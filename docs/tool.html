@@ -1,0 +1,267 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Alice - 工具</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico 0.5.1" />}
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="../static/css/normalize.css" />
+        <link rel="stylesheet" href="../static/css/site.css" />
+        <link rel="stylesheet" href="../static/css/solarized.css" />
+        <link rel="stylesheet" href="../static/style.css" />
+        <link rel="stylesheet" href="../static/frozen.css" />
+<style>
+/* alipay iconfont */
+@font-face {
+  font-family: "rei";
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"rei";
+  font-style: normal;
+  font-weight: normal;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src="http://static.alipayobjects.com/??
+seajs/seajs/2.2.0/sea.js,
+seajs/seajs-combo/1.0.1/seajs-combo.js,
+seajs/seajs-style/1.0.2/seajs-style.js,
+seajs/seajs-health/0.1.0/seajs-health.js,
+jquery/jquery/1.7.2/jquery.js"></script>
+<script>
+  (function() {
+
+  var query = location.search.substring(1).split('&');
+  var srcdir = 'src';
+
+  if (contain(query, 'dist')) {
+    srcdir = 'dist';
+    
+  } else if (contain(query, 'cov')) {
+    srcdir = 'src-cov';
+  }
+
+  seajs.config({
+    alias: {
+      "$": 'jquery/jquery/1.7.2/jquery',
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      "jquery": 'jquery/jquery/1.7.2/jquery',
+      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      expect: "gallery/expect/0.2.0/expect",
+      puerh: "popomore/puerh/0.1.0/puerh",
+      handlebars: "gallery/handlebars/1.0.2/handlebars",
+      sinon: "gallery/sinon/1.6.0/sinon"
+    },
+    map: [function(uri) {
+      // resolve id
+      var m = uri.match(/alice\/alice.spmjs.org\/0.0.1\/(.*)/);
+      if (m) {
+        return resolve(m[1]);
+      }
+      return uri;
+    }, function(uri) {
+      var m = uri.match(/([A-Za-z\-]+)\/[A-Za-z\-]+\/[\.0-9]+\/.+/);
+      if (m && /^alipay|anima$/.test(m[1])) {
+        return 'http://yuan.alipay.im/assets/' + m[0];
+      }
+      return uri;
+    }],
+    comboExcludes: {test: function(uri) {
+      return uri.indexOf('http://static.alipayobjects.com') === -1;
+    }}
+  });
+
+  function resolve(file) {
+    if (contain(query, 'debug')) {
+      if (file.indexOf('-debug') === -1) {
+        file = file.replace(/\.(\w+)$/, '-debug.$1');
+      }
+    }
+    return seajs.resolve("../" + srcdir + "/" + file + '#');
+  }
+
+  function contain(arr, value) {
+    for (var i in arr) {
+      if (arr[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+      seajs.config({ alias: {"ui-btn":"frozen/ui-btn/1.0.0/ui-btn.css","ui-btn-lg":"frozen/ui-btn/1.0.0/ui-btn-lg.css","atom":"frozen/ui-btn/1.0.0/atom.css","ui-btn-group":"frozen/ui-btn/1.0.0/ui-btn-group.css","ui-dialog":"frozen/ui-btn/1.0.0/ui-dialog.css","ui-list":"frozen/ui-btn/1.0.0/ui-list.css","ui-loading":"frozen/ui-btn/1.0.0/ui-loading.css","ui-notice":"frozen/ui-btn/1.0.0/ui-notice.css","ui-select-user":"frozen/ui-btn/1.0.0/ui-select-user.css","ui-tab":"frozen/ui-btn/1.0.0/ui-tab.css","ui-table":"frozen/ui-btn/1.0.0/ui-table.css","ui-tips":"frozen/ui-btn/1.0.0/ui-tips.css","ui-icon":"frozen/ui-btn/1.0.0/ui-icon.css","ui-icon-vip":"frozen/ui-btn/1.0.0/ui-icon-vip.css"}});
+    seajs.use(["frozen/ui-btn/1.0.0/ui-btn.css","frozen/ui-btn/1.0.0/ui-btn-lg.css","frozen/ui-btn/1.0.0/atom.css","frozen/ui-btn/1.0.0/ui-btn-group.css","frozen/ui-btn/1.0.0/ui-dialog.css","frozen/ui-btn/1.0.0/ui-list.css","frozen/ui-btn/1.0.0/ui-loading.css","frozen/ui-btn/1.0.0/ui-notice.css","frozen/ui-btn/1.0.0/ui-select-user.css","frozen/ui-btn/1.0.0/ui-tab.css","frozen/ui-btn/1.0.0/ui-table.css","frozen/ui-btn/1.0.0/ui-tips.css","frozen/ui-btn/1.0.0/ui-icon.css","frozen/ui-btn/1.0.0/ui-icon-vip.css"]);
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    cssArray.push('frozen/ui-btn/1.0.0/ui-btn.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-btn-lg.css');
+    cssArray.push('frozen/ui-btn/1.0.0/atom.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-btn-group.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-dialog.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-list.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-loading.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-notice.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-select-user.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-tab.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-table.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-tips.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-icon.css');
+    cssArray.push('frozen/ui-btn/1.0.0/ui-icon-vip.css');
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+  })();
+</script>
+        <style>
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+                position: static;
+                margin: 0;
+            }
+        
+        	.ui-icon{font-size:30px;}
+        	.ui-table{line-height: 40px;} 
+        </style>
+        <script src="../static/js/site.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <script>
+        seajs.use(['arale/fixed/1.0.1/fixed', '../static/side'], function(Fixed, side) {
+            Fixed('.side-area', 20);
+            side.init();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="head-area">
+                <div class="title-area">
+                    <h1>
+                        <a href="../">Alice</a>
+                    </h1>
+                    <p class="description">写样式的更好方式</p>
+                    <img src="../static/alice-top.png" alt="alice" />
+                </div>
+                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+            </div>
+            <div class="nav-area">
+                <ol class="main-nav">
+                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+                    <li><a href="framework.html">基础框架</a></li>
+                    <li><a href="widget.html">通用样式库</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="start.html">开始使用</a></li>
+                    <li><a href="build.html">构建模块和样式库</a></li>
+                    <li><a href="rule.html">规范和最佳实践</a></li>
+                    <li><a href="tool.html">工具</a></li>
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#spm-包管理">Spm - 包管理</a></li><li><a href="#nico-调试-amp-文档">Nico - 调试&amp;文档</a></li><li><a href="#peaches-雪碧图">Peaches - 雪碧图</a></li><li><a href="#样式预编译">样式预编译</a></li><li><a href="#stylib-样式库搭建工具">Stylib - 样式库搭建工具</a></li></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>工具</h1>
+                    <div class="content"><blockquote>
+<p>城里的女人就是白啊! <em>「 让子弹飞 」2010</em></p>
+</blockquote>
+<p>Alice 作为 Arale 的一部分，离不开 Arale 体系下的 spm 和 nico 两大工具，
+使用方式也大同小异。另外 Alice 还产出和使用了一些工具来帮助开发。</p>
+<p>Alice 目前源文件大多是纯 CSS 代码，但我们不排斥二次编译的 CSS 语言（比如 stylus、less、sass 等），
+目前 <a href="http://aliceui.org/select">alice.select</a> 和 <a href="http://aliceui.org/nav">alice.nav</a> 这两个模块的源码就是用 stylus 写的。
+我们希望有更多业界优秀的工具和语言参与到 Alice 的样式世界中来。</p>
+<hr>
+<h2 id="spm-包管理">Spm - 包管理<a href="#spm-包管理" class="anchor">¶</a></h2><p>Spm 是 CMD 社区的构建和包管理工具，在 1.6 及以前的版本都是为 JavaScript 服务的。
+我们针对样式模块的特点研究出了一套在 CMD 生态圈中如何管理和使用样式的方案，
+并在版本 1.7+ 中实现了很多重要功能。相关 issue 可以看下 <a href="https://github.com/spmjs/spm/issues/645">#645</a>。
+您会对 spm 对样式的支持有更多的了解。</p>
+<p>目前 <a href="http://github.com/spmjs/spm2">spm2</a> 已经发布，Alice 已经全面建构在 spm 2.0 版本之上，相关信息请阅读 spm2 的<a href="http://docs.spmjs.org/">文档</a>。</p>
+<pre>$ spm init        // 初始化模块
+$ spm install     // 安装一个已有模块到本地
+$ spm doc watch   // 启动本地服务调试文档
+$ spm doc publish // 发布文档到源中
+$ spm build       // 完成开发，构建模块
+$ spm publish     // 将模块发布到源上
+$ spm deploy      // 部署到开发机器上</pre><p>常用的命令基本就是这几个，其中<a href="https://github.com/spmjs/spm-build">spm build</a>、 <a href="https://github.com/spmjs/spm-init">spm init</a> 和 <a href="https://github.com/spmjs/spm-deploy">spm deploy</a> 作为 spm 的插件需要额外安装。
+更多 spm 的使用方式，请参考前面的开发教程或 Arale 的相关文档。</p>
+<blockquote>
+<p>注意：支付宝前端请安装支付宝 spm 套装 <a href="https://github.com/spmjs/apm">apm</a>，会对开发有更大的定制性帮助。</p>
+</blockquote>
+<h2 id="nico-调试-amp-文档">Nico - 调试&amp;文档<a href="#nico-调试-amp-文档" class="anchor">¶</a></h2><p>Nico 是一个 JavaScript 的静态文档生成工具，在 CMD 生态圈中被用于文档构建和 Demo 调试。它在 Alice 中的使用方式和 JS 下如出一辙。
+你如果对 Arale 那套东西熟悉的话很容易就能上手。</p>
+<p>这是目前前端文档和调试界最出色且简单的工具，没有之一。用了它，你会爱上写文档。</p>
+<p><a href="http://lab.lepture.com/nico/">nico 主页</a></p>
+<p>在 Arale &amp; Alice 整体方案中我们封装了 nico 作为一个 spm 的插件，安装 <a href="https://github.com/spmjs/spm-doc">spm-doc</a> 就后可以调用各种文档调试命令了。</p>
+<h2 id="peaches-雪碧图">Peaches - 雪碧图<a href="#peaches-雪碧图" class="anchor">¶</a></h2><p>虽然 Alice 中不推荐在通用模块中使用图片背景，但是在业务线的开发中不能避免的会碰到需要图片才能实现的需求。
+痛苦的合成雪碧图技术就成了前端必不可少的技能之一，所以我们有了 Peaches 这样的工具来帮助我们。</p>
+<p>Peaches 是支付宝前端工程师 @蔡伦 同学开发的，是一个 CSS 雪碧图编译工具。</p>
+<p>Peaches 通过分析 CSS 样式规则，提取背景图片，自动合并成雪碧图，
+并自动更新背景定位。免去了手动合并图片和定位的麻烦，而且也大大提升后续修改样式的效率。</p>
+<p>更多功能请访问 <a href="http://peaches.io/">Peaches</a> 主页：</p>
+<p><a href="http://peaches.io/"><img src="https://raw.github.com/slowhost/upload/1362839444253/peaches.png" alt=""></a></p>
+<p>安装 <a href="https://github.com/spmjs/apm">apm</a> 后，<code>spm build</code> 将支持自动合并雪碧图，只需在 <code>package.json</code> 中标明即可。</p>
+<div class="highlight"><pre><code class="javascript">  <span class="string">"spm"</span>: {
+    <span class="string">"peaches"</span>: <span class="literal">true</span>
+  }</code></pre></div><p>使用范例：<a href="https://github.com/afc163/peaches-example">afc163/peaches-example</a></p>
+<h2 id="样式预编译">样式预编译<a href="#样式预编译" class="anchor">¶</a></h2><p>Alice 默认支持 stylus 和 less 文件的预编译，
+使用了 <a href="https://github.com/gruntjs/grunt-contrib-stylus">grunt-contrib-stylus</a> 和 <a href="https://github.com/gruntjs/grunt-contrib-less">grunt-contrib-less</a>。
+<a href="https://github.com/aliceui/select">alice/select</a> 模块使用了 stylus 进行开发。</p>
+<p>安装 <code>apm</code> 后只需执行 <code>spm build</code>，我们会帮你编译 styl 和 less 文件，就这么简单。</p>
+<p><a href="http://www.lesscss.net/">less 主页</a></p>
+<p><a href="http://learnboost.github.com/stylus/">stylus 主页</a></p>
+<p>只有在 package.json 里的 <code>spm.output</code> 里指定的 <code>.styl</code> 和 <code>.less</code> 文件（一般写为同名的 <code>.css</code> 文件）才会被编译。</p>
+<h2 id="stylib-样式库搭建工具">Stylib - 样式库搭建工具<a href="#stylib-样式库搭建工具" class="anchor">¶</a></h2><p>Stylib 是快速构建 <a href="http://aliceui.org/stylib">这样</a> 的样式库的工具，
+在 <a href="/docs/build.html#构建团队的样式库">&lt;构建团队的样式库&gt;</a> 一文中提到过，具体使用方式参见此文就好。</p>
+<p>支付宝的各业务线有搭建自己的样式库需求的，欢迎使用本工具和提出建议。</p>
+</div>
+                </div>
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            <p class="powered">
+                <a href="http://aralejs.org">Arale</a> •
+                <a href="http://aliceui.org">Alice</a> •
+                <a href="http://seajs.org">Sea.js</a> •
+                <a href="https://spmjs.org">spmjs.org</a> •
+                <a href="http://lab.lepture.com/nico/">nico</a>
+            </p>
+            </footer>
+        </div>
+    </body>
+</html>
