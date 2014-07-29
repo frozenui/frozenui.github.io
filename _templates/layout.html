@@ -10,10 +10,6 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="{{system.name}} {{system.version}}" />
         {%- block assets %}
-<<<<<<< HEAD
-=======
-        {%- set config.assets_host = 'http://static.alipayobjects.com' %}}
->>>>>>> d7c4fe6d11a1e9f8af49f00e01005115772d6efa
         <link type="image/x-icon" href="{{static_url('favicon.ico')}}" rel="icon">
         <link rel="stylesheet" href="{{static_url('css/normalize.css')}}" />
         <link rel="stylesheet" href="{{static_url('css/site.css')}}" />
@@ -29,12 +25,6 @@
         
         	.ui-icon{font-size:30px;}
         	.ui-table{line-height: 40px;} 
-<<<<<<< HEAD
-=======
-        	body{
-            	-webkit-user-select: initial;
-        	}
->>>>>>> d7c4fe6d11a1e9f8af49f00e01005115772d6efa
         </style>
         <script src="{{static_url('js/site.js')}}"></script>
         <!--[if lt IE 9]>
@@ -43,11 +33,7 @@
         {%- endblock %}
         {%- block afterstyle %}{% endblock %}
         <script>
-<<<<<<< HEAD
         seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
-=======
-        seajs.use(['arale/fixed/1.0.1/fixed', '../static/side'], function(Fixed, side) {
->>>>>>> d7c4fe6d11a1e9f8af49f00e01005115772d6efa
             Fixed('.side-area', 20);
             side.init();
         });
@@ -61,11 +47,7 @@
                         <a href="{{content_url('index.html')}}">{{config.package.title|title}}</a>
                     </h1>
                     <p class="description">{{config.package.description}}</p>
-<<<<<<< HEAD
                     <img src="/static/alice-top.png" alt="alice" />
-=======
-                    <img src="../static/alice-top.png" alt="alice" />
->>>>>>> d7c4fe6d11a1e9f8af49f00e01005115772d6efa
                 </div>
                 <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
                 allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
@@ -84,11 +66,7 @@
                 {% else %}
                 <div class="side-area">
                     <ul>
-<<<<<<< HEAD
                         <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
-=======
-                        <li class="side-loading"><img width="160" alt="加载中..." src="../static/loading.gif"></li>
->>>>>>> d7c4fe6d11a1e9f8af49f00e01005115772d6efa
                     </ul>
                 </div>                
                 {%- endif %}
