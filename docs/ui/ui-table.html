@@ -46,7 +46,7 @@
 
 </script>
 
-<script src="http://static.alipayobjects.com/??
+<script src="http://assets.spmjs.org/??
 seajs/seajs/2.2.0/sea.js,
 seajs/seajs-combo/1.0.1/seajs-combo.js,
 seajs/seajs-style/1.0.2/seajs-style.js,
@@ -91,7 +91,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
       return uri;
     }],
     comboExcludes: {test: function(uri) {
-      return uri.indexOf('http://static.alipayobjects.com') === -1;
+      return uri.indexOf('http://assets.spmjs.org') === -1;
     }}
   });
 
@@ -137,7 +137,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     cssArray.push('frozen/ui-btn/1.0.0/ui-icon-vip.css');
     for (var i=0; i<cssArray.length; i++) {
       if (cssArray[i].indexOf('.css') < 0) {
-        cssArray.splice(i, 1);
+        cssArray[i] = '';
       }
     }
     seajs.use(cssArray);
@@ -151,9 +151,6 @@ jquery/jquery/1.7.2/jquery.js"></script>
         
         	.ui-icon{font-size:30px;}
         	.ui-table{line-height: 40px;} 
-        	body{
-            	-webkit-user-select: inherit;
-        	}
         </style>
         <script src="../../static/js/site.js"></script>
         <!--[if lt IE 9]>
@@ -175,7 +172,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
                         <a href="../../">Alice</a>
                     </h1>
                     <p class="description">写样式的更好方式</p>
-                    <img src="/static/alice-top.png" alt="alice" />
+                    <img src="/static/frozen-top.png" alt="frozen" />
                 </div>
                 <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
                 allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
