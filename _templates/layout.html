@@ -42,13 +42,19 @@
     <body>
         <div id="body-wrapper">
             <div class="head-area">
+
+
                 <div class="title-area">
-                    <h1>
-                        <a href="{{content_url('index.html')}}">{{config.package.title|title}}</a>
-                    </h1>
-                    <p class="description">{{config.package.description}}</p>
                     <img src="/static/frozen-top.png" alt="frozen" />
+                    <div class="title-word">
+                        <h1>
+                            <a href="{{content_url('index.html')}}">{{config.package.title|title}}</a>
+                        </h1>
+                        <p class="description">{{config.package.description}}</p>
+                    </div>                  
                 </div>
+
+
                 <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
                 allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
             </div>
@@ -100,7 +106,7 @@
         <div id="footer-wrapper">
             <footer>
             <p class="powered">
-                <a href="http://aralejs.org">Arale</a> •
+                <a href="http://aralejs.org">Frozen</a> •
                 <a href="http://aliceui.org">Alice</a> •
                 <a href="http://seajs.org">Sea.js</a> •
                 <a href="https://spmjs.org">spmjs.org</a> •
