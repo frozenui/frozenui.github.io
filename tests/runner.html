@@ -25,6 +25,22 @@
   -webkit-font-smoothing: antialiased;
 }
 </style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 <script src="http://assets.spmjs.org/??
 seajs/seajs/2.2.0/sea.js,
@@ -58,7 +74,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     },
     map: [function(uri) {
       // resolve id
-      var m = uri.match(/Frozen\/alice.spmjs.org\/0.0.1\/(.*)/);
+      var m = uri.match(/alice\/alice.spmjs.org\/0.0.1\/(.*)/);
       if (m) {
         return resolve(m[1]);
       }

@@ -29,6 +29,22 @@
   -webkit-font-smoothing: antialiased;
 }
 </style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
 
 <script src="http://assets.spmjs.org/??
 seajs/seajs/2.2.0/sea.js,
@@ -62,7 +78,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     },
     map: [function(uri) {
       // resolve id
-      var m = uri.match(/Frozen\/alice.spmjs.org\/0.0.1\/(.*)/);
+      var m = uri.match(/alice\/alice.spmjs.org\/0.0.1\/(.*)/);
       if (m) {
         return resolve(m[1]);
       }
@@ -151,19 +167,13 @@ jquery/jquery/1.7.2/jquery.js"></script>
     <body>
         <div id="body-wrapper">
             <div class="head-area">
-
-
                 <div class="title-area">
-                    <img src="/static/frozen-top.png" alt="frozen" />
-                    <div class="title-word">
-                        <h1>
-                            <a href="../../">Frozen</a>
-                        </h1>
-                        <p class="description">mobile apps friendly</p>
-                    </div>                  
+                    <img src="/static/frozen-top.png" alt="alice" />
+                    <h1>
+                        <a href="../../">Frozen</a>
+                    </h1>
+                    <p class="description">mobile apps friendly</p>                    
                 </div>
-
-
                 <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
                 allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
             </div>
@@ -200,7 +210,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
         <div id="footer-wrapper">
             <footer>
             <p class="powered">
-                <a href="http://aralejs.org">Frozen</a> •
+                <a href="http://aralejs.org">Arale</a> •
                 <a href="http://aliceui.org">Alice</a> •
                 <a href="http://seajs.org">Sea.js</a> •
                 <a href="https://spmjs.org">spmjs.org</a> •

@@ -97,9 +97,10 @@ hr {
 
 .title-area {
     margin: 0 auto;
-    margin-top: 15px;
-    /*width: 250px;
+    /*padding-top: 15px;
+    width: 250px;
     height: 120px;*/
+    margin-top: 15px;
     position: relative;
     width: 200px;
     height: 151px;
@@ -135,10 +136,11 @@ hr {
 }
 
 .title-area img {
-   /* height: 120px;*/
+    /*height: 120px;
     position: absolute;
-    /*right: 28px;
+    right: 28px;
     top: -4px;*/
+    position: absolute;
     top: 0;
     left: -155px;
 }
@@ -183,7 +185,6 @@ hr {
 
 .main-nav a:hover {
     opacity: 0.8;
-    /*color: #fff;*/
     text-decoration: none;
 }
 
