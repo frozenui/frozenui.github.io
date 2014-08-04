@@ -46,7 +46,7 @@
 
 </script>
 
-<script src="http://assets.spmjs.org/??
+<script src="http://static.alipayobjects.com/??
 seajs/seajs/2.2.0/sea.js,
 seajs/seajs-combo/1.0.1/seajs-combo.js,
 seajs/seajs-style/1.0.2/seajs-style.js,
@@ -91,7 +91,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
       return uri;
     }],
     comboExcludes: {test: function(uri) {
-      return uri.indexOf('http://assets.spmjs.org') === -1;
+      return uri.indexOf('http://static.alipayobjects.com') === -1;
     }}
   });
 
@@ -137,7 +137,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     cssArray.push('frozen/ui-btn/1.0.0/ui-icon-vip.css');
     for (var i=0; i<cssArray.length; i++) {
       if (cssArray[i].indexOf('.css') < 0) {
-        cssArray[i] = '';
+        cssArray.splice(i, 1);
       }
     }
     seajs.use(cssArray);
@@ -151,6 +151,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
         
         	.ui-icon{font-size:30px;}
         	.ui-table{line-height: 40px;} 
+        	body{
+            	-webkit-user-select: inherit;
+        	}
         </style>
         <script src="./static/js/site.js"></script>
         <!--[if lt IE 9]>
@@ -174,18 +177,17 @@ jquery/jquery/1.7.2/jquery.js"></script>
                     </h1>
                     <p class="description">mobile apps friendly</p>                    
                 </div>
-                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
-                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+                <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
             </div>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="docs/framework.html">基础框架</a></li>
                     <li><a href="docs/widget.html">通用样式库</a></li>
                     <li><a href="docs/javascript.html">JavaScript</a></li>
                     <li><a href="docs/start.html">开始使用</a></li>
                     <li><a href="docs/build.html">构建模块和样式库</a></li>
-                    <li><a href="docs/rule.html">规范和最佳实践</a></li>
+                    <li><a href="docs/rule.html">关于frozen</a></li>
                     <li><a href="docs/tool.html">工具</a></li>
                 </ol>
             </div>
