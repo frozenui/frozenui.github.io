@@ -1,0 +1,398 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">
+        <title>Frozen - 构建模块和样式库</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico 0.5.1" />
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="../static/css/normalize.css" />
+        <link rel="stylesheet" href="../static/css/site.css" />
+        <link rel="stylesheet" href="../static/css/solarized.css" />
+        <link rel="stylesheet" href="../static/style.css" />
+        <link rel="stylesheet" href="/dist/frozen-debug.css" />
+<style>
+/* alipay iconfont */
+@font-face {
+  font-family: "rei";
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"rei";
+  font-style: normal;
+  font-weight: normal;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src="http://static.alipayobjects.com/??
+seajs/seajs/2.2.0/sea.js,
+seajs/seajs-combo/1.0.1/seajs-combo.js,
+seajs/seajs-style/1.0.2/seajs-style.js,
+seajs/seajs-health/0.1.0/seajs-health.js,
+jquery/jquery/1.7.2/jquery.js"></script>
+<script>
+  (function() {
+
+  var query = location.search.substring(1).split('&');
+  var srcdir = 'src';
+
+  if (contain(query, 'dist')) {
+    srcdir = 'dist';
+    
+  } else if (contain(query, 'cov')) {
+    srcdir = 'src-cov';
+  }
+
+  seajs.config({
+    alias: {
+      "$": 'jquery/jquery/1.7.2/jquery',
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      "jquery": 'jquery/jquery/1.7.2/jquery',
+      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      expect: "gallery/expect/0.2.0/expect",
+      puerh: "popomore/puerh/0.1.0/puerh",
+      handlebars: "gallery/handlebars/1.0.2/handlebars",
+      sinon: "gallery/sinon/1.6.0/sinon"
+    },
+    map: [function(uri) {
+      // resolve id
+      var m = uri.match(/alice\/alice.spmjs.org\/0.0.1\/(.*)/);
+      if (m) {
+        return resolve(m[1]);
+      }
+      return uri;
+    }, function(uri) {
+      var m = uri.match(/([A-Za-z\-]+)\/[A-Za-z\-]+\/[\.0-9]+\/.+/);
+      if (m && /^alipay|anima$/.test(m[1])) {
+        return 'http://yuan.alipay.im/assets/' + m[0];
+      }
+      return uri;
+    }],
+    comboExcludes: {test: function(uri) {
+      return uri.indexOf('http://static.alipayobjects.com') === -1;
+    }}
+  });
+
+  function resolve(file) {
+    if (contain(query, 'debug')) {
+      if (file.indexOf('-debug') === -1) {
+        file = file.replace(/\.(\w+)$/, '-debug.$1');
+      }
+    }
+    return seajs.resolve("../" + srcdir + "/" + file + '#');
+  }
+
+  function contain(arr, value) {
+    for (var i in arr) {
+      if (arr[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+      seajs.config({ alias: {}});
+    seajs.use([]);
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+        ,"css/animate.css": resolve("css/animate.css")
+        ,"css/atom.css": resolve("css/atom.css")
+        ,"css/reset.css": resolve("css/reset.css")
+        ,"css/ui-btn-group.css": resolve("css/ui-btn-group.css")
+        ,"css/ui-btn.css": resolve("css/ui-btn.css")
+        ,"css/ui-dialog.css": resolve("css/ui-dialog.css")
+        ,"css/ui-icon-qqlevel.css": resolve("css/ui-icon-qqlevel.css")
+        ,"css/ui-icon-vip.css": resolve("css/ui-icon-vip.css")
+        ,"css/ui-icon.css": resolve("css/ui-icon.css")
+        ,"css/ui-list.css": resolve("css/ui-list.css")
+        ,"css/ui-loading.css": resolve("css/ui-loading.css")
+        ,"css/ui-notice.css": resolve("css/ui-notice.css")
+        ,"css/ui-select-user.css": resolve("css/ui-select-user.css")
+        ,"css/ui-tab.css": resolve("css/ui-tab.css")
+        ,"css/ui-table.css": resolve("css/ui-table.css")
+        ,"css/ui-tips-news.css": resolve("css/ui-tips-news.css")
+        ,"css/ui-tips.css": resolve("css/ui-tips.css")
+        ,"frozen.css": resolve("frozen.css")
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+  })();
+</script>
+        <style>
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+                position: static;
+                margin: 0;
+            }
+        
+        	.ui-icon{font-size:30px;}
+        	.ui-table{line-height: 40px;} 
+        	body{
+            	-webkit-user-select: inherit;
+        	}
+        </style>
+        <script src="../static/js/site.js"></script>
+        <!--[if lt IE 9]>
+        <script src="../static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <script>
+        seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
+            Fixed('.side-area', 20);
+            side.init();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="head-area">
+                <div class="title-area">
+                    <img src="/static/frozen-top.png" alt="alice" />
+                    <h1>
+                        <a href="../">Frozen</a>
+                    </h1>
+                    <p class="description">mobile apps friendly</p>                    
+                </div>
+                <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
+            </div>
+            <div class="nav-area">
+                <ol class="main-nav">
+                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+                    <li><a href="widget.html">通用样式库</a></li>
+                    <li><a href="javascript.html">JavaScript</a></li>
+                    <li><a href="start.html">开始使用</a></li>
+                    <li><a href="rule.html">关于frozen</a></li>
+                    <li><a href="tool.html">工具</a></li>
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#工具准备">工具准备</a><ul><li><a href="#安装-spm">安装 spm</a></li></ul></li><li><a href="#开发一个样式模块">开发一个样式模块</a><ul><li><a href="#初始化模块">初始化模块</a></li><li><a href="#写文档和设计-html-结构">写文档和设计 Html 结构</a></li><li><a href="#编码和调试">编码和调试</a></li><li><a href="#构建和发布">构建和发布</a></li><li><a href="#源码托管和文档部署">源码托管和文档部署</a></li></ul></li><li><a href="#开发某页面的样式">开发某页面的样式</a></li><li><a href="#构建团队的样式库">构建团队的样式库</a><ul><li><a href="#支付宝前端请按以下步骤操作：">支付宝前端请按以下步骤操作：</a></li><li><a href="#注意事项">注意事项</a></li></ul></ul></div>
+                
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>构建模块和样式库</h1>
+                    <div class="content"><blockquote>
+<p>More power comes more responsibility. <em>「 Spider Man 」2012</em></p>
+</blockquote>
+<p>我相信，只是复制几个 Html 结构一定不是你的追求，Alice 可以让你做得更多。本页略长，请坐稳。</p>
+<hr>
+<h2 id="工具准备">工具准备<a href="#工具准备" class="anchor">¶</a></h2><p>本文默认在 Linux\Unix 环境下运行，在开始之前，我们先需要安装几个重要的工具。
+若对这些工具的作用不了解，可以先阅读 <a href="/docs/tool.html">工具</a> 。</p>
+<p>支付宝的前端们可以跳过<code>[工具准备]</code>这部分，只须安装一个套件集合就能获取所有工具。
+（外网的同学不推荐安装 <code>apm</code>，套件会默认定制一些支付宝内部的配置，比如源地址 <code>yuan.alipay.im</code>）</p>
+<pre>$ npm install apm -g</pre><p>推荐已经安装过 apm 的同学也跑一下，更新到最新的版本。</p>
+<p>安装问题参考 apm 的 <a href="https://github.com/spmjs/apm/">文档</a>。
+遇到 <code>sudo</code> 的问题请参考<a href="http://aralejs.org/docs/installation.html#%E5%8E%BB%E9%99%A4-sudo">这里</a>。</p>
+<h3 id="安装-spm">安装 spm<a href="#安装-spm" class="anchor">¶</a></h3><pre>$ npm install spm@2.x -g</pre><p>安装 spm-build、spm-init、spm-deploy、spm-doc 等插件。</p>
+<pre>$ npm install spm-build -g
+$ npm install spm-init -g
+$ npm install spm-deploy -g
+$ npm install spm-doc -g</pre><h2 id="开发一个样式模块">开发一个样式模块<a href="#开发一个样式模块" class="anchor">¶</a></h2><p>我们的页面中总是存在的各式各样的模块化的 DOM 结构，
+都可以依据其复用度来把其中一部分代码提炼成样式模块。</p>
+<h3 id="初始化模块">初始化模块<a href="#初始化模块" class="anchor">¶</a></h3><p>现在我们要开发一个 box 区块模块。首先建立一个文件夹，并使用 <code>spm init</code> 命令进行初始化。</p>
+<pre>$ mkdir box
+$ cd box
+$ spm init</pre><pre>Please answer the following:
+[?] Project name (box)
+[?] your CMD family (alice)
+[?] Version (1.0.0)
+[?] Description (The best jQuery plugin ever.) The box module.
+[?] Project git repository (git://github.com/afc163/box.git)
+[?] Project homepage (https://github.com/afc163/box)
+[?] Project issues tracker (https://github.com/afc163/box/issues)
+[?] Licenses (MIT)
+[?] Do you need to make any changes to the above before continuing? (y/N)</pre><p>这时程序会让你输入相关的信息，
+填写 family 为 alice（Alice 通用模块） 或 alipay-css（支付宝通用业务模块）或其他，
+name 为 box 后，就会生成一个 alice 模块的初始目录结构如下。</p>
+<pre>src/
+README.md
+HISTORY.md
+package.json</pre><p>其中 <code>src</code> 目录存放我们的样式源文件，<code>HISTORY.md</code> 用于版本的升级记录，
+<code>README.md</code> 是用来写文档和 DEMO 的地方，<code>package.json</code> 则存放模块的基本信息。
+我们可以在 <code>package.json</code> 中的 spm 字段中的 alias 填写所需的依赖的别名。
+这个 box 模块不需要依赖所以不需要填写。</p>
+<h3 id="写文档和设计-html-结构">写文档和设计 Html 结构<a href="#写文档和设计-html-结构" class="anchor">¶</a></h3><p>我们先打开 README.md 进行编辑。</p>
+<pre># box
+
+---
+
+带边框和标题的标准区块。
+
+---
+
+## 演示文档
+
+&lt;link type=&quot;text/css&quot; rel=&quot;stylesheet&quot; media=&quot;screen&quot; href=&quot;src/box.css&quot;&gt;
+
+### 默认用法
+
+````html
+&lt;div class=&quot;ui-box&quot;&gt;
+    &lt;div class=&quot;ui-box-head&quot;&gt;
+        &lt;div class=&quot;ui-box-head-border&quot;&gt;
+            &lt;h3 class=&quot;ui-box-head-title&quot;&gt;区块标题&lt;/h3&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;
+    &lt;div class=&quot;ui-box-container&quot;&gt;&lt;/div&gt;
+&lt;/div&gt;
+````
+</pre><p>可以看到我们在上面写了基本的模块描述，并引入了样式源文件，在最下面设计了 box 模块的 Html 结构。
+这和 JS 模块的开发过程是类似的，先设计文档和接口再进行开发，而对于样式模块来说，Html 结构就是样式的接口。</p>
+<p>像上面使用四个 ```` 符号来包裹代码是 <a href="http://lab.lepture.com/nico/">nico</a> 的特性，这样可以把代码片段转换成实际的 DOM 结构，
+非常方便调试和文档生成。</p>
+<h3 id="编码和调试">编码和调试<a href="#编码和调试" class="anchor">¶</a></h3><p>接下来我们打开 src/box.css 进行编辑，现在就是熟悉的样式编码阶段了。
+在这个阶段，我们可以到项目目录运行 <code>spm doc watch</code> 来打开 spm doc 的调试功能，
+程序启动一个 livereload 服务监听生成的文档页面，我们可以用浏览器打开 <a href="http://127.0.0.1:8000">http://127.0.0.1:8000</a> 访问文档页面并进行调试。
+你会看到类似下图的页面。</p>
+<p><img src="https://i.alipayobjects.com/e/201303/2Ml1vh9J08.png" alt=""></p>
+<h3 id="构建和发布">构建和发布<a href="#构建和发布" class="anchor">¶</a></h3><p>开发测试完毕后，我们就可以通过一下目录构建出标准的 Alice 模块文件了。</p>
+<pre>$ spm build</pre><p>这个命令会生成一个 dist 目录，里面存放我们构建出来的样式文件。它会读取 package.json 中 spm 字段下的 output 
+字段来输出用户指定的文件。(<a href="http://docs.spmjs.org/en/package#spm-output">output 规则</a>)</p>
+<pre>$ spm publish</pre><p>再通过 publish 命令可以把样式模块上传到源中，这样其他模块就可以依赖这个模块了。</p>
+<h3 id="源码托管和文档部署">源码托管和文档部署<a href="#源码托管和文档部署" class="anchor">¶</a></h3><p>最后，建议你将这个目录提交到 github 或 gitlab 中，统一管理你的样式模块。一个版本开发构建完成后，用版本号来打一个 <a href="https://github.com/aliceui/button/tree/1.1.0">tag</a> 。
+还可以利用 <a href="https://spmjs.org">源服务器</a> 来部署模块的文档页面。</p>
+<p>比如要把这个模块的静态文档托管到 spmjs.org 上，开发完毕后然后在模块根目录运行：</p>
+<pre>$ spm doc publish</pre><p>这样可以发布页面到对应的源服务中，默认的地址为 <a href="http://{{family}}.spmjs.org/{{name}}。">http://{{family}}.spmjs.org/{{name}}。</a>
+就可以访问 <a href="http://alice.spmjs.org/box">http://alice.spmjs.org/box</a> 来访问对应的文档页了。</p>
+<blockquote>
+<p>注意：要使用 spmjs.org 的文档服务，你需要到网站上注册你自己的用户名作为项目的 <code>family</code>。</p>
+</blockquote>
+<p>如果你是<code>支付宝</code>的前端，建议在 <a href="http://gitlab.alibaba-inc.com">http://gitlab.alibaba-inc.com</a> 平台建立一个 git 项目用来管理源码。</p>
+<p>支付宝的默认源服务为 <code>http://yuan.alipay.im/</code>，你一般不需要配置。默认的文档访问地址是 <code>http://arale.alipay.im/{{family}}/{{name}}</code> 。</p>
+<blockquote>
+<p>注意：spm publish 和 spm doc publish 命令将会发布模块和文档到默认的源，你可以在 <code>~/.spm/spmrc</code> 文件中查看配置的默认源是什么。</p>
+</blockquote>
+<h2 id="开发某页面的样式">开发某页面的样式<a href="#开发某页面的样式" class="anchor">¶</a></h2><p>这里你将会知道如何依赖和打包 alice 模块。</p>
+<p>假设我们现在收到了一个 <a href="https://my.alipay.com">我的支付宝</a> 页面的开发需求，
+拿到 psd 稿后我们发现这个页面上有很多的 alice 通用模块，同时也有很多的个性化的样式需求。</p>
+<p>这时会需要一个我的支付宝的样式模块，命名为 myalipay ，操作步骤和上面的 box 模块类似。
+在 Alice 中，一切样式皆模块，所以这个 myalipay 其实和上面的 box 没有本质区别，
+只不过它是直接用在页面上的。</p>
+<blockquote>
+<p>注意在支付宝内部，family 一般填写对应的<code>{{系统名}}</code>，比如 <code>memberprod</code>。</p>
+</blockquote>
+<p>生成目录后，我们打开 myalipay/package.json 文件，编辑其中的 spm.alias 字段。假设我们需要
+用到 alice.box、alice.nav、alice.button 三个模块。</p>
+<div class="highlight"><pre><code class="javascript">{
+  <span class="string">"name"</span>: <span class="string">"myalipay"</span>,
+  <span class="string">"version"</span>: <span class="string">"1.0.0"</span>,
+  <span class="string">"family"</span>: <span class="string">"myalipay"</span>,
+  ...
+  <span class="string">"spm"</span>: {
+    <span class="string">"alias"</span>: {
+      <span class="string">"box"</span>: <span class="string">"alice/box/1.0.0/box.css"</span>,
+      <span class="string">"button"</span>: <span class="string">"alice/button/1.0.0/button.css"</span>,
+      <span class="string">"nav"</span>: <span class="string">"alice/nav/1.0.0/nav.css"</span>
+    },
+    output: [<span class="string">"myalipay.css"</span>]
+  }
+}</code></pre></div><p>其中 alias 字段指明了依赖的模块的别名，output 字段指明了需要 src 目录下打包的目标文件，
+然后打开 src/myalipay.css ，在文件前面写入</p>
+<div class="highlight"><pre><code class="css"><span class="at_rule">@<span class="keyword">import</span> <span class="function">url(<span class="string">'box'</span>)</span></span>;
+<span class="at_rule">@<span class="keyword">import</span> <span class="function">url(<span class="string">'button'</span>)</span></span>;
+<span class="at_rule">@<span class="keyword">import</span> <span class="function">url(<span class="string">'nav'</span>)</span></span>;</code></pre></div><p>通过这种类似于 Arale 中 <code>require(&#39;&#39;)</code> 的方式，引入了这三个模块。
+在调试页面，文档生成工具会自动把所需依赖的外部样式模块引入，比如 <a href="https://assets.spmjs.org/alice/button/1.0.0/button.css，">https://assets.spmjs.org/alice/button/1.0.0/button.css，</a>
+默认的静态文件地址是 <code>https://assets.spmjs.org</code>，而在支付宝内部，需要引用的是内网的静态文件源地址：<code>https://yuan.alipay.im/assets/</code>，
+此时你需要在 package.json 中表明:</p>
+<pre>&quot;keywords&quot;: [&quot;alipay&quot;]</pre><p>接下来可以在 src/myalipay.css 的后面继续编写个性化的样式代码。</p>
+<p>当然可以引入内部的模块，比如我们在 src 下建一个 user.css 文件，专门用来写和用户有关的样式。
+在 myalipay.css 中可以这样引入：</p>
+<div class="highlight"><pre><code class="css"><span class="at_rule">@<span class="keyword">import</span> <span class="function">url(<span class="string">'box'</span>)</span></span>;
+<span class="at_rule">@<span class="keyword">import</span> <span class="function">url(<span class="string">'button'</span>)</span></span>;
+<span class="at_rule">@<span class="keyword">import</span> <span class="function">url(<span class="string">'nav'</span>)</span></span>;
+
+<span class="at_rule">@<span class="keyword">import</span> <span class="function">url(<span class="string">'./user.css'</span>)</span></span>;  <span class="comment">/* 引入内部文件 */</span></code></pre></div><p>最后，和上面一样，用 <code>spm build</code> 命令打包出文件，你会发现在 dist 目录下多了
+两个文件 myalipay.css 和 myalipay-debug.css ，包含了 box、button、nav、user.css 和 myalipay.css 自身的所有代码。
+最后把 dist 下的文件部署到线上对应目录就可以了。在支付宝，我们是部署到 <code>https://a.alipayobjects.com/{{family}}/{{name}}/{{version}}/{{file}}.css</code> 这样的路径上的。</p>
+<h2 id="构建团队的样式库">构建团队的样式库<a href="#构建团队的样式库" class="anchor">¶</a></h2><p>当你构建出了一批样式模块后，你可能需要一个统一的地方展示和管理这些模块（类似这个<a href="http://aliceui.org/stylib/">页面</a>）。
+一个维护简单使用方便的样式库对于个人开发者、团队、业务线都有很大的帮助。</p>
+<p><img src="https://i.alipayobjects.com/e/201305/GiSxsk3Jt.png" alt=""></p>
+<p>Alice 的通用样式库是基于支付宝视觉规范的一套模块精选集，数量和质量都会严格控制。
+更好的实践是在各小组各产品线参照通用样式库建立自己的样式精选集。（可以避免制造出鱼龙混杂的模块池而导致的无法查找模块的问题。）</p>
+<p>Alice 提供了一种简单的方式帮助你在 <code>spmjs.org</code> 或 <code>支付宝内部源</code> 上搭建自己的样式库。在搭建你的样式库前，请先按照上面的做法构建好一批样式库中需要的 Alice 模块。
+接下来搭建的样式库会帮助你集成这些模块。</p>
+<blockquote>
+<p>注意，下面还有个支付宝前端专用的搭建教程。</p>
+</blockquote>
+<pre>$ curl https://raw.github.com/aliceui/stylib/master/bootstrap.sh | sh</pre><p>命令运行后会在当前目录建立一个样式库文件夹 <code>stylib</code>，先修改 package.json 中的 family 为你注册维护的。（比如 alice、tong、app 等，否则你将没有权限部署文档）
+然后在 package.json 的 spm.alias 字段中写上你要在样式库显示的样式模块。比如：</p>
+<div class="highlight"><pre><code class="javascript"><span class="string">"spm"</span>: {
+  alias: {
+    <span class="string">"box"</span>: <span class="string">"alice/box/1.0.0/box.css"</span>,
+    <span class="string">"button"</span>: <span class="string">"alice/button/1.0.0/button.css"</span>,
+    <span class="string">"nav"</span>: <span class="string">"alice/nav/1.0.0/nav.css"</span>
+  }
+}</code></pre></div><p>然后运行下面的命令就可以将样式库部署到 spmjs.org 提供静态文档托管服务上。
+具体的地址是 <code>https://{{package.json中的family}}/spmjs.org/docs//{{package.json中的name}}</code> 。</p>
+<pre>$ spm doc publish</pre><p>这个样式库页面会读取 alias 中配置的各模块的文档内容到样式库中，读取的各文档地址是：</p>
+<pre>http(s)://样式库根路径/模块名</pre><p>如果样式库部署到 <a href="http://alice.spmjs.org/stylib">http://alice.spmjs.org/stylib</a> 的，那么此页面会读取
+alice.spmjs.org/box、alice.spmjs.org/button 和 alice.spmjs.org/nav 这三个页面。（请确保这三个页面有内容！）</p>
+<p>最后建议将这个库部署到对应的 git 托管环境下，以便后续管理修改。</p>
+<h3 id="支付宝前端请按以下步骤操作：">支付宝前端请按以下步骤操作：<a href="#支付宝前端请按以下步骤操作：" class="anchor">¶</a></h3><pre>$ curl https://raw.github.com/aliceui/stylib/alipay/bootstrap.sh | sh</pre><p>命令运行后会在当前目录建立一个样式库文件夹 <code>stylib</code>，首先你需要修改 package.json 里面的 family 为自己的 family（比如 app）。</p>
+<p>在 package.json 的 spm.alias 字段中写上你要在样式库显示的样式模块。比如：</p>
+<div class="highlight"><pre><code class="javascript"><span class="string">"keywords"</span>: [<span class="string">"alipay"</span>],
+<span class="string">"spm"</span>: {
+  <span class="string">"alias"</span>: {
+    <span class="string">"box"</span>: <span class="string">"app/box/1.0.0/box.css"</span>,
+    <span class="string">"button"</span>: <span class="string">"app/button/1.0.0/button.css"</span>,
+    <span class="string">"nav"</span>: <span class="string">"app/nav/1.0.0/nav.css"</span>
+  }
+}</code></pre></div><p>需要引用内网的静态文件源地址：<a href="https://yuan.alipay.im/assets/">https://yuan.alipay.im/assets/</a> ，加上 <code>keywords</code> 表明这点即可。</p>
+<p>然后运行下面的命令就可以将样式库部署到基础技术组提供的 <code>yuan.alipay.im</code> 静态站点服务上。
+具体的地址是 <code>http://arale.alipay.im/{{family}}/stylib</code> 。比如<code>http://arale.alipay.im/app/stylib</code>。</p>
+<pre>$ spm doc publish</pre><p>这个样式库页面会读取 alias 中配置的各模块的文档内容到样式库中，读取的各文档地址是：</p>
+<pre>http://arale.alipay.im/模块family/模块名</pre><p>比如你建立的 Stylib 是部署到 <a href="http://arale.alipay.im/app/stylib">http://arale.alipay.im/app/stylib</a> 的，那么 Stylib 页面会用 Ajax 的方式去读取
+arale.alipay.im/app/box、arale.alipay.im/app/button 和 arale.alipay.im/app/nav 这三个页面并取到
+对应的示例展示在 Stylib 的页面上。</p>
+<p>这样你就拥有了一个样式库地址为 <a href="http://arale.alipay.im/app/stylib">arale.alipay.im/app/stylib</a> 的业务线样式库。
+你可以进一步修改这个仓库中的样式和文档来，然后运行 <code>spm doc publish</code> 就能不断优化更新它。</p>
+<p>最后建议将这个库部署到对应的 git 托管环境（如 <a href="http://gitlab.alibaba-inc.com">gitlab</a>）下，以便后续管理修改。</p>
+<h3 id="注意事项">注意事项<a href="#注意事项" class="anchor">¶</a></h3><blockquote>
+<p>注意1：因为是 Ajax 的方式读取各模块页面，
+所以请保证模块文档地址可访问，并且样式库和模块文档是同域的。</p>
+<p>注意2：Stylib 对各子模块的页面的标准有要求，请严格按照 spm init 后的模板来写你每个样式模块的 Readme.md。</p>
+<p>注意3，若无法上传文档，试试配置下内部的 spm 源地址。<code>spm config source.alipay.url http://yuan.alipay.im</code></p>
+</blockquote>
+<p>有任何问题，请发 <a href="https://github.com/aliceui/aliceui.org/issues/new">issue</a> 给我们。</p>
+</div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>
