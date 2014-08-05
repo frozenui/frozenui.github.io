@@ -10,13 +10,14 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="{{system.name}} {{system.version}}" />
         {%- set config.assets_host = 'http://static.alipayobjects.com' %}
+        
         {%- block assets %}
         <link type="image/x-icon" href="{{static_url('favicon.ico')}}" rel="icon">
         <link rel="stylesheet" href="{{static_url('css/normalize.css')}}" />
         <link rel="stylesheet" href="{{static_url('css/site.css')}}" />
         <link rel="stylesheet" href="{{static_url('css/solarized.css')}}" />
         <link rel="stylesheet" href="{{static_url('style.css')}}" />
-        <link rel="stylesheet" href="{{static_url('frozen.css')}}" />
+        <link rel="stylesheet" href="/dist/frozen-debug.css" />
         {%- include "snippet/head.html" %}
         <style>
             .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
@@ -47,14 +48,14 @@
         <div id="body-wrapper">
             <div class="head-area">
                 <div class="title-area">
+                    <img src="/static/frozen-top.png" alt="alice" />
                     <h1>
                         <a href="{{content_url('index.html')}}">{{config.package.title|title}}</a>
                     </h1>
-                    <p class="description">{{config.package.description}}</p>
-                    <img src="/static/alice-top.png" alt="alice" />
+                    <p class="description">{{config.package.description}}</p>                    
                 </div>
-                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
-                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+                <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
             </div>
             <div class="nav-area">
                 <ol class="main-nav">
@@ -81,35 +82,11 @@
                     <h1>{{post.title}}</h1>
                     <div class="content">{{ post.html|replace_code|add_anchor }}</div>
                 </div>
-                {%- if post.filename == 'index' %}
-                <div class="comment-area">
-                    <!-- Duoshuo Comment BEGIN -->
-                    <div class="ds-thread"></div>
-                    <script type="text/javascript">
-                    var duoshuoQuery = {short_name:"aliceui"};
-                    (function() {
-                        var ds = document.createElement('script');
-                        ds.type = 'text/javascript';ds.async = true;
-                        ds.src = 'http://static.duoshuo.com/embed.js';
-                        ds.charset = 'UTF-8';
-                        (document.getElementsByTagName('head')[0] 
-                        || document.getElementsByTagName('body')[0]).appendChild(ds);
-                        })();
-                    </script>
-                    <!-- Duoshuo Comment END -->
-                </div>
-                {%- endif %}
+                
             </div>
         </div>
         <div id="footer-wrapper">
             <footer>
-            <p class="powered">
-                <a href="http://aralejs.org">Arale</a> •
-                <a href="http://aliceui.org">Alice</a> •
-                <a href="http://seajs.org">Sea.js</a> •
-                <a href="https://spmjs.org">spmjs.org</a> •
-                <a href="{{system.homepage}}">{{system.name}}</a>
-            </p>
             </footer>
         </div>
     </body>

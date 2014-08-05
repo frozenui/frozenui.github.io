@@ -108,29 +108,33 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
-      seajs.config({ alias: {"ui-btn":"frozen/ui-btn/1.0.0/ui-btn.css","ui-btn-lg":"frozen/ui-btn/1.0.0/ui-btn-lg.css","atom":"frozen/ui-btn/1.0.0/atom.css","ui-btn-group":"frozen/ui-btn/1.0.0/ui-btn-group.css","ui-dialog":"frozen/ui-btn/1.0.0/ui-dialog.css","ui-list":"frozen/ui-btn/1.0.0/ui-list.css","ui-loading":"frozen/ui-btn/1.0.0/ui-loading.css","ui-notice":"frozen/ui-btn/1.0.0/ui-notice.css","ui-select-user":"frozen/ui-btn/1.0.0/ui-select-user.css","ui-tab":"frozen/ui-btn/1.0.0/ui-tab.css","ui-table":"frozen/ui-btn/1.0.0/ui-table.css","ui-tips":"frozen/ui-btn/1.0.0/ui-tips.css","ui-icon":"frozen/ui-btn/1.0.0/ui-icon.css","ui-icon-vip":"frozen/ui-btn/1.0.0/ui-icon-vip.css"}});
-    seajs.use(["frozen/ui-btn/1.0.0/ui-btn.css","frozen/ui-btn/1.0.0/ui-btn-lg.css","frozen/ui-btn/1.0.0/atom.css","frozen/ui-btn/1.0.0/ui-btn-group.css","frozen/ui-btn/1.0.0/ui-dialog.css","frozen/ui-btn/1.0.0/ui-list.css","frozen/ui-btn/1.0.0/ui-loading.css","frozen/ui-btn/1.0.0/ui-notice.css","frozen/ui-btn/1.0.0/ui-select-user.css","frozen/ui-btn/1.0.0/ui-tab.css","frozen/ui-btn/1.0.0/ui-table.css","frozen/ui-btn/1.0.0/ui-tips.css","frozen/ui-btn/1.0.0/ui-icon.css","frozen/ui-btn/1.0.0/ui-icon-vip.css"]);
+      seajs.config({ alias: {}});
+    seajs.use([]);
 
     seajs.config({alias: {
       "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+        ,"css/animate.css": resolve("css/animate.css")
+        ,"css/atom.css": resolve("css/atom.css")
+        ,"css/reset.css": resolve("css/reset.css")
+        ,"css/ui-btn-group.css": resolve("css/ui-btn-group.css")
+        ,"css/ui-btn.css": resolve("css/ui-btn.css")
+        ,"css/ui-dialog.css": resolve("css/ui-dialog.css")
+        ,"css/ui-icon-qqlevel.css": resolve("css/ui-icon-qqlevel.css")
+        ,"css/ui-icon-vip.css": resolve("css/ui-icon-vip.css")
+        ,"css/ui-icon.css": resolve("css/ui-icon.css")
+        ,"css/ui-list.css": resolve("css/ui-list.css")
+        ,"css/ui-loading.css": resolve("css/ui-loading.css")
+        ,"css/ui-notice.css": resolve("css/ui-notice.css")
+        ,"css/ui-select-user.css": resolve("css/ui-select-user.css")
+        ,"css/ui-tab.css": resolve("css/ui-tab.css")
+        ,"css/ui-table.css": resolve("css/ui-table.css")
+        ,"css/ui-tips-news.css": resolve("css/ui-tips-news.css")
+        ,"css/ui-tips.css": resolve("css/ui-tips.css")
+        ,"frozen.css": resolve("frozen.css")
     }});
 
     // 加载依赖的 css 文件
     var cssArray = [];
-    cssArray.push('frozen/ui-btn/1.0.0/ui-btn.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-btn-lg.css');
-    cssArray.push('frozen/ui-btn/1.0.0/atom.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-btn-group.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-dialog.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-list.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-loading.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-notice.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-select-user.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-tab.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-table.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-tips.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-icon.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-icon-vip.css');
     for (var i=0; i<cssArray.length; i++) {
       if (cssArray[i].indexOf('.css') < 0) {
         cssArray.splice(i, 1);

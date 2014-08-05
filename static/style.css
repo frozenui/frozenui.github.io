@@ -97,20 +97,28 @@ hr {
 
 .title-area {
     margin: 0 auto;
-    padding-top: 15px;
+    /*padding-top: 15px;
     width: 250px;
-    height: 120px;
+    height: 120px;*/
+    margin-top: 15px;
     position: relative;
+    width: 200px;
+    height: 151px;
 }
 
 .title-area h1 {
-    font-size: 54px;
+    /*font-size: 54px;
     margin: 0;
-    line-height: 60px;
+    line-height: 60px;*/
+    margin: 0;
+    padding-top: 25px;
 }
 
 .title-area h1 a {
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    font-size: 60px;
+    color: #4cbed3;
+    line-height: 60px;
 }
 
 .title-area h1 a:hover {
@@ -119,16 +127,22 @@ hr {
 }
 
 .title-area .description {
-    margin: 0;
+    /*margin: 0;
     color: #999;
-    font-size: 12px;
+    font-size: 12px;*/
+    font-size: 14px;
+    color: #aaa;
+    line-height: 14px;
 }
 
 .title-area img {
-    height: 120px;
+    /*height: 120px;
     position: absolute;
     right: 28px;
-    top: -4px;
+    top: -4px;*/
+    position: absolute;
+    top: 0;
+    left: -155px;
 }
 
 .head-area iframe {
@@ -142,10 +156,10 @@ hr {
     height: 60px;
     color: #888;
     margin-bottom: 15px;
-    background: #FBFFD7;
-    border-top: 4px solid #9ACD4B;
+    background: #66dff4;
+    border-top: 4px solid #4cbed3;
     text-align: center;
-    border-bottom: 1px solid #FFF0B5;
+    /*border-bottom: 1px solid #FFF0B5;*/
 }
 
 .main-nav {
@@ -165,11 +179,13 @@ hr {
 }
 
 .main-nav a {
-    color: #668430;
+    /*color: #668430;*/
+    color: #5c5c5c;
 }
 
 .main-nav a:hover {
     opacity: 0.8;
+    text-decoration: none;
 }
 
 .main-area {
@@ -239,7 +255,8 @@ hr {
     border-bottom: none;
     position: relative;
     text-shadow: 0 1px 2px #eee;
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    color: #00a5e0;
 }
 
 .side-area a .iconfont {
@@ -275,7 +292,8 @@ hr {
 
 .content-area h2 {
     font-size: 22px;
-    color: #7CAE23;
+    /*color: #7CAE23;*/
+    color: #00a5e0;
     margin-top: 40px;
 }
 
@@ -451,3 +469,73 @@ body .fn-hide {
     visibility: visible;
 }
 
+/*javascript栏目样式*/
+.js-module{
+    margin-bottom: 30px;
+}
+.js-module-title{
+    font-size: 22px;
+    color: #00a5e0;
+    margin-bottom: 20px;
+    font-weight: bold;
+}
+.js-module-box{
+    float: left;
+    margin-bottom: 15px;
+    margin-right: 20px;
+    padding: 8px 10px;
+    width: 170px;
+    /*height: 60px;*/
+    border: 1px solid #dbdbdb;
+    border-left: 5px solid #b4d0ee;
+    overflow: hidden;
+    border-radius: 6px;
+    box-shadow: 2px 2px 0px rgba(0,0,0.05);
+    background-color: #fff;
+}
+.js-module-name{
+    color: #3f9eb3;
+    display: inline-block;
+    font-size: 18px;
+    max-width: 145px;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    vertical-align: bottom;
+    white-space: nowrap;
+    text-transform: capitalize;
+    font-family: "Marmelad", "Lucida Grande", Georgia, sans-serif;
+}
+.js-module-name:hover{
+    text-decoration: underline;
+}
+.js-module-version{
+    font-size: 12px;
+    color: #aaa;
+    display: inline;
+    font-family: Menlo, Courier;
+}
+.js-module-description {
+    color: #666;
+    font-size: 12px;
+    line-height: 1.5;
+    height: 36px;
+}
+.js-module-description:hover {
+    overflow: auto;
+}
+/*border颜色值*/
+.gn{
+    border-left-color: #6bdfcf;
+}
+.pk{
+    border-left-color: #fa8383;
+}
+.yl{
+    border-left-color: #fada8d;
+}
+.pp{
+    border-left-color: #c974ca;
+}
+.og{
+    border-left-color: #fd795a;
+}

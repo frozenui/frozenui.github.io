@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>Alice - ui-loading</title>
+        <title>Frozen - ui-loading</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="../../static/favicon.ico" rel="icon">
@@ -10,7 +10,7 @@
         <link rel="stylesheet" href="../../static/css/site.css" />
         <link rel="stylesheet" href="../../static/css/solarized.css" />
         <link rel="stylesheet" href="../../static/style.css" />
-        <link rel="stylesheet" href="../../static/frozen.css" />
+        <link rel="stylesheet" href="/dist/frozen-debug.css" />
 <style>
 /* alipay iconfont */
 @font-face {
@@ -112,29 +112,33 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
-      seajs.config({ alias: {"ui-btn":"frozen/ui-btn/1.0.0/ui-btn.css","ui-btn-lg":"frozen/ui-btn/1.0.0/ui-btn-lg.css","atom":"frozen/ui-btn/1.0.0/atom.css","ui-btn-group":"frozen/ui-btn/1.0.0/ui-btn-group.css","ui-dialog":"frozen/ui-btn/1.0.0/ui-dialog.css","ui-list":"frozen/ui-btn/1.0.0/ui-list.css","ui-loading":"frozen/ui-btn/1.0.0/ui-loading.css","ui-notice":"frozen/ui-btn/1.0.0/ui-notice.css","ui-select-user":"frozen/ui-btn/1.0.0/ui-select-user.css","ui-tab":"frozen/ui-btn/1.0.0/ui-tab.css","ui-table":"frozen/ui-btn/1.0.0/ui-table.css","ui-tips":"frozen/ui-btn/1.0.0/ui-tips.css","ui-icon":"frozen/ui-btn/1.0.0/ui-icon.css","ui-icon-vip":"frozen/ui-btn/1.0.0/ui-icon-vip.css"}});
-    seajs.use(["frozen/ui-btn/1.0.0/ui-btn.css","frozen/ui-btn/1.0.0/ui-btn-lg.css","frozen/ui-btn/1.0.0/atom.css","frozen/ui-btn/1.0.0/ui-btn-group.css","frozen/ui-btn/1.0.0/ui-dialog.css","frozen/ui-btn/1.0.0/ui-list.css","frozen/ui-btn/1.0.0/ui-loading.css","frozen/ui-btn/1.0.0/ui-notice.css","frozen/ui-btn/1.0.0/ui-select-user.css","frozen/ui-btn/1.0.0/ui-tab.css","frozen/ui-btn/1.0.0/ui-table.css","frozen/ui-btn/1.0.0/ui-tips.css","frozen/ui-btn/1.0.0/ui-icon.css","frozen/ui-btn/1.0.0/ui-icon-vip.css"]);
+      seajs.config({ alias: {}});
+    seajs.use([]);
 
     seajs.config({alias: {
       "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+        ,"css/animate.css": resolve("css/animate.css")
+        ,"css/atom.css": resolve("css/atom.css")
+        ,"css/reset.css": resolve("css/reset.css")
+        ,"css/ui-btn-group.css": resolve("css/ui-btn-group.css")
+        ,"css/ui-btn.css": resolve("css/ui-btn.css")
+        ,"css/ui-dialog.css": resolve("css/ui-dialog.css")
+        ,"css/ui-icon-qqlevel.css": resolve("css/ui-icon-qqlevel.css")
+        ,"css/ui-icon-vip.css": resolve("css/ui-icon-vip.css")
+        ,"css/ui-icon.css": resolve("css/ui-icon.css")
+        ,"css/ui-list.css": resolve("css/ui-list.css")
+        ,"css/ui-loading.css": resolve("css/ui-loading.css")
+        ,"css/ui-notice.css": resolve("css/ui-notice.css")
+        ,"css/ui-select-user.css": resolve("css/ui-select-user.css")
+        ,"css/ui-tab.css": resolve("css/ui-tab.css")
+        ,"css/ui-table.css": resolve("css/ui-table.css")
+        ,"css/ui-tips-news.css": resolve("css/ui-tips-news.css")
+        ,"css/ui-tips.css": resolve("css/ui-tips.css")
+        ,"frozen.css": resolve("frozen.css")
     }});
 
     // 加载依赖的 css 文件
     var cssArray = [];
-    cssArray.push('frozen/ui-btn/1.0.0/ui-btn.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-btn-lg.css');
-    cssArray.push('frozen/ui-btn/1.0.0/atom.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-btn-group.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-dialog.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-list.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-loading.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-notice.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-select-user.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-tab.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-table.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-tips.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-icon.css');
-    cssArray.push('frozen/ui-btn/1.0.0/ui-icon-vip.css');
     for (var i=0; i<cssArray.length; i++) {
       if (cssArray[i].indexOf('.css') < 0) {
         cssArray.splice(i, 1);
@@ -171,24 +175,22 @@ jquery/jquery/1.7.2/jquery.js"></script>
         <div id="body-wrapper">
             <div class="head-area">
                 <div class="title-area">
+                    <img src="/static/frozen-top.png" alt="alice" />
                     <h1>
-                        <a href="../../">Alice</a>
+                        <a href="../../">Frozen</a>
                     </h1>
-                    <p class="description">写样式的更好方式</p>
-                    <img src="/static/alice-top.png" alt="alice" />
+                    <p class="description">mobile apps friendly</p>                    
                 </div>
-                <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
-                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe>
+                <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
             </div>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="../framework.html">基础框架</a></li>
                     <li><a href="../widget.html">通用样式库</a></li>
                     <li><a href="../javascript.html">JavaScript</a></li>
                     <li><a href="../start.html">开始使用</a></li>
-                    <li><a href="../build.html">构建模块和样式库</a></li>
-                    <li><a href="../rule.html">规范和最佳实践</a></li>
+                    <li><a href="../rule.html">关于frozen</a></li>
                     <li><a href="../tool.html">工具</a></li>
                 </ol>
             </div>
@@ -210,17 +212,11 @@ jquery/jquery/1.7.2/jquery.js"></script>
        <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div></div>
                 </div>
+                
             </div>
         </div>
         <div id="footer-wrapper">
             <footer>
-            <p class="powered">
-                <a href="http://aralejs.org">Arale</a> •
-                <a href="http://aliceui.org">Alice</a> •
-                <a href="http://seajs.org">Sea.js</a> •
-                <a href="https://spmjs.org">spmjs.org</a> •
-                <a href="http://lab.lepture.com/nico/">nico</a>
-            </p>
             </footer>
         </div>
     </body>
