@@ -188,8 +188,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </script>
                 <div class="content-area">
                     <h1>ui-select-user</h1>
-                    <div class="content"><h3 id="default">default<a href="#default" class="anchor">¶</a></h3><div class="nico-insert-code"><ul class="ui-select-user">
-        <!-- list1 start -->
+                    <div class="content"><h3 id="default">default<a href="#default" class="anchor">¶</a></h3><div class="nico-insert-code">
+    <ul class="ui-select-
+        <!-- list1 start -->user">
             <li class="ui-select-user-item active">
                 <h3 class="ui-border-b"><i class="arrow"></i>最近在玩的好友</h3>
                 <div class="ui-notice-warn"><i class="ui-icon ui-icon-refresh"></i><p>请检查网络</p></div>
@@ -213,9 +214,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
                         <div class="info">飞翔的企鹅</div>
                     </li>
                 </ul>
-            </li>
+
             <!-- list1 end -->
-            <!-- list2 start -->
+            <!-- list2 start -->    </li>
             <li class="ui-select-user-item">
                 <h3 class="ui-userselect-top ui-border-b"><i class="arrow"></i>鹅厂工友们</h3>
                 <ul class="ui-list ui-border-b">
@@ -238,8 +239,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
                         <div class="info">飞翔的企鹅</div>
                     </li>
                 </ul>
-            </li>
-            <!-- list2 end -->
+
+            <!-- list2 end -->    </li>
         </ul>
         <section class="ui-notice" style="display: none;">
             <p>加载中...</p>
@@ -247,17 +248,17 @@ jquery/jquery/1.7.2/jquery.js"></script>
         <section class="ui-notice" style="display: none;">
             <p>加载失败，请点击页面刷新</p>
         </section>
-        <div class="ui-loading-wrap" style="display: none;">
+    <section class="ui-loading-wrap" style="display: none;">
             <p>加载中</p>
             <i class="ui-loading"></i>
-        </div>
-        <div class="ui-dialog ui-dialog-notice show" style="display: none;">
+        </section>
+        <section class="ui-dialog ui-dialog-notice show" style="display: none;">
             <div class="dialog-notice-cnt">
               <i class="ui-loading ui-loading-bright"></i>
               <p>加载中...</p>
            </div>
-         </div>
-    </div>
+         </section>
+    <!--    
     <script src="../js/zepto.min.js"></script>
     <script src="../js/touch.js"></script>
     <script src="http://pub.idqqimg.com/qqmobile/qqapi.js"></script> 
@@ -274,8 +275,10 @@ jquery/jquery/1.7.2/jquery.js"></script>
           $('.ui-dialog button').click(function(){
               $('.ui-dialog').removeClass('show');
           })
-    </script></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-select-user"</span>&gt;</span>
-        <span class="comment">&lt;!-- list1 start --&gt;</span>
+    </script>
+    --></div><div class="highlight"><pre><code class="xml">
+    <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-select-
+        &lt;!-- list1 start --&gt;user"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-select-user-item active"</span>&gt;</span>
                 <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-border-b"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>最近在玩的好友<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
                 <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-notice-warn"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-refresh"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span><span class="tag">&lt;<span class="title">p</span>&gt;</span>请检查网络<span class="tag">&lt;/<span class="title">p</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
@@ -299,9 +302,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
                         <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"info"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
                     <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
                 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+
             <span class="comment">&lt;!-- list1 end --&gt;</span>
-            <span class="comment">&lt;!-- list2 start --&gt;</span>
+            <span class="comment">&lt;!-- list2 start --&gt;</span>    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
             <span class="tag">&lt;<span class="title">li</span> <span class="attribute">class</span>=<span class="value">"ui-select-user-item"</span>&gt;</span>
                 <span class="tag">&lt;<span class="title">h3</span> <span class="attribute">class</span>=<span class="value">"ui-userselect-top ui-border-b"</span>&gt;</span><span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"arrow"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>鹅厂工友们<span class="tag">&lt;/<span class="title">h3</span>&gt;</span>
                 <span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"ui-list ui-border-b"</span>&gt;</span>
@@ -324,8 +327,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
                         <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"info"</span>&gt;</span>飞翔的企鹅<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
                     <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
                 <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
-            <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
-            <span class="comment">&lt;!-- list2 end --&gt;</span>
+
+            <span class="comment">&lt;!-- list2 end --&gt;</span>    <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
         <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-notice"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
@@ -333,34 +336,35 @@ jquery/jquery/1.7.2/jquery.js"></script>
         <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-notice"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载失败，请点击页面刷新<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-loading-wrap"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-loading-wrap"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
             <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-        <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-        <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-dialog ui-dialog-notice show"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-dialog ui-dialog-notice show"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"dialog-notice-cnt"</span>&gt;</span>
               <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading ui-loading-bright"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
               <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
            <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-         <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-    <span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"../js/zepto.min.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"../js/touch.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
-    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://pub.idqqimg.com/qqmobile/qqapi.js"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span> 
+         <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+    <span class="comment">&lt;!--    
+    &lt;script src="../js/zepto.min.js"&gt;&lt;/script&gt;
+    &lt;script src="../js/touch.js"&gt;&lt;/script&gt;
+    &lt;script src="http://pub.idqqimg.com/qqmobile/qqapi.js"&gt;&lt;/script&gt; 
 
-    <span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
-          $(<span class="string">".ui-select-user h3"</span>).click(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
-            <span class="keyword">var</span> group=$(<span class="keyword">this</span>).closest(<span class="string">".ui-select-user-item"</span>);
-            <span class="keyword">if</span>(!group.hasClass(<span class="string">"active"</span>)){
-              group.addClass(<span class="string">"active"</span>)
-        }<span class="keyword">else</span>{
-              group.removeClass(<span class="string">"active"</span>);
+    &lt;script type="text/javascript"&gt;
+          $(".ui-select-user h3").click(function(){
+            var group=$(this).closest(".ui-select-user-item");
+            if(!group.hasClass("active")){
+              group.addClass("active")
+        }else{
+              group.removeClass("active");
         }
           })
-          $(<span class="string">'.ui-dialog button'</span>).click(<span class="function"><span class="keyword">function</span><span class="params">()</span>{</span>
-              $(<span class="string">'.ui-dialog'</span>).removeClass(<span class="string">'show'</span>);
+          $('.ui-dialog button').click(function(){
+              $('.ui-dialog').removeClass('show');
           })
-    </span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></pre></div></div>
+    &lt;/script&gt;
+    --&gt;</span></code></pre></div></div>
                 </div>
                 
             </div>
