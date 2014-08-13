@@ -1,0 +1,272 @@
+<!DOCTYPE HTML>
+<html lang="zh">
+    <head>
+        <meta charset="UTF-8">        
+        <title>Frozen - mobile apps friendly</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="generator" content="nico 0.5.1" />
+        <link type="image/x-icon" href="./static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="./static/css/normalize.css" />
+        <link rel="stylesheet" href="./static/css/site.css" />
+        <link rel="stylesheet" href="./static/css/solarized.css" />
+        <link rel="stylesheet" href="./static/style.css" />
+        <link rel="stylesheet" href="/src/css/global.css" />
+<style>
+/* alipay iconfont */
+@font-face {
+  font-family: "rei";
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
+  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
+  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
+}
+.iconfont {
+  font-family:"rei";
+  font-style: normal;
+  font-weight: normal;
+  cursor: default;
+  -webkit-font-smoothing: antialiased;
+}
+</style>
+<script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-39169474-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    if (location.port) {
+       return;
+    }
+    ga.src = 'https://ssl.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+<script src="http://static.alipayobjects.com/??
+seajs/seajs/2.2.0/sea.js,
+seajs/seajs-combo/1.0.1/seajs-combo.js,
+seajs/seajs-style/1.0.2/seajs-style.js,
+seajs/seajs-health/0.1.0/seajs-health.js,
+jquery/jquery/1.7.2/jquery.js"></script>
+<script>
+  (function() {
+
+  var query = location.search.substring(1).split('&');
+  var srcdir = 'src';
+
+  if (contain(query, 'dist')) {
+    srcdir = 'dist';
+    
+  } else if (contain(query, 'cov')) {
+    srcdir = 'src-cov';
+  }
+
+  seajs.config({
+    alias: {
+      "$": 'jquery/jquery/1.7.2/jquery',
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      "jquery": 'jquery/jquery/1.7.2/jquery',
+      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
+      expect: "gallery/expect/0.2.0/expect",
+      puerh: "popomore/puerh/0.1.0/puerh",
+      handlebars: "gallery/handlebars/1.0.2/handlebars",
+      sinon: "gallery/sinon/1.6.0/sinon"
+    },
+    map: [function(uri) {
+      // resolve id
+      var m = uri.match(/alice\/alice.spmjs.org\/0.0.1\/(.*)/);
+      if (m) {
+        return resolve(m[1]);
+      }
+      return uri;
+    }, function(uri) {
+      var m = uri.match(/([A-Za-z\-]+)\/[A-Za-z\-]+\/[\.0-9]+\/.+/);
+      if (m && /^alipay|anima$/.test(m[1])) {
+        return 'http://yuan.alipay.im/assets/' + m[0];
+      }
+      return uri;
+    }],
+    comboExcludes: {test: function(uri) {
+      return uri.indexOf('http://static.alipayobjects.com') === -1;
+    }}
+  });
+
+  function resolve(file) {
+    if (contain(query, 'debug')) {
+      if (file.indexOf('-debug') === -1) {
+        file = file.replace(/\.(\w+)$/, '-debug.$1');
+      }
+    }
+    return seajs.resolve("./" + srcdir + "/" + file + '#');
+  }
+
+  function contain(arr, value) {
+    for (var i in arr) {
+      if (arr[i] === value) {
+        return true;
+      }
+    }
+    return false;
+  }
+      seajs.config({ alias: {}});
+    seajs.use([]);
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+        ,"css/basic.css": resolve("css/basic.css")
+        ,"css/global.css": resolve("css/global.css")
+        ,"css/vip.css": resolve("css/vip.css")
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+  })();
+</script>
+        <style>
+            .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
+                position: static;
+                margin: 0;
+            }
+        
+        	.ui-icon{font-size:30px;}
+        	.ui-table{line-height: 40px;} 
+        	.ui-dialog{height:320px;}
+        	body{
+            	-webkit-user-select: inherit;
+        	}
+        </style>
+        <script src="./static/js/site.js"></script>
+        <!--[if lt IE 9]>
+        <script src="./static/js/html5shiv.js"></script>
+        <![endif]-->
+        
+        <script>
+        seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
+            Fixed('.side-area', 20);
+            side.init();
+        });
+        </script>
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="head-area">
+                <div class="title-area">
+                    <img src="/static/frozen-top.png" alt="alice" />
+                    <h1>
+                        <a href="./">Frozen</a>
+                    </h1>
+                    <p class="description">mobile apps friendly</p>                    
+                </div>
+                <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
+                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
+            </div>
+            <div class="nav-area">
+                <ol class="main-nav">
+                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+                    <li><a href="docs/widget.html">通用样式库</a></li>
+                    <li><a href="docs/javascript.html">JavaScript</a></li>
+                    <li><a href="docs/start.html">开始使用</a></li>
+                    <li><a href="docs/rule.html">关于frozen</a></li>
+                    <li><a href="docs/tool.html">工具</a></li>
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area">
+                    <ul>
+                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
+                    </ul>
+                </div>
+                <script type="text/template" id="list-template">
+                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>null</h1>
+                    <div class="content"><style type="text/css">
+    .side-area,.head-area,.nav-area,.comment-area,.content-area>h1,#footer-wrapper{
+        display: none;
+    }
+    .main-area{
+        width: 100%;
+        margin: 0;
+    }
+    .content-area{display:block;width: 100%;border: none;margin-left: 0;padding: 0;}
+</style>
+
+<div class="fr-nav">
+        <ul>
+            <li id="fr-nav-index"><a href="">Frozen</a></li>
+            <li><a href="docs/widget.html">通用样式库</a></li>
+            <li><a href="docs/javascript.html">JavaScript</a></li>
+            <li><a href="docs/start.html">开始使用</a></li>
+            <li><a href="docs/rule.html">关于Frozen</a></li>
+            <li><a href="docs/tool.html">工具</a></li>
+        </ul>
+    </div>
+    <div class="fr-banner">
+        <div class="fr-banner-content">
+            <div class="fr-banner-info">
+                <h2>Frozen</h2>
+                <h3>简单易用，轻量快捷，<br/>为移动端服务的前端框架。</h3>
+                <a href="#">下 载</a>
+            </div>
+            <img src="static/phone.png" class="fr-banner-ph">
+        </div>
+    </div>
+    <div class="fr-content">
+        <div class="fr-item">
+            <img src="static/ui.png" alt="frozenui">
+            <div class="fr-item-info fr-frozenui">
+                <h2>随心所用的UI组件</h2>
+                <p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。提供友好的手机QQ接入规范。</p>
+                <a href="docs/widget.html">查 看</a>
+            </div>
+        </div>
+        <div class="fr-item">
+            <div class="fr-item-info fr-frozenjs">
+                <h2>更显灵动的JS插件</h2>
+                <p>Frozen提供的一系列JavaScript插件，更优雅地在移动端上呈现更灵动的动画效果。</p>
+                <a href="docs/javascript.html">查 看</a>
+            </div>
+            <img src="static/js.png" alt="frozenjs" class="fr-frozenjs-img">
+        </div>
+    </div>
+    <div class="fr-footer">
+        <div class="fr-footer-content">
+            <div>
+                <h6>About us</h6>
+                <p><a href="https://github.com/frozenui">Github</a></p>
+                <p><a href="">Contact us</a></p>
+            </div>
+            <div>
+                <h6>Support</h6>
+                <p><a href="">Quick start</a></p>
+                <p><a href="">Join us</a></p>
+            </div>
+            <div id="fr-footer-us">
+                <img src="static/logo.png">
+                <p>© QQ会员前端开发组<br/>All rights reserved.</p>
+            </div>
+        </div>
+</div>
+
+</div>
+                </div>
+                
+            </div>
+        </div>
+        <div id="footer-wrapper">
+            <footer>
+            </footer>
+        </div>
+    </body>
+</html>
