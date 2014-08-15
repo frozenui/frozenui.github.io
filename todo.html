@@ -6,11 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="./static/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="./static/css/normalize.css" />
-        <link rel="stylesheet" href="./static/css/site.css" />
-        <link rel="stylesheet" href="./static/css/solarized.css" />
+
         <link rel="stylesheet" href="./static/style.css" />
-        <link rel="stylesheet" href="/src/css/global.css" />
+        <link rel="stylesheet" href="./static/solarized.css" />
+        <link rel="stylesheet" href="./static/css/global.css" />
 <style>
 /* alipay iconfont */
 @font-face {
@@ -117,9 +116,6 @@ jquery/jquery/1.7.2/jquery.js"></script>
 
     seajs.config({alias: {
       "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
-        ,"css/basic.css": resolve("css/basic.css")
-        ,"css/global.css": resolve("css/global.css")
-        ,"css/vip.css": resolve("css/vip.css")
     }});
 
     // 加载依赖的 css 文件
@@ -134,7 +130,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </script>
         <style>
             .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
-                position: static;
+                position: relative;
                 margin: 0;
             }
         
@@ -145,7 +141,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
             	-webkit-user-select: inherit;
         	}
         </style>
-        <script src="./static/js/site.js"></script>
+        <script src="./static/side.js"></script>
         <!--[if lt IE 9]>
         <script src="./static/js/html5shiv.js"></script>
         <![endif]-->

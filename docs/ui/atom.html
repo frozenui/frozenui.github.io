@@ -6,11 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="../../static/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="../../static/css/normalize.css" />
-        <link rel="stylesheet" href="../../static/css/site.css" />
-        <link rel="stylesheet" href="../../static/css/solarized.css" />
+
         <link rel="stylesheet" href="../../static/style.css" />
-        <link rel="stylesheet" href="/src/css/global.css" />
+        <link rel="stylesheet" href="../../static/solarized.css" />
+        <link rel="stylesheet" href="../../static/css/global.css" />
 <style>
 /* alipay iconfont */
 @font-face {
@@ -117,9 +116,6 @@ jquery/jquery/1.7.2/jquery.js"></script>
 
     seajs.config({alias: {
       "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
-        ,"css/basic.css": resolve("css/basic.css")
-        ,"css/global.css": resolve("css/global.css")
-        ,"css/vip.css": resolve("css/vip.css")
     }});
 
     // 加载依赖的 css 文件
@@ -134,7 +130,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </script>
         <style>
             .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
-                position: static;
+                position: relative;
                 margin: 0;
             }
         
@@ -145,7 +141,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
             	-webkit-user-select: inherit;
         	}
         </style>
-        <script src="../../static/js/site.js"></script>
+        <script src="../../static/side.js"></script>
         <!--[if lt IE 9]>
         <script src="../../static/js/html5shiv.js"></script>
         <![endif]-->
@@ -188,8 +184,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </script>
                 <div class="content-area">
                     <h1>atom</h1>
-                    <div class="content"><link type="text/css" rel="stylesheet" media="screen" href="src/atom.css">
-
+                    <div class="content"><p>辅助类</p>
 <h3 id="常用文本颜色">常用文本颜色<a href="#常用文本颜色" class="anchor">¶</a></h3><div class="nico-insert-code">    <span class="ui-txt-default">ui-txt-default</span><br>
     <span class="ui-txt-info">ui-txt-info</span><br>
     <span class="ui-txt-muted">ui-txt-muted</span><br>
@@ -242,57 +237,49 @@ jquery/jquery/1.7.2/jquery.js"></script>
         <span class="tag">&lt;<span class="title">p</span>&gt;</span>居中<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="红点和未读数通知">红点和未读数通知<a href="#红点和未读数通知" class="anchor">¶</a></h3><div class="nico-insert-code">
      <div class="ui-reddot">内容内容</div>
-     <div class="ui-reddot ui-reddot-border">内容内容</div>
-      <div class="ui-reddot ui-reddot-s">内容内容</div>
+     <div class="ui-reddot-border">内容内容</div>
+      <div class="ui-reddot-s">内容内容</div>
      <div class="ui-badge">123</div>
-     <div class="ui-badge ui-badge-muted">345</div></div><div class="highlight"><pre><code class="xml">
+     <div class="ui-badge-muted">345</div></div><div class="highlight"><pre><code class="xml">
      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot ui-reddot-border"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot ui-reddot-s"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-border"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-reddot-s"</span>&gt;</span>内容内容<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
      <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge"</span>&gt;</span>123<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
-     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge ui-badge-muted"</span>&gt;</span>345<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="圆角头像">圆角头像<a href="#圆角头像" class="anchor">¶</a></h3><div class="nico-insert-code">
+     <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-badge-muted"</span>&gt;</span>345<span class="tag">&lt;/<span class="title">div</span>&gt;</span></code></pre></div><h3 id="圆角头像">圆角头像<a href="#圆角头像" class="anchor">¶</a></h3><div class="nico-insert-code">
         <p>圆角头像，列表场景</p>
 
-            <img src="http://icase.tencent.com/vlabs/img/?100*100" class="ui-avatar">
+            <div class="ui-avatar"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"></span></div>
 
-            <img src="http://icase.tencent.com/vlabs/img/?108*108" class="ui-avatar-lg">
+            <div class="ui-avatar-lg"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"></span></div>
 
-            <img src="http://icase.tencent.com/vlabs/img/?80*80" class="ui-avatar-s">
+            <div class="ui-avatar-s"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"></span></div>
 
             <p>资料场景</p>
 
-            <img src="http://icase.tencent.com/vlabs/img/?128*128" class="ui-avatar-one">
+            <div class="ui-avatar-one"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"></span></div>
 
                 <p>平铺头像</p>
-
-            <img src="http://icase.tencent.com/vlabs/img/?60*60"  class="ui-avatar-tiled">
-
-            <img src="http://icase.tencent.com/vlabs/img/?60*60" class="ui-avatar-tiled">
-
-            <img src="http://icase.tencent.com/vlabs/img/?60*60"  class="ui-avatar-tiled">
-
-            <img src="http://icase.tencent.com/vlabs/img/?60*60"  class="ui-avatar-tiled"></div><div class="highlight"><pre><code class="xml">
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span>
+            <span class="ui-avatar-tiled"><span style="background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"></span></span></div><div class="highlight"><pre><code class="xml">
         <span class="tag">&lt;<span class="title">p</span>&gt;</span>圆角头像，列表场景<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
 
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?100*100"</span> <span class="attribute">class</span>=<span class="value">"ui-avatar"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?100*100)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?108*108"</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-lg"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-lg"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?108*108)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?80*80"</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-s"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-s"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?80*80)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
             <span class="tag">&lt;<span class="title">p</span>&gt;</span>资料场景<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
 
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?128*128"</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-one"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-one"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?128*128)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">div</span>&gt;</span>
 
                 <span class="tag">&lt;<span class="title">p</span>&gt;</span>平铺头像<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
-
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?60*60"</span>  <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span>
-
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?60*60"</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span>
-
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?60*60"</span>  <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span>
-
-            <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://icase.tencent.com/vlabs/img/?60*60"</span>  <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span></code></pre></div></div>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-avatar-tiled"</span>&gt;</span><span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image:url(http://icase.tencent.com/vlabs/img/?60*60)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div></div>
                 </div>
                 
             </div>
