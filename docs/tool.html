@@ -77,7 +77,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     },
     map: [function(uri) {
       // resolve id
-      var m = uri.match(/alice\/alice.spmjs.org\/0.0.1\/(.*)/);
+      var m = uri.match(/alice\/frozenui\/0.0.1\/(.*)/);
       if (m) {
         return resolve(m[1]);
       }
@@ -111,21 +111,6 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
-      seajs.config({ alias: {}});
-    seajs.use([]);
-
-    seajs.config({alias: {
-      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
-    }});
-
-    // 加载依赖的 css 文件
-    var cssArray = [];
-    for (var i=0; i<cssArray.length; i++) {
-      if (cssArray[i].indexOf('.css') < 0) {
-        cssArray.splice(i, 1);
-      }
-    }
-    seajs.use(cssArray);
   })();
 </script>
         <style>
