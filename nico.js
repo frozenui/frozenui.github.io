@@ -2,7 +2,6 @@ var path = require('path');
 var pkg = require(path.join(process.cwd(), 'package.json'))
 exports.package = pkg;
 
-
 // {{ settings for nico
 exports.theme = __dirname
 exports.source = process.cwd()
