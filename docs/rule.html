@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>Frozen - 关于frozen</title>
+        <title>Frozen - 规范</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
@@ -111,6 +111,22 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
+      seajs.config({ alias: {}});
+    seajs.use([]);
+      seajs.config({ alias: {}});
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
   })();
 </script>
         <style>
@@ -157,7 +173,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
                     <li><a href="widget.html">通用样式库</a></li>
                     <li><a href="javascript.html">JavaScript</a></li>
                     <li><a href="start.html">开始使用</a></li>
-                    <li><a href="rule.html">关于frozen</a></li>
+                    <li><a href="rule.html">规范</a></li>
                     <li><a href="tool.html">工具</a></li>
                 </ol>
             </div>
@@ -168,7 +184,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
                 <div class="content-area">
-                    <h1>关于frozen</h1>
+                    <h1>规范</h1>
                     <div class="content"><h2 id="命名规范">命名规范<a href="#命名规范" class="anchor">¶</a></h2><p>class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如，.btn 和 .btn-danger）。</p>
 <p>避免过度任意的简写。.btn 代表 button，但是 .s 不能表达任何意思。</p>
 <p>class 名称应当尽可能短，并且意义明确。</p>
