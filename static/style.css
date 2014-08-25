@@ -3,8 +3,8 @@ body {
     color: #666;
     background: #fdfdfd;
     font-family: "Marmelad","Lucida Grande",Georgia,sans-serif;
-    font-size: 14px;
     line-height: 1.5;
+    font-size: 14px;
 }
 
 a {
@@ -99,6 +99,9 @@ hr {
 
 .title-area {
     margin: 0 auto;
+    /*padding-top: 15px;
+    width: 250px;
+    height: 120px;*/
     margin-top: 15px;
     position: relative;
     width: 200px;
@@ -106,11 +109,15 @@ hr {
 }
 
 .title-area h1 {
+    /*font-size: 54px;
+    margin: 0;
+    line-height: 60px;*/
     margin: 0;
     padding-top: 25px;
 }
 
 .title-area h1 a {
+    /*color: #7CAE23;*/
     font-size: 60px;
     color: #4cbed3;
     line-height: 60px;
@@ -122,6 +129,9 @@ hr {
 }
 
 .title-area .description {
+    /*margin: 0;
+    color: #999;
+    font-size: 12px;*/
     font-size: 14px;
     color: #aaa;
     line-height: 14px;
@@ -144,6 +154,7 @@ hr {
     height: 60px;
     color: #888;
     margin-bottom: 15px;
+    /*background: #66dff4;*/
     background: #4cbed3;
     border-top: 4px solid #66dff4;
     text-align: center;
@@ -241,6 +252,7 @@ hr {
     border-bottom: none;
     position: relative;
     text-shadow: 0 1px 2px #eee;
+    /*color: #7CAE23;*/
     color: #00a5e0;
 }
 
@@ -277,6 +289,7 @@ hr {
 
 .content-area h2 {
     font-size: 22px;
+    /*color: #7CAE23;*/
     color: #00a5e0;
     margin-top: 40px;
 }
@@ -597,15 +610,15 @@ body .fn-hide {
     top: 100px;
 }
 .fr-banner-content h2{
-    font-size: 60px;
     font-weight: 400;
+    font-size: 60px;
     color: #fff;
     font-weight: bold;
     text-shadow:2px 2px 2px #ddd;
 }
 .fr-banner-content h3{
-    font-size: 32px;
     font-weight: 400;
+    font-size: 32px;
     color: #fff;
     font-family: "Microsoft Yahei";
 }
