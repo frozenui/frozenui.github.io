@@ -111,6 +111,25 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
+<<<<<<< HEAD
+=======
+      seajs.config({ alias: {}});
+    seajs.use([]);
+      seajs.config({ alias: {}});
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
   })();
 </script>
         <style>
@@ -154,11 +173,13 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="../widget.html">通用样式库</a></li>
+                    <li><a href="/baseui">通用样式库</a></li>
                     <li><a href="../javascript.html">JavaScript</a></li>
                     <li><a href="../start.html">开始使用</a></li>
                     <li><a href="../rule.html">关于frozen</a></li>
                     <li><a href="../tool.html">工具</a></li>
+                    
+
                 </ol>
             </div>
             <div class="main-area">
@@ -218,6 +239,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
         </ul>
         <section class="ui-notice" style="display: none;">
             <p>加载中...</p>
+<<<<<<< HEAD
         </section>
         <section class="ui-notice" style="display: none;">
             <p>加载失败，请点击页面刷新</p>
@@ -226,6 +248,16 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <p>加载中</p>
             <i class="ui-loading"></i>
         </section>
+=======
+        </section>
+        <section class="ui-notice" style="display: none;">
+            <p>加载失败，请点击页面刷新</p>
+        </section>
+    <section class="ui-loading-wrap" style="display: none;">
+            <p>加载中</p>
+            <i class="ui-loading"></i>
+        </section>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
         <section class="ui-dialog ui-dialog-notice show" style="display: none;">
             <div class="dialog-notice-cnt">
               <i class="ui-loading ui-loading-bright"></i>
@@ -299,6 +331,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
         <span class="tag">&lt;/<span class="title">ul</span>&gt;</span>
         <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-notice"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中...<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+<<<<<<< HEAD
         <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
         <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-notice"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载失败，请点击页面刷新<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
@@ -307,6 +340,16 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
             <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+=======
+        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-notice"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载失败，请点击页面刷新<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-loading-wrap"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">p</span>&gt;</span>加载中<span class="tag">&lt;/<span class="title">p</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">section</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
         <span class="tag">&lt;<span class="title">section</span> <span class="attribute">class</span>=<span class="value">"ui-dialog ui-dialog-notice show"</span> <span class="attribute">style</span>=<span class="value">"display: none;"</span>&gt;</span>
             <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"dialog-notice-cnt"</span>&gt;</span>
               <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-loading ui-loading-bright"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>

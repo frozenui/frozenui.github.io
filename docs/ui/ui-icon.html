@@ -111,6 +111,25 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
+<<<<<<< HEAD
+=======
+      seajs.config({ alias: {}});
+    seajs.use([]);
+      seajs.config({ alias: {}});
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
   })();
 </script>
         <style>
@@ -154,11 +173,13 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="../widget.html">通用样式库</a></li>
+                    <li><a href="/baseui">通用样式库</a></li>
                     <li><a href="../javascript.html">JavaScript</a></li>
                     <li><a href="../start.html">开始使用</a></li>
                     <li><a href="../rule.html">关于frozen</a></li>
                     <li><a href="../tool.html">工具</a></li>
+                    
+
                 </ol>
             </div>
             <div class="main-area">

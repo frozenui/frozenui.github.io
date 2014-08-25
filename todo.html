@@ -111,6 +111,45 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
+<<<<<<< HEAD
+=======
+      seajs.config({ alias: {}});
+    seajs.use([]);
+      seajs.config({ alias: {}});
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+        ,"base/atom.css": resolve("base/atom.css")
+        ,"base/reset.css": resolve("base/reset.css")
+        ,"basic/ui-btn-group.css": resolve("basic/ui-btn-group.css")
+        ,"basic/ui-btn.css": resolve("basic/ui-btn.css")
+        ,"basic/ui-dialog.css": resolve("basic/ui-dialog.css")
+        ,"basic/ui-icon-tag.css": resolve("basic/ui-icon-tag.css")
+        ,"basic/ui-icon.css": resolve("basic/ui-icon.css")
+        ,"basic/ui-list.css": resolve("basic/ui-list.css")
+        ,"basic/ui-loading.css": resolve("basic/ui-loading.css")
+        ,"basic/ui-notice.css": resolve("basic/ui-notice.css")
+        ,"basic/ui-select-user.css": resolve("basic/ui-select-user.css")
+        ,"basic/ui-tab.css": resolve("basic/ui-tab.css")
+        ,"basic/ui-table.css": resolve("basic/ui-table.css")
+        ,"basic/ui-tips-news.css": resolve("basic/ui-tips-news.css")
+        ,"basic/ui-tips.css": resolve("basic/ui-tips.css")
+        ,"basic.css": resolve("basic.css")
+        ,"global.css": resolve("global.css")
+        ,"vip/ui-icon-qqlevel.css": resolve("vip/ui-icon-qqlevel.css")
+        ,"vip/ui-icon-viplevel.css": resolve("vip/ui-icon-viplevel.css")
+        ,"vip.css": resolve("vip.css")
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
   })();
 </script>
         <style>

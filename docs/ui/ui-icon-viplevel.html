@@ -111,6 +111,25 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
+<<<<<<< HEAD
+=======
+      seajs.config({ alias: {}});
+    seajs.use([]);
+      seajs.config({ alias: {}});
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
   })();
 </script>
         <style>
@@ -154,22 +173,40 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+<<<<<<< HEAD
                     <li><a href="../widget.html">通用样式库</a></li>
+=======
+                    <li><a href="/baseui">通用样式库</a></li>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
                     <li><a href="../javascript.html">JavaScript</a></li>
                     <li><a href="../start.html">开始使用</a></li>
                     <li><a href="../rule.html">关于frozen</a></li>
                     <li><a href="../tool.html">工具</a></li>
+<<<<<<< HEAD
                 </ol>
             </div>
             <div class="main-area">
                 <div class="side-area"><ul><li><a href="#普通会员等级图标">普通会员等级图标</a></li><li><a href="#普通会员铭牌等级图标">普通会员铭牌等级图标</a></li><li><a href="#年费会员等级图标">年费会员等级图标</a></li><li><a href="#年费会员铭牌等级图标">年费会员铭牌等级图标</a></li><li><a href="#普通超级会员等级图标">普通超级会员等级图标</a></li><li><a href="#普通超级会员铭牌等级图标">普通超级会员铭牌等级图标</a></li><li><a href="#年费超级会员等级图标">年费超级会员等级图标</a></li><li><a href="#超级年费会员铭牌等级图标">超级年费会员铭牌等级图标</a></li><li><a href="#超q图标">超Q图标</a></li><li><a href="#普通会员图标">普通会员图标</a></li><li><a href="#过去状态图标">过去状态图标</a></li><li><a href="#普通会员等级图标">普通会员等级图标</a></li><li><a href="#普通会员铭牌等级图标">普通会员铭牌等级图标</a></li><li><a href="#年费会员等级图标">年费会员等级图标</a></li><li><a href="#年费会员铭牌等级图标">年费会员铭牌等级图标</a></li><li><a href="#普通超级会员等级图标">普通超级会员等级图标</a></li><li><a href="#普通超级会员铭牌等级图标">普通超级会员铭牌等级图标</a></li><li><a href="#年费超级会员等级图标">年费超级会员等级图标</a></li><li><a href="#年费超级会员铭牌等级图标">年费超级会员铭牌等级图标</a></li><li><a href="#超q图标">超Q图标</a></li><li><a href="#普通会员图标">普通会员图标</a></li></ul></div>
+=======
+                    
+
+                </ol>
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#普通会员图标">普通会员图标</a></li><li><a href="#普通会员铭牌图标">普通会员铭牌图标</a></li><li><a href="#年费会员图标">年费会员图标</a></li><li><a href="#年费会员铭牌图标">年费会员铭牌图标</a></li><li><a href="#普通超级会员图标">普通超级会员图标</a></li><li><a href="#普通超级会员铭牌图标">普通超级会员铭牌图标</a></li><li><a href="#年费超级会员图标">年费超级会员图标</a></li><li><a href="#超级年费会员铭牌图标">超级年费会员铭牌图标</a></li><li><a href="#超q图标">超Q图标</a></li><li><a href="#过去状态图标">过去状态图标</a></li><li><a href="#普通会员图标">普通会员图标</a></li><li><a href="#普通会员铭牌图标">普通会员铭牌图标</a></li><li><a href="#年费会员图标">年费会员图标</a></li><li><a href="#年费会员铭牌图标">年费会员铭牌图标</a></li><li><a href="#普通超级会员图标">普通超级会员图标</a></li><li><a href="#普通超级会员铭牌图标">普通超级会员铭牌图标</a></li><li><a href="#年费超级会员图标">年费超级会员图标</a></li><li><a href="#年费超级会员铭牌图标">年费超级会员铭牌图标</a></li><li><a href="#超q图标">超Q图标</a></li></ul></div>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
                 
                 <script type="text/template" id="list-template">
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
                 <div class="content-area">
                     <h1>ui-icon-vip 会员图标</h1>
+<<<<<<< HEAD
                     <div class="content"><h3 id="普通会员等级图标">普通会员等级图标<a href="#普通会员等级图标" class="anchor">¶</a></h3><div class="nico-insert-code">
+=======
+                    <div class="content"><h3 id="普通会员图标">普通会员图标<a href="#普通会员图标" class="anchor">¶</a></h3><div class="nico-insert-code">测试
+
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
 <span class="ui-icon-viplevel">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip1.png)"></span>
 </span>
@@ -190,7 +227,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-viplevel">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml">
+=======
+</span></div><div class="highlight"><pre><code class="xml">测试
+
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
@@ -211,7 +253,15 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通会员铭牌等级图标">普通会员铭牌等级图标<a href="#普通会员铭牌等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-viplevel-s">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通会员铭牌图标">普通会员铭牌图标<a href="#普通会员铭牌图标" class="anchor">¶</a></h3><div class="nico-insert-code">测试
+<span class="ui-icon-viplevel-s">
+    <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s.png)"></span>
+</span>
+<span class="ui-icon-viplevel-s">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s1.png)"></span>
 </span>
 <span class="ui-icon-viplevel-s">
@@ -231,7 +281,15 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-viplevel-s">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+=======
+</span></div><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
@@ -251,7 +309,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员等级图标">年费会员等级图标<a href="#年费会员等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearviplevel">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员图标">年费会员图标<a href="#年费会员图标" class="anchor">¶</a></h3><div class="nico-insert-code">测试
+<span class="ui-icon-yearviplevel">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip1.png)"></span>
 </span>
 <span class="ui-icon-yearviplevel">
@@ -271,7 +334,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-yearviplevel">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel"</span>&gt;</span>
+=======
+</span></div><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel"</span>&gt;</span>
@@ -291,7 +359,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员铭牌等级图标">年费会员铭牌等级图标<a href="#年费会员铭牌等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearviplevel-s">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员铭牌图标">年费会员铭牌图标<a href="#年费会员铭牌图标" class="anchor">¶</a></h3><div class="nico-insert-code">测试
+<span class="ui-icon-yearviplevel-s">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip_s1.png)"></span>
 </span>
 <span class="ui-icon-yearviplevel-s">
@@ -311,7 +384,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-yearviplevel-s">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip_s7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel-s"</span>&gt;</span>
+=======
+</span></div><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel-s"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip_s1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel-s"</span>&gt;</span>
@@ -331,7 +409,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel-s"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearvip_s7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员等级图标">普通超级会员等级图标<a href="#普通超级会员等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-sviplevel">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员图标">普通超级会员图标<a href="#普通超级会员图标" class="anchor">¶</a></h3><div class="nico-insert-code">测试
+<span class="ui-icon-sviplevel">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip1.png)"></span>
 </span>
 <span class="ui-icon-sviplevel">
@@ -351,7 +434,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-sviplevel">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel"</span>&gt;</span>
+=======
+</span></div><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel"</span>&gt;</span>
@@ -371,7 +459,15 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员铭牌等级图标">普通超级会员铭牌等级图标<a href="#普通超级会员铭牌等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-sviplevel-s">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员铭牌图标">普通超级会员铭牌图标<a href="#普通超级会员铭牌图标" class="anchor">¶</a></h3><div class="nico-insert-code">测试
+<span class="ui-icon-viplevel-s">
+    <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip_s.png)"></span>
+</span>
+<span class="ui-icon-sviplevel-s">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip_s1.png)"></span>
 </span>
 <span class="ui-icon-sviplevel-s">
@@ -391,7 +487,15 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-sviplevel-s">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip_s7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
+=======
+</span></div><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip_s.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip_s1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
@@ -411,7 +515,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/svip_s7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费超级会员等级图标">年费超级会员等级图标<a href="#年费超级会员等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearsviplevel">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费超级会员图标">年费超级会员图标<a href="#年费超级会员图标" class="anchor">¶</a></h3><div class="nico-insert-code">测试
+<span class="ui-icon-yearsviplevel">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip1.png)"></span>
 </span>
 <span class="ui-icon-yearsviplevel">
@@ -431,7 +540,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-yearsviplevel">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel"</span>&gt;</span>
+=======
+</span></div><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel"</span>&gt;</span>
@@ -451,7 +565,12 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="超级年费会员铭牌等级图标">超级年费会员铭牌等级图标<a href="#超级年费会员铭牌等级图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel-s"</span>&gt;</span>
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="超级年费会员铭牌图标">超级年费会员铭牌图标<a href="#超级年费会员铭牌图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel-s"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip_s1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel-s"</span>&gt;</span>
@@ -471,14 +590,23 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel-s"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/yearsvip_s7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="超q图标">超Q图标<a href="#超q图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-mq"</span>&gt;</span>
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="超q图标">超Q图标<a href="#超q图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml">测试
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-mq"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/mq_vip.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-mq"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/mq_yearvip.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通会员图标">普通会员图标<a href="#普通会员图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-viplevel">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s.png)"></span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/vip_s.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="过去状态图标">过去状态图标<a href="#过去状态图标" class="anchor">¶</a></h3><h3 id="普通会员等级图标">普通会员等级图标<a href="#普通会员等级图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="过去状态图标">过去状态图标<a href="#过去状态图标" class="anchor">¶</a></h3><h3 id="普通会员图标">普通会员图标<a href="#普通会员图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
@@ -498,7 +626,14 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通会员铭牌等级图标">普通会员铭牌等级图标<a href="#普通会员铭牌等级图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通会员铭牌图标">普通会员铭牌图标<a href="#普通会员铭牌图标" class="anchor">¶</a></h3><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip_s.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip_s1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
@@ -518,7 +653,11 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip_s7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员等级图标">年费会员等级图标<a href="#年费会员等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearviplevel">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员图标">年费会员图标<a href="#年费会员图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearviplevel">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearvip1.png)"></span>
 </span>
 <span class="ui-icon-yearviplevel">
@@ -558,7 +697,11 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearvip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员铭牌等级图标">年费会员铭牌等级图标<a href="#年费会员铭牌等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearviplevel-s">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费会员铭牌图标">年费会员铭牌图标<a href="#年费会员铭牌图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearviplevel-s">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearvip_s1.png)"></span>
 </span>
 <span class="ui-icon-yearviplevel-s">
@@ -598,7 +741,11 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearviplevel-s"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearvip_s7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员等级图标">普通超级会员等级图标<a href="#普通超级会员等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-sviplevel">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员图标">普通超级会员图标<a href="#普通超级会员图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-sviplevel">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip1.png)"></span>
 </span>
 <span class="ui-icon-sviplevel">
@@ -638,7 +785,14 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员铭牌等级图标">普通超级会员铭牌等级图标<a href="#普通超级会员铭牌等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-sviplevel-s">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通超级会员铭牌图标">普通超级会员铭牌图标<a href="#普通超级会员铭牌图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-viplevel-s">
+    <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip_s.png)"></span>
+</span>
+<span class="ui-icon-sviplevel-s">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip_s1.png)"></span>
 </span>
 <span class="ui-icon-sviplevel-s">
@@ -658,7 +812,14 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </span>
 <span class="ui-icon-sviplevel-s">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip_s7.png)"></span>
+<<<<<<< HEAD
 </span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
+=======
+</span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel-s"</span>&gt;</span>
+    <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip_s.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip_s1.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
@@ -678,7 +839,11 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-sviplevel-s"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/svip_s7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费超级会员等级图标">年费超级会员等级图标<a href="#年费超级会员等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearsviplevel">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费超级会员图标">年费超级会员图标<a href="#年费超级会员图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearsviplevel">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearsvip1.png)"></span>
 </span>
 <span class="ui-icon-yearsviplevel">
@@ -718,7 +883,11 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-yearsviplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearsvip7.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费超级会员铭牌等级图标">年费超级会员铭牌等级图标<a href="#年费超级会员铭牌等级图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearsviplevel-s">
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="年费超级会员铭牌图标">年费超级会员铭牌图标<a href="#年费超级会员铭牌图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-yearsviplevel-s">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/yearsvip_s1.png)"></span>
 </span>
 <span class="ui-icon-yearsviplevel-s">
@@ -768,9 +937,13 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span>
 <span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-mq"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/mq_yearvip.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span>
+<<<<<<< HEAD
 <span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div><h3 id="普通会员图标">普通会员图标<a href="#普通会员图标" class="anchor">¶</a></h3><div class="nico-insert-code"><span class="ui-icon-viplevel">
     <span style="background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip_s.png)"></span></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">span</span> <span class="attribute">class</span>=<span class="value">"ui-icon-viplevel"</span>&gt;</span>
     <span class="tag">&lt;<span class="title">span</span> <span class="attribute">style</span>=<span class="value">"background-image: url(http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/level/off/vip_s.png)"</span>&gt;</span><span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div></div>
+=======
+<span class="tag">&lt;/<span class="title">span</span>&gt;</span></code></pre></div></div>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
                 </div>
                 
             </div>

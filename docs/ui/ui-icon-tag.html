@@ -111,6 +111,25 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
+<<<<<<< HEAD
+=======
+      seajs.config({ alias: {}});
+    seajs.use([]);
+      seajs.config({ alias: {}});
+
+    seajs.config({alias: {
+      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
+    }});
+
+    // 加载依赖的 css 文件
+    var cssArray = [];
+    for (var i=0; i<cssArray.length; i++) {
+      if (cssArray[i].indexOf('.css') < 0) {
+        cssArray.splice(i, 1);
+      }
+    }
+    seajs.use(cssArray);
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
   })();
 </script>
         <style>
@@ -154,11 +173,20 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
+<<<<<<< HEAD
                     <li><a href="../widget.html">通用样式库</a></li>
+=======
+                    <li><a href="/baseui">通用样式库</a></li>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
                     <li><a href="../javascript.html">JavaScript</a></li>
                     <li><a href="../start.html">开始使用</a></li>
                     <li><a href="../rule.html">关于frozen</a></li>
                     <li><a href="../tool.html">工具</a></li>
+<<<<<<< HEAD
+=======
+                    
+
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
                 </ol>
             </div>
             <div class="main-area">
@@ -169,7 +197,18 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </script>
                 <div class="content-area">
                     <h1>ui-icon-tag</h1>
+<<<<<<< HEAD
                     <div class="content"><h3 id="角标">角标<a href="#角标" class="anchor">¶</a></h3><div class="nico-insert-code"><ul>
+=======
+                    <div class="content"><h3 id="角标">角标<a href="#角标" class="anchor">¶</a></h3><div class="nico-insert-code"><style>
+.img-list li{
+    position:relative;
+    width: 33.3%;
+}
+.img-list li img{width:100%}
+</style>
+<ul class="img-list">
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
 
         <li>
             <img src="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png">
@@ -206,7 +245,18 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 <i class="ui-icon-tag-selected"></i>
                 <div class="name">ui-icon-tag-selected</div>
         </li>
+<<<<<<< HEAD
     </ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+=======
+    </ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">style</span>&gt;</span><span class="css">
+<span class="class">.img-list</span> <span class="tag">li</span><span class="rules">{
+    <span class="rule"><span class="attribute">position</span>:<span class="value">relative</span></span>;
+    <span class="rule"><span class="attribute">width</span>:<span class="value"> <span class="number">33.3</span>%</span></span>;
+<span class="rule">}</span></span>
+<span class="class">.img-list</span> <span class="tag">li</span> <span class="tag">img</span><span class="rules">{<span class="rule"><span class="attribute">width</span>:<span class="value"><span class="number">100</span>%</span></span></span>}
+</span><span class="tag">&lt;/<span class="title">style</span>&gt;</span>
+<span class="tag">&lt;<span class="title">ul</span> <span class="attribute">class</span>=<span class="value">"img-list"</span>&gt;</span>
+>>>>>>> a9c81d3f4ea751020e706f0a5b8e376e95066163
 
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
             <span class="tag">&lt;<span class="title">img</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.0.0/img/default.png"</span>&gt;</span>
