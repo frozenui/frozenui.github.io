@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>Frozen - 开始使用</title>
+        <title>Frozen - 案例秀</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
@@ -181,25 +181,34 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </ol>
             </div>
             <div class="main-area">
-                <div class="side-area"><ul><li><a href="#一个简单的例子">一个简单的例子</a></li><li><a href="#引用和下载">引用和下载</a></li></ul></div>
+                <div class="side-area"><ul><li><a href="#frozenui是什么">frozenui是什么</a></li><li><a href="#css规范">css规范</a></li><li><a href="#常用功能类">常用功能类</a></li></ul></div>
                 
                 <script type="text/template" id="list-template">
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
                 <div class="content-area">
-                    <h1>开始使用</h1>
-                    <div class="content"><h2 id="一个简单的例子">一个简单的例子<a href="#一个简单的例子" class="anchor">¶</a></h2><script src="https://gist.github.com/fayching/120062fa6fadfdace1d4.js"></script>
-
-
-<p>粘贴到页面中你会看到一个好友选择的页面，页面效果<a href="http://frozenui.github.io/test/ui-select-user.html"><a href="http://frozenui.github.io/test/ui-select-user.html">http://frozenui.github.io/test/ui-select-user.html</a></a>。引用了<a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256">http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/basic.css?_bid=256</a></a>，这是打包了除了vip图标的基础css文件，使用手Q离线包需要加上bid的参数。</p>
-<p>如果要使用<a href="http://frozenui.github.io/docs/ui/ui-icon-viplevel">ui-icon-viplevel</a> 和<a href="http://frozenui.github.io/docs/ui/ui-icon-qqlevel">ui-icon-qqlevel</a>则需另外引用<a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/vip.css"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/vip.css">http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/vip.css</a></a> ,你也可以选择将vip.css打包到你页面的css中。</p>
-<p>还有一种引用方式，非手Q的页面可以引用<a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css">http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css</a></a> 文件，
-这个css打包了所有模块。</p>
-<p>具体模块的代码可以访问<a href="http://frozenui.github.io/docs/widget.html"><a href="http://frozenui.github.io/docs/widget.html">http://frozenui.github.io/docs/widget.html</a></a></p>
-<h2 id="引用和下载">引用和下载<a href="#引用和下载" class="anchor">¶</a></h2><h4 id="1-可以直接使用上面的-css-文件，这里提供一个未压缩的版本。">1. 可以直接使用上面的 css 文件，这里提供一个未压缩的版本。<a href="#1-可以直接使用上面的-css-文件，这里提供一个未压缩的版本。" class="anchor">¶</a></h4><p>   <a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css-debug/basic.css"><a href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css-debug/basic.css">http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css-debug/basic.css</a></a></p>
-<h4 id="2-访问我们的github仓库">2.访问我们的github仓库<a href="#2-访问我们的github仓库" class="anchor">¶</a></h4><p> <a href="https://github.com/frozenui/baseui"><a href="https://github.com/frozenui/baseui">https://github.com/frozenui/baseui</a></a>，自行 clone 到本地。</p>
-<h4 id="3-也可以利用-cdn-和-combo-服务，因为手q有离线包不建议这样使用。">3. 也可以利用 cdn 和 combo 服务，因为手Q有离线包不建议这样使用。<a href="#3-也可以利用-cdn-和-combo-服务，因为手q有离线包不建议这样使用。" class="anchor">¶</a></h4><div class="highlight"><pre><code class="xml">
-    <span class="tag">&lt;<span class="title">link</span> <span class="attribute">media</span>=<span class="value">"all"</span> <span class="attribute">href</span>=<span class="value">"http://i.gtimg.cn/c/=/vipstyle/frozenui/1.0.0/css/base/reset.css,/vipstyle/frozenui/1.0.0/css/base/atom.css,/vipstyle/frozenui/1.0.0/css/basic/ui-notice.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></code></pre></div></div>
+                    <h1>案例秀</h1>
+                    <div class="content"><h2 id="frozenui是什么">frozenui是什么<a href="#frozenui是什么" class="anchor">¶</a></h2><p>frozen是使用手Q规范的移动端web框架，包括css样式库和js特效库。</p>
+<p>css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的alice，bootstrap等，实现了最简的手Q web组件效果，并不断完善中。</p>
+<p>兼容android 2.3 +，ios 4.0 + 。</p>
+<p>使用离线包快速请求。</p>
+<p><a href="https://github.com/frozenui/frozenui">github主页</a></p>
+<p><a href="https://github.com/frozenui">github组织</a></p>
+<p><a href="https://github.com/frozenui/baseui">css仓库</a></p>
+<p>欢迎提<a href="https://github.com/frozenui/frozenui/issues">issue</a>给我们帮助我们完善frozen。</p>
+<h2 id="css规范">css规范<a href="#css规范" class="anchor">¶</a></h2><p>统一使用ui为前缀作为命名空间。</p>
+<p>class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如，.ui-btn 和 .ui-btn-danger）。</p>
+<p>避免过度任意的简写。.btn 代表 button，但是 .s 不能表达任何意思。</p>
+<p>class 名称应当尽可能短，并且意义明确。</p>
+<p>使用有意义的名称。使用有组织的或目的明确的名称，不要使用表现形式（presentational）的名称。</p>
+<p>基于最近的父 class 或基本（base） class 作为新 class 的前缀。</p>
+<p>.ui-btn-lg.disabled   </p>
+<p>{命名空间}-{模块}-{实例}-{实例属性}.{状态}</p>
+<p>常用状态有：hover, current, selected, disabled, focus, blur, checked, success, error，active 等。</p>
+<p>.ui-dialog-cnt   (对应： 命名空间-模块-子模块)</p>
+<p>常用模块名有：cnt(content)，hd(header)，bd(body)，ft(footer)，text(txt)，img(images/pic)，title，item，cell 等， 只要词义表达了组件要实现的功能或者要表现出来的的外观就可以了。</p>
+<h2 id="常用功能类">常用功能类<a href="#常用功能类" class="anchor">¶</a></h2><p>提供常用文本颜色，1px解决方案，不同尺寸的头像，红点和未读数通知等功能类。</p>
+</div>
                 </div>
                 
             </div>
