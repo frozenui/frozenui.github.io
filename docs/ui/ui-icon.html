@@ -6,11 +6,10 @@
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="../../static/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="../../static/css/normalize.css" />
-        <link rel="stylesheet" href="../../static/css/site.css" />
-        <link rel="stylesheet" href="../../static/css/solarized.css" />
+
         <link rel="stylesheet" href="../../static/style.css" />
-        <link rel="stylesheet" href="/dist/frozen-debug.css" />
+        <link rel="stylesheet" href="../../static/solarized.css" />
+        <link rel="stylesheet" href="../../static/css/global.css" />
 <style>
 /* alipay iconfont */
 @font-face {
@@ -78,7 +77,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     },
     map: [function(uri) {
       // resolve id
-      var m = uri.match(/alice\/alice.spmjs.org\/0.0.1\/(.*)/);
+      var m = uri.match(/alice\/frozenui\/0.0.1\/(.*)/);
       if (m) {
         return resolve(m[1]);
       }
@@ -112,54 +111,22 @@ jquery/jquery/1.7.2/jquery.js"></script>
     }
     return false;
   }
-      seajs.config({ alias: {}});
-    seajs.use([]);
-
-    seajs.config({alias: {
-      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
-        ,"css/animate.css": resolve("css/animate.css")
-        ,"css/atom.css": resolve("css/atom.css")
-        ,"css/reset.css": resolve("css/reset.css")
-        ,"css/ui-btn-group.css": resolve("css/ui-btn-group.css")
-        ,"css/ui-btn.css": resolve("css/ui-btn.css")
-        ,"css/ui-dialog.css": resolve("css/ui-dialog.css")
-        ,"css/ui-icon-qqlevel.css": resolve("css/ui-icon-qqlevel.css")
-        ,"css/ui-icon-vip.css": resolve("css/ui-icon-vip.css")
-        ,"css/ui-icon.css": resolve("css/ui-icon.css")
-        ,"css/ui-list.css": resolve("css/ui-list.css")
-        ,"css/ui-loading.css": resolve("css/ui-loading.css")
-        ,"css/ui-notice.css": resolve("css/ui-notice.css")
-        ,"css/ui-select-user.css": resolve("css/ui-select-user.css")
-        ,"css/ui-tab.css": resolve("css/ui-tab.css")
-        ,"css/ui-table.css": resolve("css/ui-table.css")
-        ,"css/ui-tips-news.css": resolve("css/ui-tips-news.css")
-        ,"css/ui-tips.css": resolve("css/ui-tips.css")
-        ,"frozen.css": resolve("frozen.css")
-    }});
-
-    // 加载依赖的 css 文件
-    var cssArray = [];
-    for (var i=0; i<cssArray.length; i++) {
-      if (cssArray[i].indexOf('.css') < 0) {
-        cssArray.splice(i, 1);
-      }
-    }
-    seajs.use(cssArray);
   })();
 </script>
         <style>
             .ui-btn-group, .ui-dialog,.ui-tips,.ui-notice{
-                position: static;
+                position: relative;
                 margin: 0;
             }
         
         	.ui-icon{font-size:30px;}
         	.ui-table{line-height: 40px;} 
+        	.ui-dialog{height:320px;}
         	body{
             	-webkit-user-select: inherit;
         	}
         </style>
-        <script src="../../static/js/site.js"></script>
+        <script src="../../static/side.js"></script>
         <!--[if lt IE 9]>
         <script src="../../static/js/html5shiv.js"></script>
         <![endif]-->
@@ -202,71 +169,79 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </script>
                 <div class="content-area">
                     <h1>ui-icon</h1>
-                    <div class="content"><h3 id="icon">icon<a href="#icon" class="anchor">¶</a></h3><div class="nico-insert-code"><ul>
+                    <div class="content"><h3 id="icon">icon<a href="#icon" class="anchor">¶</a></h3><div class="nico-insert-code"><ul style="background: #f8f9fa">
         <li>
-            <i class="ui-icon icon-refresh"></i>
-            <div class="name">icon-refresh</div>    
+            <i class="ui-icon ui-icon-refresh"></i>
+            <div class="name">ui-icon-refresh</div>    
         </li>
         <li>
-            <i class="ui-icon icon-info"></i>
-            <div class="name">icon-info</div>    
-        </li>   
+            <i class="ui-icon ui-icon-info"></i>
+            <div class="name">ui-icon-info</div>    
+        </li>    
         <li>
-            <i class="ui-icon icon-select-img"></i>
-            <div class="name">select-img</div>    
-        </li>  
-        <li>
-            <i class="ui-icon icon-warn-red"></i>
-            <div class="name">icon-warn-red</div>    
+            <i class="ui-icon ui-icon-warn"></i>
+            <div class="name">ui-icon-warn</div>    
         </li> 
         <li>
-            <i class="ui-icon icon-praise"></i>
-            <div class="name">icon-praise</div>
+            <i class="ui-icon ui-icon-praise"></i>
+            <div class="name">ui-icon-praise</div>
         </li>
         <li>
-            <i class="ui-icon icon-praise active"></i>
-            <div class="name">icon-praise</div>
+            <i class="ui-icon ui-icon-praise active"></i>
+            <div class="name">ui-icon-praise</div>
         </li>
         <li>
-            <i class="ui-icon icon-praise-s"></i>
-            <div class="name">icon-praise-s</div>
+            <i class="ui-icon ui-icon-praise-s"></i>
+            <div class="name">ui-icon-praise-s</div>
         </li>
         <li>
-            <i class="ui-icon icon-praise-s active"></i>
-            <div class="name">icon-praise-s</div>
+            <i class="ui-icon ui-icon-praise-s active"></i>
+            <div class="name">ui-icon-praise-s</div>
         </li>
-    </ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span>&gt;</span>
+         <li>
+            <i class="ui-icon ui-icon-success"></i>
+            <div class="name">ui-icon-success</div>
+        </li>
+        <li>
+            <i class="ui-icon ui-icon-tips"></i>
+            <div class="name">ui-icon-tips</div>
+        </li>
+    </ul></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">ul</span> <span class="attribute">style</span>=<span class="value">"background: #f8f9fa"</span>&gt;</span>
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-refresh"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>icon-refresh<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-refresh"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-refresh<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
         <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-info"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>icon-info<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
-        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>   
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-info"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-info<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>    
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-select-img"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>select-img<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
-        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>  
-        <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-warn-red"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>icon-warn-red<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-warn"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-warn<span class="tag">&lt;/<span class="title">div</span>&gt;</span>    
         <span class="tag">&lt;/<span class="title">li</span>&gt;</span> 
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-praise"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>icon-praise<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-praise"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-praise<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-praise active"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>icon-praise<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-praise active"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-praise<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-praise-s"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>icon-praise-s<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-praise-s"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-praise-s<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon icon-praise-s active"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
-            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>icon-praise-s<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-praise-s active"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-praise-s<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+         <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-success"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-success<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
+        <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
+        <span class="tag">&lt;<span class="title">li</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">i</span> <span class="attribute">class</span>=<span class="value">"ui-icon ui-icon-tips"</span>&gt;</span><span class="tag">&lt;/<span class="title">i</span>&gt;</span>
+            <span class="tag">&lt;<span class="title">div</span> <span class="attribute">class</span>=<span class="value">"name"</span>&gt;</span>ui-icon-tips<span class="tag">&lt;/<span class="title">div</span>&gt;</span>
         <span class="tag">&lt;/<span class="title">li</span>&gt;</span>
     <span class="tag">&lt;/<span class="title">ul</span>&gt;</span></code></pre></div></div>
                 </div>

@@ -1,24 +1,29 @@
 {
-  "name": "alice.spmjs.org",
+  "name": "frozenui",
   "version": "0.0.1",
   "title": "Frozen",
   "family": "alice",
-  "description": "mobile apps friendly",
-  "homepage": "http://aliceui.org",
+  "homepage": "http://frozenui.github.io",
+  "author": "faycheng",
   "repository": {
     "type": "git",
-    "url": "https://github.com/aliceui/aliceui.org"
+    "url": "https://github.com/frozenui/frozenui.git"
   },
+  "licenses": "MIT",
+  "description": "mobile apps friendly",
   "bugs": {
-    "url": "https://github.com/aliceui/aliceui.org/issues"
+    "url": ""
   },
   "spm": {
-      "alias": {
-      },
-      "output":["frozen.css"]
+    "output": [
+      "frozen.css"
+    ],
+    "alias": {},
+    "devAlias": {},
+    "engines": {}
   },
-  "dependencies":[
-        "ui-btn","ui-btn-lg","atom","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-icon","ui-icon-vip"
+  "widgets": [
+        "atom","ui-btn","ui-btn-lg","ui-btn-group","ui-dialog","ui-list","ui-loading","ui-notice","ui-select-user","ui-tab","ui-table","ui-tips","ui-tips-news","ui-icon","ui-icon-tag","ui-icon-viplevel","ui-icon-qqlevel"
         ]
 
 }
