@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">        
-        <title>Frozen - mobile apps friendly</title>
+        <title>Frozen - 为移动端web而生</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="./static/favicon.ico" rel="icon">
@@ -76,7 +76,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     },
     map: [function(uri) {
       // resolve id
-      var m = uri.match(/alice\/frozenui\/0.0.1\/(.*)/);
+      var m = uri.match(/alice\/frozenui\/0.0.2\/(.*)/);
       if (m) {
         return resolve(m[1]);
       }
@@ -161,7 +161,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
                     <h1>
                         <a href="./">Frozen</a>
                     </h1>
-                    <p class="description">mobile apps friendly</p>                    
+                    <p class="description">为移动端web而生</p>                    
                 </div>
                 <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
                 allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
@@ -169,8 +169,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="/baseui">通用样式库</a></li>
-                    <li><a href="docs/javascript.html">JavaScript</a></li>
+                    <li><a href="/baseui">css组件库</a></li>
+                    <li><a href="docs/javascript.html">Js组件库</a></li>
                     <li><a href="docs/case.html">案例秀</a></li>
                     <li><a href="docs/start.html">开始使用</a></li>
                     <li><a href="docs/rule.html">关于frozen</a></li>
@@ -189,25 +189,16 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </script>
                 <div class="content-area">
                     <h1>null</h1>
-                    <div class="content"><style type="text/css">
-    .side-area,.head-area,.nav-area,.comment-area,.content-area>h1,#footer-wrapper{
-        display: none;
-    }
-    .main-area{
-        width: 100%;
-        margin: 0;
-    }
-    .content-area{display:block;width: 100%;border: none;margin-left: 0;padding: 0;}
-</style>
+                    <div class="content"><link rel="stylesheet" type="text/css" href="/static/index.css">
 
 <div class="fr-nav">
         <ul>
             <li id="fr-nav-index"><a href="">Frozen</a></li>
-            <li><a href="/baseui">通用样式库</a></li>
-            <li><a href="docs/javascript.html">JavaScript</a></li>
+            <li><a href="/baseui">css组件库</a></li>
+            <li><a href="docs/javascript.html">js组件库</a></li>
+            <li><a href="docs/case.html">案例秀</a></li>
             <li><a href="docs/start.html">开始使用</a></li>
             <li><a href="docs/rule.html">关于Frozen</a></li>
-            <li><a href="docs/tool.html">工具</a></li>
         </ul>
     </div>
     <div class="fr-banner">
@@ -215,7 +206,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="fr-banner-info">
                 <h2>Frozen</h2>
                 <h3>简单易用，轻量快捷，<br/>为移动端服务的前端框架。</h3>
-                <a href="#">下 载</a>
+                <a href="docs/start.html">开始使用</a>
             </div>
             <img src="static/phone.png" class="fr-banner-ph">
         </div>
@@ -225,8 +216,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <img src="static/ui.png" alt="frozenui">
             <div class="fr-item-info fr-frozenui">
                 <h2>随心所用的UI组件</h2>
-                <p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。提供友好的手机QQ接入规范。</p>
-                <a href="docs/widget.html">查 看</a>
+                <p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循手Q样式规范，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
+                <a href="/baseui">查 看</a>
             </div>
         </div>
         <div class="fr-item">
@@ -247,7 +238,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
             </div>
             <div>
                 <h6>Support</h6>
-                <p><a href="">Quick start</a></p>
+                <p><a href="docs/start.html">Quick start</a></p>
                 <p><a href="">Join us</a></p>
             </div>
             <div id="fr-footer-us">
