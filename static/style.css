@@ -2,14 +2,8 @@ html,body { padding: 0; margin: 0;}
 body {
     color: #666;
     background: #fdfdfd;
-<<<<<<< HEAD
-    font: 400 18px/1.62 "Georgia", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+    font: 400 18px/1.62  "Arial","Georgia", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
 
-=======
-    font-family: "Marmelad","Lucida Grande",Georgia,sans-serif;
-    line-height: 1.5;
-    font-size: 14px;
->>>>>>> 315b41c5c4f7f1ed41007d83318266e45c1e7852
 }
 
 a {
@@ -134,10 +128,7 @@ hr {
 }
 
 .title-area .description {
-    /*margin: 0;
-    color: #999;
-    font-size: 12px;*/
-    font-size: 14px;
+    font-size: 16px;
     color: #aaa;
     line-height: 14px;
 }
