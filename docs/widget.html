@@ -2,7 +2,7 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>Frozen - 工具</title>
+        <title>Frozen - css组件库</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
         <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
@@ -188,8 +188,27 @@ jquery/jquery/1.7.2/jquery.js"></script>
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
                 <div class="content-area">
-                    <h1>工具</h1>
-                    <div class="content"></div>
+                    <h1>css组件库</h1>
+                    <div class="content"><p><style type="text/css">
+    .side-area,.content-area h1{display: none;}
+    .content-area{
+        margin: 0;
+        width: 1140px;
+        padding: 0;
+        border: none;
+    }
+</style></p>
+<p><iframe src="http://frozenui.github.io/baseui/index.html" allowtransparency="true" frameborder="0" scrolling="0" onload="autoHeight();" id="Iframe1" width="100%"></iframe></p>
+<script type="text/javascript">
+    function autoHeight(){
+        var iframe = document.getElementById("Iframe1");
+        if(iframe.Document){//ie自有属性
+            iframe.style.height = iframe.Document.documentElement.scrollHeight;
+        }else if(iframe.contentDocument){//ie,firefox,chrome,opera,safari
+            iframe.height = iframe.contentDocument.body.offsetHeight ;
+        }
+    }
+</script></div>
                 </div>
                 
             </div>
