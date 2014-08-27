@@ -2,8 +2,7 @@ html,body { padding: 0; margin: 0;}
 body {
     color: #666;
     background: #fdfdfd;
-    font: 400 18px/1.62  "Arial","Georgia", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
-
+    font: 400 18px/1.62  "Marmelad","Lucida Grande","Georgia", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
 }
 
 a {
