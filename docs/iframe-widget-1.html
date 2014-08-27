@@ -1,14 +1,31 @@
 <!DOCTYPE HTML>
 <html lang="zh">
-    <head>
-        <meta charset="UTF-8">
-        <title>Frozen - css组件库</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="nico 0.5.1" />
-        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css" />
-        <link rel="stylesheet" href="../static/style.css" />
-        <link rel="stylesheet" href="../static/solarized.css" />
+  <head>
+    <meta charset="UTF-8">
+    <title>Frozenui</title>
+    <meta name="HandheldFriendly" content="True">
+    <meta name="MobileOptimized" content="320">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <style>
+    /* alipay iconfont */
+    @font-face {
+        font-family: "rei";
+        src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502"); /* IE9 */
+        src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130502#iefix") format("embedded-opentype"), /* IE6-IE8 */
+        url("https://i.alipayobjects.com/common/fonts/rei.woff?20130502") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
+        url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130502")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
+        url("https://i.alipayobjects.com/common/fonts/rei.svg?20130502#rei") format("svg"); /* iOS 4.1- */
+    }
+    .iconfont {
+        font-family:"rei";
+        font-style: normal;
+        font-weight: normal;
+        font-size: 12px;
+        color: #4d4d4d;
+        cursor: default;
+        -webkit-font-smoothing: antialiased;
+    }
+    </style>
 <style>
 /* alipay iconfont */
 @font-face {
@@ -128,58 +145,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
     seajs.use(cssArray);
   })();
 </script>
-        <style>
-           
-        </style>
-        <script src="../static/side.js"></script>
-        <!--[if lt IE 9]>
-        <script src="../static/js/html5shiv.js"></script>
-        <![endif]-->
-        
-        <script>
-        seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
-            Fixed('.side-area', 20);
-            side.init();
-        });
-        </script>
-    </head>
-    <body>
-        <div id="body-wrapper">
-            <div class="head-area">
-                <div class="title-area">
-                    <img src="/static/frozen-top.png" alt="alice" />
-                    <h1>
-                        <a href="../">Frozen</a>
-                    </h1>
-                    <p class="description">为移动端web而生</p>                    
-                </div>
-                <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
-                allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
-            </div>
-            <div class="nav-area">
-                <ol class="main-nav">
-                    <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="widget.html">css组件库</a></li>
-                    <li><a href="javascript.html">Js组件库</a></li>
-                    <li><a href="case.html">案例秀</a></li>
-                    <li><a href="start.html">开始使用</a></li>
-                    <li><a href="rule.html">关于frozen</a></li>
-                    
-
-                </ol>
-            </div>
-            <div class="main-area">
-                <div class="side-area">
-                    <ul>
-                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
-                    </ul>
-                </div>
-                <script type="text/template" id="list-template">
-                    <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
-                </script>
-                <div class="content-area">
-                    <h1>css组件库</h1>
-                    <div class="content"><p>Frozen提供的UI组件是目前QQ会员前端开发组所用的通用样式库。遵循<a href="http://isux.oa.com/guide/mqq/vd#545">手Q样式规范</a>，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
+  </head>
+  <body>
+    <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css" />
 <link rel="stylesheet" type="text/css" href="/static/widget.css">
 
 <script type="text/template" id="alice-module">
@@ -303,14 +271,6 @@ seajs.use(['$', 'gallery/underscore/1.4.4/underscore', 'arale/popup/1.1.2/popup'
 
 });
 </script>
-</div>
-                </div>
-                
-            </div>
-        </div>
-        <div id="footer-wrapper">
-            <footer>
-            </footer>
-        </div>
-    </body>
+ 
+  </body>
 </html>
