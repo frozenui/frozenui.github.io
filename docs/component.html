@@ -2,13 +2,13 @@
 <html lang="zh">
     <head>
         <meta charset="UTF-8">
-        <title>Frozen - History</title>
+        <title>Frozen - css组件库</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
-        <link type="image/x-icon" href="./static/favicon.ico" rel="icon">
+        <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
 
-        <link rel="stylesheet" href="./static/style.css" />
-        <link rel="stylesheet" href="./static/solarized.css" />
+        <link rel="stylesheet" href="../static/style.css" />
+        <link rel="stylesheet" href="../static/solarized.css" />
 <style>
 /* alipay iconfont */
 @font-face {
@@ -76,7 +76,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
     },
     map: [function(uri) {
       // resolve id
-      var m = uri.match(/alice\/frozenui\/0.0.1\/(.*)/);
+      var m = uri.match(/alice\/frozenui\/0.0.2\/(.*)/);
       if (m) {
         return resolve(m[1]);
       }
@@ -99,7 +99,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
         file = file.replace(/\.(\w+)$/, '-debug.$1');
       }
     }
-    return seajs.resolve("./" + srcdir + "/" + file + '#');
+    return seajs.resolve("../" + srcdir + "/" + file + '#');
   }
 
   function contain(arr, value) {
@@ -141,9 +141,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
             	-webkit-user-select: inherit;
         	}
         </style>
-        <script src="./static/side.js"></script>
+        <script src="../static/side.js"></script>
         <!--[if lt IE 9]>
-        <script src="./static/js/html5shiv.js"></script>
+        <script src="../static/js/html5shiv.js"></script>
         <![endif]-->
         
         <script>
@@ -159,9 +159,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 <div class="title-area">
                     <img src="/static/frozen-top.png" alt="alice" />
                     <h1>
-                        <a href="./">Frozen</a>
+                        <a href="../">Frozen</a>
                     </h1>
-                    <p class="description">mobile apps friendly</p>                    
+                    <p class="description">为移动端web而生</p>                    
                 </div>
                 <!-- <iframe src="http://ghbtns.com/github-btn.html?user=aliceui&repo=aliceui.org&type=watch&count=true"
                 allowtransparency="true" frameborder="0" scrolling="0" width="90" height="20"></iframe> -->
@@ -169,26 +169,36 @@ jquery/jquery/1.7.2/jquery.js"></script>
             <div class="nav-area">
                 <ol class="main-nav">
                     <li><a href="/"><i title="首页" class="iconfont"></i> 首页</a></li>
-                    <li><a href="/baseui">通用样式库</a></li>
-                    <li><a href="docs/javascript.html">JavaScript</a></li>
-                    <li><a href="docs/case.html">案例秀</a></li>
-                    <li><a href="docs/start.html">开始使用</a></li>
-                    <li><a href="docs/rule.html">关于frozen</a></li>
-                    <li><a href="docs/tool.html">工具</a></li>
+                    <li><a href="/baseui">css组件库</a></li>
+                    <li><a href="component.html">css组件库</a></li>
+                    <li><a href="javascript.html">Js组件库</a></li>
+                    <li><a href="case.html">案例秀</a></li>
+                    <li><a href="start.html">开始使用</a></li>
+                    <li><a href="rule.html">关于frozen</a></li>
                     
 
                 </ol>
             </div>
             <div class="main-area">
-                <div class="side-area"><ul><li><a href="#1-0-0">1.0.0</a></li></ul></div>
-                
+                <div class="side-area">
+                    <ul>
+                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
+                    </ul>
+                </div>
                 <script type="text/template" id="list-template">
                     <li><a href="#"><i class="iconfont" title="单箭头右">&#x00E5;</i></a></li>
                 </script>
                 <div class="content-area">
-                    <h1>History</h1>
-                    <div class="content"><h2 id="1-0-0">1.0.0<a href="#1-0-0" class="anchor">¶</a></h2><p><code>new</code> alice/frozenui First version.</p>
-</div>
+                    <h1>css组件库</h1>
+                    <div class="content"><p><style type="text/css">
+    .side-area{display: none;}
+    .content-area{
+        margin-left: 0;
+        width: 1080px;
+    }
+</style></p>
+<div class="nico-iframe">
+<iframe src="http://frozenui.github.io/baseui/index.html" allowtransparency="true" frameborder="0" scrolling="0"></iframe></div></div>
                 </div>
                 
             </div>
