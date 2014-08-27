@@ -191,14 +191,23 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 <div class="content-area">
                     <h1>css组件库</h1>
                     <div class="content"><p><style type="text/css">
-    .side-area{display: none;}
+    .side-area,.content-area h1{display: none;}
     .content-area{
         margin-left: 0;
         width: 1080px;
     }
 </style></p>
-<div class="nico-iframe">
-<iframe src="http://frozenui.github.io/baseui/index.html" allowtransparency="true" frameborder="0" scrolling="0"></iframe></div></div>
+<p><iframe src="http://frozenui.github.io/baseui/index.html" allowtransparency="true" frameborder="0" scrolling="0" onload="autoHeight();" id="Iframe1"></iframe></p>
+<script type="text/javascript">
+    function autoHeight(){
+        var iframe = document.getElementById("Iframe1");
+        if(iframe.Document){//ie自有属性
+            iframe.style.height = iframe.Document.documentElement.scrollHeight;
+        }else if(iframe.contentDocument){//ie,firefox,chrome,opera,safari
+            iframe.height = iframe.contentDocument.body.offsetHeight ;
+        }
+    }
+</script></div>
                 </div>
                 
             </div>
