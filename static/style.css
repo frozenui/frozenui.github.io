@@ -1,7 +1,7 @@
 body {
     color: #666;
     background: #fdfdfd;
-    font: 400 18px/1.62  "Marmelad","Lucida Grande","Georgia", "Xin Gothic", "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
+    font: 400 16px/1.5 "Hiragino Sans GB", "WenQuanYi Micro Hei", "Microsoft YaHei", "SimSun", sans-serif;
 }
 /* alice.base 样式模块 */
 
@@ -207,7 +207,7 @@ hr {
     border-bottom: 4px solid #66dff4;
     padding-top: 30px;
 }
-.head-content{width: 1140px;margin: auto;}
+.head-content{max-width: 1140px;margin: auto;}
 .title-area {
     width: 200px;
     float: left;
@@ -363,7 +363,7 @@ hr {
 }
 
 .content-area h1 {
-    font-size: 28px;
+    font-size: 22px;
     text-align: center;
     margin: 30px 0;
 }
