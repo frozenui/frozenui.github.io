@@ -135,6 +135,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
         </style>
         <script src="../static/side.js"></script>
         <script src="../static/qrcode.js"></script>
+        <script src="../static/layout.js"></script>
         <!--[if lt IE 9]>
         <script src="../static/js/html5shiv.js"></script>
         <![endif]-->
@@ -149,26 +150,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
     <body>
         <div id="body-wrapper">
             <div class="head-area">
-                <div class="head-content">
-                    <div class="title-area">
-                        <img src="/static/frozen-top.png" alt="frozen" />
-                        <h1>
-                            <a href="../">Frozen</a>
-                        </h1>                  
-                    </div>
-                
-                    <div class="nav-area">
-                        <ol class="main-nav">
-                            <li><a href="/baseui"> css组件库 </a></li>
-                            <li><a href="javascript.html">Js组件库</a></li>
-                            <li><a href="case.html">案例秀</a></li>
-                            <li><a href="start.html">开始使用</a></li>
-                            <li><a href="rule.html">关于frozen</a></li>
-                            
-        
-                        </ol>
-                    </div>
-                </div>
+                <script type="text/javascript">
+                    write_head();
+                </script>
             </div>
             <div class="main-area">
                 
@@ -181,23 +165,10 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </div>
                 
             </div>
-            <div class="fr-footer">
-        		<div class="fr-footer-content">
-        			<div>
-        				<h6>About us</h6>
-        				<p><a href="https://github.com/frozenui">Github</a></p>
-        				<p><a href="https://github.com/frozenui/frozenui/issues">Contact us</a></p>
-        			</div>
-        			<div>
-        				<h6>Support</h6>
-        				<p><a href="/docs/start.html">Quick start</a></p>
-        				<p><a href="http://isux.tencent.com/jobs">Join us</a></p>
-        			</div>
-        			<div id="fr-footer-us">
-        				<img src="../static/logo.png">
-        				<p>© QQ会员前端开发组<br/>All rights reserved.</p>
-        			</div>
-        		</div>
+            <div class="footer">
+                <script type="text/javascript">
+                    write_foot();
+                </script>
             </div>
 
         </div>
