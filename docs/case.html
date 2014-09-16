@@ -178,8 +178,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
             </ul>        
         </div>
     </section>
+</section>
 
-<p></section>    </p>
 <script id="csscase-template" type="text/x-handlebars-template">
   {{#each csscase}}
     <li>
@@ -219,6 +219,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
 </script>
 
 <script type="text/javascript">
+  window.jQuery = window.$ = jQuery;
   $(document).ready(function() {
 
     var casedata ={ 
@@ -232,10 +233,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
         casedata.apicase = data.apicase;
         cssTemplate = Handlebars.compile($("#csscase-template").html());
         apiTemplate = Handlebars.compile($("#apicase-template").html());
-        // alert("first success");
     })
     .success(function() {
-        // alert("second success"); 
         $('#cssCase').html(cssTemplate(casedata));
         $('#apiCase').html(apiTemplate(casedata));
     })
@@ -245,11 +244,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
           var url=$(el).attr("data-url");
           $(this).find(".qr").qrcode(url);
         });
-     // alert("complete"); 
-    });
-
-
-
+    });   
   });
 </script>
 </div>
