@@ -9,130 +9,14 @@
         <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css" />
         <link rel="stylesheet" href="../static/style.css" />
         <link rel="stylesheet" href="../static/solarized.css" />
-<style>
-/* alipay iconfont */
-@font-face {
-  font-family: "rei";
-  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423"); /* IE9 */
-  src: url("https://i.alipayobjects.com/common/fonts/rei.eot?20130423#iefix") format("embedded-opentype"), /* IE6-IE8 */
-  url("https://i.alipayobjects.com/common/fonts/rei.woff?20130423") format("woff"), /* chrome 6+、firefox 3.6+、Safari5.1+、Opera 11+ */
-  url("https://i.alipayobjects.com/common/fonts/rei.ttf?20130423")  format("truetype"), /* chrome、firefox、opera、Safari, Android, iOS 4.2+ */
-    url("https://i.alipayobjects.com/common/fonts/rei.svg?20130423#rei") format("svg"); /* iOS 4.1- */
-}
-.iconfont {
-  font-family:"rei";
-  font-style: normal;
-  font-weight: normal;
-  cursor: default;
-  -webkit-font-smoothing: antialiased;
-}
-</style>
-<script type="text/javascript">
-
-  var _gaq = _gaq || [];
-  _gaq.push(['_setAccount', 'UA-39169474-1']);
-  _gaq.push(['_trackPageview']);
-
-  (function() {
-    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
-    if (location.port) {
-       return;
-    }
-    ga.src = 'https://ssl.google-analytics.com/ga.js';
-    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
-  })();
-
-</script>
-
-<script src="http://static.alipayobjects.com/??
-seajs/seajs/2.2.0/sea.js,
-seajs/seajs-combo/1.0.1/seajs-combo.js,
-seajs/seajs-style/1.0.2/seajs-style.js,
-seajs/seajs-health/0.1.0/seajs-health.js,
-jquery/jquery/1.7.2/jquery.js"></script>
-<script>
-  (function() {
-
-  var query = location.search.substring(1).split('&');
-  var srcdir = 'src';
-
-  if (contain(query, 'dist')) {
-    srcdir = 'dist';
-    
-  } else if (contain(query, 'cov')) {
-    srcdir = 'src-cov';
-  }
-
-  seajs.config({
-    alias: {
-      "$": 'jquery/jquery/1.7.2/jquery',
-      "$-debug": 'jquery/jquery/1.7.2/jquery-debug',
-      "jquery": 'jquery/jquery/1.7.2/jquery',
-      "jquery-debug": 'jquery/jquery/1.7.2/jquery-debug',
-      expect: "gallery/expect/0.2.0/expect",
-      puerh: "popomore/puerh/0.1.0/puerh",
-      handlebars: "gallery/handlebars/1.0.2/handlebars",
-      sinon: "gallery/sinon/1.6.0/sinon"
-    },
-    map: [function(uri) {
-      // resolve id
-      var m = uri.match(/alice\/frozenui\/0.0.2\/(.*)/);
-      if (m) {
-        return resolve(m[1]);
-      }
-      return uri;
-    }, function(uri) {
-      var m = uri.match(/([A-Za-z\-]+)\/[A-Za-z\-]+\/[\.0-9]+\/.+/);
-      if (m && /^alipay|anima$/.test(m[1])) {
-        return 'http://yuan.alipay.im/assets/' + m[0];
-      }
-      return uri;
-    }],
-    comboExcludes: {test: function(uri) {
-      return uri.indexOf('http://static.alipayobjects.com') === -1;
-    }}
-  });
-
-  function resolve(file) {
-    if (contain(query, 'debug')) {
-      if (file.indexOf('-debug') === -1) {
-        file = file.replace(/\.(\w+)$/, '-debug.$1');
-      }
-    }
-    return seajs.resolve("../" + srcdir + "/" + file + '#');
-  }
-
-  function contain(arr, value) {
-    for (var i in arr) {
-      if (arr[i] === value) {
-        return true;
-      }
-    }
-    return false;
-  }
-      seajs.config({ alias: {}});
-    seajs.use([]);
-      seajs.config({ alias: {}});
-
-    seajs.config({alias: {
-      "$-debug": 'jquery/jquery/1.7.2/jquery-debug'
-    }});
-
-    // 加载依赖的 css 文件
-    var cssArray = [];
-    for (var i=0; i<cssArray.length; i++) {
-      if (cssArray[i].indexOf('.css') < 0) {
-        cssArray.splice(i, 1);
-      }
-    }
-    seajs.use(cssArray);
-  })();
-</script>
+        
         <style>
         body{
         	-webkit-user-select: inherit;
     	}
         </style>
+        <script src="../static/sea.js"></script>
+        <script src="../static/jquery.js"></script>
         <script src="../static/side.js"></script>
         <script src="../static/handlebars.js"></script>
         <script src="../static/qrcode.js"></script>
@@ -141,12 +25,7 @@ jquery/jquery/1.7.2/jquery.js"></script>
         <script src="../static/js/html5shiv.js"></script>
         <![endif]-->
         
-        <script>
-        seajs.use(['arale/fixed/1.0.1/fixed', '/static/side'], function(Fixed, side) {
-            Fixed('.side-area', 20);
-            side.init();
-        });
-        </script>
+        
     </head>
     <body>
         <div id="body-wrapper">
@@ -162,7 +41,8 @@ jquery/jquery/1.7.2/jquery.js"></script>
                 </script>
                 <div class="content-area">
                     <h1>关于frozen</h1>
-                    <div class="content"><h2 id="frozen是什么">frozen是什么<a href="#frozen是什么" class="anchor">¶</a></h2><p>frozen是使用最新的<a href="http://isux.oa.com/guide/mqq/vd#545">手Q规范</a>的移动端web框架，css包括基本样式和组件，js包括基本组件和动效库。</p>
+                    <div class="content"><h2 id="frozen是什么">frozen是什么<img src="http://frozenui.github.io/static/frozen-top.png"><a href="#frozen是什么" class="anchor">¶</a></h2><p>frozen是我们团队根据最新的<a href="">手Q规范</a>的制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。</p>
+<p>为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把女王alsa作为我们的卡通代言人，相信大多数看过这部动画的人都会喜欢女王的形象吧。</p>
 <p>css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的<a href="http://aliceui.org/">alice</a>，<a href="http://getbootstrap.com/">bootstrap</a>等，实现了最简的手Q web组件效果，并不断完善中。</p>
 <p>兼容android 2.3 +，ios 4.0 + 。</p>
 <p>使用<code>离线包</code>减少网络请求。</p>
@@ -171,10 +51,9 @@ jquery/jquery/1.7.2/jquery.js"></script>
 <p><a href="https://github.com/frozenui/baseui">css仓库</a></p>
 <p>欢迎提<a href="https://github.com/frozenui/frozenui/issues">issue</a>给我们帮助我们完善frozen。</p>
 <h2 id="css规范">css规范<a href="#css规范" class="anchor">¶</a></h2><p>统一使用ui为前缀作为命名空间。</p>
-<p>class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如，<code>.ui-btn</code> 和 <code>.ui-btn-danger</code>）。</p>
+<p>class 名称中只能出现小写字符和破折号（dashe）（不是下划线，也不是驼峰命名法）。破折号应当用于相关 class 的命名（类似于命名空间）（例如<code>.ui-btn</code> 和 <code>.ui-btn-danger</code>）。</p>
 <p>避免过度任意的简写。<code>.btn</code> 代表 <code>button</code>，但是 <code>.b</code> 不能表达任何意思。</p>
-<p>class 名称应当尽可能短，并且意义明确。</p>
-<p>使用有意义的名称。使用有组织的或目的明确的名称，不要使用表现形式（presentational）的名称。</p>
+<p>class 名称应当尽可能短，并且意义明确，不要使用表现形式（presentational）的名称。</p>
 <p>基于最近的父 class 或基本（base） class 作为新 class 的前缀。</p>
 <p><code>.ui-btn-lg.disabled</code></p>
 <p>{命名空间}-{模块}-{实例}-{实例属性}.{状态}</p>
