@@ -5,6 +5,7 @@
         <title>Frozen - 关于frozen</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
+       
         <link type="image/x-icon" href="../static/favicon.ico" rel="icon">
         <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css" />
         <link rel="stylesheet" href="../static/style.css" />
@@ -14,15 +15,35 @@
         body{
         	-webkit-user-select: inherit;
     	}
+    	.content-area{margin-left: 240px;width: 840px}
+        .side-area{top: 20px;}
+        @media (max-width: 980px){
+            .content-area{
+                margin-left: 0;
+                width: auto;
+            }
+        }
         </style>
-        <script src="../static/sea.js"></script>
-        <script src="../static/jquery.js"></script>
-        <script src="../static/side.js"></script>
-        <script src="../static/handlebars.js"></script>
-        <script src="../static/qrcode.js"></script>
-        <script src="../static/layout.js"></script>
-       
         
+        <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+        <script src="http://frozenui.github.io/static/layout.js"></script>
+        <script src="http://frozenui.github.io/static/jquery.js"></script>
+       <script>
+        var $ = jQuery;
+        seajs.config({
+          base: "http://frozenui.github.io/static/sea-modules/",
+          alias: {
+            "$": "jquery/jquery/2.1.0/jquery.js",
+            "sticky":"arale/sticky/1.3.1/sticky",
+            "side":"http://frozenui.github.io/static/side",
+            "handlebars": "gallery/handlebars/1.0.2/handlebars"
+          }
+        });
+        seajs.use(['sticky', 'side'], function(Sticky, side) {
+            Sticky('.side-area', 20);
+            side.init();
+        });
+        </script>
         
     </head>
     <body>
@@ -33,13 +54,15 @@
                 </script>
             </div>
             <div class="main-area">
-                
+                <div class="side-area"><ul><li><a href="#frozen是什么">frozen是什么</a></li><li><a href="#css规范">css规范</a></li><li><a href="#常用功能类">常用功能类</a></li></ul></div>
+                    
                 <script type="text/template" id="list-template">
                     <li><a href="#"></a></li>
                 </script>
                 <div class="content-area">
                     <h1>关于frozen</h1>
-                    <div class="content"><h2 id="frozen是什么">frozen是什么<img src="http://frozenui.github.io/static/frozen-top.png"><a href="#frozen是什么" class="anchor">¶</a></h2><p>frozen是我们团队根据最新的<a href="">手Q规范</a>的制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。</p>
+                    <div class="content"><h2 id="frozen是什么">frozen是什么<a href="#frozen是什么" class="anchor">¶</a></h2><p><img src="http://frozenui.github.io/static/frozen-top.png"></p>
+<p>frozen是我们团队根据最新的<a href="">手Q规范</a>的制作的移动端web框架，包括css基础样式和组件，javascript基础组件和一些动画效果库。</p>
 <p>为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把女王alsa作为我们的卡通代言人，相信大多数看过这部动画的人都会喜欢女王的形象吧。</p>
 <p>css使用模块化的样式命名和组织规范，参考了前人的成果：支付宝团队的<a href="http://aliceui.org/">alice</a>，<a href="http://getbootstrap.com/">bootstrap</a>等，实现了最简的手Q web组件效果，并不断完善中。</p>
 <p>兼容android 2.3 +，ios 4.0 + 。</p>
