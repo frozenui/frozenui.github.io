@@ -5,6 +5,7 @@
         <title>Frozen - 为移动端web而生</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <meta name="generator" content="nico 0.5.1" />
+       
         <link type="image/x-icon" href="./static/favicon.ico" rel="icon">
         <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css" />
         <link rel="stylesheet" href="./static/style.css" />
@@ -15,16 +16,26 @@
         	-webkit-user-select: inherit;
     	}
         </style>
-        <script src="./static/sea.js"></script>
-        <script src="./static/jquery.js"></script>
-        <script src="./static/side.js"></script>
-        <script src="./static/handlebars.js"></script>
-        <script src="./static/qrcode.js"></script>
-        <script src="./static/layout.js"></script>
-        <!--[if lt IE 9]>
-        <script src="./static/js/html5shiv.js"></script>
-        <![endif]-->
         
+        <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+        <script src="/static/layout.js"></script>
+        <script src="http://frozenui.github.io/static/jquery.js"></script>
+       <script>
+        var $ = jQuery;
+        seajs.config({
+          base: "http://frozenui.github.io/static/sea-modules/",
+          alias: {
+            "$": "jquery/jquery/2.1.0/jquery.js",
+            "sticky":"arale/sticky/1.3.1/sticky",
+            "side":"http://frozenui.github.io/static/side",
+            "handlebars": "gallery/handlebars/1.0.2/handlebars"
+          }
+        });
+        seajs.use(['sticky', 'side'], function(Sticky, side) {
+            Sticky('.side-area', 20);
+            side.init();
+        });
+        </script>
         
     </head>
     <body>
@@ -35,7 +46,11 @@
                 </script>
             </div>
             <div class="main-area">
-                
+                <div class="side-area">
+                    <ul>
+                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
+                    </ul>
+                </div>    
                 <script type="text/template" id="list-template">
                     <li><a href="#"></a></li>
                 </script>
@@ -63,13 +78,31 @@
         </div>
     </div>
     <div class="fr-item">
+        <img src="static/js.png" alt="frozenjs" class="fr-frozenjs-img">
         <div class="fr-item-info fr-frozenjs">
             <h2>更显灵动的JS插件</h2>
             <p>Frozen提供的一系列JavaScript插件，更优雅地在移动端上呈现更灵动的动画效果。</p>
-            <a href="docs/javascript.html">查 看</a>
+            <a href="/frozenjs">查 看</a>
         </div>
-        <img src="static/js.png" alt="frozenjs" class="fr-frozenjs-img">
     </div>
+    <div class="fr-item">
+        <img src="static/case.png" alt="animation case">
+        <div class="fr-item-info fr-frozenui">
+            <h2>酷炫好玩的案例秀</h2>
+            <p>Frozen提供的Animation case，把业务上有趣好玩的案例沉淀下来，帮助日后能更快速找到设计灵感。</p>
+            <a href="/docs/case.html">查 看</a>
+        </div>
+    </div>
+</div>
+<div class="fr-content fr-yewu">
+    <h2 class="fr-yewu-title">应用业务</h2>
+    <p>目前，frozen已经应用到实际业务，并在不断完善中。</p>
+    <ul>
+        <li class="fr-yewu1"><img src="static/yewu1.jpg"></li>
+        <li class="fr-yewu2"><img src="static/yewu2.jpg"></li>
+        <li class="fr-yewu3"><img src="static/yewu3.jpg"></li>
+        <li class="fr-yewu4"><img src="static/yewu4.jpg"></li>
+    </ul>
 </div>
 
 
