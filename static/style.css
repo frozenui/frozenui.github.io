@@ -461,18 +461,7 @@ body .fn-hide {
     line-height: 1;
 }
 
-.slideDown{
-    height: auto;
-    -webkit-animation: 1s slideDown;
-}
-@-webkit-keyframes slideDown{
-    from{
-        height: 0;
-    }
-    to{
-        height: auto;
-    }
-}
+
 .content-area h1 a.anchor,
 .content-area h2 a.anchor,
 .content-area h3 a.anchor,
@@ -745,4 +734,16 @@ body .fn-hide {
     .fr-item-info a{width: 100%;float: none;margin-bottom: 10px;}
     .fr-yewu li{width: 100%;margin-bottom: 20px;}
     .fr-yewu ul img{display: block;margin: auto;}
+}
+.slideDown{
+    height: auto;
+    -webkit-animation: 1s slideDown;
+}
+@-webkit-keyframes slideDown{
+    from{
+        height: 0;
+    }
+    to{
+        height: auto;
+    }
 }
