@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+<html lang="">
+    <head>
+        <meta charset="UTF-8">
+        <title>FrozenUI - 关于frozenUI</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="Description" content="专注于移动web的UI框架，基于腾讯手机QQ规范" />
+        <meta name="Keywords" content="frozen,frozenui,frozenjs,forzen ui,forzen js,UI框架,组件库,css组件库,javascript组件库" />
+        <meta name="author" content="fayching" />
+        <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="/static/style.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
+        <script src="http://frozenui.github.io/static/jquery.js"></script>
+        
+       <script>
+        var $ = jQuery;
+        seajs.config({
+          base: "http://frozenui.github.io/static/sea-modules/",
+          alias: {
+            "$": "jquery/jquery/2.1.0/jquery.js",
+            "sticky":"arale/sticky/1.3.1/sticky",
+            "side":"http://frozenui.github.io/static/side",
+            "handlebars": "gallery/handlebars/1.0.2/handlebars"
+          }
+        });
+        seajs.use(['sticky','side'], function(Sticky, Side) {
+            if(document.body.clientWidth>980){
+            	Sticky('.side-area', 20);
+            }
+            Side.init();
+        });
+        </script>
+        
+    </head>
+    <body>
+        <div id="body-wrapper">
+            <div class="head-area">
+            </div>
+            <div class="main-area">
+                <div class="side-area"><ul><li><a href="#frozenui是什么">frozenUI是什么</a></li></ul></div>
+                        
+                <script type="text/template" id="list-template">
+                    <li><a href="#"></a></li>
+                </script>
+                <div class="content-area">
+                    <h1>关于frozenUI</h1>
+                    <div class="content"><p><style>
+.nico-insert-code{display:none}
+</style></p>
+<h2 id="frozenui是什么">frozenUI是什么</h2><p>Frozen UI是一个开源的简单易用，轻量快捷的移动端UI框架。基于手Q样式规范，选取最常用的组件，做成公用离线包减少请求，升级方式友好，文档完善，目前全面应用在腾讯手Q增值业务中。</p>
+<p>CSS组件包括按钮，列表，表单，通知，提示条，弹出框，选项卡，等级图标，角标，红点，1px解决方案等。</p>
+<p>CSS使用模块化的样式命名和组织规范，使用sass编写css代码。</p>
+<p>FrozenJS 是针对移动端开发的 js 组件库，其依赖 zepto.js 和 FrozenUI。</p>
+<p>FrozenJS 包括： basic：FrozenJS 的一些基础功能，包括模板引擎、tap 支持等。 ui：主要是一些触屏常用的 UI 组件，包括 dialog 等。 effect：非常用的特效库，特殊场景使用到是可以单独调用。</p>
+<p>兼容android 2.3 +，ios 4.0 + 。</p>
+<p>使用<code>离线包</code>实现0k网络请求。</p>
+<p><a href="https://github.com/frozenui/frozenui">github主页</a></p>
+<p><a href="https://github.com/frozenui">github组织</a></p>
+<p><a href="https://github.com/frozenui/baseui">css仓库</a></p>
+<p><a href="https://github.com/frozenui/frozenjs">js仓库</a></p>
+<p><a href="http://frozenui.github.io/cssguide.html">css规范</a></p>
+<p><a href="http://frozenui.github.io/baseui/history.html">css历史版本修改记录</a></p>
+<p>欢迎提 <a href="https://github.com/frozenui/frozenui/issues">issue</a> 给我们帮助我们完善FrozenUI。</p>
+<p>ps: 为了方便记忆和增添趣味性，我们为它取了动画片冰雪奇缘的英文名，并把Elsa女王作为我们的卡通代言人。</p>
+<p><img src="../static/elsa.jpg"></p>
+</div>
+                </div>
+                
+            </div>
+            <div class="footer-area">
+            </div>
+
+        </div>
+        <script src="/static/layout.js"></script>
+    </body>
+</html>

@@ -1,25 +1,19 @@
 <!DOCTYPE HTML>
-<html lang="zh">
+<html lang="">
     <head>
         <meta charset="UTF-8">        
-        <title>FrozenUI - 为移动端web而生</title>
+        <title>FrozenUI - 专注于移动web的UI框架</title>
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <meta name="generator" content="nico 0.5.1" />
-       
-        <link type="image/x-icon" href="./static/favicon.ico" rel="icon">
-        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.0.0/css/global.css" />
-        <link rel="stylesheet" href="./static/style.css" />
-        <link rel="stylesheet" href="./static/solarized.css" />
-        
-        <style>
-        body{
-        	-webkit-user-select: inherit;
-    	}
-        </style>
-        
+        <meta name="Description" content="专注于移动web的UI框架，基于腾讯手机QQ规范" />
+        <meta name="Keywords" content="frozen,frozenui,frozenjs,forzen ui,forzen js,UI框架,组件库,css组件库,javascript组件库" />
+        <meta name="author" content="fayching" />
+        <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+        <link rel="stylesheet" href="/static/style.css" />
+        <link rel="stylesheet" href="http://frozenui.github.io/static/solarized.css" />
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
         <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
-        <script src="/static/layout.js"></script>
         <script src="http://frozenui.github.io/static/jquery.js"></script>
+        
        <script>
         var $ = jQuery;
         seajs.config({
@@ -31,9 +25,11 @@
             "handlebars": "gallery/handlebars/1.0.2/handlebars"
           }
         });
-        seajs.use(['sticky', 'side'], function(Sticky, side) {
-            Sticky('.side-area', 20);
-            side.init();
+        seajs.use(['sticky','side'], function(Sticky, Side) {
+            if(document.body.clientWidth>980){
+            	Sticky('.side-area', 20);
+            }
+            Side.init();
         });
         </script>
         
@@ -41,16 +37,12 @@
     <body>
         <div id="body-wrapper">
             <div class="head-area">
-                <script type="text/javascript">
-                    write_header();
-                </script>
             </div>
             <div class="main-area">
                 <div class="side-area">
                     <ul>
-                        <li class="side-loading"><img width="160" alt="加载中..." src="/static/loading.gif"></li>
                     </ul>
-                </div>    
+                </div>        
                 <script type="text/template" id="list-template">
                     <li><a href="#"></a></li>
                 </script>
@@ -60,12 +52,12 @@
 
 <div class="fr-banner">
     <div class="fr-banner-content">
-        <div class="fr-banner-info">
-            <h3>简单易用，轻量快捷，<br/>为移动端服务的前端框架。</h3>
-            <a href="docs/start.html">开始使用</a>
-            <a href="https://github.com/frozenui/" target="_blank">Github地址</a>
+        <h3>简单易用，轻量快捷，<br/>为移动端服务的前端框架。</h3>
+        <img src="static/phones.png" class="fr-banner-ph">
+        <div class="fr-banner-btn">
+        <a href="/start.html">开始使用</a>
+        <a href="https://github.com/frozenui/" target="_blank">Github地址</a>
         </div>
-        <img src="static/phone.png" class="fr-banner-ph">
     </div>
 </div>
 <div class="fr-content">
@@ -73,15 +65,16 @@
         <img src="static/ui.png" alt="frozenui">
         <div class="fr-item-info fr-frozenui">
             <h2>随心所用的样式组件</h2>
-            <p>Frozen提供的CSS组件是目前QQ会员前端开发组所用的通用样式库。遵循手Q样式规范，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
-            <a href="/baseui">查 看</a>
+            <p>FrozenUI提供的CSS组件是目前QQ会员前端开发组所用的通用样式库。遵循手Q样式规范，基本样式使用离线包的方式减少请求，并提供快速接入的方案。</p>
+            <a href="/baseui">查 看</a> 
+            <a href="/baseui/static/frozenui-1.2.0.zip">下载</a>
         </div>
     </div>
     <div class="fr-item">
         <img src="static/js.png" alt="frozenjs" class="fr-frozenjs-img">
         <div class="fr-item-info fr-frozenjs">
             <h2>更显灵动的JS插件</h2>
-            <p>Frozen提供的一系列JavaScript插件，更优雅地在移动端上呈现更灵动的动画效果。</p>
+            <p>FrozenUI提供的一系列JavaScript插件，更优雅地在移动端上呈现更灵动的动画效果。</p>
             <a href="/frozenjs">查 看</a>
         </div>
     </div>
@@ -89,14 +82,14 @@
         <img src="static/case.png" alt="animation case">
         <div class="fr-item-info fr-frozenui">
             <h2>酷炫好玩的案例秀</h2>
-            <p>Frozen提供的Animation case，把业务上有趣好玩的案例沉淀下来，帮助日后能更快速找到设计灵感。</p>
-            <a href="/docs/case.html">查 看</a>
+            <p>FrozenUI提供的Animation case，把业务上有趣好玩的案例沉淀下来，帮助日后能更快速找到设计灵感。</p>
+            <a href="/case.html">查 看</a>
         </div>
     </div>
 </div>
 <div class="fr-content fr-yewu">
     <h2 class="fr-yewu-title">应用业务</h2>
-    <p>目前，frozen已经应用到实际业务，并在不断完善中。</p>
+    <p>目前，FrozenUI已经应用到实际业务，并在不断完善中。</p>
     <ul>
         <li class="fr-yewu1"><img src="static/yewu1.jpg"></li>
         <li class="fr-yewu2"><img src="static/yewu2.jpg"></li>
@@ -111,11 +104,9 @@
                 
             </div>
             <div class="footer-area">
-                <script type="text/javascript">
-                    write_footer();
-                </script>
             </div>
 
         </div>
+        <script src="/static/layout.js"></script>
     </body>
 </html>
