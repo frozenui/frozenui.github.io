@@ -9,7 +9,11 @@ $(function() {
       '<div class="nav-area">'+
           '<a class="nav-toggle"></a>'+
           '<ol class="main-nav">'+
+<<<<<<< HEAD
               '<li><a href="/frozenui">CSS组件库</a></li>'+
+=======
+              '<li><a href="/baseui">CSS组件库</a></li>'+
+>>>>>>> aa661152e18b49f36cf85368cdbe35b3e72ae802
               '<li><a href="/frozenjs">JavaScript</a></li>'+
               '<li><a href="/case.html">动效库</a></li>'+
               '<li><a href="/start.html">开始使用</a></li>'+
