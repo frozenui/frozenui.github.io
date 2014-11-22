@@ -156,33 +156,22 @@ frameborder="0" scrolling="0" ></iframe></div><div class="highlight"><pre><code 
 <p>css具体模块的代码可以访问<a href="http://frozenui.github.io/frozenui/"><a href="http://frozenui.github.io/frozenui/">http://frozenui.github.io/frozenui/</a></a></p>
 <p>js具体模块代码可以访问<a href="http://frozenui.github.io/frozenjs/"><a href="http://frozenui.github.io/frozenjs/">http://frozenui.github.io/frozenjs/</a></a></p>
 <p><a href="http://frozenui.github.io/frozenui/history.html">这里</a> 查看css历史版本修改记录。</p>
-<h2 id="正确使用css的方式">正确使用css的方式</h2><h4 id="1-可以直接使用上面的-css-文件，注意1-2-0之后的bid改为306">1. 可以直接使用上面的 css 文件，注意1.2.0之后的bid改为306:</h4><div class="nico-insert-code"> <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306" rel="stylesheet">
+<h2 id="正确使用css的方式">正确使用css的方式</h2><h4 id="1-可以直接使用上面的-css-文件，注意1-2-0之后的bid改为306">1. 可以直接使用上面的 css 文件，注意1.2.0之后的bid改为306:</h4><pre> &lt;link media=&quot;all&quot; href=&quot;http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306&quot; rel=&quot;stylesheet&quot;&gt;
 
-  <link media="all" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306" rel="stylesheet"></div><div class="highlight"><pre><code class="xml"> <span class="tag">&lt;<span class="title">link</span> <span class="attribute">media</span>=<span class="value">"all"</span> <span class="attribute">href</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span>
-
-  <span class="tag">&lt;<span class="title">link</span> <span class="attribute">media</span>=<span class="value">"all"</span> <span class="attribute">href</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></code></pre></div><p>前者是打包了除了会员相关的基础css文件，后者包括vip等级图标 ，qq等级图标，角标，好友选择器等会员相关的css组件，使用手Q离线包需要加上bid的参数。</p>
+  &lt;link media=&quot;all&quot; href=&quot;http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/vip.css?_bid=306&quot; rel=&quot;stylesheet&quot;&gt;</pre><p>前者是打包了除了会员相关的基础css文件，后者包括vip等级图标 ，qq等级图标，角标，好友选择器等会员相关的css组件，使用手Q离线包需要加上bid的参数。</p>
 <p>调试时可使用未压缩版，把css目录换成css-debug，如<a href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css">http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css-debug/frozen.css</a></p>
-<h4 id="2-针对非手q用户可以使用cdn-和-combo-服务按需加载">2. 针对非手Q用户可以使用cdn 和 combo 服务按需加载</h4><div class="nico-insert-code"> <link media="all" href="http://i.gtimg.cn/c/=/vipstyle/frozenui/1.2.0/css/reset.css,/vipstyle/frozenui/1.2.0/css/ui-notice.css" rel="stylesheet"></div><div class="highlight"><pre><code class="xml"> <span class="tag">&lt;<span class="title">link</span> <span class="attribute">media</span>=<span class="value">"all"</span> <span class="attribute">href</span>=<span class="value">"http://i.gtimg.cn/c/=/vipstyle/frozenui/1.2.0/css/reset.css,/vipstyle/frozenui/1.2.0/css/ui-notice.css"</span> <span class="attribute">rel</span>=<span class="value">"stylesheet"</span>&gt;</span></code></pre></div><h4 id="3-直接下载">3. 直接下载</h4><p>另外提供下载地址，供非腾讯公司用户使用：<a href="http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip"><a href="http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip">http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip</a></a></p>
+<h4 id="2-针对非手q用户可以使用cdn-和-combo-服务按需加载">2. 针对非手Q用户可以使用cdn 和 combo 服务按需加载</h4><pre> &lt;link media=&quot;all&quot; href=&quot;http://i.gtimg.cn/c/=/vipstyle/frozenui/1.2.0/css/reset.css,/vipstyle/frozenui/1.2.0/css/ui-notice.css&quot; rel=&quot;stylesheet&quot;&gt;</pre><h4 id="3-直接下载">3. 直接下载</h4><p>另外提供下载地址，供非腾讯公司用户使用：<a href="http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip"><a href="http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip">http://frozenui.github.io/frozenui/static/frozenui-1.2.0.zip</a></a></p>
 <h4 id="4-访问我们的github仓库">4.访问我们的github仓库</h4><p> <a href="https://github.com/frozenui/frozenui"><a href="https://github.com/frozenui/frozenui">https://github.com/frozenui/frozenui</a></a>，自行 clone 到本地。</p>
-<h2 id="正确使用js的方式">正确使用js的方式</h2><h4 id="1-非模块化引用方式">1. 非模块化引用方式</h4><div class="nico-insert-code"><script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"></script>
-<script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304"></script></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
-<span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></pre></div><h4 id="2-模块化引用方式，这里的zepto必须是模块化后的">2. 模块化引用方式，这里的zepto必须是模块化后的</h4><div class="nico-insert-code"><script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/sea.js?_bid=304"></script>
-<script type="text/javascript">
+<h2 id="正确使用js的方式">正确使用js的方式</h2><h4 id="1-非模块化引用方式">1. 非模块化引用方式</h4><pre>&lt;script src=&quot;http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304&quot;&gt;&lt;/script&gt;
+&lt;script src=&quot;http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304&quot;&gt;&lt;/script&gt;</pre><h4 id="2-模块化引用方式，这里的zepto必须是模块化后的">2. 模块化引用方式，这里的zepto必须是模块化后的</h4><pre>&lt;script src=&quot;http://i.gtimg.cn/vipstyle/frozenjs/lib/sea.js?_bid=304&quot;&gt;&lt;/script&gt;
+&lt;script type=&quot;text/javascript&quot;&gt;
 seajs.config({
     alias:{
-        "$":"frozenjs/lib/zepto.min.js?_bid=304",
-        "frozen":"frozenjs/1.0.0/frozen.js?_bid=304"
+        &quot;$&quot;:&quot;frozenjs/lib/zepto.min.js?_bid=304&quot;,
+        &quot;frozen&quot;:&quot;frozenjs/1.0.0/frozen.js?_bid=304&quot;
     }
 });
-</script></div><div class="highlight"><pre><code class="xml"><span class="tag">&lt;<span class="title">script</span> <span class="attribute">src</span>=<span class="value">"http://i.gtimg.cn/vipstyle/frozenjs/lib/sea.js?_bid=304"</span>&gt;</span><span class="javascript"></span><span class="tag">&lt;/<span class="title">script</span>&gt;</span>
-<span class="tag">&lt;<span class="title">script</span> <span class="attribute">type</span>=<span class="value">"text/javascript"</span>&gt;</span><span class="javascript">
-seajs.config({
-    alias:{
-        <span class="string">"$"</span>:<span class="string">"frozenjs/lib/zepto.min.js?_bid=304"</span>,
-        <span class="string">"frozen"</span>:<span class="string">"frozenjs/1.0.0/frozen.js?_bid=304"</span>
-    }
-});
-</span><span class="tag">&lt;/<span class="title">script</span>&gt;</span></code></pre></div><h4 id="3-访问我们的github仓库">3.访问我们的github仓库</h4><p><a href="https://github.com/frozenui/frozenjs"><a href="https://github.com/frozenui/frozenjs">https://github.com/frozenui/frozenjs</a></a>，自行 clone 到本地。</p>
+&lt;/script&gt;</pre><h4 id="3-访问我们的github仓库">3.访问我们的github仓库</h4><p><a href="https://github.com/frozenui/frozenjs"><a href="https://github.com/frozenui/frozenjs">https://github.com/frozenui/frozenjs</a></a>，自行 clone 到本地。</p>
 <p><em>注意非腾讯公司用户请不要直接使用上述域名。</em></p>
 </div>
                 </div>
