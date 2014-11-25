@@ -733,7 +733,7 @@ body .fn-hide {
     .fr-banner{display: none;}
     .fr-frozenui,.fr-frozenjs-img{position: static;}
     .fr-item{padding:15px;}
-    .fr-item-info{max-width: auto;}
+    .fr-item-info{max-width: 980px;}
     .fr-item img{display: block;margin: auto;margin-bottom: 20px;}
     .fr-item-info h2,.fr-item-info p{text-align: center;}
     .fr-item-info a{width: 100%;float: none;margin-bottom: 10px;}
