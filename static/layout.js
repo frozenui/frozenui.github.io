@@ -18,6 +18,7 @@ $(function() {
                 '<li><a href="/case.html">动效库</a></li>'+
                 '<li><a href="/start.html">开始使用</a></li>'+
                 '<li><a href="/about.html">关于</a></li>'+
+                '<li><a href="/demo">Demo</a></li>'+
                 '<li><a href="https://github.com/frozenui">GitHub</a></li>'+
             '</ol>'+
         '</div>'+
