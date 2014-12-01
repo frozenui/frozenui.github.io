@@ -1,7 +1,7 @@
 $(function() {
     var csslink = '/frozenui';
     if(document.documentElement.clientWidth < 640){
-        csslink = '/frozenui/demo';
+        csslink = '/demo';
     }
     var template_header = '<div class="head-content">'+
           '<div class="title-area">'+
