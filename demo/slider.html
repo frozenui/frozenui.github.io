@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="ISUX" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>
+            组件库
+        </title>
+        <!-- <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306"/> -->
+        <link rel="stylesheet" type="text/css" href="1.2.0/css/frozen.css">
+        <style>
+            .title { padding-left: 15px; line-height: 48px; font-size: 20px; color:
+            #00A5E3; }
+            .ui-slider {width: 100%;overflow: hidden;position: relative;padding-top: 62.5%;}
+            .ui-slider-content {display: -webkit-box;width: 300%;position: absolute;left: 0;top: 0}
+            .ui-slider-content > li{-webkit-box-flex: 1;width: 100%;}
+            .ui-slider-content > li img{width: 100%;}
+            .ui-slider-indicators {position:absolute;bottom:0;right:10px;}
+            .ui-slider-indicators li {display:inline-block;text-indent:100%;white-space:nowrap;overflow:hidden;width:6px;height:6px;background-color:rgba(255,255,255,0.3);border-radius:10px;}
+            .ui-slider-indicators li.current {background-color:rgba(255,255,255,1);}
+        </style>
+    </head>
+    
+    <body>
+        <h2 class="title ui-border-b"><a href="index.html">Frozen UI</a> &gt; 选项卡 </h2>
+        <div class="ui-slider">
+            <ul class="ui-slider-content">
+                <li><img src="http://i.gtimg.cn/aoi/sola/20141201154940_fXIQIADwLo.jpg"></li>
+                <li><img src="http://i.gtimg.cn/aoi/sola/20141201154941_GhAN4FCMIF.jpg"></li>      
+                <li><img src="http://i.gtimg.cn/aoi/sola/20141201154939_LZJZBbo7ET.jpg"></li>
+                
+            </ul>
+            <ul class="ui-slider-indicators">
+                <li class="current">1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+        </div>
+        内容
+        <script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"></script>
+        <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304"></script>
+        <script>
+        window.addEventListener('load', function(){
+
+            var slider = new Scroll('.ui-slider', {
+                role: 'slider',
+                indicator: true,
+                autoplay: true,
+                interval: 3000
+            });
+
+            slider.on('slideStart', function() {
+                console.log('start')
+            });
+
+            slider.on('slideEnd', function() {
+                console.log('end')
+            });
+        })
+        </script>
+    </body>
+
+</html>

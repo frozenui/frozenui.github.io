@@ -11,11 +11,15 @@
         <title>
             组件库
         </title>
-        <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306"
-        />
+        <!-- <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306"/> -->
+        <link rel="stylesheet" type="text/css" href="1.2.0/css/frozen.css">
         <style>
             .title { padding-left: 15px; line-height: 48px; font-size: 20px; color:
             #00A5E3; }
+            .ui-tab{
+                width: 100%;
+                overflow: hidden;
+            }
             .ui-tab-content{
                 display: -webkit-box;
                 width: 300%;
@@ -91,19 +95,21 @@
         <script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"></script>
         <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304"></script>
         <script>
-       var tab = new Slide('.ui-tab', {
-           role: 'tab',
-           autoplay: true,
-           interval: 3000
-       });
+        window.addEventListener('load', function(){
+        var tab = new Scroll('.ui-tab', {
+            role: 'tab',
+            autoplay: true,
+            interval: 3000
+        });
 
-       tab.on('slideStart', function() {
-           console.log('start')
-       });
+        tab.on('slideStart', function() {
+            console.log('start')
+        });
 
-       tab.on('slideEnd', function() {
-           console.log('end')
-       });
+        tab.on('slideEnd', function() {
+            console.log('end')
+        });
+       })    
     </script>
     </body>
 
