@@ -752,3 +752,6 @@ body .fn-hide {
         height: auto;
     }
 }
+body > a{
+	display: none;
+}
