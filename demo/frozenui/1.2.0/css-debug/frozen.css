@@ -72,7 +72,7 @@ select {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
-  border: none;
+  border: 0;
   background: none;
   -webkit-appearance: none;
   outline: none; }
@@ -1467,7 +1467,7 @@ li.ui-list-item-link:active, li.ui-list-item-link:active .ui-border-t, li.ui-lis
   display: -webkit-box;
   -webkit-box-pack: center;
   -webkit-box-align: center;
-  background: #f8f9fa; }
+  background-color: #f8f9fa; }
   .ui-searchbar-wrap button {
     margin-right: 10px; }
   .ui-searchbar-wrap .ui-searchbar-cancel {
