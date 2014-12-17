@@ -401,15 +401,15 @@ em {
  */
 .ui-btn, .ui-btn-lg {
   height: 30px;
-  font-size: 14px;
-  line-height: 14px;
-  padding: 8px 13px;
+  line-height: 30px;
+  padding: 0 13px;
   min-width: 56px;
   display: inline-block;
   position: relative;
   text-align: center;
   border: none;
   color: #0079ff;
+  font-size: 14px;
   background-color: #fdfdfd;
   background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, white), to(#fafafa));
   border-radius: 3px;
@@ -475,9 +475,8 @@ em {
 
 .ui-btn-lg {
   font-size: 18px;
-  line-height: 18px;
-  padding: 13px 0;
   height: 44px;
+  line-height: 42px;
   display: block;
   width: 100%;
   border-radius: 5px; }
