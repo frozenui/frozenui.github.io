@@ -331,7 +331,9 @@ em {
   height: 22px;
   line-height: 22px;
   -webkit-border-radius: 12px;
-  padding: 0 7px; }
+  padding: 0 7px;
+  -webkit-background-clip: padding-box;
+          background-clip: padding-box; }
 
 /* 浅色的 */
 .ui-badge-muted {
@@ -816,7 +818,7 @@ em {
 .ui-tooltips .ui-btn, .ui-tooltips .ui-btn-lg {
   position: absolute;
   top: 50%;
-  right: 15px;
+  right: 10px;
   margin-top: -15px; }
 
 .ui-tooltips-state .ui-tooltips-cnt-link:after {
@@ -1026,7 +1028,8 @@ em {
   display: box;
   display: -webkit-box;
   -webkit-box-orient: vertical;
-  -webkit-box-pack: center; }
+  -webkit-box-pack: center;
+  margin: 7px 0; }
 
 .ui-list-info > h4 {
   font-size: 16px;
