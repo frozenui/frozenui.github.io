@@ -21,7 +21,10 @@
             #00A5E3; }
             body>a{display: none;}
             .ui-list{margin-bottom: 20px;}
-            .border-list li{width: 100px;margin-bottom: 10px;-webkit-box-pack: center;}
+            .border-list{
+                background-color: #fff;
+            }
+            .border-list li{width: 100px;margin: 10px auto;-webkit-box-pack: center;text-align: center;}
             
         </style>
     </head>
@@ -98,7 +101,7 @@
                 </div>
             </li>
         </ul>
-        <ul class="ui-list ui-list-text border-list">
+        <ul class="ui-list-text border-list">
             <li class="ui-border-t">上边框</li>
             <li class="ui-border">边框</li>
             <li class="ui-border-b">下边框</li>
