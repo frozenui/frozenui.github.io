@@ -1,7 +1,7 @@
 body {
     color: #666;
     background: #fff;
-    font: 400 14px/1.5 "Helvetica Neue",Helvetica,Arial,"WenQuanYi Micro Hei", "Microsoft YaHei", sans-serif;
+    font: 400 14px/1.5 "Helvetica Neue","Marmelad","Lucida Grande",'Hiragino Sans GB',Georgia,"Microsoft YaHei", sans-serif;
     -webkit-user-select: inherit;
 }
 /* alice.base 样式模块 */
@@ -209,6 +209,7 @@ hr {
 .head-content{max-width: 1140px;margin: auto;line-height: 50px;}
 .title-area {
     position: absolute;
+    font-family: "Helvetica Neue";
 }
 .title-area h1 a{
     font-weight: 300;
@@ -664,7 +665,6 @@ body .fn-hide {
 .fr-yewu ul{
     max-width: 1013px;
     margin: 20px auto;
-    font-size: 0;
 }
 .fr-yewu li{
     display: inline-block;
@@ -737,7 +737,7 @@ body .fn-hide {
     .fr-item img{display: block;margin: auto;margin-bottom: 20px;}
     .fr-item-info h2,.fr-item-info p{text-align: center;}
     .fr-item-info a{width: 100%;float: none;margin-bottom: 10px;}
-    .fr-yewu li{width: 100%;margin-bottom: 20px;}
+    .fr-yewu li{width: 100%;margin-bottom: 20px;margin-right: 0}
     .fr-yewu ul img{display: block;margin: auto;}
 }
 .slideDown{
