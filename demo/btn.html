@@ -21,14 +21,8 @@
         <style>
             body>a{display: none;}
             .title { padding-left: 15px; line-height: 48px; font-size: 20px; color:
-            #00A5E3; margin-bottom: 10px; } .ui-btn-wrap{ padding: 5px 15px; } .ui-btn-group-tiled{margin-bottom:
-            80px;}
-            .ui-btn{
-                border-top-left-radius: 3px;
-                border-top-right-radius:3px;
-                border-bottom-right-radius:3px;
-                border-bottom-left-radius:3px;
-            }
+            #00A5E3; margin-bottom: 10px; } .ui-btn-wrap{ padding: 5px 15px; } 
+            .ui-btn-group-tiled{margin-bottom: 80px;}
         </style>
     </head>
     
@@ -40,6 +34,17 @@
             &gt; 按钮
         </h2>
         <div class="ui-btn-wrap">
+            <button class="ui-btn-s">
+                确定
+            </button>
+            <button class="ui-btn-s active">
+                确定
+            </button>
+            <button class="ui-btn-s disabled">
+                取消
+            </button>
+        </div>
+        <div class="ui-btn-wrap">
             <button class="ui-btn">
                 确定
             </button>
@@ -50,6 +55,7 @@
                 取消
             </button>
         </div>
+        
         <div class="ui-btn-wrap">
             <button class="ui-btn ui-btn-progress">确定</button>
             <button class="ui-btn ui-btn-progress">

@@ -15,8 +15,8 @@
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
         document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3c5e509616a8353ee908823c8b29510c' type='text/javascript'%3E%3C/script%3E"));
         </script>
-        <!-- <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306"/> -->
-        <link rel="stylesheet" type="text/css" href="frozenui/1.2.0/css/frozen.css">
+        <!-- <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.1/css/frozen.css?_bid=306"/> -->
+        <link rel="stylesheet" type="text/css" href="frozenui/1.2.1/css/frozen.css">
         <style>
             body>a{display: none;}
             .title { padding-left: 15px; line-height: 48px; font-size: 20px; color:
@@ -27,10 +27,10 @@
     <body ontouchstart="">
         <h2 class="title ui-border-b"><a href="index.html">Frozen UI</a> &gt; 轮播组件 </h2>
         <div class="ui-slider">
-            <ul class="ui-slider-content">
-                <li><img src="http://i.gtimg.cn/aoi/sola/20141201154940_fXIQIADwLo.jpg"></li>
-                <li><img src="http://i.gtimg.cn/aoi/sola/20141201154941_GhAN4FCMIF.jpg"></li>      
-                <li><img src="http://i.gtimg.cn/aoi/sola/20141201154939_LZJZBbo7ET.jpg"></li>
+            <ul class="ui-slider-content" style="width: 300%">
+                <li><span style="background-image:url(http://placehold.sinaapp.com/?640*200)"></span></li>
+                <li><span style="background-image:url(http://placehold.sinaapp.com//?640*200)"></span></li>      
+                <li><span style="background-image:url(http://placehold.sinaapp.com//?640*200)"></span></li>
             </ul>
         </div>
         内容
@@ -48,8 +48,8 @@
                 interval: 3000
             });
 
-            slider.on('beforeScrollStart', function() {
-                console.log('start')
+            slider.on('beforeScrollStart', function(fromIndex, toIndex) {
+                console.log(fromIndex,toIndex)
             });
 
             slider.on('scrollEnd', function() {

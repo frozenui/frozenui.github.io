@@ -15,25 +15,12 @@
         var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
         document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3c5e509616a8353ee908823c8b29510c' type='text/javascript'%3E%3C/script%3E"));
         </script>
-        <!-- <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.0/css/frozen.css?_bid=306"/> -->
-        <link rel="stylesheet" type="text/css" href="frozenui/1.2.0/css/frozen.css">
+        <!-- <link rel="stylesheet" type="text/css" href="http://i.gtimg.cn/vipstyle/frozenui/1.2.1/css/frozen.css?_bid=306"/> -->
+        <link rel="stylesheet" type="text/css" href="frozenui/1.2.1/css/frozen.css">
         <style>
             body>a{display: none;}
             .title { padding-left: 15px; line-height: 48px; font-size: 20px; color:
             #00A5E3; }
-            .ui-tab{
-                width: 100%;
-                overflow: hidden;
-            }
-            .ui-tab-content{
-                display: -webkit-box;
-                width: 300%;
-             }
-            .ui-tab-content > li {
-                -webkit-box-flex: 1;
-                width: 100%;
-                height:300px;
-            }
             .ui-tab-nav{
                 top: 50px;
             }
@@ -43,12 +30,12 @@
     <body ontouchstart="">
         <h2 class="title ui-border-b"><a href="index.html">Frozen UI</a> &gt; 选项卡 </h2>
         <div class="ui-tab">
-            <ul class="ui-tab-nav">
+            <ul class="ui-tab-nav ui-border-b">
                 <li class="current">热门推荐</li>
                 <li>全部表情</li>
                 <li>表情</li>
             </ul>
-            <ul class="ui-tab-content">
+            <ul class="ui-tab-content" style="width: 300%;">
                 <li>
                     <ul class="ui-list ui-list-link ui-border-b">  
                         <li>
@@ -93,8 +80,49 @@
                         <i class="ui-loading"></i>
                     </div>
                 </li>
-                <li>内容二</li>
-                <li>内容三</li>
+                <li>
+                    <ul class="ui-list ui-list-text ui-border-b">
+                        <li class="ui-border-t">
+                            <div class="ui-list-info">
+                                <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+                            </div>
+                            <div class="ui-badge">123</div>
+                        </li>
+                        <li class="ui-border-t">
+                            <div class="ui-list-info">
+                                <h4>加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断加h4可以超出长度截断</h4>
+                            </div>
+                            <div class="ui-badge-muted">123</div>
+                        </li>
+                        <li class="ui-border-t">
+                            <div class="ui-list-info">
+                               <h4>标题标题标题标题标题标题标</h4>
+                            </div>
+                            <div class="ui-list-action">使用中</div>
+                        </li>
+                    </ul>
+                </li>
+                <li>
+                    <ul class="ui-list ui-list-link ui-border-b">
+                        <li class="ui-border-t">
+                            <div class="ui-list-img">
+                                <span style="background-image:url(http://placehold.sinaapp.com/?200*136)"></span>
+                            </div>
+                            <div class="ui-list-info">
+                                <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+                                <p>内容内容内容内容内容内容内容内容内容内容内容内容内容内容</p>
+                            </div>
+                        </li>
+                        <li class="ui-border-t">
+                            <div class="ui-list-img">
+                               <span style="background-image:url(http://placehold.sinaapp.com/?200*136)"></span>
+                            </div>
+                            <div class="ui-list-info">
+                                <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+                            </div>
+                        </li>
+                    </ul>
+                </li>
             </ul>
         </div>
         <!-- <script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"></script>
@@ -109,8 +137,8 @@
             interval: 3000
         });
 
-        tab.on('beforeScrollStart', function() {
-            console.log('start')
+        tab.on('beforeScrollStart', function(fromIndex, toIndex) {
+            console.log(fromIndex, toIndex)
         });
 
         tab.on('scrollEnd', function() {
