@@ -28,7 +28,8 @@ $(function() {
     		'<a href="https://github.com/frozenui">GitHub</a> • '+
             '<a href="http://lab.lepture.com/nico/">nico</a> • '+
             '<a href="https://github.com/frozenui/frozenui/issues">Issues</a> • '+
-            '<a href="https://github.com/QQVIPTeam">QQVIP FD Team</a>'
+            '<a href="https://github.com/QQVIPTeam">QQVIP FD Team</a> • '+
+            '交流群：427632094'
         '</div>';
     $('.footer-area').html(template_footer); 
     $('.nav-toggle').click(function(e){
