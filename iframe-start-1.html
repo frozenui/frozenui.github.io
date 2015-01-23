@@ -81,21 +81,25 @@
         </div>
     </div>
      <script src="http://i.gtimg.cn/vipstyle/frozenjs/lib/zepto.min.js?_bid=304"></script>
-    <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.0/frozen.js?_bid=304"></script>
+    <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.1/frozen.js?_bid=304"></script>
     <script>
-       var tab = new Slide('.ui-tab', {
-           role: 'tab',
-           autoplay: true,
-           interval: 3000
-       });
+       (function() {
 
-       tab.on('slideStart', function() {
-           console.log('start')
-       });
+            var tab = new fz.Scroll('.ui-tab', {
+                role: 'tab',
+                autoplay: true,
+                interval: 3000
+            });
 
-       tab.on('slideEnd', function() {
-           console.log('end')
-       });
+            tab.on('beforeScrollStart', function(from, to) {
+                console.log(from, to);
+            });
+
+            tab.on('scrollEnd', function(curPage) {
+                console.log(curPage);
+            });
+
+        })();
     </script>
 </body>
 </html>
