@@ -309,12 +309,12 @@ hr {
 .side-area .side-highlight > a {
   border-right: 1px solid #025775; }
 
-.content-area > h1 {
+.content-area > h1,.content > h1{
   font-size: 24px;
   border-bottom: 1px #eee solid;
   padding: 20px 0; }
 
-.content-area > h2,.content-area form > h2  {
+.content-area > h2,.content-area form > h2,.content > h2  {
   font-size: 20px;
   line-height: 30px;
   color: #00a5e0;
