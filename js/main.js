@@ -105,7 +105,9 @@ $(function () {
             hideIframe = (display === 'none') ? false : true;
             $(this).text(text);
         });
-
+        $('.nav-toggle').click(function(e){
+            $('.main-nav').toggleClass('slideDown');
+        });
 
         $('.doc-demo-link').on('mouseover', function (e) {
             e.preventDefault();
