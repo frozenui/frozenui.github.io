@@ -7,7 +7,7 @@
         downloadZipName: 'frozen.zip',
         downloadCssName: 'css/frozen.css',
         downloadJsName:  'js/frozen.js',
-        downloadZeptoName:  'js/lib/zeptojs/zepto.min.js'
+        downloadZeptoName:  'js/lib/zepto.min.js'
     };
 
     function getFile (url) {
