@@ -241,37 +241,121 @@
         
         <div class="frozen-module-demo">
             <h3 class="frozen-module-subtitle">
-                居中
+                flex布局排列，默认横排
             </h3>
-            <div class="frozen-module-dom">
-            <div class="ui-center">
-                <p>垂直上下居中</p>
-                <p>垂直上下居中</p>
+            <div class="frozen-module-dom"> 
+            <div class="ui-flex ui-flex-pack-start">
+                <div>左</div><div>左</div>
             </div>
-            <div class="ui-center-hor">
-                <p>一行内垂直上下居中</p><p>一行内垂直上下居中</p>
+            <div class="ui-flex ui-flex-pack-center">
+                <div>中</div><div>中</div>
             </div>
-            
+            <div class="ui-flex ui-flex-pack-end">
+                <div>右</div><div>右</div>
+            </div>
+            <div class="ui-flex ui-flex-align-start">
+                <div>上</div><div>上</div>
+            </div>
+            <div class="ui-flex  ui-flex-align-center">
+                <div>中</div><div>中</div>
+            </div>
+            <div class="ui-flex ui-flex-align-end">
+                <div>下</div><div>下</div>
+            </div>
         </div>
-            <pre class="frozen-module-code"><code class="html">
-&lt;div class=&quot;ui-center&quot;&gt;
-    &lt;p&gt;垂直上下居中&lt;/p&gt;
-    &lt;p&gt;垂直上下居中&lt;/p&gt;
+            <pre class="frozen-module-code"><code class="html"> 
+&lt;div class=&quot;ui-flex ui-flex-pack-start&quot;&gt;
+    &lt;div&gt;左&lt;/div&gt;&lt;div&gt;左&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ui-center-hor&quot;&gt;
-    &lt;p&gt;一行内垂直上下居中&lt;/p&gt;&lt;p&gt;一行内垂直上下居中&lt;/p&gt;
+&lt;div class=&quot;ui-flex ui-flex-pack-center&quot;&gt;
+    &lt;div&gt;中&lt;/div&gt;&lt;div&gt;中&lt;/div&gt;
 &lt;/div&gt;
-
+&lt;div class=&quot;ui-flex ui-flex-pack-end&quot;&gt;
+    &lt;div&gt;右&lt;/div&gt;&lt;div&gt;右&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-flex ui-flex-align-start&quot;&gt;
+    &lt;div&gt;上&lt;/div&gt;&lt;div&gt;上&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-flex  ui-flex-align-center&quot;&gt;
+    &lt;div&gt;中&lt;/div&gt;&lt;div&gt;中&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-flex ui-flex-align-end&quot;&gt;
+    &lt;div&gt;下&lt;/div&gt;&lt;div&gt;下&lt;/div&gt;
+&lt;/div&gt;
         </code></pre>
-            <a class="doc-copy-code-btn" data-clipboard-text="
-&lt;div class=&quot;ui-center&quot;&gt;
-    &lt;p&gt;垂直上下居中&lt;/p&gt;
-    &lt;p&gt;垂直上下居中&lt;/p&gt;
+            <a class="doc-copy-code-btn" data-clipboard-text=" 
+&lt;div class=&quot;ui-flex ui-flex-pack-start&quot;&gt;
+    &lt;div&gt;左&lt;/div&gt;&lt;div&gt;左&lt;/div&gt;
 &lt;/div&gt;
-&lt;div class=&quot;ui-center-hor&quot;&gt;
-    &lt;p&gt;一行内垂直上下居中&lt;/p&gt;&lt;p&gt;一行内垂直上下居中&lt;/p&gt;
+&lt;div class=&quot;ui-flex ui-flex-pack-center&quot;&gt;
+    &lt;div&gt;中&lt;/div&gt;&lt;div&gt;中&lt;/div&gt;
 &lt;/div&gt;
-
+&lt;div class=&quot;ui-flex ui-flex-pack-end&quot;&gt;
+    &lt;div&gt;右&lt;/div&gt;&lt;div&gt;右&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-flex ui-flex-align-start&quot;&gt;
+    &lt;div&gt;上&lt;/div&gt;&lt;div&gt;上&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-flex  ui-flex-align-center&quot;&gt;
+    &lt;div&gt;中&lt;/div&gt;&lt;div&gt;中&lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-flex ui-flex-align-end&quot;&gt;
+    &lt;div&gt;下&lt;/div&gt;&lt;div&gt;下&lt;/div&gt;
+&lt;/div&gt;
+        ">复制</a>
+        </div>
+        
+        <div class="frozen-module-demo">
+            <h3 class="frozen-module-subtitle">
+                flex布局排列纵向,以此类推
+            </h3>
+            <div class="frozen-module-dom"> 
+            <div class="ui-flex ui-flex-ver ui-flex-pack-center ui-flex-align-start">
+                <div>左中</div>
+                <div>左中</div>
+            </div>
+        </div>
+            <pre class="frozen-module-code"><code class="html"> 
+&lt;div class=&quot;ui-flex ui-flex-ver ui-flex-pack-center ui-flex-align-start&quot;&gt;
+    &lt;div&gt;左中&lt;/div&gt;
+    &lt;div&gt;左中&lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+            <a class="doc-copy-code-btn" data-clipboard-text=" 
+&lt;div class=&quot;ui-flex ui-flex-ver ui-flex-pack-center ui-flex-align-start&quot;&gt;
+    &lt;div&gt;左中&lt;/div&gt;
+    &lt;div&gt;左中&lt;/div&gt;
+&lt;/div&gt;
+        ">复制</a>
+        </div>
+        
+        <div class="frozen-module-demo">
+            <h3 class="frozen-module-subtitle">
+                flex网格布局
+            </h3>
+            <div class="frozen-module-dom"> 
+            <ul class="ui-row-flex">
+                <li class="ui-col ui-flex ui-flex-pack-start"><div>左</div><div>左</div></li>
+                <li class="ui-col ui-flex ui-flex-pack-center"><div>中</div><div>中</div></li>
+                <li class="ui-col ui-flex ui-flex-pack-end"><div>右</div><div>右</div></li>
+                <li class="ui-col ui-flex ui-flex-ver  ui-flex-align-end ui-flex-pack-end"><div>竖排右下</div><div>竖排右下</div></li>
+            </ul>
+        </div>
+            <pre class="frozen-module-code"><code class="html"> 
+&lt;ul class=&quot;ui-row-flex&quot;&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-pack-start&quot;&gt;&lt;div&gt;左&lt;/div&gt;&lt;div&gt;左&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-pack-center&quot;&gt;&lt;div&gt;中&lt;/div&gt;&lt;div&gt;中&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-pack-end&quot;&gt;&lt;div&gt;右&lt;/div&gt;&lt;div&gt;右&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-ver  ui-flex-align-end ui-flex-pack-end&quot;&gt;&lt;div&gt;竖排右下&lt;/div&gt;&lt;div&gt;竖排右下&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
+        </code></pre>
+            <a class="doc-copy-code-btn" data-clipboard-text=" 
+&lt;ul class=&quot;ui-row-flex&quot;&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-pack-start&quot;&gt;&lt;div&gt;左&lt;/div&gt;&lt;div&gt;左&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-pack-center&quot;&gt;&lt;div&gt;中&lt;/div&gt;&lt;div&gt;中&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-pack-end&quot;&gt;&lt;div&gt;右&lt;/div&gt;&lt;div&gt;右&lt;/div&gt;&lt;/li&gt;
+    &lt;li class=&quot;ui-col ui-flex ui-flex-ver  ui-flex-align-end ui-flex-pack-end&quot;&gt;&lt;div&gt;竖排右下&lt;/div&gt;&lt;div&gt;竖排右下&lt;/div&gt;&lt;/li&gt;
+&lt;/ul&gt;
         ">复制</a>
         </div>
         
@@ -476,7 +560,7 @@
                 <div class="ui-col ui-col-3">3/5</div>
                 <div class="ui-col ui-col-2">2/5</div>
             </div>
-        </div>
+    </div>
             <pre class="frozen-module-code"><code class="html">
 &lt;div class=&quot;ui-row-flex ui-whitespace&quot;&gt;
     &lt;div class=&quot;ui-col ui-col&quot;&gt;平均分&lt;/div&gt;
@@ -500,7 +584,7 @@
     &lt;div class=&quot;ui-col ui-col-3&quot;&gt;3/5&lt;/div&gt;
     &lt;div class=&quot;ui-col ui-col-2&quot;&gt;2/5&lt;/div&gt;
 &lt;/div&gt;
-        </code></pre>
+    </code></pre>
             <a class="doc-copy-code-btn" data-clipboard-text="
 &lt;div class=&quot;ui-row-flex ui-whitespace&quot;&gt;
     &lt;div class=&quot;ui-col ui-col&quot;&gt;平均分&lt;/div&gt;
@@ -524,7 +608,7 @@
     &lt;div class=&quot;ui-col ui-col-3&quot;&gt;3/5&lt;/div&gt;
     &lt;div class=&quot;ui-col ui-col-2&quot;&gt;2/5&lt;/div&gt;
 &lt;/div&gt;
-        ">复制</a>
+    ">复制</a>
         </div>
         
         <div class="frozen-module-demo">
