@@ -200,6 +200,30 @@
         ">复制</a>
         </div>
         
+        <div class="frozen-module-demo">
+            <h3 class="frozen-module-subtitle">
+                文本两端对齐
+            </h3>
+            <div class="frozen-module-dom">
+            <div class="ui-whitespace">
+                <p class="ui-txt-justify-one">一行：ui-txt-justify-one</p>
+                <p class="ui-txt-justify">普通的多行文本内容：ui-txt-justify在首个《进击的巨人》预热视频中只是描述了一个巨人恰好拿起一人准备放进嘴巴里面，而另个场景则是超大型巨人附着浓重的烟雾将巨手拍下来。将于今年8月1日上映。</p>
+            </div>
+        </div>
+            <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-whitespace&quot;&gt;
+    &lt;p class=&quot;ui-txt-justify-one&quot;&gt;一行：ui-txt-justify-one&lt;/p&gt;
+    &lt;p class=&quot;ui-txt-justify&quot;&gt;普通的多行文本内容：ui-txt-justify在首个《进击的巨人》预热视频中只是描述了一个巨人恰好拿起一人准备放进嘴巴里面，而另个场景则是超大型巨人附着浓重的烟雾将巨手拍下来。将于今年8月1日上映。&lt;/p&gt;
+&lt;/div&gt;
+        </code></pre>
+            <a class="doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-whitespace&quot;&gt;
+    &lt;p class=&quot;ui-txt-justify-one&quot;&gt;一行：ui-txt-justify-one&lt;/p&gt;
+    &lt;p class=&quot;ui-txt-justify&quot;&gt;普通的多行文本内容：ui-txt-justify在首个《进击的巨人》预热视频中只是描述了一个巨人恰好拿起一人准备放进嘴巴里面，而另个场景则是超大型巨人附着浓重的烟雾将巨手拍下来。将于今年8月1日上映。&lt;/p&gt;
+&lt;/div&gt;
+        ">复制</a>
+        </div>
+        
     </div>
     
     <div id="layout" class="frozen-module">
@@ -1099,16 +1123,16 @@
                 text-align:justify两端对齐一行多行
             </h3>
             <div class="frozen-module-dom">  
-            <div class="ui-justify ui-whitespace">
+            <div>
                 <p class="demo-desc">一行</p>
-                <ul>
+                <ul class="ui-justify ui-whitespace">
                     <li><div class="test-img"></div><p>xxx</p></li>
                     <li><div class="test-img"></div><p>xxx</p></li>
                     <li><div class="test-img"></div><p>xxx</p></li>
                     <li><div class="test-img"></div><p>xxx</p></li>
                 </ul>
                 <p class="demo-desc">多行</p>
-                <ul>
+                <ul class="ui-justify ui-whitespace">
                     <li><div class="test-img"></div><p>xxx</p></li>
                     <li><div class="test-img"></div><p>xxx</p></li>
                     <li><div class="test-img"></div><p>xxx</p></li>
@@ -1124,16 +1148,16 @@
             </div>
         </div>
             <pre class="frozen-module-code"><code class="html">  
-&lt;div class=&quot;ui-justify ui-whitespace&quot;&gt;
+&lt;div&gt;
     &lt;p class=&quot;demo-desc&quot;&gt;一行&lt;/p&gt;
-    &lt;ul&gt;
+    &lt;ul class=&quot;ui-justify ui-whitespace&quot;&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;p class=&quot;demo-desc&quot;&gt;多行&lt;/p&gt;
-    &lt;ul&gt;
+    &lt;ul class=&quot;ui-justify ui-whitespace&quot;&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
@@ -1149,16 +1173,16 @@
 &lt;/div&gt;
         </code></pre>
             <a class="doc-copy-code-btn" data-clipboard-text="  
-&lt;div class=&quot;ui-justify ui-whitespace&quot;&gt;
+&lt;div&gt;
     &lt;p class=&quot;demo-desc&quot;&gt;一行&lt;/p&gt;
-    &lt;ul&gt;
+    &lt;ul class=&quot;ui-justify ui-whitespace&quot;&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
     &lt;/ul&gt;
     &lt;p class=&quot;demo-desc&quot;&gt;多行&lt;/p&gt;
-    &lt;ul&gt;
+    &lt;ul class=&quot;ui-justify ui-whitespace&quot;&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
         &lt;li&gt;&lt;div class=&quot;test-img&quot;&gt;&lt;/div&gt;&lt;p&gt;xxx&lt;/p&gt;&lt;/li&gt;
