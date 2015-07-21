@@ -7,7 +7,7 @@
         downloadZipName: 'frozen.zip',
         downloadCssName: 'css/frozen.css',
         downloadJsName:  'js/frozen.js',
-        downloadZeptoName:  'js/lib/zepto.min.js'
+        downloadZeptoName:  'js/lib/zeptojs/zepto.min.js'
     };
 
     function getFile (url) {
@@ -53,6 +53,17 @@
         });
     }
 
+    $('button.toggle').on('click', function(event) {
+        event.preventDefault();
+        if ( $(this).data('check') == '1' ){
+            $(this).data('check', '0');
+            $('#custom-form input[type="checkbox"]').prop('checked',false);
+        } else {
+            $(this).data('check', '1');
+            $('#custom-form input[type="checkbox"]').prop('checked',true);
+        }
+    });
+
     $('input[data-click="toggle"]').on('change', function (e) {
         var checked = e.target.checked;
         var $formItem = $(this).parents('.form-item');
@@ -73,6 +84,11 @@
 
     $('#custom-form').on('submit', function (e) {
         e.preventDefault();
+        if ( $('input[type="checkbox"]:checked').length == 0 ){
+            alert ('您还没选择任何组件，请勾选选择。');
+            return false;
+        }
+
         try {
             var isFileSaverSupported = !!new Blob;
         } catch (e) {
@@ -113,6 +129,7 @@
                     var content = zip.generate({type:"blob"});
                     saveAs(content, Config.downloadZipName);
                 } else {
+                    alert ('下载失败，请重试！');
                     console.log('download fail.');
                 }
             }
