@@ -107,11 +107,11 @@
   width: 1140px;
   margin: 0 auto;
   position: relative;
-  padding: 80px 130px;
+  padding: 80px 0;
 }
 .fr-item .rightside {
   position: absolute;
-  right: 340px;
+  right: 200px;
   top: 18px;
 }
 .fr-item .introduce .title{
