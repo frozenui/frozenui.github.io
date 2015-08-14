@@ -266,11 +266,11 @@ h6, .ui-txt-tips {
 
   .ui-border-t {
     background-position: left top;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)); }
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #e0e0e0), to(transparent)); }
 
   .ui-border-b {
     background-position: left bottom;
-    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)); }
+    background-image: -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #e0e0e0), to(transparent)); }
 
   .ui-border-t,
   .ui-border-b,
@@ -279,16 +279,16 @@ h6, .ui-txt-tips {
     -webkit-background-size: 100% 1px; }
 
   .ui-border-tb {
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #e0e0e0), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #e0e0e0), to(transparent));
     background-position: top, bottom; }
 
   .ui-border-l {
     background-position: left top;
-    background-image: -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)); }
+    background-image: -webkit-gradient(linear, right top, left top, color-stop(0.5, #e0e0e0), to(transparent)); }
 
   .ui-border-r {
     background-position: right top;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)); }
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #e0e0e0), to(transparent)); }
 
   .ui-border-l,
   .ui-border-r {
@@ -302,7 +302,7 @@ h6, .ui-txt-tips {
     position: absolute;
     top: 0;
     left: 0;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0)), -webkit-gradient(linear, right top, left top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #e0e0e0), to(transparent)), -webkit-gradient(linear, left top, right top, color-stop(0.5, #e0e0e0), to(transparent)), -webkit-gradient(linear, left top, left bottom, color-stop(0.5, #e0e0e0), to(transparent)), -webkit-gradient(linear, right top, left top, color-stop(0.5, #e0e0e0), to(transparent));
     -webkit-background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
     background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
     -webkit-background-size: 100% 1px,1px 100% ,100% 1px, 1px 100%;
@@ -1661,14 +1661,14 @@ h6, .ui-txt-tips {
     position: relative;
     border: 0;
     background-position: left top;
-    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0));
+    background-image: -webkit-gradient(linear, left bottom, left top, color-stop(0.5, #e0e0e0), to(transparent));
     background-repeat: repeat-x;
     -webkit-background-size: 100% 1px; }
 
   .ui-dialog-ft button {
     border-right: 0;
     background-position: right top;
-    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, transparent), color-stop(0.51, #e0e0e0), to(#e0e0e0));
+    background-image: -webkit-gradient(linear, left top, right top, color-stop(0.5, #e0e0e0), to(transparent));
     background-repeat: repeat-y;
     -webkit-background-size: 1px 100%; }
     .ui-dialog-ft button:last-child {
