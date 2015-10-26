@@ -4834,7 +4834,19 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
           <div class="module-tags">
             <span class="example module-tags">Example</span>
             <a class="copy doc-copy-code-btn" data-clipboard-text="
-&lt;div class=&quot;ui-tab&quot;&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab1&quot;&gt;
+    &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
+        &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
+        &lt;li&gt;全部表情&lt;/li&gt;
+        &lt;li&gt;表情&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;ui-tab-content&quot; style=&quot;width:300%&quot;&gt;
+        &lt;li&gt;内容1&lt;/li&gt;
+        &lt;li&gt;内容2&lt;/li&gt;
+        &lt;li&gt;内容3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab2&quot;&gt;
     &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
         &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
         &lt;li&gt;全部表情&lt;/li&gt;
@@ -4849,7 +4861,19 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
 		">Copy</a>
           </div>
           <div class="frozen-module-dom"><div class="dom-content">
-			<div class="ui-tab">
+			<div class="ui-tab" id="tab1">
+			    <ul class="ui-tab-nav ui-border-b">
+			        <li class="current">热门推荐</li>
+			        <li>全部表情</li>
+			        <li>表情</li>
+			    </ul>
+			    <ul class="ui-tab-content" style="width:300%">
+			        <li>内容1</li>
+			        <li>内容2</li>
+			        <li>内容3</li>
+			    </ul>
+			</div>
+			<div class="ui-tab" id="tab2">
 			    <ul class="ui-tab-nav ui-border-b">
 			        <li class="current">热门推荐</li>
 			        <li>全部表情</li>
@@ -4863,7 +4887,19 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
 			</div>
 		</div></div>
           <pre class="frozen-module-code"><code class="html">
-&lt;div class=&quot;ui-tab&quot;&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab1&quot;&gt;
+    &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
+        &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
+        &lt;li&gt;全部表情&lt;/li&gt;
+        &lt;li&gt;表情&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;ui-tab-content&quot; style=&quot;width:300%&quot;&gt;
+        &lt;li&gt;内容1&lt;/li&gt;
+        &lt;li&gt;内容2&lt;/li&gt;
+        &lt;li&gt;内容3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab2&quot;&gt;
     &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
         &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
         &lt;li&gt;全部表情&lt;/li&gt;
@@ -4906,7 +4942,7 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
           <div class="module-tags">
             <span class="example module-tags">Example</span>
             <a class="copy doc-copy-code-btn" data-clipboard-text="
-&lt;div class=&quot;ui-slider&quot;&gt;
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider1&quot;&gt;
     &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
@@ -4914,12 +4950,18 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
     &lt;/ul&gt;
 &lt;/div&gt;
 内容
-
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider2&quot;&gt;
+    &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 
         ">Copy</a>
           </div>
           <div class="frozen-module-dom"><div class="dom-content">
-            <div class="ui-slider">
+            <div class="ui-slider" id="slider1">
                 <ul class="ui-slider-content" style="width: 300%">
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
@@ -4927,11 +4969,17 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
                 </ul>
             </div>
             内容
-
+            <div class="ui-slider" id="slider2">
+                <ul class="ui-slider-content" style="width: 300%">
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                </ul>
+            </div>
             
         </div></div>
           <pre class="frozen-module-code"><code class="html">
-&lt;div class=&quot;ui-slider&quot;&gt;
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider1&quot;&gt;
     &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
@@ -4939,7 +4987,13 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
     &lt;/ul&gt;
 &lt;/div&gt;
 内容
-
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider2&quot;&gt;
+    &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 
         </code></pre>
         </div>
