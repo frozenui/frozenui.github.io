@@ -8,6 +8,7 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
     width: 126px;
   }
   .content .caselist {
+    width: 1180px;
     margin: 0 auto;
   }
   
@@ -18,6 +19,11 @@ body,div,dl,dt,dd,ul,ol,li,h1,h2,h3,h4,h5,h6,pre,code,form,fieldset,legend,input
 
 
 @media screen and (max-width:1260px) {
+  .content .caselist {
+    width: auto;
+    margin-right: -20px;
+  }
+  
   .content .item:nth-child(3n) {
       margin-right: 20px;
   }
