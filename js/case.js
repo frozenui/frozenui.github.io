@@ -28,7 +28,7 @@
     //获取菜单
     $.ajax({
         type: "POST",
-        url: "http://61.142.65.166/frozen_case/Home/Index/getCategory",
+        url: "http://61.142.65.166/frozen_case/index.php/Home/Index/getCategory",
         dataType: 'json',
         timeout: 9999999
     })
