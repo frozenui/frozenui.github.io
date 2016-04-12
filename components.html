@@ -8,6 +8,7 @@
     <meta name="keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js"/>
     <meta name="description" content="专注于移动web的UI框架，基于腾讯手机QQ规范"/>
     <meta name="author" content="Tencent.com"/>
+    <meta name="baidu-site-verification" content="pHwErTapFr" />
     <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
     <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
     <script src="http://frozenui.github.io/frozenui/lib/zepto.min.js"></script>
@@ -35,7 +36,7 @@
                     <li><a href="base.html">基础组件</a></li>
                     <li><a href="components.html">UI 组件</a></li>
                     <li><a href="http://frozenui.github.io/frozenjs/">JS 插件</a></li>
-                    <li><a href="case.html" target="_blank">动效库</a></li>
+                    <li><a href="case.html">动效库</a></li>
                     <li><a href="customize.html">下载</a></li>
                     <li><a href="/frozenui/demo/index.html">Demo</a></li>
                     <li><a href="https://github.com/frozenui/frozenui">GitHub</a></li>
@@ -3643,6 +3644,57 @@
     <div class="frozen-module">
         <div class="frozen-module-head">
           <h2 class="frozen-module-title">
+            默认
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;table class=&quot;ui-table ui-border-tb&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;已购买&lt;/th&gt;&lt;th&gt;状态&lt;/th&gt;&lt;th&gt;会员到期时间&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;2014257777&lt;/td&gt;&lt;td&gt;使用中&lt;/td&gt;&lt;td&gt;2016-02-06&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;2014257777&lt;/td&gt;&lt;td&gt;待付款&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#&quot;&gt;付款&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;2014257777&lt;/td&gt;&lt;td class=&quot;ui-border-r&quot;&gt;待付款&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        ">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <table class="ui-table ui-border-tb">
+                <thead>
+                <tr><th>已购买</th><th>状态</th><th>会员到期时间</th></tr>
+                </thead>
+                <tbody>
+                <tr><td>2014257777</td><td>使用中</td><td>2016-02-06</td></tr>
+                <tr><td>2014257777</td><td>待付款</td><td><a href="#">付款</a></td></tr>
+                <tr><td>2014257777</td><td class="ui-border-r">待付款</td></tr>
+                </tbody>
+            </table>
+        </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;table class=&quot;ui-table ui-border-tb&quot;&gt;
+    &lt;thead&gt;
+    &lt;tr&gt;&lt;th&gt;已购买&lt;/th&gt;&lt;th&gt;状态&lt;/th&gt;&lt;th&gt;会员到期时间&lt;/th&gt;&lt;/tr&gt;
+    &lt;/thead&gt;
+    &lt;tbody&gt;
+    &lt;tr&gt;&lt;td&gt;2014257777&lt;/td&gt;&lt;td&gt;使用中&lt;/td&gt;&lt;td&gt;2016-02-06&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;2014257777&lt;/td&gt;&lt;td&gt;待付款&lt;/td&gt;&lt;td&gt;&lt;a href=&quot;#&quot;&gt;付款&lt;/a&gt;&lt;/td&gt;&lt;/tr&gt;
+    &lt;tr&gt;&lt;td&gt;2014257777&lt;/td&gt;&lt;td class=&quot;ui-border-r&quot;&gt;待付款&lt;/td&gt;&lt;/tr&gt;
+    &lt;/tbody&gt;
+&lt;/table&gt;
+        </code></pre>
+        </div>
+    </div>
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
             全框
             
           </h2>
@@ -4783,7 +4835,19 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
           <div class="module-tags">
             <span class="example module-tags">Example</span>
             <a class="copy doc-copy-code-btn" data-clipboard-text="
-&lt;div class=&quot;ui-tab&quot;&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab1&quot;&gt;
+    &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
+        &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
+        &lt;li&gt;全部表情&lt;/li&gt;
+        &lt;li&gt;表情&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;ui-tab-content&quot; style=&quot;width:300%&quot;&gt;
+        &lt;li&gt;内容1&lt;/li&gt;
+        &lt;li&gt;内容2&lt;/li&gt;
+        &lt;li&gt;内容3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab2&quot;&gt;
     &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
         &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
         &lt;li&gt;全部表情&lt;/li&gt;
@@ -4798,7 +4862,19 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
 		">Copy</a>
           </div>
           <div class="frozen-module-dom"><div class="dom-content">
-			<div class="ui-tab">
+			<div class="ui-tab" id="tab1">
+			    <ul class="ui-tab-nav ui-border-b">
+			        <li class="current">热门推荐</li>
+			        <li>全部表情</li>
+			        <li>表情</li>
+			    </ul>
+			    <ul class="ui-tab-content" style="width:300%">
+			        <li>内容1</li>
+			        <li>内容2</li>
+			        <li>内容3</li>
+			    </ul>
+			</div>
+			<div class="ui-tab" id="tab2">
 			    <ul class="ui-tab-nav ui-border-b">
 			        <li class="current">热门推荐</li>
 			        <li>全部表情</li>
@@ -4812,7 +4888,19 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
 			</div>
 		</div></div>
           <pre class="frozen-module-code"><code class="html">
-&lt;div class=&quot;ui-tab&quot;&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab1&quot;&gt;
+    &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
+        &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
+        &lt;li&gt;全部表情&lt;/li&gt;
+        &lt;li&gt;表情&lt;/li&gt;
+    &lt;/ul&gt;
+    &lt;ul class=&quot;ui-tab-content&quot; style=&quot;width:300%&quot;&gt;
+        &lt;li&gt;内容1&lt;/li&gt;
+        &lt;li&gt;内容2&lt;/li&gt;
+        &lt;li&gt;内容3&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tab&quot; id=&quot;tab2&quot;&gt;
     &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
         &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
         &lt;li&gt;全部表情&lt;/li&gt;
@@ -4855,7 +4943,7 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
           <div class="module-tags">
             <span class="example module-tags">Example</span>
             <a class="copy doc-copy-code-btn" data-clipboard-text="
-&lt;div class=&quot;ui-slider&quot;&gt;
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider1&quot;&gt;
     &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
@@ -4863,12 +4951,18 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
     &lt;/ul&gt;
 &lt;/div&gt;
 内容
-
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider2&quot;&gt;
+    &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 
         ">Copy</a>
           </div>
           <div class="frozen-module-dom"><div class="dom-content">
-            <div class="ui-slider">
+            <div class="ui-slider" id="slider1">
                 <ul class="ui-slider-content" style="width: 300%">
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
                     <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
@@ -4876,11 +4970,17 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
                 </ul>
             </div>
             内容
-
+            <div class="ui-slider" id="slider2">
+                <ul class="ui-slider-content" style="width: 300%">
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                    <li><span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span></li>
+                </ul>
+            </div>
             
         </div></div>
           <pre class="frozen-module-code"><code class="html">
-&lt;div class=&quot;ui-slider&quot;&gt;
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider1&quot;&gt;
     &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
         &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
@@ -4888,7 +4988,13 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
     &lt;/ul&gt;
 &lt;/div&gt;
 内容
-
+&lt;div class=&quot;ui-slider&quot; id=&quot;slider2&quot;&gt;
+    &lt;ul class=&quot;ui-slider-content&quot; style=&quot;width: 300%&quot;&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+        &lt;li&gt;&lt;span style=&quot;background-image:url(http://placeholder.qiniudn.com/640x200)&quot;&gt;&lt;/span&gt;&lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
 
         </code></pre>
         </div>
@@ -6752,7 +6858,7 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
                       <a href="">GitHub</a> • <a href="">nico</a> • <a href="">Issues</a> • <a href="">QQVIP FD Team</a>
                   </div>
                   <div class="copyright">
-                      ISUX VAS UI Team  （腾讯社交用户体验设计 － 增值UI开发团队）
+                      © 2015  QQVIP FD Team
                   </div>
               </div>
 
@@ -6767,9 +6873,8 @@ $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
     
     
 
-    <script src="http://frozenui.github.io/static/sea-modules/seajs/seajs/2.2.1/sea.js"></script>
-    <script src="http://frozenui.github.io/static/jquery.js"></script>
-    <script src="http://frozenui.github.io/frozenui/lib/zepto.min.js"></script>
+    <script src="js/sea.js"></script>
+    <script src="js/jquery.js"></script>
     <script src="libs/highlight/highlight.pack.js"></script>
     <script src="libs/zeroclipboard/dist/ZeroClipboard.min.js"></script>
     <script src="libs/jquery-qrcode/jquery.qrcode.min.js"></script>
