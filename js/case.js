@@ -28,7 +28,7 @@
     //获取菜单
     $.ajax({
         type: "POST",
-        url: "http://61.142.65.166/frozen_case/index.php/Home/Index/getCategory",
+        url: "http://113.106.16.229/frozen_case/index.php/Home/Index/getCategory",
         dataType: 'json',
         timeout: 9999999
     })
@@ -67,7 +67,7 @@
       var maxnum =  oncenum;
       $.ajax({
          type: "POST",
-         url: "http://61.142.65.166/frozen_case/index.php/Home/Index/getData",
+         url: "http://113.106.16.229/frozen_case/index.php/Home/Index/getData",
          dataType: 'json',
          timeout: 9999999,
          data: {
