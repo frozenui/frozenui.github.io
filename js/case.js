@@ -86,7 +86,7 @@
             for(var i=0; i<j; i++){
             var imgname = datalist[i].thumb.split(",");
             if(datalist[i].imgPath == undefined){
-              datalist[i].imgPath ='http://61.142.65.166/frozen_case/Public/';
+              datalist[i].imgPath ='http://113.106.16.229/frozen_case/Public/';
             }
             $(".caselist").append('<div class="item"><div class="thumb"><a class="case-link" target="_blank" href="'+datalist[i].url+'"><img src="'+datalist[i].imgPath+imgname[0]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[1]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[2]+'.jpg" alt=""><div class="qr"></div><div class="mask"></div></a></div><div class="meta"><div class="title"><a href="'+datalist[i].url+'" target="_blank">'+datalist[i].title+'</a><span class="author"><a target="_blank" href="'+datalist[i].homepage+'"><i></i>'+datalist[i].name+'</a></span></div><div class="desc">'+datalist[i].description+'</div></div></div>');
         }
