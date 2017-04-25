@@ -10,7 +10,7 @@
     });
     var cname;
     var number;
-    var oncenum = 9;//设置每次加载值
+    var oncenum = 12;//设置每次加载值
     //生成二维码
     function initCaseQrcode(element) {
         $(element).each(function(index, el) {
