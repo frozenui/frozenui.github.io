@@ -41,6 +41,7 @@ body{
   position: absolute;
   top: 20px;
   width: 220px;
+  float: left;
 }
 
 a, a:link {
@@ -202,7 +203,7 @@ li.side-highlight {
   border-right-color: transparent;
   left: 50%;
   margin-left: -5px;
-  top: -7px;	
+  top: -7px;
 }
 
 
@@ -250,7 +251,7 @@ li.side-highlight {
   height: 100px;
   width: 103px;
   text-align: center;
-  
+
 }
 .icon-lists li i{
     font-size: 32px;
@@ -287,7 +288,7 @@ li.side-highlight {
 .test-img {
     width: 50px;
     height: 50px;
-    background: #777; 
+    background: #777;
 }
 .ui-loading-block{
   position: absolute;
@@ -381,7 +382,7 @@ li.side-highlight {
     font-size: 20px;
     cursor: pointer;
     background-color: #fff;
-    
+
 }
 
 .customize .btn-download:hover {
