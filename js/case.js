@@ -36,7 +36,7 @@
         var category = data;
         var j= category.length;
         for(var i=0; i<j; i++){
-            $("#menu").append('<li><a href="#">'+decodeURIComponent(category[i].name)+'</a></li>');
+            $("#menu").append('<li><a href="#">'+decodeURIComponent(category[i].name.toString())+'</a></li>');
         }
     })
     .fail(function() {
