@@ -36,7 +36,7 @@
         var category = data;
         var j= category.length;
         for(var i=0; i<j; i++){
-            $("#menu").append('<li><a href="#">'+decodeURIComponent(category[i].name.toString())+'</a></li>');
+            $("#menu").append('<li><a href="#">'+category[i].name+'</a></li>');
         }
     })
     .fail(function() {
@@ -81,7 +81,7 @@
             if(datalist[i].imgPath == undefined){
               datalist[i].imgPath ='http://119.29.8.64/frozen_case/Public/';
             }
-            $(".caselist").append('<div class="item"><div class="thumb"><a class="case-link" target="_blank" href="'+datalist[i].url+'"><img src="'+datalist[i].imgPath+imgname[0]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[1]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[2]+'.jpg" alt=""><div class="qr"></div><div class="mask"></div></a></div><div class="meta"><div class="title"><a href="'+datalist[i].url+'" target="_blank">'+decodeURIComponent(datalist[i].title)+'</a><span class="author"><a target="_blank" href="'+datalist[i].homepage+'"><i></i>'+decodeURIComponent(datalist[i].name)+'</a></span></div><div class="desc">'+decodeURIComponent(datalist[i].description)+'</div></div></div>');
+            $(".caselist").append('<div class="item"><div class="thumb"><a class="case-link" target="_blank" href="'+datalist[i].url+'"><img src="'+datalist[i].imgPath+imgname[0]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[1]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[2]+'.jpg" alt=""><div class="qr"></div><div class="mask"></div></a></div><div class="meta"><div class="title"><a href="'+datalist[i].url+'" target="_blank">'+datalist[i].title+'</a><span class="author"><a target="_blank" href="'+datalist[i].homepage+'"><i></i>'+datalist[i].name+'</a></span></div><div class="desc">'+datalist[i].description+'</div></div></div>');
         }
         var qrlen =  $(".qr").length;
         for(var k = 0; k<qrlen; k++){
