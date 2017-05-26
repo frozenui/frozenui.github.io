@@ -67,17 +67,12 @@
       var maxnum =  oncenum;
       $.ajax({
          type: "POST",
-         url: "http://123.207.7.55/frozen_case/index.php/Home/Index/getData",
+         url: "http://119.29.8.64/vipstyle/web/case/getData.json",
          dataType: 'json',
-         timeout: 9999999,
-         data: {
-         'page':num,
-         'num': maxnum,
-         'category': name
-         }
+         timeout: 9999999
       })
     .done(function(data) {
-        if(data.length == 1 && JSON.stringify(data[0]).indexOf("thumb") == -1){//没有数据
+        if(data.length == 1 && JSON.stringify(data[0]).indexOf("thumb") == -1){  //没有数据
             $("#none").css("display","block");
         }
         else{//有数据
@@ -86,7 +81,7 @@
             for(var i=0; i<j; i++){
             var imgname = datalist[i].thumb.split(",");
             if(datalist[i].imgPath == undefined){
-              datalist[i].imgPath ='http://123.207.7.55/frozen_case/Public/';
+              datalist[i].imgPath ='http://119.29.8.64/frozen_case/Public/';
             }
             $(".caselist").append('<div class="item"><div class="thumb"><a class="case-link" target="_blank" href="'+datalist[i].url+'"><img src="'+datalist[i].imgPath+imgname[0]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[1]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[2]+'.jpg" alt=""><div class="qr"></div><div class="mask"></div></a></div><div class="meta"><div class="title"><a href="'+datalist[i].url+'" target="_blank">'+datalist[i].title+'</a><span class="author"><a target="_blank" href="'+datalist[i].homepage+'"><i></i>'+datalist[i].name+'</a></span></div><div class="desc">'+datalist[i].description+'</div></div></div>');
         }
@@ -123,30 +118,30 @@
 
     // 滚动至底部加载更多
 
-    $(window).scroll(function () {
-        var scrollTop = $(this).scrollTop();
-        var scrollHeight = $(document).height();
-        var windowHeight = $(this).height();
+//     $(window).scroll(function () {
+//         var scrollTop = $(this).scrollTop();
+//         var scrollHeight = $(document).height();
+//         var windowHeight = $(this).height();
 
-        function getMoreData() {
-          if (scrollTop + windowHeight >= scrollHeight) {
-             var k = $(".caselist .item").length;
-             if(k%oncenum > 0){
-                 $("#none").css("display","block");
-             }
-             else{
-                 $(".load-more span").text('Load more...');
-                 var mname = $(".current a").text();
-                 var mnum = parseInt(k/oncenum);
-                 if(mnum >= 1){
-                    mnum = mnum+1;
-                 }
-                 getData(mname, mnum);
-             }
-           }
-        }
+//         function getMoreData() {
+//           if (scrollTop + windowHeight >= scrollHeight) {
+//              var k = $(".caselist .item").length;
+//              if(k%oncenum > 0){
+//                  $("#none").css("display","block");
+//              }
+//              else{
+//                  $(".load-more span").text('Load more...');
+//                  var mname = $(".current a").text();
+//                  var mnum = parseInt(k/oncenum);
+//                  if(mnum >= 1){
+//                     mnum = mnum+1;
+//                  }
+//                  getData(mname, mnum);
+//              }
+//            }
+//         }
 
-        throttle(getMoreData, 500, this)
-    });
+//         throttle(getMoreData, 500, this)
+//     });
 
 })(jQuery);
