@@ -81,7 +81,8 @@
                if(datalist[i].imgPath == undefined){
                   datalist[i].imgPath ='http://119.29.8.64/vipstyle/web/case/img/';
                }
-               if (datalist[i].category.indexOf(name) != -1 || name == "") {
+               console.log(datalist[i].category, name)
+               if (name == "" || datalist[i].category.indexOf(name) != -1) {
                   $(".caselist").append('<div class="item"><div class="thumb"><a class="case-link" target="_blank" href="'+datalist[i].url+'"><img src="'+datalist[i].imgPath+imgname[0]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[1]+'.jpg" alt=""><img src="'+datalist[i].imgPath+imgname[2]+'.jpg" alt=""><div class="qr"></div><div class="mask"></div></a></div><div class="meta"><div class="title"><a href="'+datalist[i].url+'" target="_blank">'+datalist[i].title+'</a><span class="author"><a target="_blank" href="'+datalist[i].homepage+'"><i></i>'+datalist[i].name+'</a></span></div><div class="desc">'+datalist[i].description+'</div></div></div>');
                }
             }
