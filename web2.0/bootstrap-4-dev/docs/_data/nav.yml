@@ -1,4 +1,4 @@
-- title: Getting started
+- title: 快速开始
   pages:
     - title: Introduction
     - title: Download
@@ -10,45 +10,20 @@
     - title: Best practices
     - title: Accessibility
 
-- title: Layout
-  pages:
-    - title: Overview
-    - title: Grid
-    - title: Media object
-    - title: Utilities for layout
-
-- title: Content
-  pages:
-    - title: Reboot
-    - title: Typography
-    - title: Code
-    - title: Images
-    - title: Tables
-    - title: Figures
 
 - title: Components
   pages:
-    - title: Alerts
-    - title: Badge
-    - title: Breadcrumb
-    - title: Buttons
-    - title: Button group
-    - title: Card
-    - title: Carousel
-    - title: Collapse
-    - title: Dropdowns
-    - title: Forms
-    - title: Input group
-    - title: Jumbotron
-    - title: List group
-    - title: Modal
-    - title: Navs
-    - title: Navbar
-    - title: Pagination
-    - title: Popovers
-    - title: Progress
-    - title: Scrollspy
-    - title: Tooltips
+    - title: 按钮 ui-btn
+    - title: 面板 ui-panel
+    - title: 信息流 ui-feeds
+    - title: 列表 ui-list
+    - title: 提示 
+    - title: 表格 
+    - title: 选项卡
+    - title: 角标
+    - title: 菜单
+    - title: 表单
+    - title: 网格
 
 - title: Utilities
   pages:
