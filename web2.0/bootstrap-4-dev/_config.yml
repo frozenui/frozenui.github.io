@@ -11,7 +11,7 @@ permalink:        pretty
 # Server
 source:           docs
 destination:      _gh_pages
-host:             0.0.0.0
+host:             localhost
 port:             9001
 baseurl:          ""
 url:              https://v4-alpha.getbootstrap.com
@@ -31,7 +31,7 @@ social_logo_path: /assets/brand/bootstrap-social-logo.png
 social_image_path: /assets/brand/bootstrap-social.png
 
 # Custom vars
-current_version:  4.0.0-alpha.6
+current_version:  2.0.0
 repo:             https://github.com/twbs/bootstrap
 slack:            https://bootstrap-slack.herokuapp.com
 

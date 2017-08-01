@@ -24,7 +24,7 @@
     <div class="collapse navbar-collapse" id="bd-main-nav">
       <ul class="nav navbar-nav">
         <li class="nav-item active">
-          <a class="nav-item nav-link {% if page.layout == "home" %}active{% endif %}" href="{{ site.baseurl }}/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">FrozneUI</a>
+          <a class="nav-item nav-link {% if page.layout == "home" %}active{% endif %}" href="{{ site.baseurl }}/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">首页</a>
         </li>
         <li class="nav-item">
           <a class="nav-item nav-link {% if page.layout == "docs" %}active{% endif %}" href="{{ site.baseurl }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">快速开始</a>
@@ -33,12 +33,18 @@
           <a class="nav-item nav-link {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/components/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">UI组件</a>
         </li>
         <li class="nav-item">
+          <a class="nav-item nav-link {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/components/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">扩展方法</a>
+        </li>
+        <li class="nav-item">
           <a class="nav-item nav-link" href="{{ site.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">动效库</a>
         </li>
          <li class="nav-item">
           <a class="nav-item nav-link" href="{{ site.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">GitHub</a>
         </li>
       </ul>
+      <!-- <ul class="nav navbar-nav">
+        <li><a href="" target="_blank">QQ群：427632094</a></li>
+      </ul> -->
     </div>
   </nav>
 </header>
