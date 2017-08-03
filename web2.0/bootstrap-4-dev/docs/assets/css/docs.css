@@ -1696,3 +1696,50 @@ body {
   display: inline-block;
   margin-top: 60px;
 }
+
+*:focus {
+  outline: 0 !important;
+}
+
+.bd-example {
+  background: #fff;
+}
+
+.ui-loading-block {
+  position: relative;
+}
+
+.ui-notice {
+  position: relative;
+}
+
+.ui-tooltips-action {
+  position: relative;
+}
+
+.ui-btn-s {
+  overflow: visible;
+}
+
+.ui-dialog {
+  position: relative;
+  padding: 80px 0;
+}
+
+.ui-dialog button {
+  overflow: visible;
+}
+
+.ui-col {
+  padding: 5px;
+  background: #777;
+  text-align: center;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  border: 1px solid #ddd;
+}
+
+.ui-row-flex-ver {
+  border: 1px solid #ddd;
+  min-height: 100px;
+}
