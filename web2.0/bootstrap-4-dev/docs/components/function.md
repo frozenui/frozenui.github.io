@@ -1,9 +1,9 @@
 ---
 layout: docs
 title: 扩展方法
-description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
-group: components
-redirect_from: "/components/"
+description: 专注于移动web的UI框架，基于腾讯手机QQ规范.
+group: function
+redirect_from: ""
 ---
 ## 基础函数
 

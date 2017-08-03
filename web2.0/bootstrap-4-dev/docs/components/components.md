@@ -1,9 +1,9 @@
 ---
 layout: docs
 title: UI组件
-description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
+description: 专注于移动web的UI框架，基于腾讯手机QQ规范.
 group: components
-redirect_from: "/components/"
+redirect_from: ""
 ---
 ## UI组件
 
