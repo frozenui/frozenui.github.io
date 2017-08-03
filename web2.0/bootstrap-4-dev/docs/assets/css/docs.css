@@ -40,6 +40,7 @@
 
 .bd-navbar .navbar-nav .nav-link {
   color: rgba(255, 255, 255, 0.75);
+  margin-right: 10px;
 }
 
 .bd-navbar .navbar-nav .nav-link.active, .bd-navbar .navbar-nav .nav-link:hover, .bd-navbar .navbar-nav .nav-link:focus {
