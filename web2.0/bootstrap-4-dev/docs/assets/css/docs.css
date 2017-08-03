@@ -1210,6 +1210,8 @@ body {
 .logo-frozenui {
   color: #fff;
   margin-right: 20px; }
+  .logo-frozenui:hover {
+    color: rgba(255, 255, 255, 0.9); }
 
 .logo-img {
   width: 110px;
@@ -1220,7 +1222,11 @@ body {
   border-color: white;
   color: white;
   font-weight: normal;
-  padding: .6rem 1.2rem; }
+  padding: .5rem 1.2rem;
+  width: 11rem;
+  margin-right: 1rem;
+  margin-bottom: 20px;
+  cursor: pointer; }
   .bd-masthead .btn-download:hover {
     color: white;
     border-color: white;
@@ -1236,7 +1242,7 @@ body {
     margin-top: 60px; }
 
 *:focus {
-  outline: 0; }
+  outline: 0 !important; }
 
 .bd-example {
   background: #fff; }
