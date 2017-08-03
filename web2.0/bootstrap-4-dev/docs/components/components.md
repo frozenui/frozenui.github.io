@@ -3,7 +3,7 @@ layout: docs
 title: UI组件
 description: 专注于移动web的UI框架，基于腾讯手机QQ规范.
 group: components
-redirect_from: ""
+redirect_from: "/components/"
 ---
 ## UI组件
 

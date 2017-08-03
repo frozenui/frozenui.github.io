@@ -3,9 +3,6 @@ layout: simple
 title: 快速开始
 description:
 redirect_from:
-  - /docs/4.0/getting-started/
-  - /docs/4.0/
-  - /docs/
 toc: true
 ---
 

@@ -3,7 +3,7 @@ layout: docs
 title: 扩展方法
 description: 专注于移动web的UI框架，基于腾讯手机QQ规范.
 group: function
-redirect_from: ""
+redirect_from: "/function/"
 ---
 ## 基础函数
 
