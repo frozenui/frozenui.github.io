@@ -11,14 +11,14 @@
     - title: Accessibility
 
 
-- title: Components
+- title: UI组件
   pages:
     - title: 按钮 ui-btn
     - title: 面板 ui-panel
     - title: 信息流 ui-feeds
     - title: 列表 ui-list
-    - title: 提示 
-    - title: 表格 
+    - title: 提示
+    - title: 表格
     - title: 选项卡
     - title: 角标
     - title: 菜单

@@ -24,25 +24,25 @@
     <div class="collapse navbar-collapse" id="bd-main-nav">
       <ul class="nav navbar-nav">
         <li class="nav-item active">
-          <a class="nav-item nav-link {% if page.layout == "home" %}active{% endif %}" href="{{ site.baseurl }}/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Bootstrap');">首页</a>
+          <a class="nav-item nav-link {% if page.layout == "home" %}active{% endif %}" href="{{ site.baseurl }}/">首页</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link {% if page.layout == "docs" %}active{% endif %}" href="{{ site.baseurl }}/getting-started/introduction/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Docs');">快速开始</a>
+          <a class="nav-item nav-link {% if page.layout == "simple" %}active{% endif %}" href="{{ site.baseurl }}/getting-started">快速开始</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/components/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'ui');">UI组件</a>
+          <a class="nav-item nav-link {% if page.title == "UI组件" %}active{% endif %}" href="{{ site.baseurl }}/components/components">UI组件</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/components/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Examples');">扩展方法</a>
+          <a class="nav-item nav-link {% if page.title == "扩展方法" %}active{% endif %}" href="{{ site.baseurl }}/components/function">扩展方法</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link {% if page.title == "Examples" %}active{% endif %}" href="{{ site.baseurl }}/components/" onclick="ga('send', 'event', 'Navbar', 'Community links', 'demo');">DEMO</a>
+          <a class="nav-item nav-link" target="_blank" href="http://frozenui.github.io/frozenui/demo/index.html">DEMO</a>
         </li>
         <li class="nav-item">
-          <a class="nav-item nav-link" href="{{ site.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">精彩H5</a>
+          <a class="nav-item nav-link" target="_blank" href="{{ site.themes }}">精彩H5</a>
         </li>
          <li class="nav-item">
-          <a class="nav-item nav-link" href="{{ site.themes }}" onclick="ga('send', 'event', 'Navbar', 'Community links', 'Themes');">GitHub</a>
+          <a class="nav-item nav-link" target="_blank" href="{{ site.repo }}">GitHub</a>
         </li>
       </ul>
     </div>

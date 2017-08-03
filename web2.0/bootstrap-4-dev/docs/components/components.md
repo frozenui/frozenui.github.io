@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Buttons
+title: UI组件
 description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 group: components
 redirect_from: "/components/"

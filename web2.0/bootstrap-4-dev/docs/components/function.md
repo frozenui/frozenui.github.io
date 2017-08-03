@@ -1,6 +1,6 @@
 ---
 layout: docs
-title: Buttons
+title: 扩展方法
 description: Use Bootstrap's custom button styles for actions in forms, dialogs, and more with support for multiple sizes, states, and more.
 group: components
 redirect_from: "/components/"
@@ -13,7 +13,7 @@ redirect_from: "/components/"
 <!-- ## Examples -->
 ## 1px线
 
-{% example html %} 
+{% example html %}
   <ul class="ui-list-text border-list">
     <li class="ui-border-t">上边框</li>
     <li class="ui-border">边框</li>
@@ -87,7 +87,7 @@ redirect_from: "/components/"
     <p class="ui-txt-justify-one">一行文本</p>
     <p class="ui-txt-justify">普通的多行文本内容：在首个《进击的巨人》预热视频中只是描述了一个巨人恰好拿起一人准备放进嘴巴里面，而另个场景则是超大型巨人附着浓重的烟雾将巨手拍下来。将于今年8月1日上映。</p>
 </div>
-      
+
 {% endexample %}
 
 
@@ -96,8 +96,5 @@ redirect_from: "/components/"
 <div class="ui-nowrap ui-whitespace">
     一行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
 </div>
-       
+
 {% endexample %}
-
-
-
