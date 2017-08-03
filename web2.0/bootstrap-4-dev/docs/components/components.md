@@ -13,7 +13,7 @@ redirect_from: "/components/"
 <!-- ## Examples -->
 ## 1.短按钮:
 
-{% example html %} 
+{% example html %}
   <button class="ui-btn">确定</button>
   <button class="ui-btn ui-btn-primary">确定</button>
   <button class="ui-btn ui-btn-danger">确定</button>
@@ -28,11 +28,11 @@ redirect_from: "/components/"
 <button class="ui-btn-lg">确定</button>
 
 <button class="ui-btn-lg ui-btn-primary">确定</button>
-       
+
 <button class="ui-btn-lg ui-btn-danger">确定</button>
-      
+
 <button class="ui-btn-lg disabled">取消</button>
-           
+
 <button class="ui-btn-highlight ui-btn-lg">取消</button>
 {% endexample %}
 
@@ -130,7 +130,7 @@ redirect_from: "/components/"
 ## 1.文字提示（带标题）
 
 {% example html %}
-	<div class="ui-dialog">
+	<div class="ui-dialog show">
 	    <div class="ui-dialog-cnt">
 	        <div class="ui-dialog-bd">
 	            <h4>下线通知</h4>
@@ -148,7 +148,7 @@ redirect_from: "/components/"
 ## 2.文字提示（不带标题）
 
 {% example html %}
-	<div class="ui-dialog">
+	<div class="ui-dialog show">
 	    <div class="ui-dialog-cnt">
 	        <div class="ui-dialog-bd">
 	            <h4>将终止文件发送，确定返回？</h4>
@@ -165,7 +165,7 @@ redirect_from: "/components/"
 ## 3.结构化消息提示
 
 {% example html %}
-	<div class="ui-dialog ui-dialog-function">
+	<div class="ui-dialog ui-dialog-function show">
 	    <div class="ui-dialog-cnt">
 	        <div class="ui-dialog-bd">
 	            <h4>发送到 seame芝麻</h4>
@@ -192,7 +192,7 @@ redirect_from: "/components/"
 ## 4.运营提示(运营图展示类)
 
 {% example html %}
-	<div class="ui-dialog ui-dialog-operate">
+	<div class="ui-dialog ui-dialog-operate show">
 	    <div class="ui-dialog-cnt">
 	        <div class="ui-dialog-hd">
 	            <div class="ui-img">
@@ -215,7 +215,7 @@ redirect_from: "/components/"
 ## 5.运营提示(图标展示类)
 
 {% example html %}
-	<div class="ui-dialog ui-dialog-operate ui-dialog-operate-icon">
+	<div class="ui-dialog ui-dialog-operate ui-dialog-operate-icon show">
 	    <div class="ui-dialog-cnt">
 	        <div class="ui-dialog-hd">
 	            <div class="ui-img">
@@ -249,7 +249,7 @@ redirect_from: "/components/"
 
 ## 1.通用设置类输入框:
 
-{% example html %} 
+{% example html %}
 	<div class="ui-form ui-border-t">
 	    <form action="#">
 	        <div class="ui-form-item ui-border-b">
@@ -341,7 +341,7 @@ redirect_from: "/components/"
 ## 6.多选框
 {% example html %}
 <div class="demo-block">
-    <p> 
+    <p>
         <label class="ui-checkbox-s">
             <input type="checkbox" name="checkbox" checked="" />
         </label>
@@ -1090,4 +1090,3 @@ redirect_from: "/components/"
     </ul>
 </div>
 {% endexample %}
-
