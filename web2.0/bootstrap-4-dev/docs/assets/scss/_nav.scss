@@ -2,21 +2,26 @@
 // Main navbar
 //
 
+.navbar-toggler {
+    color: rgba(255,255,255,.5);
+    background: rgba(255,255,255,.1);
+    border: 1px solid rgba(255,255,255,.1);
+}
 .bd-navbar {
+    background: #0088cc;
   .navbar-nav {
     .nav-link {
-      color: $bd-graphite-light;
+      color: rgba(255,255,255,.75);
 
       &.active,
       &:hover,
       &:focus {
-        color: $gray-dark;
+        color: #fff;
         background-color: transparent;
       }
 
       &.active {
-        font-weight: 500;
-        color: darken($gray-dark, 15%);
+        color: #fff;
       }
     }
   }

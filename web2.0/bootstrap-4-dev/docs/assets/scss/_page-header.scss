@@ -1,20 +1,21 @@
 // scss-lint:disable ImportantRule
 
 .bd-pageheader {
-  padding: 2rem ($grid-gutter-width-base / 2);
+  padding: 1.5rem ($grid-gutter-width-base / 2);
   margin-bottom: 1.5rem;
   color: $bd-purple-light;
   text-align: center;
-  background-color: #52b6ec;
+  background-color: #0088cc;
 
   .container {
     position: relative;
   }
 
   h1 {
-    font-size: 3rem;
+    font-size: 2.5rem;
     font-weight: normal;
     color: #fff;
+    margin-bottom: .2rem;
   }
 
   p {
@@ -24,9 +25,9 @@
   }
 
   @include media-breakpoint-up(sm) {
-    padding-top: 4rem;
-    padding-bottom: 4rem;
-    margin-bottom: 3rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    margin-bottom: 2rem;
     text-align: left;
 
     .carbonad {
@@ -35,9 +36,9 @@
   }
 
   @include media-breakpoint-up(md) {
-    h1 {
-      font-size: 4rem;
-    }
+    // h1 {
+    //   font-size: 4rem;
+    // }
 
     p {
       font-size: 1.5rem;

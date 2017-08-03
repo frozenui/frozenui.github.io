@@ -5,7 +5,7 @@
   padding: 3rem ($grid-gutter-width-base / 2) 2rem;
   color: $bd-purple-light;
   text-align: center;
-  background-image: linear-gradient(135deg, darken($bd-purple, 20%), $bd-purple, lighten(saturate($bd-purple, 5%), 15%));
+  background-image: linear-gradient(180deg, $bd-purple, #01cfff);
 
   .bd-booticon {
     margin: 0 auto 2rem;
@@ -52,8 +52,8 @@
   }
 
   @include media-breakpoint-up(sm) {
-    padding-top: 8rem;
-    padding-bottom: 2rem;
+    padding-top: 5rem;
+    padding-bottom: 1rem;
 
     .btn {
       width: auto;
@@ -65,29 +65,29 @@
   }
 
   @include media-breakpoint-up(md) {
-    padding-bottom: 4rem;
+    padding-bottom: 2.5rem;
 
     .bd-header {
-      margin-bottom: 4rem;
+      margin-bottom: 2.5rem;
     }
 
     h1 {
-      font-size: 4rem;
+      font-size: 3rem;
     }
 
     .lead {
-      font-size: 1.5rem;
+      font-size: 1.2rem;
     }
 
     .carbonad {
-      margin-top: 3rem !important;
+      margin-top: 2rem !important;
     }
   }
 
   @include media-breakpoint-up(lg) {
     .lead {
       width: 85%;
-      font-size: 2rem;
+      font-size: 1.8rem;
     }
   }
 }

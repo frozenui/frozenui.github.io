@@ -46,10 +46,10 @@
   width: 6rem;
   margin: 2.5rem auto;
 
-  @include media-breakpoint-up(sm) {
-    margin-right: 0;
-    margin-left: 0;
-  }
+  // @include media-breakpoint-up(sm) {
+  //   margin-right: 0;
+  //   margin-left: 0;
+  // }
 }
 .bd-featurette h4 {
   margin-top: 1rem;
