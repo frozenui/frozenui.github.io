@@ -245,6 +245,209 @@ redirect_from: "/components/"
     </div>
 {% endexample %}
 
+## 2.信息流(两图)
+
+{% example html %}
+  <div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+## 3.信息流(三图)
+
+{% example html %}
+  <div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+## 4.信息流(四图)
+
+{% example html %}
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+## 5.信息流(五图)
+
+{% example html %}
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+## 6.信息流(六图)
+
+{% example html %}
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+## 7.信息流(七图)
+
+{% example html %}
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+## 8.信息流(八图)
+
+{% example html %}
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+## 9.信息流(九图)
+
+{% example html %}
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
 
 
 ## 1.通用设置类输入框:
