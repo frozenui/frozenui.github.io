@@ -73,6 +73,9 @@ body {
     color: #fff;
     margin-right: 20px;
     // font-size: 20px;
+    &:hover {
+        color: rgba(255,255,255,.9);
+    }
 }
 .logo-img {
     width: 110px;

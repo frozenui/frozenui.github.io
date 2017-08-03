@@ -1655,6 +1655,10 @@ body {
   margin-right: 20px;
 }
 
+.logo-frozenui:hover {
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .logo-img {
   width: 110px;
   height: 110px;
