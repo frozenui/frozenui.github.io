@@ -406,7 +406,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-## 输入框:
+## 输入框
 {% example html %}
 	<div class="ui-form ui-border-t">
 	    <form action="#">
@@ -1085,7 +1085,7 @@ redirect_from: "/components/"
 
 
 <!-- ## Examples -->
-## 角标:
+## 角标
 
 {% example html %}
 <ul class="ui-grid-halve">
