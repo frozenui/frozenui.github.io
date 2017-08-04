@@ -1739,6 +1739,10 @@ body {
   min-height: 100px;
 }
 
+.bd-content {
+  margin-bottom: 50px;
+}
+
 .bd-content h2 {
   padding-bottom: 9px;
   margin: 40px 0 20px;
