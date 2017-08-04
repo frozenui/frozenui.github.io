@@ -157,3 +157,16 @@ body {
         font-size: 26px;
     }
 }
+#markdown-toc {
+    li {
+        a{
+            color: #777;
+            font-size: 14px;
+        }
+        &.acticve {
+            a {
+                color: #12B7F5;
+            }
+        }
+    }
+}

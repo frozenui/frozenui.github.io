@@ -1749,3 +1749,12 @@ body {
   border-bottom: 1px solid #eee;
   font-size: 26px;
 }
+
+#markdown-toc li a {
+  color: #777;
+  font-size: 14px;
+}
+
+#markdown-toc li.acticve a {
+  color: #12B7F5;
+}
