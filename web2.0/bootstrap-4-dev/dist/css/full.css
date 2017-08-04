@@ -507,7 +507,9 @@ h6,
         -webkit-transform: scaleY(0.3333)
     }
 }
-
+.ui-border{
+    position: relative;
+}
 .ui-border:before {
     content: "";
     width: 100%;
@@ -4916,6 +4918,10 @@ h6,
         background-image: none
     }
 }
-
+#markdown-toc{
+  position: fixed;
+  right: 200px;
+  top: 300px;
+}
 
 /*# sourceMappingURL=full.css.map */

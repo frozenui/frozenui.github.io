@@ -1,4 +1,4 @@
-- title: 快速开始
+- title: 
   pages:
     - title: Introduction
     - title: Download
@@ -11,12 +11,12 @@
     - title: Accessibility
 
 
-- title: UI组件
+- title: 
   pages:
-    - title: 按钮 ui-btn
-    - title: 面板 ui-panel
-    - title: 信息流 ui-feeds
-    - title: 列表 ui-list
+    - title: 按钮 
+    - title: 面板 
+    - title: 信息流 
+    - title: 列表 
     - title: 提示
     - title: 表格
     - title: 选项卡

@@ -5,24 +5,28 @@ description: 专注于移动web的UI框架，基于腾讯手机QQ规范.
 group: components
 redirect_from: "/components/"
 ---
-## UI组件
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
+## u
 
 <!-- ## Examples -->
-## 1.短按钮:
+## 按钮
 
 {% example html %}
-  <button class="ui-btn">确定</button>
+  <div class="demo">
+    <button class="ui-btn">确定</button>
+  </div>
+  <div class="demo">
   <button class="ui-btn ui-btn-primary">确定</button>
+  </div>
+  <div class="demo">
   <button class="ui-btn ui-btn-danger">确定</button>
+  </div>
+  <div class="demo">
   <button class="ui-btn ui-btn-highlight">确定</button>
+  </div>
 {% endexample %}
-
-
-<!-- ## Examples -->
-## 2.长按钮
 
 {% example html %}
 <button class="ui-btn-lg">确定</button>
@@ -36,8 +40,6 @@ redirect_from: "/components/"
 <button class="ui-btn-highlight ui-btn-lg">取消</button>
 {% endexample %}
 
-
-## 3.2/3按钮
 {% example html %}
 <button class="ui-btn-lg-nowhole">取消</button>
 <button class="ui-btn-lg-nowhole ui-btn-primary">取消</button>
@@ -45,7 +47,7 @@ redirect_from: "/components/"
 <button class="ui-btn-lg-nowhole ui-btn-danger disabled">取消</button>
 {% endexample %}
 
-## 菜单 actionsheet
+## 菜单
 
 {% example html %}
 	<div class="ui-actionsheet ">
@@ -61,8 +63,6 @@ redirect_from: "/components/"
 
 
 ## 提示
-## 1.提示:
-
 {% example html %}
 <div class="ui-tooltips">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -75,11 +75,7 @@ redirect_from: "/components/"
     </div>
 </div>
 {% endexample %}
-
-
 <!-- ## Examples -->
-## 2.警示提示
-
 {% example html %}
 <div class="ui-tooltips ui-tooltips-warn">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -92,10 +88,7 @@ redirect_from: "/components/"
     </div>
 </div>
 {% endexample %}
-
 <!-- ## Examples -->
-## 3.引导提示
-
 {% example html %}
 <div class="ui-tooltips ui-tooltips-guide">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -113,10 +106,7 @@ redirect_from: "/components/"
     </div>
 </div>
 {% endexample %}
-
 <!-- ## Examples -->
-## 4.底部引导条
-
 {% example html %}
 <div class="ui-tooltips ui-tooltips-guide ui-tooltips-action">
     <div class="ui-tooltips-cnt ui-border-b">
@@ -125,10 +115,8 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-
+## 弹窗
 <!--  -->
-## 1.文字提示（带标题）
-
 {% example html %}
 	<div class="ui-dialog show">
 	    <div class="ui-dialog-cnt">
@@ -145,8 +133,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 2.文字提示（不带标题）
-
 {% example html %}
 	<div class="ui-dialog show">
 	    <div class="ui-dialog-cnt">
@@ -162,8 +148,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 3.结构化消息提示
-
 {% example html %}
 	<div class="ui-dialog ui-dialog-function show">
 	    <div class="ui-dialog-cnt">
@@ -189,8 +173,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 4.运营提示(运营图展示类)
-
 {% example html %}
 	<div class="ui-dialog ui-dialog-operate show">
 	    <div class="ui-dialog-cnt">
@@ -212,7 +194,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 5.运营提示(图标展示类)
 
 {% example html %}
 	<div class="ui-dialog ui-dialog-operate ui-dialog-operate-icon show">
@@ -233,7 +214,7 @@ redirect_from: "/components/"
 	</div>
 {% endexample %}
 
-## 1.信息流
+## 信息流
 
 {% example html %}
 	<div class="ui-feeds">
@@ -245,8 +226,6 @@ redirect_from: "/components/"
     </div>
 {% endexample %}
 
-## 2.信息流(两图)
-
 {% example html %}
   <div class="ui-feeds">
     <ul>
@@ -260,8 +239,6 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-## 3.信息流(三图)
-
 {% example html %}
   <div class="ui-feeds">
     <ul>
@@ -278,8 +255,6 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-## 4.信息流(四图)
-
 {% example html %}
 <div class="ui-feeds">
     <ul>
@@ -298,8 +273,6 @@ redirect_from: "/components/"
     </ul>
 </div>
 {% endexample %}
-
-## 5.信息流(五图)
 
 {% example html %}
 <div class="ui-feeds">
@@ -322,8 +295,6 @@ redirect_from: "/components/"
     </ul>
 </div>
 {% endexample %}
-
-## 6.信息流(六图)
 
 {% example html %}
 <div class="ui-feeds">
@@ -349,8 +320,6 @@ redirect_from: "/components/"
     </ul>
 </div>
 {% endexample %}
-
-## 7.信息流(七图)
 
 {% example html %}
 <div class="ui-feeds">
@@ -379,8 +348,6 @@ redirect_from: "/components/"
     </ul>
 </div>
 {% endexample %}
-
-## 8.信息流(八图)
 
 {% example html %}
 <div class="ui-feeds">
@@ -412,8 +379,6 @@ redirect_from: "/components/"
     </ul>
 </div>
 {% endexample %}
-
-## 9.信息流(九图)
 
 {% example html %}
 <div class="ui-feeds">
@@ -449,9 +414,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-
-## 1.通用设置类输入框:
-
+## 输入框:
 {% example html %}
 	<div class="ui-form ui-border-t">
 	    <form action="#">
@@ -484,8 +447,6 @@ redirect_from: "/components/"
 
 
 <!-- ## Examples -->
-## 2.强引导类输入框
-
 {% example html %}
 <div class="demo-block">
     <section class="ui-input-wrap ui-border-t">
@@ -502,8 +463,6 @@ redirect_from: "/components/"
  </div>
 {% endexample %}
 
-
-## 3.表单开关项
 {% example html %}
 <form action="#">
     <div class="ui-form-item ui-form-item-switch ui-border-b">
@@ -517,7 +476,6 @@ redirect_from: "/components/"
 </form>
 {% endexample %}
 
-## 4.表单单选项
 {% example html %}
 <form action="#">
     <div class="ui-form-item ui-form-item-radio ui-border-b">
@@ -529,7 +487,6 @@ redirect_from: "/components/"
 </form>
 {% endexample %}
 
-## 5.表单多选项,普通列表中多选项
 {% example html %}
 <form action="#">
     <div class="ui-form-item ui-form-item-checkbox ui-border-b">
@@ -541,7 +498,6 @@ redirect_from: "/components/"
 </form>
 {% endexample %}
 
-## 6.多选框
 {% example html %}
 <div class="demo-block">
     <p>
@@ -553,7 +509,6 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-## 7.普通列表中单选项
 {% example html %}
 <ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
     <li class="ui-border-t">
@@ -571,7 +526,7 @@ redirect_from: "/components/"
 </ul>
 {% endexample %}
 
-## 1.网格(float网格适合多行)
+## 网格
 
 {% example html %}
 	<ul class="ui-row">
@@ -589,8 +544,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 2.flex网格
-
 {% example html %}
 	<div class="ui-row-flex ui-whitespace">
         <div class="ui-col ui-col">平均分</div>
@@ -617,8 +570,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 3.竖排flex网格
-
 {% example html %}
 	<div class="ui-row-flex ui-whitespace ui-row-flex-ver">
         <div class="ui-col">1/2</div>
@@ -627,8 +578,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 4.三列网格(无交界线)
-
 {% example html %}
 	<div class="ui-grid ui-grid-trisect">
               <ul class="ui-border-b">
@@ -677,8 +626,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 5.三列网格（有交界线）
-
 {% example html %}
 	<div class="ui-grid ui-grid-trisect">
       <ul class="ui-border-b">
@@ -727,8 +674,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 6.两列网格
-
 {% example html %}
 	<div class="ui-grid ui-grid-bisect">
                 <ul>
@@ -757,8 +702,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 7.两列文字网格
-
 {% example html %}
 	<div class="ui-grid ui-grid-bisect">
             <ul>
@@ -803,7 +746,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 8.banner位
+## banner位
 
 {% example html %}
 <div class="ui-img-banner">
@@ -812,7 +755,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 9.cover位
+## cover位
 
 {% example html %}
 <div class="ui-img-cover">
@@ -821,7 +764,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 10.2/3横排图标网格（两列）
+## 图标网格
 
 {% example html %}
 <div class="ui-grid-icon ui-grid-icon-horizontal">
@@ -843,8 +786,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 11.2/3横排图标网格（三列）
-
 {% example html %}
 <div class="ui-grid-icon ">
           <ul>
@@ -874,7 +815,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 1.单行列表（纯文字）
+## 列表
 
 {% example html %}
 	  <ul class="ui-list ui-list-one ui-list-link ui-border-tb">
@@ -894,8 +835,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 2.单行小图
-
 {% example html %}
 	 <ul class="ui-list ui-list-link ui-border-tb">
                 <li class="ui-border-t active">
@@ -926,10 +865,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 3.图文单行列表
-
 {% example html %}
-	   <ul class="ui-list ui-list-one ui-list-link ui-border-tb">
                 <li class="ui-border-t">
                     <div class="ui-list-thumb">
                         <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
@@ -952,8 +888,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 4.列表带头像
-
 {% example html %}
 	       <ul class="ui-list ui-list-link ui-border-tb">
                 <li>
@@ -977,8 +911,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 5.列表带正方形
-
 {% example html %}
 	<ul class="ui-list ui-border-tb ui-list-square">
         <li>
@@ -1003,8 +935,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 6.列表带长方形
-
 {% example html %}
     <ul class="ui-list ui-border-tb">
         <li>
@@ -1028,8 +958,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 1.局部加载中
-
 {% example html %}
 	<div class="ui-loading-wrap">
         <p>正在加载中...</p>
@@ -1038,8 +966,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 2.页面加载中
-
 {% example html %}
 	<div class="ui-loading-block show">
 	    <div class="ui-loading-cnt">
@@ -1050,7 +976,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 
-## 1.通知
+## 通知
 
 {% example html %}
 	<section class="ui-notice">
@@ -1063,7 +989,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 1.默认面板
+## 面板
 
 {% example html %}
 	<section class="ui-panel ui-grid ui-grid-trisect">
@@ -1104,7 +1030,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 2.面板（ui-panel-center居中）
 
 {% example html %}
 	<section class="ui-panel ui-panel-center ui-border-tb">
@@ -1113,7 +1038,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 3.面板（ui-panel-center-multi居中两行）
 
 {% example html %}
 	<section class="ui-panel ui-panel-center-multi ui-border-tb">
@@ -1123,7 +1047,7 @@ redirect_from: "/components/"
 
 
 <!-- ## Examples -->
-## 1.进度条
+## 进度条
 
 {% example html %}
 	<div class="ui-progress">
@@ -1132,7 +1056,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 1.图片上进度条
 
 {% example html %}
 	<ul class="ui-grid-halve">
@@ -1153,7 +1076,7 @@ redirect_from: "/components/"
 {% endexample %}
 
 !-- ## Examples -->
-## 1.搜索栏
+## 搜索栏
 
 {% example html %}
 	<div  class="ui-searchbar-wrap ui-border-b">
@@ -1170,7 +1093,7 @@ redirect_from: "/components/"
 
 
 <!-- ## Examples -->
-## 1.红色角标:
+## 角标:
 
 {% example html %}
 <ul class="ui-grid-halve">
@@ -1184,7 +1107,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 2.橙色角标:
 
 {% example html %}
 <ul class="ui-grid-halve">
@@ -1198,7 +1120,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 3.绿色角标:
 
 {% example html %}
 <ul class="ui-grid-halve">
@@ -1212,7 +1133,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 4.蓝色角标:
 
 {% example html %}
 <ul class="ui-grid-halve">
@@ -1226,7 +1146,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 5.三个字角标:
 
 {% example html %}
 <ul class="ui-grid-halve">
@@ -1239,9 +1158,8 @@ redirect_from: "/components/"
 </ul>
 {% endexample %}
 
-
 <!-- ## Examples -->
-## 1.两个Tab:
+## 选项卡
 
 {% example html %}
 <div class="ui-tab ">
@@ -1257,7 +1175,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 2.三个Tab:
 
 {% example html %}
 <div class="ui-tab">
@@ -1275,7 +1192,6 @@ redirect_from: "/components/"
 {% endexample %}
 
 <!-- ## Examples -->
-## 3.四个Tab:
 
 {% example html %}
 <div class="ui-tab">
