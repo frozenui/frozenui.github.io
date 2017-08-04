@@ -29,7 +29,7 @@ redirect_from: "/function/"
 
 
 <!-- ## Examples -->
-## 2.占位图
+## 占位图
 
 {% example html %}
 <section class="ui-placehold-img">
