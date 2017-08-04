@@ -5,7 +5,7 @@ description: 专注于移动web的UI框架，基于腾讯手机QQ规范.
 group: function
 redirect_from: "/function/"
 ---
-## 基础函数
+## function
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}

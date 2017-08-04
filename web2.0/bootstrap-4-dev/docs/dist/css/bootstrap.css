@@ -7913,5 +7913,13 @@ a.text-gray-dark:focus, a.text-gray-dark:hover {
 .invisible {
   visibility: hidden !important;
 }
-
+#uicompontent,#function{
+  display: none;
+}
+.demo button{
+  margin-bottom: 10px; 
+}
+.container .bd-content >h2:nth-child(3) {
+  margin-top: 0px;
+}
 /*# sourceMappingURL=bootstrap.css.map */

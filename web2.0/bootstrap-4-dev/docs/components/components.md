@@ -8,43 +8,35 @@ redirect_from: "/components/"
 
 * Will be replaced with the ToC, excluding the "Contents" header
 {:toc}
-## u
+## uicompontent
 
-<!-- ## Examples -->
 ## 按钮
 
 {% example html %}
   <div class="demo">
     <button class="ui-btn">确定</button>
-  </div>
-  <div class="demo">
-  <button class="ui-btn ui-btn-primary">确定</button>
-  </div>
-  <div class="demo">
-  <button class="ui-btn ui-btn-danger">确定</button>
-  </div>
-  <div class="demo">
-  <button class="ui-btn ui-btn-highlight">确定</button>
+    <button class="ui-btn ui-btn-primary">确定</button>
+    <button class="ui-btn ui-btn-danger">确定</button>
+    <button class="ui-btn disabled">确定</button>
   </div>
 {% endexample %}
 
 {% example html %}
-<button class="ui-btn-lg">确定</button>
-
-<button class="ui-btn-lg ui-btn-primary">确定</button>
-
-<button class="ui-btn-lg ui-btn-danger">确定</button>
-
-<button class="ui-btn-lg disabled">取消</button>
-
-<button class="ui-btn-highlight ui-btn-lg">取消</button>
+ <div class="demo">
+  <button class="ui-btn-lg">确定</button>
+  <button class="ui-btn-lg ui-btn-primary">确定</button>
+  <button class="ui-btn-lg ui-btn-danger">确定</button>
+  <button class="ui-btn-lg disabled">取消</button>
+ </div>
 {% endexample %}
 
 {% example html %}
-<button class="ui-btn-lg-nowhole">取消</button>
-<button class="ui-btn-lg-nowhole ui-btn-primary">取消</button>
-<button class="ui-btn-lg-nowhole ui-btn-danger">取消</button>
-<button class="ui-btn-lg-nowhole ui-btn-danger disabled">取消</button>
+ <div class="demo">
+  <button class="ui-btn-lg-nowhole">取消</button>
+  <button class="ui-btn-lg-nowhole ui-btn-primary">取消</button>
+  <button class="ui-btn-lg-nowhole ui-btn-danger">取消</button>
+  <button class="ui-btn-lg-nowhole ui-btn-danger disabled">取消</button>
+</div>
 {% endexample %}
 
 ## 菜单
