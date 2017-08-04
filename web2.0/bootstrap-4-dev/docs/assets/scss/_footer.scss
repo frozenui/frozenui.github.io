@@ -32,6 +32,10 @@
   padding-left: 0;
   margin-bottom: 1rem;
 
+  a:hover {
+      color: rgba(255,255,255,.8);
+  }
+
   li {
     display: inline-block;
 

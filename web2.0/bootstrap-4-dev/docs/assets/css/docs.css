@@ -596,6 +596,10 @@
   margin-bottom: 1rem;
 }
 
+.bd-footer-links a:hover {
+  color: rgba(255, 255, 255, 0.8);
+}
+
 .bd-footer-links li {
   display: inline-block;
 }
