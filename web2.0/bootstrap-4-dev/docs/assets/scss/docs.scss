@@ -117,6 +117,9 @@ body {
 .bd-example{
   background:#fff;
 }
+.bd-example::after {
+  content:none;
+}
 .ui-loading-block{
   position: relative;
 }
@@ -134,6 +137,14 @@ body {
   padding: 80px 0;
   button{
     overflow: visible;
+  }
+}
+.ui-actionsheet{
+  padding:10px;
+  position:relative;
+  .ui-actionsheet-cnt{
+    width:320px;
+    position:relative;
   }
 }
 .ui-col {

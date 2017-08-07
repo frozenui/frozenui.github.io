@@ -11,16 +11,18 @@ redirect_from: "/components/"
 ## uicompontent
 
 ## 按钮
+普通按钮。添加class:.disabled增加不可点状态
 
 {% example html %}
   <div class="demo">
-    <button class="ui-btn">确定</button>
-    <button class="ui-btn ui-btn-primary">确定</button>
-    <button class="ui-btn ui-btn-danger">确定</button>
-    <button class="ui-btn disabled">确定</button>
+    <button class="ui-btn">普通按钮</button>
+    <button class="ui-btn ui-btn-primary">主要按钮</button>
+    <button class="ui-btn ui-btn-danger">警示按钮</button>
+    <button class="ui-btn disabled">不可点击</button>
   </div>
 {% endexample %}
 
+块状按钮
 {% example html %}
  <div class="demo">
   <button class="ui-btn-lg">确定</button>
@@ -30,6 +32,7 @@ redirect_from: "/components/"
  </div>
 {% endexample %}
 
+大按钮
 {% example html %}
  <div class="demo">
   <button class="ui-btn-lg-nowhole">取消</button>
@@ -42,19 +45,20 @@ redirect_from: "/components/"
 ## 菜单
 
 {% example html %}
-	<div class="ui-actionsheet ">
-	    <div class="ui-actionsheet-cnt am-actionsheet-down">
-	        <h4>同时会将我从对方的列表中删除</h4>
-	        <button>分享</button>
-	        <button class="ui-actionsheet-del">删除</button>
-	        <div class="ui-actionsheet-split-line"></div>
-	        <button id="cancel">取消</button>
-	    </div>
-	</div>
+<div class="ui-actionsheet show">
+    <div class="ui-actionsheet-cnt am-actionsheet-down">
+        <h4>同时会将我从对方的列表中删除</h4>
+        <button>分享</button>
+        <button class="ui-actionsheet-del">删除</button>
+        <div class="ui-actionsheet-split-line"></div>
+        <button id="cancel">取消</button>
+    </div>
+</div>
 {% endexample %}
 
 
 ## 提示
+普通提示
 {% example html %}
 <div class="ui-tooltips">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -67,7 +71,8 @@ redirect_from: "/components/"
     </div>
 </div>
 {% endexample %}
-<!-- ## Examples -->
+
+警示提示
 {% example html %}
 <div class="ui-tooltips ui-tooltips-warn">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -80,7 +85,8 @@ redirect_from: "/components/"
     </div>
 </div>
 {% endexample %}
-<!-- ## Examples -->
+
+引导提示
 {% example html %}
 <div class="ui-tooltips ui-tooltips-guide">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -98,7 +104,8 @@ redirect_from: "/components/"
     </div>
 </div>
 {% endexample %}
-<!-- ## Examples -->
+
+底部提示
 {% example html %}
 <div class="ui-tooltips ui-tooltips-guide ui-tooltips-action">
     <div class="ui-tooltips-cnt ui-border-b">
