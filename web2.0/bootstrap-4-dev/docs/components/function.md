@@ -29,13 +29,13 @@ redirect_from: "/function/"
 
 
 <!-- ## Examples -->
-## 占位图
+<!-- ## 占位图
 
 {% example html %}
 <section class="ui-placehold-img">
     <span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span>
 </section>
-{% endexample %}
+{% endexample %} -->
 
 
 ## 文本大小
@@ -52,20 +52,6 @@ redirect_from: "/function/"
 {% endexample %}
 
 
-
-## 文字颜色
-{% example html %}
-<div class="ui-whitespace">
-    <p class="ui-txt-default">主要内容色</p>
-    <p class="ui-txt-white" style="background:#000">主要内容反色</p>
-    <p class="ui-txt-info">辅助次要内容色</p>
-    <p class="ui-txt-muted">时间，输入框，不可点击状态文本色</p>
-    <p class="ui-txt-warning">警示，会员红名，搜索热词，同ui-txt-red</p>
-    <p class="ui-txt-highlight">关键词高亮，同em</p>
-    <p><a>链接颜色</a></p>
-    <p class="ui-txt-feeds">feeds链接</p>
-</div>
-{% endexample %}
 
 ## 文字颜色
 {% example html %}
