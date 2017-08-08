@@ -1806,3 +1806,8 @@ body {
 .ui-notice {
   background-color: #fff;
 }
+
+#markdown-toc li.active a{
+  color: #00a5e0;
+  
+}
