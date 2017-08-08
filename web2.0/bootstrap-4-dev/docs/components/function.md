@@ -13,6 +13,7 @@ redirect_from: "/function/"
 <!-- ## Examples -->
 ## 1px线
 
+解决移动端retina屏幕1像素的显示问题。
 {% example html %}
   <ul class="ui-list-text border-list">
     <li class="ui-border-t">上边框</li>
@@ -39,6 +40,7 @@ redirect_from: "/function/"
 
 
 ## 文本大小
+统一常见的字号。
 {% example html %}
 <div class="ui-whitespace">
     <p>默认字体大小32px, 行高为1.5</p>
@@ -54,6 +56,7 @@ redirect_from: "/function/"
 
 
 ## 文字颜色
+多场景下使用的文字颜色。
 {% example html %}
 <div class="ui-whitespace">
     <p class="ui-txt-default">主要内容色</p>
@@ -68,6 +71,7 @@ redirect_from: "/function/"
 {% endexample %}
 
 ## 两端对齐
+常用的两端对齐解决方案。
 {% example html %}
 <div class="ui-whitespace">
     <p class="ui-txt-justify-one">一行文本</p>
@@ -78,6 +82,7 @@ redirect_from: "/function/"
 
 
 ## 超出截断
+应用广泛的文字超出截断（以省略号显示）的解决方案。
 {% example html %}
 <div class="ui-nowrap ui-whitespace">
     一行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
