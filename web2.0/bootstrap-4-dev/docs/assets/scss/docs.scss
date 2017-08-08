@@ -68,7 +68,14 @@ $bd-info:           #0088cc;
 body {
     background-color: #fff;
     -webkit-user-select: inherit;
-    font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+    line-height: 2;
+    font-family: "思源黑体", "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+.bd-masthead .lead {
+    line-height: 1.6;
+}
+.bd-navbar {
+    line-height: 1.6;
 }
 .logo-frozenui {
     color: #fff;
@@ -114,8 +121,14 @@ body {
 *:focus {
     outline: 0!important;
 }
+.highlight {
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+}
 .bd-example{
-  background:#fff;
+    margin-top: 1.2rem;
+    margin-bottom: 1.2rem;
+    background:#fff;
 }
 .bd-example::after {
   content:none;
