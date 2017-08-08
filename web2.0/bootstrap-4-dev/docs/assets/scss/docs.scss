@@ -115,7 +115,8 @@ body {
     outline: 0!important;
 }
 .bd-example{
-  background:#fff;
+  // background:#fff;
+  background-color: #f6f6f6;
 }
 .bd-example::after {
   content:none;
@@ -197,4 +198,12 @@ margin-bottom: 0px!important;
             }
         }
     }
+}
+// jasmin add
+.ui-feeds,.ui-grid,.ui-grid-icon,.ui-list,.ui-notice,.ui-grid-halve{
+  max-width: 375px;
+  margin: 0 auto;
+}
+.ui-notice{
+  background-color: #fff;
 }

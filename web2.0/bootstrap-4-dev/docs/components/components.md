@@ -133,17 +133,17 @@ redirect_from: "/components/"
 
 文字提示(不带标题)
 {% example html %}
-	<div class="ui-dialog show">
-	    <div class="ui-dialog-cnt">
-	        <div class="ui-dialog-bd">
-	            <p>将终止文件发送，确定返回？</p>
-	        </div>
-	        <div class="ui-dialog-ft">
-	            <button type="button" data-role="button">取消</button>
-	            <button type="button" data-role="button">确定</button>
-	        </div>
-	    </div>        
-	</div>
+<div class="ui-dialog show">
+    <div class="ui-dialog-cnt">
+        <div class="ui-dialog-bd">
+            <p>将终止文件发送，确定返回？</p>
+        </div>
+        <div class="ui-dialog-ft">
+            <button type="button" data-role="button">取消</button>
+            <button type="button" data-role="button">确定</button>
+        </div>
+    </div>        
+</div>
 {% endexample %}
 
 结构化消息提示
@@ -445,33 +445,33 @@ redirect_from: "/components/"
 ## 输入框
 通用设置类输入框
 {% example html %}
-	<div class="ui-form ui-border-t">
-	    <form action="#">
-	        <div class="ui-form-item ui-border-b">
-	            <label>
-	                列表标题
-	            </label>
-	            <input type="text" placeholder="18位身份证号码" />
-	            <a href="#" class="ui-icon-close">
-	            </a>
-	        </div>
-	        <div class="ui-form-item ui-form-item-link ui-border-b">
-	            <label>
-	                列表标题
-	            </label>
-	        </div>
-	        <div class="ui-form-item ui-form-item-link ui-border-b">
-	            <label>
-	                标题
-	            </label>
-	        </div>
-	        <div class="ui-btn-wrap">
-	            <button class="ui-btn-lg ui-btn-primary">
-	                确定
-	            </button>
-	        </div>
-	    </form>
-	</div>
+<div class="ui-form ui-border-t">
+    <form action="#">
+        <div class="ui-form-item ui-border-b">
+            <label>
+                列表标题
+            </label>
+            <input type="text" placeholder="18位身份证号码" />
+            <a href="#" class="ui-icon-close">
+            </a>
+        </div>
+        <div class="ui-form-item ui-form-item-link ui-border-b">
+            <label>
+                列表标题
+            </label>
+        </div>
+        <div class="ui-form-item ui-form-item-link ui-border-b">
+            <label>
+                标题
+            </label>
+        </div>
+        <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary">
+                确定
+            </button>
+        </div>
+    </form>
+</div>
 {% endexample %}
 
 强引导类输入框
@@ -488,7 +488,7 @@ redirect_from: "/components/"
             <input type="text" name="" value="" placeholder="我也说一句...">
         </div>
     </section>
- </div>
+</div>
 {% endexample %}
 
 表单开关项
@@ -563,52 +563,52 @@ redirect_from: "/components/"
 
 float网格适合多行
 {% example html %}
-	<ul class="ui-row">
-        <li class="ui-col ui-col-50">50</li>
-        <li class="ui-col ui-col-50">50</li>
-        <li class="ui-col ui-col-25">25</li>
-        <li class="ui-col ui-col-75">75</li>
-        <li class="ui-col ui-col-33">33</li>
-        <li class="ui-col ui-col-67">67</li>
-        <li class="ui-col ui-col-20">20</li>
-        <li class="ui-col ui-col-80">80</li>
-        <li class="ui-col ui-col-10">10</li>
-        <li class="ui-col ui-col-90">90</li>
-    </ul>
+<ul class="ui-row">
+    <li class="ui-col ui-col-50">50</li>
+    <li class="ui-col ui-col-50">50</li>
+    <li class="ui-col ui-col-25">25</li>
+    <li class="ui-col ui-col-75">75</li>
+    <li class="ui-col ui-col-33">33</li>
+    <li class="ui-col ui-col-67">67</li>
+    <li class="ui-col ui-col-20">20</li>
+    <li class="ui-col ui-col-80">80</li>
+    <li class="ui-col ui-col-10">10</li>
+    <li class="ui-col ui-col-90">90</li>
+</ul>
 {% endexample %}
 
 flex网格
 {% example html %}
-	<div class="ui-row-flex ui-whitespace">
-        <div class="ui-col ui-col">平均分</div>
-        <div class="ui-col ui-col">平均分</div>
-        <div class="ui-col ui-col">平均分</div>
-        <div class="ui-col ui-col">平均分</div>
-    </div>
-    <div class="ui-row-flex ui-whitespace">
-        <div class="ui-col ui-col-2">2/3</div>
-        <div class="ui-col">1/3</div>
-    </div>
-    <div class="ui-row-flex ui-whitespace">
-        <div class="ui-col ui-col-3">3/4</div>
-        <div class="ui-col">1/4</div>
-    </div>
-    <div class="ui-row-flex ui-whitespace">
-        <div class="ui-col ui-col-4">4/5</div>
-        <div class="ui-col">1/5</div>
-    </div>
-    <div class="ui-row-flex ui-whitespace">
-        <div class="ui-col ui-col-3">3/5</div>
-        <div class="ui-col ui-col-2">2/5</div>
-    </div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col">平均分</div>
+    <div class="ui-col ui-col">平均分</div>
+    <div class="ui-col ui-col">平均分</div>
+    <div class="ui-col ui-col">平均分</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-2">2/3</div>
+    <div class="ui-col">1/3</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-3">3/4</div>
+    <div class="ui-col">1/4</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-4">4/5</div>
+    <div class="ui-col">1/5</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-3">3/5</div>
+    <div class="ui-col ui-col-2">2/5</div>
+</div>
 {% endexample %}
 
 竖排flex
 {% example html %}
-	<div class="ui-row-flex ui-whitespace ui-row-flex-ver">
-        <div class="ui-col">1/2</div>
-        <div class="ui-col">1/2</div>
-    </div>
+<div class="ui-row-flex ui-whitespace ui-row-flex-ver">
+    <div class="ui-col">1/2</div>
+    <div class="ui-col">1/2</div>
+</div>
 {% endexample %}
 
 三列(无交界线)
@@ -710,72 +710,72 @@ flex网格
 两列
 {% example html %}
 <div class="ui-grid ui-grid-bisect">
-      <ul>
-          <li>
-              <div class="ui-img-horizontal">
-                  <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-              </div>
-          </li>
-          <li>
-              <div class="ui-img-horizontal">
-                  <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-              </div>
-          </li>
-          <li>
-              <div class="ui-img-horizontal">
-                  <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-              </div>
-          </li>
-          <li>
-              <div class="ui-img-horizontal">
-                  <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-              </div>
-          </li>
-      </ul>
+    <ul>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+    </ul>
 </div>
 {% endexample %}
 
 两列文字
 {% example html %}
 <div class="ui-grid ui-grid-bisect">
-  <ul>
-      <li>
-          <div class="ui-img-horizontal">
-              <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-          </div>
-          <div class="ui-grid-info ui-border-r">
-            <h4>主要信息</h4>
-            <p>辅助信息</p>
-          </div>
-      </li>
-      <li>
-          <div class="ui-img-horizontal">
-              <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-          </div>
-          <div class="ui-grid-info ui-border-r">
-            <h4>主要信息</h4>
-            <p>辅助信息</p>
-          </div>
-      </li>
-      <li>
-          <div class="ui-img">
-              <span style="background-image:url(http://placeholder.qiniudn.com/290x290)"></span>
-          </div>
-          <div class="ui-grid-info ui-border-r">
-            <h4>主要信息</h4>
-            <p>辅助信息</p>
-          </div>
-      </li>
-      <li>
-          <div class="ui-img">
-              <span style="background-image:url(http://placeholder.qiniudn.com/290x290)"></span>
-          </div>
-          <div class="ui-grid-info">
-            <h4>主要信息</h4>
-            <p>辅助信息</p>
-          </div>
-      </li>
-  </ul>
+    <ul>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x290)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x290)"></span>
+            </div>
+            <div class="ui-grid-info">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+    </ul>
 </div>
 {% endexample %}
 
@@ -785,20 +785,20 @@ flex网格
 图文左右排列
 {% example html %}
 <div class="ui-grid-icon ui-grid-icon-horizontal">
-  <ul>
-    <li>
-      <div class="ui-img-icon">
-        <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
-      </div>
-        <h4>标题</h4>
-    </li>
-    <li>
-      <div class="ui-img-icon">
-        <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
-      </div>
-     <h4>标题</h4>
-    </li>
-  </ul>
+    <ul>
+      <li>
+        <div class="ui-img-icon">
+          <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+          <h4>标题</h4>
+      </li>
+      <li>
+        <div class="ui-img-icon">
+          <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+       <h4>标题</h4>
+      </li>
+    </ul>
 </div>
 {% endexample %}
 
@@ -806,29 +806,29 @@ flex网格
 图文上下排列
 {% example html %}
 <div class="ui-grid-icon ">
-  <ul>
-      <li>
-        <div class="ui-img-icon">
-          <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
-        </div>
-        <h5>标题</h5>
-        <p>副标题</p>
-      </li>
-      <li>
-        <div class="ui-img-icon">
-          <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
-        </div>
-        <h5>标题</h5>
-        <p>副标题</p>
-      </li>
-      <li>
-        <div class="ui-img-icon">
-          <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
-        </div>
-        <h5>标题</h5>
-        <p>副标题</p>
-      </li>
-  </ul>
+    <ul>
+        <li>
+          <div class="ui-img-icon">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+          </div>
+          <h5>标题</h5>
+          <p>副标题</p>
+        </li>
+        <li>
+          <div class="ui-img-icon">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+          </div>
+          <h5>标题</h5>
+          <p>副标题</p>
+        </li>
+        <li>
+          <div class="ui-img-icon">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+          </div>
+          <h5>标题</h5>
+          <p>副标题</p>
+        </li>
+    </ul>
 </div>
 {% endexample %}
 
@@ -836,68 +836,14 @@ flex网格
 ## 列表
 单行列表(纯文字)
 {% example html %}
-	  <ul class="ui-list ui-list-one ui-list-link ui-border-tb">
-        <li class="ui-border-t ui-list-single-font">
-            <div class="ui-list-info">
-                <h4 class="ui-nowrap">性别</h4>
-                <div class="ui-txt-info">男</div>
-            </div>
-        </li>
-        <li class="ui-border-t ui-list-single-font">
-            <div class="ui-list-info">
-                <h4 class="ui-nowrap">生日</h4>
-                <div class="ui-reddot ui-reddot-static"></div>
-            </div>
-        </li>
-   </ul>
-{% endexample %}
-
-单行头像
-{% example html %}
- <ul class="ui-list ui-list-link ui-border-tb">
-    <li class="ui-border-t active">
-        <div class="ui-list-small">
-            <span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span>
-        </div>
-        <div class="ui-list-info">
-            <h4 class="ui-nowrap">ui-list-thumb缩略图</h4>
-        </div>
-    </li>
+<ul class="ui-list ui-list-single ui-list-link ui-border-tb">
     <li class="ui-border-t">
-        <div class="ui-list-small">
-            <span style="background-image:url(http://placeholder.qiniudn.com/60x60)"></span>
-        </div>
-        <div class="ui-list-info">
-            <h4 class="ui-nowrap">ui-list-thumb-s缩略小图</h4>
-        </div>
-    </li>
-    <li class="ui-border-t">
-        <div class="ui-list-icon ui-avatar">
-            <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
-        </div>
-        <div class="ui-list-info">
-            <h4 class="ui-nowrap">ui-list-icon icon图</h4>
-        </div>
-    </li>
-</ul>
-{% endexample %}
-
-单行小缩略图
-{% example html %}
-<ul>
-    <li class="ui-border-t">
-        <div class="ui-list-thumb">
-            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
-        </div>
         <div class="ui-list-info">
             <h4 class="ui-nowrap">性别</h4>
             <div class="ui-txt-info">男</div>
         </div>
     </li>
     <li class="ui-border-t">
-        <div class="ui-list-thumb">
-            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
-        </div>
         <div class="ui-list-info">
             <h4 class="ui-nowrap">生日</h4>
             <div class="ui-reddot ui-reddot-static"></div>
@@ -906,33 +852,164 @@ flex网格
 </ul>
 {% endexample %}
 
+单行头像
 {% example html %}
-<ul class="ui-list ui-list-link ui-border-tb">
+<ul class="ui-list ui-list-link ui-list-single ui-border-tb">
     <li>
-        <div class="ui-avatar">
-            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
-            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <h4 class="ui-nowrap">ui-avatar-s单行头像</h4>
         </div>
     </li>
     <li>
-        <div class="ui-avatar">
-            <span  style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
-            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
-            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+            <h4 class="ui-nowrap">ui-avatar-s单行头像</h4>
+        </div>
+    </li>
+    <li>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar-s单行头像</h4>
         </div>
     </li>
 </ul>
 {% endexample %}
 
+单行小缩略图
 {% example html %}
-<ul class="ui-list ui-border-tb ui-list-square">
+<ul class="ui-list ui-list-single ui-list-link ui-border-tb">
     <li>
-        <div class="ui-square">
-            <span style="background-image:url(http://placeholder.qiniudn.com/144x144)"></span>
+        <div class="ui-list-thumb-s ui-border-t">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">性别</h4>
+            <div class="ui-txt-info">男</div>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-thumb-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">生日</h4>
+            <div class="ui-reddot ui-reddot-static"></div>
+        </div>
+    </li>
+</ul>
+{% endexample %}
+
+单行缩略图
+{% example html %}
+<ul class="ui-list ui-list-link ui-border-tb">
+    <li>
+        <div class="ui-list-thumb">
+            <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-list-thumb缩略图</h4>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-thumb">
+            <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-list-thumb缩略图</h4>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-thumb">
+            <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-list-thumb缩略图</h4>
+        </div>
+    </li>
+</ul>
+{% endexample %}
+
+双行文字头像+按钮
+{% example html %}
+<ul class="ui-list ui-list-function ui-border-tb">
+    <li>
+        <div class="ui-avatar">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar</h4>
+            <p>双行头像</p>
+        </div>
+        <div class="ui-btn">PK</div>
+    </li>
+    <li>
+        <div class="ui-avatar">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar</h4>
+            <p>双行头像</p>
+        </div>
+        <div class="ui-btn-s">PK</div>
+    </li>
+    <li>
+        <div class="ui-avatar">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar</h4>
+            <p>双行头像</p>
+        </div>
+        <div class="ui-btn">PK</div>
+    </li>
+</ul>
+{% endexample %}
+
+<!-- ## Examples -->
+图片在右列表
+{% example html %}
+<ul class="ui-list ui-list-nospace ui-border-tb">
+    <li class="ui-border-t ui-arrowlink">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">ui-list-icon</h4>
+            <p class="ui-nowrap">两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行</p>
+        </div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">ui-list-icon</h4>
+            <p class="ui-nowrap">两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两</p>
+        </div>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
+        </div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">ui-list-icon</h4>
+            <p>两行</p>
+        </div>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
+        </div>
+    </li>
+</ul>
+{% endexample %}
+
+<!-- ## Examples -->
+图文列表正方形固定大小
+{% example html %}
+<ul class="ui-list ui-border-tb ">
+    <li>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
             <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
@@ -940,8 +1017,8 @@ flex网格
         </div>
     </li>
     <li>
-        <div class="ui-square">
-            <span  style="background-image:url(http://placeholder.qiniudn.com/144x144);"></span>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
             <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
@@ -952,11 +1029,12 @@ flex网格
 {% endexample %}
 
 <!-- ## Examples -->
+图文列表（垂直）
 {% example html %}
 <ul class="ui-list ui-border-tb">
     <li>
-        <div class="ui-list-img ui-list-img-vertical">
-            <span style="background-image:url(http://placeholder.qiniudn.com/134x94)"></span>
+        <div class=" ui-list-img-vertical">
+            <span style="background-image:url(http://placeholder.qiniudn.com/216x308)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
             <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
@@ -964,11 +1042,69 @@ flex网格
         </div>
     </li>
     <li>
-        <div class="ui-list-img ui-list-img-vertical">
-            <span style="background-image:url(http://placeholder.qiniudn.com/134x94)"></span>
+        <div class="ui-list-img-vertical">
+            <span style="background-image:url(http://placeholder.qiniudn.com/216x308)"></span>
         </div>
         <div class="ui-list-info ui-border-t">
             <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+        </div>
+    </li>
+</ul>
+{% endexample %}
+
+<!-- ## Examples -->
+图文列表（水平）
+{% example html %}
+<ul class="ui-list  ui-border-tb">
+    <li class="active">
+        <div class=" ui-list-img-horizontal">
+            <span style="background-image:url(http://placeholder.qiniudn.com/268x188)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p>这是内容</p>
+            <p></p>
+            <p></p>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-img-horizontal">
+            <span style="background-image:url(http://placeholder.qiniudn.com/268x188)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题</h4>
+             <p>这是内容</p>
+            <p></p>
+            <p></p>
+        </div>
+    </li>
+</ul>
+{% endexample %}
+
+<!-- ## Examples -->
+图文列表图片不固定大小
+{% example html %}
+<ul class="ui-list ui-list-nospace ui-border-tb ">
+    <li>
+        <div class="ui-list-img">
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/248x352)"></span>
+            </div>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-img">
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/248x352)"></span>
+            </div>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
         </div>
     </li>
 </ul>
@@ -1010,7 +1146,7 @@ flex网格
 
 默认面板
 {% example html %}
-	<section class="ui-panel ui-grid ui-grid-trisect">
+<section class="ui-panel ui-grid ui-grid-trisect">
     <h2 class="ui-arrowlink">猜你喜欢<span class="ui-panel-subtitle">1328条</span></h2>
     <ul>
         <li>
@@ -1049,16 +1185,16 @@ flex网格
 
 ui-panel-center 居中
 {% example html %}
-	<section class="ui-panel ui-panel-center ui-border-tb">
-     <h2 class="ui-arrowlink"><span>标题文字</span><span class="ui-panel-title-tips">分类更多</span></h2>
+<section class="ui-panel ui-panel-center ui-border-tb">
+    <h2 class="ui-arrowlink"><span>标题文字</span><span class="ui-panel-title-tips">分类更多</span></h2>
 </section>
 {% endexample %}
 
 ui-panel-center-multi 居中两行
 {% example html %}
-	<section class="ui-panel ui-panel-center-multi ui-border-tb">
-	    <h2 class="ui-arrowlink"><span>标题文字</span><span class="ui-panel-subtitle">副标题文字</span><span class="ui-panel-title-tips">分类更多</span></h2>
-	</section>
+<section class="ui-panel ui-panel-center-multi ui-border-tb">
+    <h2 class="ui-arrowlink"><span>标题文字</span><span class="ui-panel-subtitle">副标题文字</span><span class="ui-panel-title-tips">分类更多</span></h2>
+</section>
 {% endexample %}
 
 
@@ -1067,26 +1203,26 @@ ui-panel-center-multi 居中两行
 进度条
 {% example html %}
 <div class="ui-progress">
-       <span style="width:50%"></span>
+    <span style="width:50%"></span>
 </div>
 {% endexample %}
 
 图片上进度条
 {% example html %}
 <ul class="ui-grid-halve">
-  <li>
-      <div class="ui-grid-halve-img">
-          <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-          <div class="ui-progress">
-              <span style="width:50%"></span>
-          </div>
-      </div>
-  </li>
-  <li>
-      <div class="ui-grid-halve-img">
-          <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-      </div>
-  </li>
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            <div class="ui-progress">
+                <span style="width:50%"></span>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
 </ul>
 {% endexample %}
 
@@ -1094,7 +1230,7 @@ ui-panel-center-multi 居中两行
 ## 搜索栏
 
 {% example html %}
-	<div  class="ui-searchbar-wrap ui-border-b">
+<div  class="ui-searchbar-wrap ui-border-b">
     <div class="ui-searchbar ui-border-radius">
         <i class="ui-icon-search"></i>
         <div class="ui-searchbar-text">搜索号码（2-10位）</div>
@@ -1137,36 +1273,36 @@ ui-panel-center-multi 居中两行
 绿色角标
 {% example html %}
 <ul class="ui-grid-halve">
-  <li>
-      <div class="ui-grid-halve-img" style="overflow:hidden;">
-          <i class="ui-subscript ui-subscript-green">限免</i>
-          <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-      </div>
-  </li>
+    <li>
+        <div class="ui-grid-halve-img" style="overflow:hidden;">
+            <i class="ui-subscript ui-subscript-green">限免</i>
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
 </ul>
 {% endexample %}
 
 蓝色角标
 {% example html %}
 <ul class="ui-grid-halve">
-  <li>
-      <div class="ui-grid-halve-img" style="overflow:hidden;">
-          <i class="ui-subscript ui-subscript-blue">免费</i>
-          <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-      </div>
-  </li>
+    <li>
+        <div class="ui-grid-halve-img" style="overflow:hidden;">
+            <i class="ui-subscript ui-subscript-blue">免费</i>
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
 </ul>
 {% endexample %}
 
 三个字的情况
 {% example html %}
 <ul class="ui-grid-halve">
-  <li>
-      <div class="ui-grid-halve-img" style="overflow:hidden;">
-          <i class="ui-subscript ui-subscript-red ui-subscript-trisection">小表情</i>
-          <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
-      </div>
-  </li>
+    <li>
+        <div class="ui-grid-halve-img" style="overflow:hidden;">
+            <i class="ui-subscript ui-subscript-red ui-subscript-trisection">小表情</i>
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
 </ul>
 {% endexample %}
 
