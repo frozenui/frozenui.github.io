@@ -1789,13 +1789,22 @@ body {
   margin-bottom: 20px;
 }
 
-#markdown-toc li a {
-  color: #777;
-  font-size: 14px;
+#markdown-toc li {
+  margin: 0;
 }
 
-#markdown-toc li.acticve a {
+#markdown-toc li a {
+  display: block;
+  color: #777;
+  font-size: 14px;
+  padding: 3px 20px;
+  border-left: 2px solid #fff;
+  margin: 2px 0;
+}
+
+#markdown-toc li.active a {
   color: #12B7F5;
+  border-left-color: #12B7F5;
 }
 
 .ui-feeds, .ui-grid, .ui-grid-icon, .ui-list, .ui-notice, .ui-grid-halve {
@@ -1805,9 +1814,4 @@ body {
 
 .ui-notice {
   background-color: #fff;
-}
-
-#markdown-toc li.active a{
-  color: #00a5e0;
-  
 }

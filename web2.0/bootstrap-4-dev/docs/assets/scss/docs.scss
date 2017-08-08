@@ -187,13 +187,20 @@ margin-bottom: 0px!important;
 }
 #markdown-toc {
     li {
+        margin: 0;
         a{
+            display: block;
             color: #777;
             font-size: 14px;
+            padding: 3px 20px;
+            border-left: 2px solid #fff;
+            margin: 2px 0;
         }
-        &.acticve {
+        &.active {
+
             a {
                 color: #12B7F5;
+                border-left-color: #12B7F5;
             }
         }
     }
