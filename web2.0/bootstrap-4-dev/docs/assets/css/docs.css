@@ -1276,6 +1276,13 @@ body {
     width: 320px;
     position: relative; }
 
+.ui-grid-halve {
+  overflow: hidden; }
+
+.ui-dialog h3 {
+  font-weight: 400 !important;
+  margin-bottom: 0px !important; }
+
 .ui-col {
   padding: 5px;
   background: #777;
@@ -1287,6 +1294,12 @@ body {
 .ui-row-flex-ver {
   border: 1px solid #ddd;
   min-height: 100px; }
+
+.ui-panel h2 {
+  padding-bottom: 0px !important;
+  margin: 0px !important;
+  border-bottom: none !important;
+  font-size: 18px !important; }
 
 .bd-content {
   margin-bottom: 50px; }
