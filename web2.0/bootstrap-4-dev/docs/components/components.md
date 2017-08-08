@@ -623,7 +623,6 @@ flex网格
               <h4>高尔夫<span>2.3M</span></h4>
               <p>辅助信息</p>
             </div>
-            <!-- <button class="ui-btn-s ui-btn-progress">免费</button> -->
         </li>
         <li>
             <div class="ui-img-vertical">
@@ -633,7 +632,6 @@ flex网格
               <h4>高尔夫<span>2.3M</span></h4>
               <p>辅助信息</p>
             </div>
-            <!-- <button class="ui-btn-s ui-btn-progress">免费</button> -->
         </li>
         <li>
             <div class="ui-img-vertical">
@@ -643,7 +641,6 @@ flex网格
               <h4>高尔夫<span>2.3M</span></h4>
               <p>辅助信息</p>
             </div>
-            <!-- <button class="ui-btn-s ui-btn-progress">免费</button> -->
         </li>
         <li>
             <div class="ui-img-vertical">
