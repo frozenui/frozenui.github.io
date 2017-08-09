@@ -1693,11 +1693,12 @@ body {
 }
 
 .index-info {
-  color: #777;
+  color: #666;
+  line-height: 2;
 }
 
 .index-info p {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .index-info .btn-go-github {
@@ -1796,13 +1797,14 @@ body {
 
 .bd-content h2 {
   padding-bottom: 15px;
-  margin: 40px 0 20px;
+  margin: 40px 0 30px;
   border-bottom: 1px solid #eee;
   font-size: 26px;
 }
 
 .bd-content h3 {
   font-weight: bold;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
