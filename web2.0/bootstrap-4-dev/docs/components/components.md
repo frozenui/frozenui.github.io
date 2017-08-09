@@ -34,20 +34,20 @@ redirect_from: "/components/"
 块状按钮
 {% example html %}
 <div class="demo">
-    <button class="ui-btn-lg">确定</button>
-    <button class="ui-btn-lg ui-btn-primary">确定</button>
-    <button class="ui-btn-lg ui-btn-danger">确定</button>
-    <button class="ui-btn-lg disabled">取消</button>
+    <button class="ui-btn-lg">普通按钮</button>
+    <button class="ui-btn-lg ui-btn-primary">主要按钮</button>
+    <button class="ui-btn-lg ui-btn-danger">警示按钮</button>
+    <button class="ui-btn-lg disabled">不可点击</button>
 </div>
 {% endexample %}
 
 大按钮
 {% example html %}
 <div class="demo">
-    <button class="ui-btn-lg-nowhole">取消</button>
-    <button class="ui-btn-lg-nowhole ui-btn-primary">取消</button>
-    <button class="ui-btn-lg-nowhole ui-btn-danger">取消</button>
-    <button class="ui-btn-lg-nowhole ui-btn-danger disabled">取消</button>
+    <button class="ui-btn-lg-nowhole">普通按钮</button>
+    <button class="ui-btn-lg-nowhole ui-btn-primary">主要按钮</button>
+    <button class="ui-btn-lg-nowhole ui-btn-danger">警示按钮</button>
+    <button class="ui-btn-lg-nowhole ui-btn-danger disabled">不可点击</button>
 </div>
 {% endexample %}
 
