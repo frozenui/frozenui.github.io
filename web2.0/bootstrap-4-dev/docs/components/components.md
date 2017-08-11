@@ -11,7 +11,10 @@ redirect_from: "/components/"
 ## uicompontent
 
 ## 按钮
+<a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span> <span class="doc-qrcode" id="qrbtn"></span> </a> 
 普通按钮，添加类名 <code>.disabled</code> 增加不可点状态。
+
+
 
 {% example html %}
 <div class="demo">
