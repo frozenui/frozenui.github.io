@@ -1,3 +1,4 @@
+@charset "UTF-8";
 /*!
  * Bootstrap Docs (https://getbootstrap.com)
  * Copyright 2011-2017 The Bootstrap Authors
@@ -1654,7 +1655,16 @@
 body {
   background-color: #fff;
   -webkit-user-select: inherit;
-  font-family: -apple-system, system-ui, BlinkMacSystemFont, "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  line-height: 2;
+  font-family: "思源黑体", "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+}
+
+.bd-masthead .lead {
+  line-height: 1.6;
+}
+
+.bd-navbar {
+  line-height: 1.6;
 }
 
 .logo-frozenui {
@@ -1690,11 +1700,12 @@ body {
 }
 
 .index-info {
-  color: #777;
+  color: #666;
+  line-height: 2;
 }
 
 .index-info p {
-  margin-bottom: 12px;
+  margin-bottom: 20px;
 }
 
 .index-info .btn-go-github {
@@ -1707,7 +1718,14 @@ body {
   outline: 0 !important;
 }
 
+.highlight {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
 .bd-example {
+  margin-top: 1.2rem;
+  margin-bottom: 1.2rem;
   background: #fff;
 }
 
@@ -1785,8 +1803,8 @@ body {
 }
 
 .bd-content h2 {
-  padding-bottom: 9px;
-  margin: 40px 0 20px;
+  padding-bottom: 15px;
+  margin: 40px 0 30px;
   border-bottom: 1px solid #eee;
   font-size: 26px;
   position: relative;
@@ -1794,16 +1812,26 @@ body {
 
 .bd-content h3 {
   font-weight: bold;
+  margin-top: 40px;
   margin-bottom: 20px;
 }
 
-#markdown-toc li a {
-  color: #777;
-  font-size: 14px;
+#markdown-toc li {
+  margin: 0;
 }
 
-#markdown-toc li.acticve a {
+#markdown-toc li a {
+  display: block;
+  color: #777;
+  font-size: 14px;
+  padding: 3px 20px;
+  border-left: 2px solid #fff;
+  margin: 2px 0;
+}
+
+#markdown-toc li.active a {
   color: #12B7F5;
+  border-left-color: #12B7F5;
 }
 
 .ui-feeds,
