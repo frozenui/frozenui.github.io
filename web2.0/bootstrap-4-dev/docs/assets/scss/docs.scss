@@ -68,7 +68,7 @@ body {
   background-color: #fff;
   -webkit-user-select: inherit;
   line-height: 2;
-  font-family: "思源黑体", "Segoe UI", Roboto, "Helvetica Neue", Arial, "PingFang SC", "Hiragino Sans GB", "Microsoft YaHei", sans-serif;
+  font-family: "思源黑体",'PingFang SC',"Microsoft Yahei",sans-serif;;
 }
 
 .bd-masthead .lead {
@@ -273,7 +273,7 @@ body {
 .icon-qr {
   position: absolute;
   top: 0px;
-  left: 0px; 
+  left: 0px;
   background: url(http://frozenui.github.io/img/icon-qr.png) no-repeat;
   width: 20px;
   height: 20px;
@@ -284,11 +284,11 @@ body {
 .doc-qrcode {
   position: absolute;
   top: 30px;
-  margin-left: -70px; 
+  margin-left: -70px;
   background-color: #fff;
   border-radius: 10px;
   border: 1px solid #ccc;
-  z-index: 9999; 
+  z-index: 9999;
   position: absolute;
   width: 160px;
   height: 160px;
@@ -314,9 +314,9 @@ body {
     border-right-color: transparent;
     left: 50%;
     margin-left: -5px;
-    top: -6px; 
+    top: -6px;
   }
-} 
+}
 
 .qr {
   display: -webkit-box;
