@@ -814,7 +814,6 @@ flex网格
 {% endexample %}
 
 
-<!-- ## Examples -->
 ## 图标网格
 <div class="mod-qrcode3">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
@@ -1016,7 +1015,6 @@ flex网格
 </ul>
 {% endexample %}
 
-<!-- ## Examples -->
 图片在右列表
 {% example html %}
 <ul class="ui-list ui-list-nospace ui-border-tb">
@@ -1047,7 +1045,6 @@ flex网格
 </ul>
 {% endexample %}
 
-<!-- ## Examples -->
 图文列表正方形固定大小
 {% example html %}
 <ul class="ui-list ui-border-tb ">
@@ -1072,7 +1069,6 @@ flex网格
 </ul>
 {% endexample %}
 
-<!-- ## Examples -->
 图文列表（垂直）
 {% example html %}
 <ul class="ui-list ui-border-tb">
@@ -1190,7 +1186,6 @@ flex网格
 </section>
 {% endexample %}
 
-<!-- ## Examples -->
 ## 面板
 <div class="mod-qrcode">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/panel.html" title="点击查看demo" target="_blank">
@@ -1252,7 +1247,6 @@ ui-panel-center-multi 居中两行
 {% endexample %}
 
 
-<!-- ## Examples -->
 ## 进度条
 <div class="mod-qrcode2">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
@@ -1286,7 +1280,6 @@ ui-panel-center-multi 居中两行
 </ul>
 {% endexample %}
 
-<!-- ## Examples -->
 ## 搜索栏
 <div class="mod-qrcode2">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
@@ -1308,7 +1301,6 @@ ui-panel-center-multi 居中两行
 
 
 
-<!-- ## Examples -->
 ## 角标
 <div class="mod-qrcode">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
@@ -1376,7 +1368,6 @@ ui-panel-center-multi 居中两行
 </ul>
 {% endexample %}
 
-<!-- ## Examples -->
 ## 选项卡
 <div class="mod-qrcode2">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
