@@ -127,6 +127,10 @@ body {
   outline: 0!important;
 }
 
+.ui-radio input:before{
+  box-sizing: content-box;
+}
+
 .highlight {
   margin-top: 1.2rem;
   margin-bottom: 1.2rem;
@@ -242,6 +246,9 @@ body {
 }
 
 // jasmin add
+.ui-form,
+.ui-input-wrap,
+.ui-form-item,
 .ui-feeds,
 .ui-grid,
 .ui-grid-icon,

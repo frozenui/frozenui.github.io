@@ -473,129 +473,6 @@ redirect_from: "/components/"
 </div>
 {% endexample %} -->
 
-## 输入框
-<div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/list.html" title="点击查看demo" target="_blank">
-    <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrlist"></span>
-  </a>
-</div>
-通用设置类输入框
-{% example html %}
-<div class="ui-form ui-border-t">
-    <form action="#">
-        <div class="ui-form-item ui-border-b">
-            <label>
-                列表标题
-            </label>
-            <input type="text" placeholder="18位身份证号码" />
-            <a href="#" class="ui-icon-close">
-            </a>
-        </div>
-        <div class="ui-form-item ui-form-item-link ui-border-b">
-            <label>
-                列表标题
-            </label>
-        </div>
-        <div class="ui-form-item ui-form-item-link ui-border-b">
-            <label>
-                标题
-            </label>
-        </div>
-        <div class="ui-btn-wrap">
-            <button class="ui-btn-lg ui-btn-primary">
-                确定
-            </button>
-        </div>
-    </form>
-</div>
-{% endexample %}
-
-强引导类输入框
-{% example html %}
-<div class="demo-block">
-    <section class="ui-input-wrap ui-border-t">
-        <div class="ui-input ui-border-radius">
-            <input type="text" name="" value="" placeholder="我也说一句...">
-        </div>
-        <button class="ui-btn">评论</button>
-    </section>
-    <section class="ui-input-wrap ui-border-t">
-        <div class="ui-input ui-border-radius ui-input-text">
-            <input type="text" name="" value="" placeholder="我也说一句...">
-        </div>
-    </section>
-</div>
-{% endexample %}
-
-表单开关项
-{% example html %}
-<form action="#">
-    <div class="ui-form-item ui-form-item-switch ui-border-b">
-        <p>
-            对附近的人可见
-        </p>
-        <label class="ui-switch">
-            <input type="checkbox" />
-        </label>
-    </div>
-</form>
-{% endexample %}
-
-表单单选项
-{% example html %}
-<form action="#">
-    <div class="ui-form-item ui-form-item-radio ui-border-b">
-        <label class="ui-radio" for="radio">
-            <input type="radio" name="radio" />
-        </label>
-        <p>表单中用于单选操作</p>
-    </div>
-</form>
-{% endexample %}
-
-表单多选项,普通列表中多选项
-{% example html %}
-<form action="#">
-    <div class="ui-form-item ui-form-item-checkbox ui-border-b">
-        <label class="ui-checkbox">
-            <input type="checkbox" />
-        </label>
-        <p>表单中用于多选操作</p>
-    </div>
-</form>
-{% endexample %}
-
-多选框
-{% example html %}
-<div class="demo-block">
-    <p>
-        <label class="ui-checkbox-s">
-            <input type="checkbox" name="checkbox" checked="" />
-        </label>
-         我已阅读并同意
-    </p>
-</div>
-{% endexample %}
-
-普通列表中单选项
-{% example html %}
-<ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
-    <li class="ui-border-t">
-        <label class="ui-radio" for="radio">
-            <input type="radio" name="radio" />
-        </label>
-        <p>普通列表中用于单选操作</p>
-    </li>
-    <li class="ui-border-t">
-        <label class="ui-radio" for="radio">
-            <input type="radio" checked="" name="radio" />
-        </label>
-        <p>普通列表中用于单选操作</p>
-    </li>
-</ul>
-{% endexample %}
-
 ## 网格
 <div class="mod-qrcode">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
@@ -813,14 +690,6 @@ flex网格
 </div>
 {% endexample %}
 
-
-## 图标网格
-<div class="mod-qrcode3">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
-    <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrbtn"></span>
-  </a>
-</div>
 图文左右排列
 {% example html %}
 <div class="ui-grid-icon ui-grid-icon-horizontal">
@@ -1166,6 +1035,208 @@ flex网格
         <p>正在加载中...</p>
     </div>
 </div>
+{% endexample %}
+
+## 表单
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+通用设置类输入框
+{% example html %}
+<div class="ui-form ui-border-t">
+    <form action="">
+        <div class="ui-form-item ui-border-b">
+            <label>
+                列表标题
+            </label>
+            <input type="text" placeholder="18位身份证号码">
+            <a href="#" class="ui-icon-close">
+            </a>
+        </div>
+        <div class="ui-form-item ui-form-item-link ui-border-b">
+            <label>
+                列表标题
+            </label>
+        </div>
+        <div class="ui-form-item ui-form-item-link ui-border-b">
+            <label>
+                标题
+            </label>
+        </div>
+        <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary">
+                确定
+            </button>
+        </div>
+    </form>
+</div>
+{% endexample %}
+{% example html %}
+<div class="ui-form ui-border-t">
+    <form action="">
+        <div class="ui-form-item ui-form-item-pure ui-border-b">
+            <input type="text" placeholder="列表标题">
+            <a href="#" class="ui-icon-close"></a>
+        </div>
+        <p class="ui-form-tips">4/20</p>
+    </form>
+</div>
+{% endexample %}
+
+强引导类输入框
+{% example html %}
+<section class="ui-input-wrap ui-border-t">
+    <div class="ui-input ui-border-radius">
+        <input type="text" name="" value="" placeholder="我也说一句...">
+    </div>
+    <button class="ui-btn">评论</button>
+</section>
+<section class="ui-input-wrap ui-border-t">
+    <div class="ui-input ui-border-radius ui-input-text">
+        <input type="text" name="" value="" placeholder="我也说一句...">
+    </div>
+</section>
+{% endexample %}
+
+表单开关项
+{% example html %}
+  <form action="">
+      <div class="ui-form-item ui-form-item-switch ui-border-b">
+          <p>
+              对附近的人可见
+          </p>
+          <label class="ui-switch">
+              <input type="checkbox">
+          </label>
+      </div>
+      <div class="ui-form-item ui-form-item-switch ui-border-b">
+          <p>
+              对附近的人可见
+          </p>
+          <label class="ui-switch">
+              <input type="checkbox" checked="">
+          </label>
+      </div>
+  </form>
+{% endexample %}
+
+表单下拉框
+{% example html %}
+<form action="">
+    <div class="ui-form-item ui-border-b">
+        <label>日期</label>
+        <div class="ui-select-group">
+            <div class="ui-select">
+                <select>
+                    <option>2014</option>
+                    <option selected="">2015</option>
+                    <option>2016</option>
+                </select>
+            </div>
+            <div class="ui-select">
+                <select>
+                    <option>03</option>
+                    <option selected="">04</option>
+                    <option>05</option>
+                </select>
+            </div>
+            <div class="ui-select">
+                <select>
+                    <option>21</option>
+                    <option selected="">22</option>
+                    <option>23</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="ui-form-item ui-border-b">
+        <label>日期</label>
+        <div class="ui-select">
+            <select>
+                <option>2014</option>
+                <option selected="">2015</option>
+                <option>2016</option>
+            </select>
+        </div>
+    </div>
+</form>
+{% endexample %}
+
+表单单选项
+{% example html %}
+<form action="">
+    <div class="ui-form-item ui-form-item-radio ui-border-b">
+        <label class="ui-radio" for="radio">
+            <input type="radio" name="radio">
+        </label>
+        <p>表单中用于单选操作</p>
+    </div>
+    <div class="ui-form-item ui-form-item-radio ui-border-b">
+
+        <label class="ui-radio" for="radio">
+            <input type="radio" checked="" name="radio">
+        </label>
+        <p>表单中用于单选操作</p>
+    </div>
+</form>
+{% endexample %}
+
+表单多选项
+{% example html %}
+<form action="">
+    <div class="ui-form-item ui-form-item-checkbox ui-border-b">
+        <label class="ui-checkbox">
+            <input type="checkbox">
+        </label>
+        <p>表单中用于多选操作</p>
+    </div>
+    <div class="ui-form-item ui-form-item-checkbox ui-border-b">
+        <label class="ui-checkbox">
+            <input type="checkbox" checked="">
+        </label>
+        <p>表单中用于多选操作</p>
+    </div>
+</form>
+{% endexample %}
+
+
+普通列表中单选项
+{% example html %}
+<ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
+    <li class="ui-border-t">
+        <label class="ui-radio" for="radio">
+            <input type="radio" name="radio">
+        </label>
+        <p>普通列表中用于单选操作</p>
+    </li>
+    <li class="ui-border-t">
+        <label class="ui-radio" for="radio">
+            <input type="radio" checked="" name="radio">
+        </label>
+        <p>普通列表中用于单选操作</p>
+    </li>
+</ul>
+{% endexample %}
+
+普通列表中多选项
+{% example html %}
+<ul class="ui-list ui-list-text ui-list-checkbox ui-border-b">
+    <li class="ui-border-t">
+        <label class="ui-checkbox">
+            <input type="checkbox">
+        </label>
+        <p>普通列表中用于多选操作</p>
+    </li>
+    <li class="ui-border-t">
+        <label class="ui-checkbox">
+            <input type="checkbox" checked="">
+        </label>
+        <p>普通列表中用于多选操作</p>
+    </li>
+</ul>
 {% endexample %}
 
 
