@@ -23,7 +23,7 @@ FrozenUI 是一套基于移动端的UI库。它非常轻量、精美，遵从手
 **方式二**：在页面上引入样式文件（推荐）
 
 {% highlight html %}
-<link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/qui/2.0.0/css/qui.css">
+<link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.3.0/css/frozen.css">
 {% endhighlight %}
 
 ## 如何使用
@@ -39,7 +39,7 @@ FrozenUI 是一套基于移动端的UI库。它非常轻量、精美，遵从手
         <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, initial-scale=1.0, user-scalable=no">
         <title>FrozenUI Demo</title>
         <!-- 引入 FrozenUI -->
-        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/qui/2.0.0/css/qui.css"/>
+        <link rel="stylesheet" href="http://i.gtimg.cn/vipstyle/frozenui/1.3.0/css/frozen.css"/>
     </head>
     <body>
         <!-- 使用 -->
@@ -70,25 +70,31 @@ grunt
 {% highlight plaintext %}
 FrozenUI/
 ├── sass/
-│   ├── base 通用支撑代码
-│   ├── component 组件代码
-│   ├── util 基础功能代码
 │   └── 存放 .scss 源码
 └── css/
-│   ├── full.css
-│   └── qui.css
+│   └── frozen.css
 └── font/
 │   └── 存放 字体文件
 └── img/
 │   └── 存放 图片文件
+└── js/
+│   └── frozen.js
+└── lib/
+│   └── 存放第三方依赖类库，如 zepto
+└── doc/
+│   └── 代码规范
+└── jsdoc/
+│   └── jsdoc生成的api文档
 └── demo/
 │   └── 示例 从 src/ 自动生成
 └── dist/
-    └── 发布的文件
+│   └── 发布的文件
+└── Gruntfile.js/
+    └── grunt 配置文件
 {% endhighlight %}
 
 
-## 使用进阶
+<!-- ## 使用进阶
 
 FrozenUI 是一个非常灵活、轻量的组件库，遵循模块化和颗粒化的理念，除了上述中的常规使用，我们还有一些进阶的用法。
 
@@ -109,4 +115,14 @@ $button-bg-color:   #333;
 $button-text:       #fff;
 {% endhighlight %}
 
-通过该方法，可以让多页面场景更高效管理。常见的一键换肤功能也可以通过此方法快速实现。
+通过该方法，可以让多页面场景更高效管理。常见的一键换肤功能也可以通过此方法快速实现。 -->
+
+## 历史版本及代码规范
+
+1.3.0以前的历史版本修改记录： [https://github.com/frozenui/frozenui/wiki/History](https://github.com/frozenui/frozenui/wiki/History)
+
+1.3.0版本的修改记录： [https://github.com/frozenui/frozenui/wiki/History-1.3.0](https://github.com/frozenui/frozenui/wiki/History-1.3.0)
+
+组件css规范： [https://github.com/frozenui/frozenui/wiki/CSS-Guide](https://github.com/frozenui/frozenui/wiki/CSS-Guide)
+
+通用代码规范： [https://github.com/frozenui/frozenui/wiki/CSS-Guide](https://github.com/frozenui/frozenui/wiki/CSS-Guide)
