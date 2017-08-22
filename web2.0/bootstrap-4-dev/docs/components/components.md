@@ -258,8 +258,9 @@ redirect_from: "/components/"
   </div>        
 </div>
 {% endexample %}
-<!--
+
 ## 信息流
+
 <div class="mod-qrcode2">
   <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/feeds.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
@@ -471,13 +472,13 @@ redirect_from: "/components/"
       </li>
     </ul>
 </div>
-{% endexample %} -->
+{% endexample %} 
 
 ## 输入框
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/list.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/input.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrlist"></span>
+    <span class="doc-qrcode" id="qrinput"></span>
   </a>
 </div>
 通用设置类输入框
@@ -598,9 +599,9 @@ redirect_from: "/components/"
 
 ## 网格
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/grid.html" title="点击查看demo" target="_blank">
   <span class="icon-qr"></span>
-  <span class="doc-qrcode" id="qrbtn"></span>
+  <span class="doc-qrcode" id="qrgrid"></span>
   </a>
 </div>
 float网格适合多行
@@ -816,9 +817,9 @@ flex网格
 
 ## 图标网格
 <div class="mod-qrcode3">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/grid.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrbtn"></span>
+    <span class="doc-qrcode" id="qrgrid2"></span>
   </a>
 </div>
 图文左右排列
@@ -874,7 +875,7 @@ flex网格
 <!-- ## Examples -->
 ## 列表
 <div class="mod-qrcode">
-    <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span> <span class="doc-qrcode" id="qrbtn"></span> </a>
+    <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/list.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span> <span class="doc-qrcode" id="qrlist"></span> </a>
 </div>
 
 单行列表(纯文字)
@@ -1171,9 +1172,9 @@ flex网格
 
 ## 通知
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/notice.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrbtn"></span>
+    <span class="doc-qrcode" id="qrnotice"></span>
   </a>
 </div>
 {% example html %}
@@ -1249,9 +1250,9 @@ ui-panel-center-multi 居中两行
 
 ## 进度条
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/progress.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrbtn"></span>
+    <span class="doc-qrcode" id="qrprogress"></span>
   </a>
 </div>
 进度条
@@ -1282,9 +1283,9 @@ ui-panel-center-multi 居中两行
 
 ## 搜索栏
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/search.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrbtn"></span>
+    <span class="doc-qrcode" id="qrsearch"></span>
   </a>
 </div>
 {% example html %}
@@ -1299,13 +1300,11 @@ ui-panel-center-multi 居中两行
 </div>
 {% endexample %}
 
-
-<!--
 ## 角标
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/subscript.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrbtn"></span>
+    <span class="doc-qrcode" id="qrsubscript"></span>
   </a>
 </div>
 红色角标
@@ -1366,18 +1365,18 @@ ui-panel-center-multi 居中两行
         </div>
     </li>
 </ul>
-{% endexample %} -->
+{% endexample %} 
 
 ## 选项卡
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/tab.html" title="点击查看demo" target="_blank">
     <span class="icon-qr"></span>
-    <span class="doc-qrcode" id="qrbtn"></span>
+    <span class="doc-qrcode" id="qrtab"></span>
   </a>
 </div>
 两个tab
 {% example html %}
-<div class="ui-tab ">
+<div class="ui-tab ">s
     <ul class="ui-tab-nav ui-border-b ">
         <li class="current"><span>热门</span></li>
         <li><span>热门</span></li>
