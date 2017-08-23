@@ -19,7 +19,8 @@ redirect_from: "/components/"
   </a>
 </div>
 
-普通按钮，添加类名 <code>.disabled</code> 增加不可点状态。
+### 普通按钮
+添加类名 <code>.disabled</code> 增加不可点状态。
 
 
 {% example html %}
@@ -31,7 +32,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-块状按钮
+### 块状按钮
 {% example html %}
 <div class="demo">
     <button class="ui-btn-lg">普通按钮</button>
@@ -41,7 +42,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-大按钮
+### 大按钮
 {% example html %}
 <div class="demo">
     <button class="ui-btn-lg-nowhole">普通按钮</button>
@@ -78,7 +79,7 @@ redirect_from: "/components/"
   <span class="doc-qrcode" id="qrtips"></span>
   </a>
 </div>
-普通提示
+### 普通提示
 {% example html %}
 <div class="ui-tooltips">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -92,7 +93,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-警示提示
+### 警示提示
 {% example html %}
 <div class="ui-tooltips ui-tooltips-warn">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -106,7 +107,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-引导提示
+### 引导提示
 {% example html %}
 <div class="ui-tooltips ui-tooltips-guide">
     <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
@@ -125,7 +126,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-底部提示
+### 底部提示
 {% example html %}
 <div class="ui-tooltips ui-tooltips-guide ui-tooltips-action">
     <div class="ui-tooltips-cnt ui-border-b">
@@ -141,7 +142,7 @@ redirect_from: "/components/"
     <span class="doc-qrcode" id="qrdialog"></span>
   </a>
 </div>
-文字提示(带标题)
+### 文字提示(带标题)
 {% example html %}
 <div class="ui-dialog show">
     <div class="ui-dialog-cnt">
@@ -157,7 +158,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-文字提示(不带标题)
+### 文字提示(不带标题)
 {% example html %}
 <div class="ui-dialog show">
     <div class="ui-dialog-cnt">
@@ -172,7 +173,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-结构化消息提示
+### 结构化消息提示
 {% example html %}
 <div class="ui-dialog ui-dialog-function show">
     <div class="ui-dialog-cnt">
@@ -197,7 +198,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-运营提示(运营图展示类)(单按钮)
+### 运营提示(运营图展示类)(单按钮)
 {% example html %}
 <div class="ui-dialog ui-dialog-operate show">
   <div class="ui-dialog-cnt">
@@ -218,7 +219,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-运营提示(运营图展示类)(双按钮)
+### 运营提示(运营图展示类)(双按钮)
 {% example html %}
 <div class="ui-dialog ui-dialog-operate show">
   <div class="ui-dialog-cnt">
@@ -239,7 +240,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-运营提示(图标展示类)
+### 运营提示(图标展示类)
 {% example html %}
 <div class="ui-dialog ui-dialog-operate ui-dialog-operate-icon show">
   <div class="ui-dialog-cnt">
@@ -266,7 +267,7 @@ redirect_from: "/components/"
     <span class="doc-qrcode" id="qrfeeds"></span>
   </a>
 </div>
-单图展示
+### 单图展示
 {% example html %}
 	<div class="ui-feeds">
         <ul>
@@ -277,7 +278,7 @@ redirect_from: "/components/"
     </div>
 {% endexample %}
 
-两图展示
+### 两图展示
 {% example html %}
   <div class="ui-feeds">
     <ul>
@@ -291,7 +292,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-三图展示
+### 三图展示
 {% example html %}
   <div class="ui-feeds">
     <ul>
@@ -308,7 +309,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-四图展示
+### 四图展示
 {% example html %}
 <div class="ui-feeds">
     <ul>
@@ -328,7 +329,7 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-五图展示
+### 五图展示
 {% example html %}
 <div class="ui-feeds">
     <ul>
@@ -351,39 +352,10 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-六图展示
+### 六图展示
 {% example html %}
 <div class="ui-feeds">
     <ul>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
-    </ul>
-</div>
-{% endexample %}
-
-七图展示
-{% example html %}
-<div class="ui-feeds">
-    <ul>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
       <li>
         <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
       </li>
@@ -406,13 +378,10 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-八图展示
+### 七图展示
 {% example html %}
 <div class="ui-feeds">
     <ul>
-      <li>
-        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
-      </li>
       <li>
         <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
       </li>
@@ -438,7 +407,39 @@ redirect_from: "/components/"
 </div>
 {% endexample %}
 
-九图展示
+### 八图展示
+{% example html %}
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+{% endexample %}
+
+### 九图展示
 {% example html %}
 <div class="ui-feeds">
     <ul>
@@ -480,7 +481,7 @@ redirect_from: "/components/"
   <span class="doc-qrcode" id="qrbtn"></span>
   </a>
 </div>
-float网格适合多行
+### float网格适合多行
 {% example html %}
 <ul class="ui-row">
     <li class="ui-col ui-col-50">50</li>
@@ -496,7 +497,7 @@ float网格适合多行
 </ul>
 {% endexample %}
 
-flex网格
+### flex网格
 {% example html %}
 <div class="ui-row-flex ui-whitespace">
     <div class="ui-col ui-col">平均分</div>
@@ -522,7 +523,7 @@ flex网格
 </div>
 {% endexample %}
 
-竖排flex
+### 竖排flex
 {% example html %}
 <div class="ui-row-flex ui-whitespace ui-row-flex-ver">
     <div class="ui-col">1/2</div>
@@ -530,7 +531,7 @@ flex网格
 </div>
 {% endexample %}
 
-三列(无交界线)
+### 三列(无交界线)
 {% example html %}
 <div class="ui-grid ui-grid-trisect">
     <ul class="ui-border-b">
@@ -574,7 +575,7 @@ flex网格
 </div>
 {% endexample %}
 
-三列
+### 三列
 {% example html %}
 <div class="ui-grid ui-grid-trisect">
     <ul class="ui-border-b">
@@ -618,7 +619,7 @@ flex网格
 </div>
 {% endexample %}
 
-两列
+### 两列
 {% example html %}
 <div class="ui-grid ui-grid-bisect">
     <ul>
@@ -646,7 +647,7 @@ flex网格
 </div>
 {% endexample %}
 
-两列文字
+### 两列文字
 {% example html %}
 <div class="ui-grid ui-grid-bisect">
     <ul>
@@ -690,7 +691,7 @@ flex网格
 </div>
 {% endexample %}
 
-图文左右排列
+### 图文左右排列
 {% example html %}
 <div class="ui-grid-icon ui-grid-icon-horizontal">
     <ul>
@@ -746,7 +747,7 @@ flex网格
     <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span> <span class="doc-qrcode" id="qrbtn"></span> </a>
 </div>
 
-单行列表(纯文字)
+### 单行列表(纯文字)
 {% example html %}
 <ul class="ui-list ui-list-single ui-list-link ui-border-tb">
     <li class="ui-border-t">
@@ -764,7 +765,7 @@ flex网格
 </ul>
 {% endexample %}
 
-单行头像
+### 单行头像
 {% example html %}
 <ul class="ui-list ui-list-link ui-list-single ui-border-tb">
     <li>
@@ -794,7 +795,7 @@ flex网格
 </ul>
 {% endexample %}
 
-单行小缩略图
+### 单行小缩略图
 {% example html %}
 <ul class="ui-list ui-list-single ui-list-link ui-border-tb">
     <li>
@@ -818,7 +819,7 @@ flex网格
 </ul>
 {% endexample %}
 
-单行缩略图
+### 单行缩略图
 {% example html %}
 <ul class="ui-list ui-list-link ui-border-tb">
     <li>
@@ -848,7 +849,7 @@ flex网格
 </ul>
 {% endexample %}
 
-双行文字头像+按钮
+### 双行文字头像+按钮
 {% example html %}
 <ul class="ui-list ui-list-function ui-border-tb">
     <li>
@@ -884,7 +885,7 @@ flex网格
 </ul>
 {% endexample %}
 
-图片在右列表
+### 图片在右列表
 {% example html %}
 <ul class="ui-list ui-list-nospace ui-border-tb">
     <li class="ui-border-t ui-arrowlink">
@@ -914,7 +915,7 @@ flex网格
 </ul>
 {% endexample %}
 
-图文列表正方形固定大小
+### 图文列表正方形固定大小
 {% example html %}
 <ul class="ui-list ui-border-tb ">
     <li>
@@ -938,7 +939,7 @@ flex网格
 </ul>
 {% endexample %}
 
-图文列表（垂直）
+### 图文列表（垂直）
 {% example html %}
 <ul class="ui-list ui-border-tb">
     <li>
@@ -1044,7 +1045,7 @@ flex网格
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
 </div>
-通用设置类输入框
+### 通用设置类输入框
 {% example html %}
 <div class="ui-form ui-border-t">
     <form action="">
@@ -1086,7 +1087,7 @@ flex网格
 </div>
 {% endexample %}
 
-强引导类输入框
+### 强引导类输入框
 {% example html %}
 <section class="ui-input-wrap ui-border-t">
     <div class="ui-input ui-border-radius">
@@ -1101,7 +1102,7 @@ flex网格
 </section>
 {% endexample %}
 
-表单开关项
+### 表单开关项
 {% example html %}
   <form action="">
       <div class="ui-form-item ui-form-item-switch ui-border-b">
@@ -1123,7 +1124,7 @@ flex网格
   </form>
 {% endexample %}
 
-表单下拉框
+### 表单下拉框
 {% example html %}
 <form action="">
     <div class="ui-form-item ui-border-b">
@@ -1165,7 +1166,7 @@ flex网格
 </form>
 {% endexample %}
 
-表单单选项
+### 表单单选项
 {% example html %}
 <form action="">
     <div class="ui-form-item ui-form-item-radio ui-border-b">
@@ -1184,7 +1185,7 @@ flex网格
 </form>
 {% endexample %}
 
-表单多选项
+### 表单多选项
 {% example html %}
 <form action="">
     <div class="ui-form-item ui-form-item-checkbox ui-border-b">
@@ -1203,7 +1204,7 @@ flex网格
 {% endexample %}
 
 
-普通列表中单选项
+### 普通列表中单选项
 {% example html %}
 <ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
     <li class="ui-border-t">
@@ -1221,7 +1222,7 @@ flex网格
 </ul>
 {% endexample %}
 
-普通列表中多选项
+### 普通列表中多选项
 {% example html %}
 <ul class="ui-list ui-list-text ui-list-checkbox ui-border-b">
     <li class="ui-border-t">
@@ -1264,7 +1265,7 @@ flex网格
     <span class="doc-qrcode" id="qrpanel"></span>
   </a>
 </div>
-默认面板
+### 默认面板
 {% example html %}
 <section class="ui-panel ui-grid ui-grid-trisect">
     <h2 class="ui-arrowlink">猜你喜欢<span class="ui-panel-subtitle">1328条</span></h2>
@@ -1379,7 +1380,7 @@ ui-panel-center-multi 居中两行
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
 </div>
-红色角标
+### 红色角标
 {% example html %}
 <ul class="ui-grid-halve">
     <li>
@@ -1391,7 +1392,7 @@ ui-panel-center-multi 居中两行
 </ul>
 {% endexample %}
 
-橙色角标
+### 橙色角标
 {% example html %}
 <ul class="ui-grid-halve">
   <li>
@@ -1403,7 +1404,7 @@ ui-panel-center-multi 居中两行
 </ul>
 {% endexample %}
 
-绿色角标
+### 绿色角标
 {% example html %}
 <ul class="ui-grid-halve">
     <li>
@@ -1415,7 +1416,7 @@ ui-panel-center-multi 居中两行
 </ul>
 {% endexample %}
 
-蓝色角标
+### 蓝色角标
 {% example html %}
 <ul class="ui-grid-halve">
     <li>
@@ -1427,7 +1428,7 @@ ui-panel-center-multi 居中两行
 </ul>
 {% endexample %}
 
-三个字的情况
+### 三个字的情况
 {% example html %}
 <ul class="ui-grid-halve">
     <li>
@@ -1446,7 +1447,7 @@ ui-panel-center-multi 居中两行
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
 </div>
-两个tab
+### 两个tab
 {% example html %}
 <div class="ui-tab ">
     <ul class="ui-tab-nav ui-border-b ">
@@ -1460,7 +1461,7 @@ ui-panel-center-multi 居中两行
 </div>
 {% endexample %}
 
-三个tab
+### 三个tab
 {% example html %}
 <div class="ui-tab">
     <ul class="ui-tab-nav ui-border-b">
@@ -1476,7 +1477,7 @@ ui-panel-center-multi 居中两行
 </div>
 {% endexample %}
 
-四个tab
+### 四个tab
 {% example html %}
 <div class="ui-tab">
     <ul class="ui-tab-nav ui-border-b">
