@@ -4922,5 +4922,10 @@ h6,
     margin-right: -150px;
     top: 20px;
 }
-
+.mod-qrcode3 .icon-qr{
+    left: 15px;
+}
+.mod-qrcode3 .doc-qrcode{
+    left: 15px;
+}
 /*# sourceMappingURL=full.css.map */
