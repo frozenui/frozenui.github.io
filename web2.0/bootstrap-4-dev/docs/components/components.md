@@ -939,7 +939,7 @@ redirect_from: "/components/"
 </ul>
 {% endexample %}
 
-### 图文列表（垂直）
+### 图文列表（垂直） 
 {% example html %}
 <ul class="ui-list ui-border-tb">
     <li>
