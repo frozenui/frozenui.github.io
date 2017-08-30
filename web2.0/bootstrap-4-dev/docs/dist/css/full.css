@@ -4919,8 +4919,9 @@ h6,
 #markdown-toc{
     position: sticky;
     float: right;
-    margin-right: -150px;
+    margin-right: -350px;
     top: 20px;
+    width: 275px;
 }
 .mod-qrcode3 .icon-qr{
     left: 15px;

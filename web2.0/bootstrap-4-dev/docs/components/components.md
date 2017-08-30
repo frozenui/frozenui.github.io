@@ -13,7 +13,7 @@ redirect_from: "/components/"
 ## 按钮
 
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
       <span class="icon-qr"></span>
       <span class="doc-qrcode" id="qrbtn"></span>
   </a>
@@ -54,7 +54,7 @@ redirect_from: "/components/"
 
 ## 菜单
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/actionsheet.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/actionsheet.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qractionsheet"></span>
   </a>
@@ -74,7 +74,7 @@ redirect_from: "/components/"
 
 ## 提示
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/tips.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/tips.html" title="点击查看demo" target="blank">
   <span class="icon-qr"></span>
   <span class="doc-qrcode" id="qrtips"></span>
   </a>
@@ -137,7 +137,7 @@ redirect_from: "/components/"
 
 ## 弹窗
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/dialog.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/dialog.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrdialog"></span>
   </a>
@@ -259,10 +259,10 @@ redirect_from: "/components/"
   </div>        
 </div>
 {% endexample %}
-<!--
+
 ## 信息流
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/feeds.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/feeds.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrfeeds"></span>
   </a>
@@ -472,11 +472,11 @@ redirect_from: "/components/"
       </li>
     </ul>
 </div>
-{% endexample %} -->
+{% endexample %}
 
 ## 网格
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
   <span class="icon-qr"></span>
   <span class="doc-qrcode" id="qrbtn"></span>
   </a>
@@ -744,7 +744,7 @@ redirect_from: "/components/"
 <!-- ## Examples -->
 ## 列表
 <div class="mod-qrcode">
-    <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span> <span class="doc-qrcode" id="qrbtn"></span> </a>
+    <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank"><span class="icon-qr"></span> <span class="doc-qrcode" id="qrbtn"></span> </a>
 </div>
 
 ### 单行列表(纯文字)
@@ -939,7 +939,7 @@ redirect_from: "/components/"
 </ul>
 {% endexample %}
 
-### 图文列表（垂直） 
+### 图文列表（垂直）
 {% example html %}
 <ul class="ui-list ui-border-tb">
     <li>
@@ -1040,7 +1040,7 @@ redirect_from: "/components/"
 
 ## 表单
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
@@ -1243,7 +1243,7 @@ redirect_from: "/components/"
 
 ## 通知
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
@@ -1260,7 +1260,7 @@ redirect_from: "/components/"
 
 ## 面板
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/panel.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/panel.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrpanel"></span>
   </a>
@@ -1321,7 +1321,7 @@ ui-panel-center-multi 居中两行
 
 ## 进度条
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
@@ -1354,7 +1354,7 @@ ui-panel-center-multi 居中两行
 
 ## 搜索栏
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
@@ -1372,10 +1372,9 @@ ui-panel-center-multi 居中两行
 {% endexample %}
 
 
-<!--
 ## 角标
 <div class="mod-qrcode">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
@@ -1438,11 +1437,12 @@ ui-panel-center-multi 居中两行
         </div>
     </li>
 </ul>
-{% endexample %} -->
+{% endexample %}
+
 
 ## 选项卡
 <div class="mod-qrcode2">
-  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="_blank">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
     <span class="icon-qr"></span>
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>

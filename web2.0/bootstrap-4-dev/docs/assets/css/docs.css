@@ -1330,7 +1330,6 @@ body {
     font-weight: bold;
     margin-top: 40px;
     margin-bottom: 20px; }
-
 #markdown-toc li {
   margin: 0; }
   #markdown-toc li a {
@@ -1340,9 +1339,15 @@ body {
     padding: 3px 20px;
     border-left: 2px solid #fff;
     margin: 2px 0; }
-  #markdown-toc li.active a {
+  #markdown-toc li ul{
+    display: none;
+  }
+  #markdown-toc li.active > a {
     color: #12B7F5;
     border-left-color: #12B7F5; }
+  #markdown-toc li.active ul{
+    display: block;
+  }
 
 .ui-form,
 .ui-input-wrap,
