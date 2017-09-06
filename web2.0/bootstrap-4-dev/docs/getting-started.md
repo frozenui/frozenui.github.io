@@ -18,8 +18,9 @@ FrozenUI 是一套基于移动端的UI库。它非常轻量、精美，遵从手
 ## 获取 FrozenUI
 
 **方式一**：点击链接下载文件
-<a href="{{ site.download.source }}" class="">{{ site.download.source }} </a>
-<br><br>
+
+<a href="https://github.com/frozenui/frozenui/archive/1.3.0.zip">frozenUI</a>
+
 **方式二**：在页面上引入样式文件（推荐）
 
 {% highlight html %}

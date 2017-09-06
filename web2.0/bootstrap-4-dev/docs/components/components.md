@@ -1265,6 +1265,7 @@ redirect_from: "/components/"
     <span class="doc-qrcode" id="qrpanel"></span>
   </a>
 </div>
+
 ### 默认面板
 {% example html %}
 <section class="ui-panel ui-grid ui-grid-trisect">
@@ -1304,6 +1305,7 @@ redirect_from: "/components/"
 </section>
 {% endexample %}
 
+### 居中面板
 ui-panel-center 居中
 {% example html %}
 <section class="ui-panel ui-panel-center ui-border-tb">
@@ -1311,6 +1313,7 @@ ui-panel-center 居中
 </section>
 {% endexample %}
 
+### 多行居中面板
 ui-panel-center-multi 居中两行
 {% example html %}
 <section class="ui-panel ui-panel-center-multi ui-border-tb">
@@ -1379,6 +1382,7 @@ ui-panel-center-multi 居中两行
     <span class="doc-qrcode" id="qrbtn"></span>
   </a>
 </div>
+
 ### 红色角标
 {% example html %}
 <ul class="ui-grid-halve">
@@ -1427,7 +1431,7 @@ ui-panel-center-multi 居中两行
 </ul>
 {% endexample %}
 
-### 三个字的情况
+### 三字角标
 {% example html %}
 <ul class="ui-grid-halve">
     <li>
