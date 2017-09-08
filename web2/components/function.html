@@ -1,0 +1,593 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+  
+    工具方法 · FrozenUI - 专注于移动web的UI框架 ; 
+  
+</title>
+
+<!-- Meta -->
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+<!-- Bootstrap core CSS -->
+
+  <link href="/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="/dist/css/full.css" rel="stylesheet">
+
+
+<!-- Documentation extras -->
+<link href="/assets/css/docs.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+
+<script>
+var _mtac = {"senseQuery":1};
+(function() {
+    var mta = document.createElement("script");
+    mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+    mta.setAttribute("name", "MTAH5");
+    mta.setAttribute("sid", "500500200");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(mta, s);
+})();
+
+
+</script>
+
+  </head>
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+    <header class="navbar navbar-expand-md bd-navbar">
+  <nav class="container">
+    
+
+    <div class="d-flex justify-content-between">
+      <a class="navbar-brand logo-frozenui" href="/">
+        FrozenUI
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bd-main-nav">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-item nav-link " href="/">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/getting-started">快速开始</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/components/components">UI组件</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="/components/function">工具方法</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" target="_blank" href="http://frozenui.github.io/frozenui/demo/index.html">DEMO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" target="_blank" href="http://frozenui.github.io/case.html">精彩H5</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-item nav-link" href="">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+    <div class="bd-pageheader">
+      <div class="container">
+        
+  <h1>工具方法</h1>
+  <p class="lead">
+      常用的工具方法，包括1px边框、rem适配、两端留白等常用场景等解决方案。
+  </p>
+
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
+          
+<nav class="bd-links" id="docsNavbarContent">
+  
+  
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item ">
+      <a class="bd-toc-link" href="//introduction/">
+        
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//introduction/">
+              Introduction
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//download/">
+              Download
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//contents/">
+              Contents
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//browsers-devices/">
+              Browsers & devices
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//javascript/">
+              JavaScript
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//options/">
+              Options
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//build-tools/">
+              Build tools
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//best-practices/">
+              Best practices
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//accessibility/">
+              Accessibility
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+  
+  
+  
+  
+
+  
+
+  <div class="bd-toc-item ">
+      <a class="bd-toc-link" href="//按钮/">
+        
+      </a>
+
+      <ul class="nav bd-sidenav">
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//按钮/">
+              按钮
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//面板/">
+              面板
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//信息流/">
+              信息流
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//列表/">
+              列表
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//提示/">
+              提示
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//表格/">
+              表格
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//选项卡/">
+              选项卡
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//角标/">
+              角标
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//菜单/">
+              菜单
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//表单/">
+              表单
+            </a>
+
+            
+          </li>
+        
+          
+          
+
+          
+
+          <li class="">
+            <a href="//网格/">
+              网格
+            </a>
+
+            
+          </li>
+        
+      </ul>
+    </div>
+  
+</nav>
+
+        </div>
+        <main class="col-12 col-md-9 pull-md-3 bd-content" role="main">
+          <h2 id="function">function</h2>
+
+<ul id="markdown-toc">
+  <li><a href="#function" id="markdown-toc-function">function</a></li>
+  <li><a href="#1px线" id="markdown-toc-1px线">1px线</a></li>
+  <li><a href="#文本大小" id="markdown-toc-文本大小">文本大小</a></li>
+  <li><a href="#文字颜色" id="markdown-toc-文字颜色">文字颜色</a></li>
+  <li><a href="#两端对齐" id="markdown-toc-两端对齐">两端对齐</a></li>
+  <li><a href="#超出截断" id="markdown-toc-超出截断">超出截断</a></li>
+</ul>
+
+<!-- ## Examples -->
+<h2 id="1px线">1px线</h2>
+
+<p>解决移动端retina屏幕1像素的显示问题。</p>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list-text border-list">
+    <li class="ui-border-t">上边框</li>
+    <li class="ui-border">边框</li>
+    <li class="ui-border-b">下边框</li>
+    <li class="ui-border-tb">上下边框</li>
+    <li class="ui-border-l">左边框</li>
+    <li class="ui-border-r">右边框</li>
+    <li class="ui-border-radius">
+        圆角边框
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list-text border-list"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>上边框<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border"</span><span class="nt">&gt;</span>边框<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-b"</span><span class="nt">&gt;</span>下边框<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-tb"</span><span class="nt">&gt;</span>上下边框<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-l"</span><span class="nt">&gt;</span>左边框<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-r"</span><span class="nt">&gt;</span>右边框<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-radius"</span><span class="nt">&gt;</span>
+        圆角边框
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<!-- ## Examples -->
+<!-- ## 占位图
+
+
+<div class="bd-example" data-example-id="">
+<section class="ui-placehold-img">
+    <span style="background-image:url(http://placeholder.qiniudn.com/640x200)"></span>
+</section>
+</div><div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"ui-placehold-img"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/640x200)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></div>
+ -->
+
+<h2 id="文本大小">文本大小</h2>
+<p>统一常见的字号。</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-whitespace">
+    <p>默认字体大小32px, 行高为1.5</p>
+    <h1>标题：h1, 36px</h1>
+    <h2>栏目：h2, 34px</h2>
+    <h3>内文：导航，正文段落h3, 32px</h3>
+    <h4>内文：人名歌名标题等h4, 32px</h4>
+    <h5>副内文：h5, 同ui-txt-sub, 28px</h5>
+    <h6>辅助文字：h6, 同ui-txt-tips, 24px</h6>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>默认字体大小32px, 行高为1.5<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;h1&gt;</span>标题：h1, 36px<span class="nt">&lt;/h1&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>栏目：h2, 34px<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;h3&gt;</span>内文：导航，正文段落h3, 32px<span class="nt">&lt;/h3&gt;</span>
+    <span class="nt">&lt;h4&gt;</span>内文：人名歌名标题等h4, 32px<span class="nt">&lt;/h4&gt;</span>
+    <span class="nt">&lt;h5&gt;</span>副内文：h5, 同ui-txt-sub, 28px<span class="nt">&lt;/h5&gt;</span>
+    <span class="nt">&lt;h6&gt;</span>辅助文字：h6, 同ui-txt-tips, 24px<span class="nt">&lt;/h6&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="文字颜色">文字颜色</h2>
+<p>多场景下使用的文字颜色。</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-whitespace">
+    <p class="ui-txt-default">主要内容色</p>
+    <p class="ui-txt-white" style="background:#000">主要内容反色</p>
+    <p class="ui-txt-info">辅助次要内容色</p>
+    <p class="ui-txt-muted">时间，输入框，不可点击状态文本色</p>
+    <p class="ui-txt-warning">警示，会员红名，搜索热词，同ui-txt-red</p>
+    <p class="ui-txt-highlight">关键词高亮，同em</p>
+    <p><a>链接颜色</a></p>
+    <p class="ui-txt-feeds">feeds链接</p>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-default"</span><span class="nt">&gt;</span>主要内容色<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-white"</span> <span class="na">style=</span><span class="s">"background:#000"</span><span class="nt">&gt;</span>主要内容反色<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-info"</span><span class="nt">&gt;</span>辅助次要内容色<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-muted"</span><span class="nt">&gt;</span>时间，输入框，不可点击状态文本色<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-warning"</span><span class="nt">&gt;</span>警示，会员红名，搜索热词，同ui-txt-red<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-highlight"</span><span class="nt">&gt;</span>关键词高亮，同em<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p&gt;&lt;a&gt;</span>链接颜色<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-feeds"</span><span class="nt">&gt;</span>feeds链接<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="两端对齐">两端对齐</h2>
+<p>常用的两端对齐解决方案。</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-whitespace">
+    <p class="ui-txt-justify-one">一行文本</p>
+    <p class="ui-txt-justify">普通的多行文本内容：在首个《进击的巨人》预热视频中只是描述了一个巨人恰好拿起一人准备放进嘴巴里面，而另个场景则是超大型巨人附着浓重的烟雾将巨手拍下来。将于今年8月1日上映。</p>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-justify-one"</span><span class="nt">&gt;</span>一行文本<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-txt-justify"</span><span class="nt">&gt;</span>普通的多行文本内容：在首个《进击的巨人》预热视频中只是描述了一个巨人恰好拿起一人准备放进嘴巴里面，而另个场景则是超大型巨人附着浓重的烟雾将巨手拍下来。将于今年8月1日上映。<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="超出截断">超出截断</h2>
+<p>应用广泛的文字超出截断（以省略号显示）的解决方案。</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-nowrap ui-whitespace">
+    一行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-nowrap ui-whitespace"</span><span class="nt">&gt;</span>
+    一行文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略，内容文字超出长度省略
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+        </main>
+      </div>
+    </div>
+
+    <footer class="bd-footer text-muted">
+  <div class="container">
+    <ul class="bd-footer-links">
+      <li><a href="">GitHub</a></li>
+      <li><a href="http://frozenui.github.io/frozenui/demo/index.html">DEMO</a></li>
+      <li><a href="http://frozenui.github.io/case.html">精彩H5</a></li>
+      <li><a href="#">QQ群：427632094</a></li>
+    </ul>
+    <p></p>
+    <p>©2017 QQVIP FD Team</p>
+  </div>
+</footer>
+
+<script src="" integrity="" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="/assets/js/vendor/tether.min.js"></script>
+
+
+  <script src="/dist/js/bootstrap.js"></script>
+  <script src="/dist/js/qrcode.min.js"></script>
+  <script src="/dist/js/index.js"></script>
+
+
+
+
+  <script src="/assets/js/vendor/anchor.min.js"></script>
+  <script src="/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/assets/js/vendor/holder.min.js"></script>
+  <script src="/assets/js/src/application.js"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/js/ie-emulation-modes-warning.js"></script>
+
+
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
+
+<script>
+SimpleJekyllSearch.init({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  searchResultTemplate: '<a class="dropdown-item" href="{url}">{title}</a>',
+  noResultsText: '<div class="dropdown-item no-results">Sorry, there are no results for that search.</div>',
+  json: '/search.json'
+})
+</script>
+
+
+<script>
+</script>
+
+  </body>
+</html>
