@@ -28,7 +28,7 @@
     //获取菜单
     $.ajax({
         type: "POST",
-        url: "http://119.29.8.64/vipstyle/web/case/getCategory.json",
+        url: "http://111.231.236.41/vipstyle/web/case/getCategory.json",
         dataType: 'json',
         timeout: 9999999
     })
@@ -65,7 +65,7 @@
       var maxnum =  oncenum;
       $.ajax({
          type: "POST",
-         url: "http://119.29.8.64/vipstyle/web/case/getData.json",
+         url: "http://111.231.236.41/vipstyle/web/case/getData.json",
          dataType: 'json',
          timeout: 9999999
       })
@@ -79,7 +79,7 @@
             for(var i=0; i<j; i++){
                var imgname = datalist[i].thumb.split(",");
                if(datalist[i].imgPath == undefined){
-                  datalist[i].imgPath ='http://119.29.8.64/vipstyle/web/case/img/';
+                  datalist[i].imgPath ='http://111.231.236.41/vipstyle/web/case/img/';
                }
                console.log(datalist[i].category, name)
                if (name == "" || datalist[i].category.indexOf(name) != -1) {
