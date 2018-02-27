@@ -1,4 +1,4 @@
-/*20151028 by Irene*/
+/*20180227 by Irene*/
 (function($) {
    //ajax方法
     $("#loading").ajaxStart(function(){
