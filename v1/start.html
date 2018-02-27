@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FrozenUI - 专注于移动web的UI框架</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="Tencent"/>
+    <meta name="keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js"/>
+    <meta name="description" content="专注于移动web的UI框架，基于腾讯手机QQ规范"/>
+    <meta name="author" content="Tencent.com"/>
+    <meta name="baidu-site-verification" content="pHwErTapFr" />
+    <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+    <script src="http://frozenui.github.io/frozenui/lib/zepto.min.js"></script>
+    <!-- <scripe src="frozenui/js/frozen.js"></scripe> -->
+    <link rel="stylesheet" href="css/base.css">
+    
+    
+
+    <script>
+        if (document.documentElement.clientWidth < 640) {
+            window.location.href = "/frozenui/demo";
+        }
+    </script>
+</head>
+<body>
+<div id="body-wrapper">
+    
+    <div class="head-area normal">
+    
+        <div class="head-content ">
+            <div class="title-area"><h1><a href="/">Frozen UI</a></h1></div>
+            <div class="nav-area"><a class="nav-toggle"></a>
+                <ol class="main-nav">
+                    <li><a href="start.html">快速开始</a></li>
+                    <li><a href="base.html">基础组件</a></li>
+                    <li><a href="components.html">UI 组件</a></li>
+                    <li><a href="http://frozenui.github.io/frozenjs/">JS 插件</a></li>
+                    <li><a href="case.html">动效库</a></li>
+                    <li><a href="customize.html">下载</a></li>
+                    <li><a href="/frozenui/demo/index.html">Demo</a></li>
+                    <li><a href="https://github.com/frozenui/frozenui">GitHub</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+<link rel="stylesheet" href="frozenui/css/frozen.css"/>
+<link rel="stylesheet" href="frozenui/css/vip.css">
+
+<link rel="stylesheet" href="css/solarized_light.css">
+<link rel="stylesheet" href="css/component.css">
+
+<div class="main-content">
+
+	<div class="banner">
+		<div class="banner-content">
+		    <h1>快速开始</h1>
+            <p class="info">简单易用，轻量快捷，为移动端服务的前端框架</p>
+		</div>
+	</div>
+
+	<div class="content">
+			<h2 id="history">历史版本</h2>
+	    	<p>
+	    		查看1.3.0以前的历史版本修改记录 <a href="https://github.com/frozenui/frozenui/wiki/History">https://github.com/frozenui/frozenui/wiki/History</a><br>
+               查看1.3.0版本的修改记录 <a href="https://github.com/frozenui/frozenui/wiki/History-1.3.0">https://github.com/frozenui/frozenui/wiki/History-1.3.0</a><br>
+               查看组件css规范 <a href="https://github.com/frozenui/frozenui/wiki/CSS-Guide">https://github.com/frozenui/frozenui/wiki/CSS-Guide</a><br>
+               查看通用代码规范 <a href="https://github.com/frozenui/frozenui/wiki/CSS-Guide">https://github.com/frozenui/frozenui/wiki/CSS-Guide</a>
+           </p>
+           <h2 id="install">下载安装</h2>
+           <h4 id="最新引用方式">最新引用方式</h4>
+           <p>1.下载完整版 <a href="https://github.com/frozenui/frozenui/archive/1.3.0.zip">https://github.com/frozenui/frozenui/archive/1.3.0.zip</a>
+           <p> </p>
+           <p>2.定制化下载 <a href="http://frozenui.github.io/customize.html">http://frozenui.github.io/customize.html</a></p>
+           <p>
+               3.访问我们的github仓库
+               <a href="https://github.com/frozenui/frozenui"><a href="https://github.com/frozenui/frozenui">https://github.com/frozenui/frozenui</a></a>，
+               自行 clone 到本地。
+           </p>
+           <h2>目录结构</h2>
+
+           - sass/ <br>
+    &nbsp;&nbsp;+ 存放 .scss 源码 <br>
+- css/<br>
+   &nbsp;&nbsp; + frozen.css <br>
+- font/<br>
+   &nbsp;&nbsp; + 存放 字体文件<br>
+- img/<br>
+   &nbsp;&nbsp; + 存放 图片文件<br> 
+- js/<br>
+   &nbsp;&nbsp; + frozen.js<br>
+- lib/<br>
+   &nbsp;&nbsp; + 存放第三方依赖类库，如 zeptojs<br>
+- doc/<br>
+   &nbsp;&nbsp; + 代码规范<br>
+- jsdoc/<br>
+   &nbsp;&nbsp; + jsdoc生成的api文档<br>
+- demo/<br>
+   &nbsp;&nbsp; + 示例, 从 src/ 自动生成<br>
+- dist/<br>
+   &nbsp;&nbsp; + 发布的文件<br>
+- Gruntfile.js<br>
+   &nbsp;&nbsp; + grunt 配置文件<br>
+
+			<h2>基础模板</h2>
+	    	<pre class="frozen-module-code"><code class="html">&lt;!DOCTYPE html&gt;
+&lt;html&gt;
+    &lt;head&gt;
+        &lt;meta charset=&quot;utf-8&quot;&gt;
+        &lt;meta name=&quot;viewport&quot; content=&quot;initial-scale=1, maximum-scale=1, user-scalable=no&quot;&gt;
+        &lt;meta name=&quot;format-detection&quot; content=&quot;telephone=no&quot;&gt;
+        &lt;title&gt;FrozenUI Demo&lt;/title&gt;
+        &lt;link rel=&quot;stylesheet&quot; href=&quot;../css/frozen.css&quot;&gt;
+    &lt;/head&gt;
+    &lt;body ontouchstart=&quot;&quot;&gt;
+        &lt;header class=&quot;ui-header ui-header-positive ui-border-b&quot;&gt;
+            &lt;i class=&quot;ui-icon-return&quot; onclick=&quot;history.back()&quot;&gt;&lt;/i&gt;&lt;h1&gt;选项卡 tab&lt;/h1&gt;&lt;button class=&quot;ui-btn&quot;&gt;回首页&lt;/button&gt;
+        &lt;/header&gt;
+        &lt;footer class=&quot;ui-footer ui-footer-btn&quot;&gt;
+            &lt;ul class=&quot;ui-tiled ui-border-t&quot;&gt;
+                &lt;li data-href=&quot;index.html&quot; class=&quot;ui-border-r&quot;&gt;&lt;div&gt;基础样式&lt;/div&gt;&lt;/li&gt;
+                &lt;li data-href=&quot;ui.html&quot; class=&quot;ui-border-r&quot;&gt;&lt;div&gt;UI组件&lt;/div&gt;&lt;/li&gt;
+                &lt;li data-href=&quot;js.html&quot;&gt;&lt;div&gt;JS插件&lt;/div&gt;&lt;/li&gt;
+            &lt;/ul&gt;
+        &lt;/footer&gt;
+        &lt;section class=&quot;ui-container&quot;&gt;
+            &lt;section id=&quot;tab&quot;&gt;
+            	&lt;div class=&quot;demo-item&quot;&gt;
+            		&lt;p class=&quot;demo-desc&quot;&gt;标签栏&lt;/p&gt;
+            		&lt;div class=&quot;demo-block&quot;&gt;
+            			&lt;div class=&quot;ui-tab&quot;&gt;
+            			    &lt;ul class=&quot;ui-tab-nav ui-border-b&quot;&gt;
+            			        &lt;li class=&quot;current&quot;&gt;热门推荐&lt;/li&gt;
+            			        &lt;li&gt;全部表情&lt;/li&gt;
+            			        &lt;li&gt;表情&lt;/li&gt;
+            			    &lt;/ul&gt;
+            			    &lt;ul class=&quot;ui-tab-content&quot; style=&quot;width:300%&quot;&gt;
+            			        &lt;li&gt;内容1&lt;/li&gt;
+            			        &lt;li&gt;内容2&lt;/li&gt;
+            			        &lt;li&gt;内容3&lt;/li&gt;
+            			    &lt;/ul&gt;
+            			&lt;/div&gt;
+            		&lt;/div&gt;
+            		&lt;script class=&quot;demo-script&quot;&gt;
+            		
+                    &lt;/script&gt;
+            	&lt;/div&gt;
+            &lt;/section&gt;
+        &lt;/section&gt;
+        &lt;script src=&quot;../lib/zepto.min.js&quot;&gt;&lt;/script&gt;
+        &lt;script src=&quot;../js/frozen.js&quot;&gt;&lt;/script&gt;
+        &lt;script&gt;
+        (function (){
+            var tab = new fz.Scroll(&#39;.ui-tab&#39;, {
+                role: &#39;tab&#39;,
+                autoplay: true,
+                interval: 3000
+            });
+            /* 滑动开始前 */
+            tab.on(&#39;beforeScrollStart&#39;, function(fromIndex, toIndex) {
+                console.log(fromIndex,toIndex);// from 为当前页，to 为下一页
+            })
+        })();
+        &lt;/script&gt;
+    &lt;/body&gt;
+&lt;/html&gt;</code></pre>
+	</div>
+</div>
+        <div class="foot-area">
+          <div class="fr-info">
+              <div class="info-item">
+                  <span class="qq-logo"></span>：427632094
+              </div>
+          </div>
+            
+          <div class="fr-introduce">
+            <div class="introduce-content">
+              <h3>FrozenUI是什么</h3>
+              <p>FrozenUI是什么 Frozen UI是一个开源的简单易用，轻量快捷的移动端UI框架。基于手Q样式规范，选取最常用的组件，</p>
+              <p>做成手Q公用离线包减少请求，升级方式友好，文档完善，目前全面应用在腾讯手Q增值业务中。</p>
+
+              <div class="bottom-info">
+                  <div class="links">
+                      <a href="">GitHub</a> • <a href="">nico</a> • <a href="">Issues</a> • <a href="">QQVIP FD Team</a>
+                  </div>
+                  <div class="copyright">
+                      © 2015  QQVIP FD Team
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    
+    <a href="#" class="scroll-top-btn" style="display: inline;">回到顶部</a>
+    
+    
+
+    <script src="js/sea.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="libs/highlight/highlight.pack.js"></script>
+    <script src="libs/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+    <script src="libs/jquery-qrcode/jquery.qrcode.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+

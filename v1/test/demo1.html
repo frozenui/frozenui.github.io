@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+        <meta charset="utf-8" />
+        <meta name="author" content="ISUX" />
+        <meta name="format-detection" content="telephone=no" />
+        <meta name="viewport" content="width=device-width, user-scalable=no" />
+        <meta name="apple-mobile-web-app-capable" content="yes" />
+        <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+        <title>FrozenUI组件库</title>
+        <!--统计代码 -->
+        <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+        <script type="text/javascript">
+        var _bdhmProtocol = (("https:" == document.location.protocol) ? " https://" : " http://");
+        document.write(unescape("%3Cscript src='" + _bdhmProtocol + "hm.baidu.com/h.js%3F3c5e509616a8353ee908823c8b29510c' type='text/javascript'%3E%3C/script%3E"));
+        </script>
+       
+        <style>
+            .main {
+                text-align: justify;
+                font-size: 0;
+            }
+
+            .main li {
+                display: inline-block;
+                text-align: center;
+                margin: 10px;
+            }
+
+            .main ul:after {
+                content: '';
+                display: inline-block;
+                width: 100%;
+                height: 0;
+                overflow: hidden;
+            }
+
+            .main2 {
+                height: 100px;
+                width: 100%;
+                display: -webkit-flex;
+                display: -webkit-box;
+                -webkit-box-pack: justify;
+                -webkit-justify-content: space-between;
+            }
+
+            .img {
+                width: 50px;
+                height: 50px;
+                background: #f43;
+            }
+
+            ul,li {
+                margin: 0;
+                padding: 0;
+            }
+
+            .box {
+                border-right: 1px solid #f43;
+                -webkit-box-flex: 1;
+                margin-left: 50px;
+                width: 0;
+                position: relative;
+            }
+
+            .box2 {
+                -webkit-box-flex: 2;
+            }
+
+            .box3 {
+                -webkit-box-flex: 2;
+            }
+
+            .box4 {
+                -webkit-box-flex: 1;
+                border-right: 0;
+            }
+
+            .box .img {
+                position: absolute;
+                left: 50%;
+                margin-left: -50px;
+                top: 25px;
+            }
+
+            .box1 .img {
+                left: 0;
+            }
+
+            .box4 .img {
+                left: 100%;
+            }
+
+            .main3 {
+                display: -webkit-box;
+                height: 100px;
+                width: 100%;
+            }
+
+            .main4 {
+                overflow: hidden;
+                width: 100%;
+            }
+
+            .main4 ul {
+                width: 125%;
+                padding-right: 62.5px;
+              /* 5/4*图片宽度 */
+                box-sizing: border-box;
+            }
+
+            .main4 ul li {
+                width: 20%;
+                height: 100px;
+                list-style: none;
+                float: left;
+            }
+
+        </style>
+    </head>
+    
+    <body>
+                    
+        <h3>text-align:justify</h3>
+        <div class="main">
+            <ul>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+                <li><div class="img"></div><span>xxx</span></li>
+            </ul>
+        </div>
+          
+        <h3> 纯flexbox </h3>
+        <div class="main2">
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            <div class="img"></div>
+            
+        </div>
+        <h3>flexbox + margin</h3>
+        <div class="main3">
+            <div class="box box1"><div class="img"></div></div>
+            <div class="box box2"><div class="img"></div></div>
+            <div class="box box3"><div class="img"></div></div>
+            <div class="box box4"><div class="img"></div></div>
+        </div> 
+        <h3>padding+box-sizing</h3>
+         <div class="main4">
+            <ul>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+                <li><div class="img"></div>xxx</li>
+            </ul>
+        </div>
+
+        
+    </body>
+
+</html>

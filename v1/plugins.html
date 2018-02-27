@@ -1,0 +1,827 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <title>FrozenUI - 专注于移动web的UI框架</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="copyright" content="Tencent"/>
+    <meta name="keywords" content="frozen，frozenui，frozenjs，forzen ui，forzen js"/>
+    <meta name="description" content="专注于移动web的UI框架，基于腾讯手机QQ规范"/>
+    <meta name="author" content="Tencent.com"/>
+    <meta name="baidu-site-verification" content="pHwErTapFr" />
+    <link type="image/x-icon" href="http://frozenui.github.io/static/favicon.ico" rel="icon">
+    <script type="text/javascript" src="http://tajs.qq.com/stats?sId=37342703" charset="UTF-8"></script>
+    <script src="http://frozenui.github.io/frozenui/lib/zepto.min.js"></script>
+    <!-- <scripe src="frozenui/js/frozen.js"></scripe> -->
+    <link rel="stylesheet" href="css/base.css">
+    
+    
+
+    <script>
+        if (document.documentElement.clientWidth < 640) {
+            window.location.href = "/frozenui/demo";
+        }
+    </script>
+</head>
+<body>
+<div id="body-wrapper">
+    
+    <div class="head-area normal">
+    
+        <div class="head-content ">
+            <div class="title-area"><h1><a href="/">Frozen UI</a></h1></div>
+            <div class="nav-area"><a class="nav-toggle"></a>
+                <ol class="main-nav">
+                    <li><a href="start.html">快速开始</a></li>
+                    <li><a href="base.html">基础组件</a></li>
+                    <li><a href="components.html">UI 组件</a></li>
+                    <li><a href="http://frozenui.github.io/frozenjs/">JS 插件</a></li>
+                    <li><a href="case.html">动效库</a></li>
+                    <li><a href="customize.html">下载</a></li>
+                    <li><a href="/frozenui/demo/index.html">Demo</a></li>
+                    <li><a href="https://github.com/frozenui/frozenui">GitHub</a></li>
+                </ol>
+            </div>
+        </div>
+    </div>
+
+<div class="main-area">
+    <div class="side-area">
+        <ul>
+    
+		
+        <li data-id="loading">
+            <a href="#loading">加载中</a>
+        </li>
+    
+		
+        <li data-id="tips">
+            <a href="#tips">提示</a>
+        </li>
+    
+		
+        <li data-id="dialog">
+            <a href="#dialog">对话框</a>
+        </li>
+    
+		
+        <li data-id="scroller">
+            <a href="#scroller">选项卡，轮播图，模拟滑动</a>
+        </li>
+    
+</ul>
+
+
+    </div>
+    <div class="content-area">
+        <h1>JS 插件</h1>
+        <div class="content">
+            
+
+
+
+
+<div class="module-group" id="loading">
+    <div class="group-head">
+        <h1 class="group-title"> 
+          <a href="http://frozenui.github.io/frozenui/demo/loading.html">加载中 loading</a>
+          <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/loading.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span></a>
+          <div class="doc-qrcode">
+            <img src="img/qr-code-demo.png" alt="">
+          </div>
+        </h1>
+    </div>
+
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            局部加载中
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-loading-wrap&quot;&gt;
+    &lt;p&gt;正在加载中...&lt;/p&gt;
+    &lt;i class=&quot;ui-loading&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+        ">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <div class="ui-loading-wrap">
+                <p>正在加载中...</p>
+                <i class="ui-loading"></i>
+            </div>
+        </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-loading-wrap&quot;&gt;
+    &lt;p&gt;正在加载中...&lt;/p&gt;
+    &lt;i class=&quot;ui-loading&quot;&gt;&lt;/i&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            页面加载中
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-btn&quot; id=&quot;btn1&quot;&gt;弹出&lt;/div&gt;
+&lt;div class=&quot;ui-loading-block&quot;&gt;
+    &lt;div class=&quot;ui-loading-cnt&quot;&gt;
+      &lt;i class=&quot;ui-loading-bright&quot;&gt;&lt;/i&gt;
+      &lt;p&gt;正在加载中...&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; class=&quot;demo-script&quot;&gt;
+    $(&quot;#btn1&quot;).tap(function(){
+        var el=$.loading({
+            content:&#39;加载中...&#39;,
+        })
+        setTimeout(function(){
+            el.loading(&quot;hide&quot;);
+        },20000);
+        el.on(&quot;loading:hide&quot;,function(){
+            console.log(&quot;loading hide&quot;);
+        });
+    });
+&lt;/script&gt;
+        ">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <div class="ui-btn" id="btn1">弹出</div>
+            <div class="ui-loading-block">
+                <div class="ui-loading-cnt">
+                  <i class="ui-loading-bright"></i>
+                  <p>正在加载中...</p>
+               </div>
+            </div>
+            <script type="text/javascript" class="demo-script">
+                $("#btn1").tap(function(){
+                    var el=$.loading({
+                        content:'加载中...',
+                    })
+                    setTimeout(function(){
+                        el.loading("hide");
+                    },20000);
+                    el.on("loading:hide",function(){
+                        console.log("loading hide");
+                    });
+                });
+            </script>
+        </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-btn&quot; id=&quot;btn1&quot;&gt;弹出&lt;/div&gt;
+&lt;div class=&quot;ui-loading-block&quot;&gt;
+    &lt;div class=&quot;ui-loading-cnt&quot;&gt;
+      &lt;i class=&quot;ui-loading-bright&quot;&gt;&lt;/i&gt;
+      &lt;p&gt;正在加载中...&lt;/p&gt;
+   &lt;/div&gt;
+&lt;/div&gt;
+&lt;script type=&quot;text/javascript&quot; class=&quot;demo-script&quot;&gt;
+    $(&quot;#btn1&quot;).tap(function(){
+        var el=$.loading({
+            content:&#39;加载中...&#39;,
+        })
+        setTimeout(function(){
+            el.loading(&quot;hide&quot;);
+        },20000);
+        el.on(&quot;loading:hide&quot;,function(){
+            console.log(&quot;loading hide&quot;);
+        });
+    });
+&lt;/script&gt;
+        </code></pre>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="module-group" id="tips">
+    <div class="group-head">
+        <h1 class="group-title"> 
+          <a href="http://frozenui.github.io/frozenui/demo/tips.html">提示 tips</a>
+          <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/tips.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span></a>
+          <div class="doc-qrcode">
+            <img src="img/qr-code-demo.png" alt="">
+          </div>
+        </h1>
+    </div>
+
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            浮层提示条
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-poptips ui-poptips-info&quot;&gt;
+    &lt;div class=&quot;ui-poptips-cnt&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;提供相关的信息或建议
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-poptips ui-poptips-warn&quot;&gt;
+    &lt;div class=&quot;ui-poptips-cnt&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;警示已经发生或可能发生的问题
+    &lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&quot;ui-poptips ui-poptips-success&quot;&gt;
+    &lt;div class=&quot;ui-poptips-cnt&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;提示操作成功或流程成功
+    &lt;/div&gt;
+&lt;/div&gt;
+        ">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <div class="ui-poptips ui-poptips-info">
+                <div class="ui-poptips-cnt">
+                    <i></i>提供相关的信息或建议
+                </div>
+            </div>
+            <div class="ui-poptips ui-poptips-warn">
+                <div class="ui-poptips-cnt">
+                    <i></i>警示已经发生或可能发生的问题
+                </div>
+            </div>
+             <div class="ui-poptips ui-poptips-success">
+                <div class="ui-poptips-cnt">
+                    <i></i>提示操作成功或流程成功
+                </div>
+            </div>
+        </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-poptips ui-poptips-info&quot;&gt;
+    &lt;div class=&quot;ui-poptips-cnt&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;提供相关的信息或建议
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-poptips ui-poptips-warn&quot;&gt;
+    &lt;div class=&quot;ui-poptips-cnt&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;警示已经发生或可能发生的问题
+    &lt;/div&gt;
+&lt;/div&gt;
+ &lt;div class=&quot;ui-poptips ui-poptips-success&quot;&gt;
+    &lt;div class=&quot;ui-poptips-cnt&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;提示操作成功或流程成功
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            工具提示条
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-tooltips ui-tooltips-warn&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;异常状态相关提示异常状态相关提示异常状态相关提示异常状态相关提示
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tooltips ui-tooltips-warn&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-border-b&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;客观情况告知客观情况告知客观情况告知客观情况告知&lt;a class=&quot;ui-icon-close&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tooltips ui-tooltips-guide&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b&quot;&gt;
+        &lt;i class=&quot;ui-icon-talk&quot;&gt;&lt;/i&gt;进行时状态相关进行时状态相关进行时状态相关进行时状态相关
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tooltips ui-tooltips-guide&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-border-b&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。&lt;a class=&quot;ui-icon-close&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        ">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <div class="ui-tooltips ui-tooltips-warn">
+                <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+                    <i></i>异常状态相关提示异常状态相关提示异常状态相关提示异常状态相关提示
+                </div>
+            </div>
+            <div class="ui-tooltips ui-tooltips-warn">
+                <div class="ui-tooltips-cnt ui-border-b">
+                    <i></i>客观情况告知客观情况告知客观情况告知客观情况告知<a class="ui-icon-close"></a>
+                </div>
+            </div>
+            <div class="ui-tooltips ui-tooltips-guide">
+                <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+                    <i class="ui-icon-talk"></i>进行时状态相关进行时状态相关进行时状态相关进行时状态相关
+                </div>
+            </div>
+            <div class="ui-tooltips ui-tooltips-guide">
+                <div class="ui-tooltips-cnt ui-border-b">
+                    <i></i>新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。<a class="ui-icon-close"></a>
+                </div>
+            </div>
+        </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-tooltips ui-tooltips-warn&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;异常状态相关提示异常状态相关提示异常状态相关提示异常状态相关提示
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tooltips ui-tooltips-warn&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-border-b&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;客观情况告知客观情况告知客观情况告知客观情况告知&lt;a class=&quot;ui-icon-close&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tooltips ui-tooltips-guide&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b&quot;&gt;
+        &lt;i class=&quot;ui-icon-talk&quot;&gt;&lt;/i&gt;进行时状态相关进行时状态相关进行时状态相关进行时状态相关
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tooltips ui-tooltips-guide&quot;&gt;
+    &lt;div class=&quot;ui-tooltips-cnt ui-border-b&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。&lt;a class=&quot;ui-icon-close&quot;&gt;&lt;/a&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+        </code></pre>
+        </div>
+    </div>
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            普通提示条
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-tips ui-tips-info&quot;&gt;
+    &lt;i&gt;&lt;/i&gt;&lt;span&gt;提供相关的信息或建议提供相关的信息或建议&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips ui-tips-warn&quot;&gt;
+    &lt;i&gt;&lt;/i&gt;&lt;span&gt;警示已经发生或可能在未来发生的问题警示已经发生或可能在未来发生的问题&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips ui-tips-success&quot;&gt;
+    &lt;i&gt;&lt;/i&gt;&lt;span&gt;提示操作成功或流程成功提示&lt;/span&gt;
+&lt;/div&gt;
+">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <div class="ui-tips ui-tips-info">
+                <i></i><span>提供相关的信息或建议提供相关的信息或建议</span>
+            </div>
+            <div class="ui-tips ui-tips-warn">
+                <i></i><span>警示已经发生或可能在未来发生的问题警示已经发生或可能在未来发生的问题</span>
+            </div>
+            <div class="ui-tips ui-tips-success">
+                <i></i><span>提示操作成功或流程成功提示</span>
+            </div>
+            </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-tips ui-tips-info&quot;&gt;
+    &lt;i&gt;&lt;/i&gt;&lt;span&gt;提供相关的信息或建议提供相关的信息或建议&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips ui-tips-warn&quot;&gt;
+    &lt;i&gt;&lt;/i&gt;&lt;span&gt;警示已经发生或可能在未来发生的问题警示已经发生或可能在未来发生的问题&lt;/span&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips ui-tips-success&quot;&gt;
+    &lt;i&gt;&lt;/i&gt;&lt;span&gt;提示操作成功或流程成功提示&lt;/span&gt;
+&lt;/div&gt;
+</code></pre>
+        </div>
+    </div>
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            新消息提示
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-tips-news-wrap&quot;&gt;
+    &lt;div class=&quot;ui-tips-news&quot;&gt;
+        &lt;span class=&quot;ui-avatar-tiled&quot;&gt;
+            &lt;span style=&quot;background-image:url(http://placehold.it/60x60)&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;div&gt;新消息新消息新消息新消息新消息新消息新消息新消息&lt;/div&gt;
+        &lt;span class=&quot;ui-reddot ui-reddot-static&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips-news-wrap&quot;&gt;
+    &lt;div class=&quot;ui-tips-news&quot;&gt;
+        &lt;span class=&quot;ui-tips-news-thumb&quot;&gt;
+            &lt;span style=&quot;background-image:url(http://placehold.it/60x60)&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;div&gt;新消息&lt;/div&gt;
+        &lt;span class=&quot;ui-badge-num&quot;&gt;123&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips-news-wrap&quot;&gt;
+    &lt;div class=&quot;ui-tips-news&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;
+        &lt;div&gt;新消息&lt;/div&gt;
+        &lt;span class=&quot;ui-badge-num&quot;&gt;123&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+        ">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <div class="ui-tips-news-wrap">
+                <div class="ui-tips-news">
+                    <span class="ui-avatar-tiled">
+                        <span style="background-image:url(http://placehold.it/60x60)"></span>
+                    </span>
+                    <div>新消息新消息新消息新消息新消息新消息新消息新消息</div>
+                    <span class="ui-reddot ui-reddot-static"></span>
+                </div>
+            </div>
+            <div class="ui-tips-news-wrap">
+                <div class="ui-tips-news">
+                    <span class="ui-tips-news-thumb">
+                        <span style="background-image:url(http://placehold.it/60x60)"></span>
+                    </span>
+                    <div>新消息</div>
+                    <span class="ui-badge-num">123</span>
+                </div>
+            </div>
+            <div class="ui-tips-news-wrap">
+                <div class="ui-tips-news">
+                    <i></i>
+                    <div>新消息</div>
+                    <span class="ui-badge-num">123</span>
+                </div>
+            </div>
+            
+        </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-tips-news-wrap&quot;&gt;
+    &lt;div class=&quot;ui-tips-news&quot;&gt;
+        &lt;span class=&quot;ui-avatar-tiled&quot;&gt;
+            &lt;span style=&quot;background-image:url(http://placehold.it/60x60)&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;div&gt;新消息新消息新消息新消息新消息新消息新消息新消息&lt;/div&gt;
+        &lt;span class=&quot;ui-reddot ui-reddot-static&quot;&gt;&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips-news-wrap&quot;&gt;
+    &lt;div class=&quot;ui-tips-news&quot;&gt;
+        &lt;span class=&quot;ui-tips-news-thumb&quot;&gt;
+            &lt;span style=&quot;background-image:url(http://placehold.it/60x60)&quot;&gt;&lt;/span&gt;
+        &lt;/span&gt;
+        &lt;div&gt;新消息&lt;/div&gt;
+        &lt;span class=&quot;ui-badge-num&quot;&gt;123&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+&lt;div class=&quot;ui-tips-news-wrap&quot;&gt;
+    &lt;div class=&quot;ui-tips-news&quot;&gt;
+        &lt;i&gt;&lt;/i&gt;
+        &lt;div&gt;新消息&lt;/div&gt;
+        &lt;span class=&quot;ui-badge-num&quot;&gt;123&lt;/span&gt;
+    &lt;/div&gt;
+&lt;/div&gt;
+
+        </code></pre>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="module-group" id="dialog">
+    <div class="group-head">
+        <h1 class="group-title"> 
+          <a href="http://frozenui.github.io/frozenui/demo/dialog.html">对话框 dialog</a>
+          <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/dialog.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span></a>
+          <div class="doc-qrcode">
+            <img src="img/qr-code-demo.png" alt="">
+          </div>
+        </h1>
+    </div>
+
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            对话框
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-dialog&quot;&gt;
+    &lt;div class=&quot;ui-dialog-cnt&quot;&gt;
+	    &lt;header class=&quot;ui-dialog-hd ui-border-b&quot;&gt;
+                  &lt;h3&gt;新手任务&lt;/h3&gt;
+                  &lt;i class=&quot;ui-dialog-close&quot; data-role=&quot;button&quot;&gt;&lt;/i&gt;
+              &lt;/header&gt;
+        &lt;div class=&quot;ui-dialog-bd&quot;&gt;
+            &lt;h4&gt;标题标题&lt;/h4&gt;
+            &lt;div&gt;开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ui-dialog-ft ui-btn-group&quot;&gt;
+            &lt;button type=&quot;button&quot; data-role=&quot;button&quot;&gt;取消&lt;/button&gt;
+            &lt;button type=&quot;button&quot; data-role=&quot;button&quot;&gt;开通&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;        
+&lt;/div&gt;
+&lt;div class=&quot;ui-btn&quot; id=&quot;btn1&quot;&gt;模板创建弹窗&lt;/div&gt;
+ 		&lt;div class=&quot;ui-btn&quot; id=&quot;btn2&quot;&gt;DOM创建弹窗&lt;/div&gt;
+&lt;script class=&quot;demo-script&quot;&gt;
+(function (){
+          $(&quot;#btn1&quot;).tap(function(){
+	    var dia=$.dialog({
+	        title:&#39;温馨提示&#39;,
+	        content:&#39;温馨提示内容&#39;,
+	        button:[&quot;确认&quot;,&quot;取消&quot;]
+	    });
+
+	    dia.on(&quot;dialog:action&quot;,function(e){
+	        console.log(e.index)
+	    });
+	    dia.on(&quot;dialog:hide&quot;,function(e){
+	        console.log(&quot;dialog hide&quot;)
+	    });
+	})
+	$(&quot;#btn2&quot;).tap(function(){
+	    $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
+	})
+})();
+      &lt;/script&gt;
+		">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+			<div class="ui-dialog">
+			    <div class="ui-dialog-cnt">
+				    <header class="ui-dialog-hd ui-border-b">
+	                    <h3>新手任务</h3>
+	                    <i class="ui-dialog-close" data-role="button"></i>
+	                </header>
+			        <div class="ui-dialog-bd">
+			            <h4>标题标题</h4>
+			            <div>开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！</div>
+			        </div>
+			        <div class="ui-dialog-ft ui-btn-group">
+			            <button type="button" data-role="button">取消</button>
+			            <button type="button" data-role="button">开通</button>
+			        </div>
+			    </div>        
+			</div>
+			<div class="ui-btn" id="btn1">模板创建弹窗</div>
+    		<div class="ui-btn" id="btn2">DOM创建弹窗</div>
+			<script class="demo-script">
+			(function (){
+	            $("#btn1").tap(function(){
+				    var dia=$.dialog({
+				        title:'温馨提示',
+				        content:'温馨提示内容',
+				        button:["确认","取消"]
+				    });
+
+				    dia.on("dialog:action",function(e){
+				        console.log(e.index)
+				    });
+				    dia.on("dialog:hide",function(e){
+				        console.log("dialog hide")
+				    });
+				})
+				$("#btn2").tap(function(){
+				    $(".ui-dialog").dialog("show");
+				})
+			})();
+	        </script>
+		</div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-dialog&quot;&gt;
+    &lt;div class=&quot;ui-dialog-cnt&quot;&gt;
+	    &lt;header class=&quot;ui-dialog-hd ui-border-b&quot;&gt;
+                  &lt;h3&gt;新手任务&lt;/h3&gt;
+                  &lt;i class=&quot;ui-dialog-close&quot; data-role=&quot;button&quot;&gt;&lt;/i&gt;
+              &lt;/header&gt;
+        &lt;div class=&quot;ui-dialog-bd&quot;&gt;
+            &lt;h4&gt;标题标题&lt;/h4&gt;
+            &lt;div&gt;开通年费QQ会员即可领取欢乐斗地主感恩节回馈礼包！&lt;/div&gt;
+        &lt;/div&gt;
+        &lt;div class=&quot;ui-dialog-ft ui-btn-group&quot;&gt;
+            &lt;button type=&quot;button&quot; data-role=&quot;button&quot;&gt;取消&lt;/button&gt;
+            &lt;button type=&quot;button&quot; data-role=&quot;button&quot;&gt;开通&lt;/button&gt;
+        &lt;/div&gt;
+    &lt;/div&gt;        
+&lt;/div&gt;
+&lt;div class=&quot;ui-btn&quot; id=&quot;btn1&quot;&gt;模板创建弹窗&lt;/div&gt;
+ 		&lt;div class=&quot;ui-btn&quot; id=&quot;btn2&quot;&gt;DOM创建弹窗&lt;/div&gt;
+&lt;script class=&quot;demo-script&quot;&gt;
+(function (){
+          $(&quot;#btn1&quot;).tap(function(){
+	    var dia=$.dialog({
+	        title:&#39;温馨提示&#39;,
+	        content:&#39;温馨提示内容&#39;,
+	        button:[&quot;确认&quot;,&quot;取消&quot;]
+	    });
+
+	    dia.on(&quot;dialog:action&quot;,function(e){
+	        console.log(e.index)
+	    });
+	    dia.on(&quot;dialog:hide&quot;,function(e){
+	        console.log(&quot;dialog hide&quot;)
+	    });
+	})
+	$(&quot;#btn2&quot;).tap(function(){
+	    $(&quot;.ui-dialog&quot;).dialog(&quot;show&quot;);
+	})
+})();
+      &lt;/script&gt;
+		</code></pre>
+        </div>
+    </div>
+    
+</div>
+
+
+<div class="module-group" id="scroller">
+    <div class="group-head">
+        <h1 class="group-title"> 
+          <a href="http://frozenui.github.io/frozenui/demo/scroller.html">选项卡，轮播图，模拟滑动 scroller</a>
+          <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/scroller.html" title="点击查看demo" target="_blank"><span class="icon-qr"></span></a>
+          <div class="doc-qrcode">
+            <img src="img/qr-code-demo.png" alt="">
+          </div>
+        </h1>
+    </div>
+
+    
+    <div class="frozen-module">
+        <div class="frozen-module-head">
+          <h2 class="frozen-module-title">
+            模拟滚动
+            
+          </h2>
+          <p class="introduce"></p>
+        </div>
+        <div class="frozen-module-demo">
+          <div class="module-tags">
+            <span class="example module-tags">Example</span>
+            <a class="copy doc-copy-code-btn" data-clipboard-text="
+&lt;div class=&quot;ui-scroller ui-border&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;1、活动时间：2014.09.25 - 2014.10.31&lt;/li&gt;
+        &lt;li&gt;2、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。&lt;/li&gt;
+        &lt;li&gt;3、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。&lt;/li&gt;
+        &lt;li&gt;4、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  &lt;/li&gt;
+        &lt;li&gt;5、活动时间：2014.09.25 - 2014.10.31&lt;/li&gt;
+        &lt;li&gt;6、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。&lt;/li&gt;
+        &lt;li&gt;7、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。&lt;/li&gt;
+        &lt;li&gt;8、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- &lt;script src=&quot;http://i.gtimg.cn/vipstyle/frozenjs/1.0.1/frozen.js?_bid=304&quot;&gt;&lt;/script&gt; --&gt;
+&lt;script src=&quot;frozenjs/1.0.1/frozen.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    window.addEventListener(&#39;load&#39;, function(){
+
+        var myScroll = new fz.Scroll(&#39;.ui-scroller&#39;, {
+            scrollY: true
+        });
+    })
+&lt;/script&gt;
+        ">Copy</a>
+          </div>
+          <div class="frozen-module-dom"><div class="dom-content">
+            <div class="ui-scroller ui-border">
+                <ul>
+                    <li>1、活动时间：2014.09.25 - 2014.10.31</li>
+                    <li>2、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。</li>
+                    <li>3、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。</li>
+                    <li>4、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  </li>
+                    <li>5、活动时间：2014.09.25 - 2014.10.31</li>
+                    <li>6、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。</li>
+                    <li>7、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。</li>
+                    <li>8、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  </li>
+                </ul>
+            </div>
+
+            <!-- <script src="http://i.gtimg.cn/vipstyle/frozenjs/1.0.1/frozen.js?_bid=304"></script> -->
+            <script src="frozenjs/1.0.1/frozen.js"></script>
+            <script>
+                window.addEventListener('load', function(){
+
+                    var myScroll = new fz.Scroll('.ui-scroller', {
+                        scrollY: true
+                    });
+                })
+            </script>
+        </div></div>
+          <pre class="frozen-module-code"><code class="html">
+&lt;div class=&quot;ui-scroller ui-border&quot;&gt;
+    &lt;ul&gt;
+        &lt;li&gt;1、活动时间：2014.09.25 - 2014.10.31&lt;/li&gt;
+        &lt;li&gt;2、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。&lt;/li&gt;
+        &lt;li&gt;3、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。&lt;/li&gt;
+        &lt;li&gt;4、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  &lt;/li&gt;
+        &lt;li&gt;5、活动时间：2014.09.25 - 2014.10.31&lt;/li&gt;
+        &lt;li&gt;6、活动面向“预付费（Q点Q币、QQ卡、财付通/银行卡）开通超级QQ”的用户。以下支付方式的用户不 在本次活动范围内，“同时开通预付费超级QQ和短信版超级QQ”、“同时开通预付费超级QQ与短信版 会员”、“同时开通预付费超级QQ与iOS会员”、“开通短信版超级QQ”及“宽带/固定电话/超级/”（相关活动可留意超级QQ官网消息）。&lt;/li&gt;
+        &lt;li&gt;7、活动中，成长值的转移规则：① QQ会员成长值 = 超级QQ成长值 -（超级QQ成长值/超级QQ成长速度）*（超级QQ成长速度 - 同条件下会员成长速度）② 若您在转移前同时开通了超级QQ和QQ会员，转移后会员成长值在上述成长值（超Q转换而来）与原会员成长值间取较高者。较低部分，转换成等值的QQ会员加倍成长卡赠送给您。&lt;/li&gt;
+        &lt;li&gt;8、活动时间：2014.09.25 - 2014.10.311、活动间2014.09.25 - 2014.10.31、活动时间：  2014.09.25 -  活动时间活动时间活动时间  &lt;/li&gt;
+    &lt;/ul&gt;
+&lt;/div&gt;
+
+&lt;!-- &lt;script src=&quot;http://i.gtimg.cn/vipstyle/frozenjs/1.0.1/frozen.js?_bid=304&quot;&gt;&lt;/script&gt; --&gt;
+&lt;script src=&quot;frozenjs/1.0.1/frozen.js&quot;&gt;&lt;/script&gt;
+&lt;script&gt;
+    window.addEventListener(&#39;load&#39;, function(){
+
+        var myScroll = new fz.Scroll(&#39;.ui-scroller&#39;, {
+            scrollY: true
+        });
+    })
+&lt;/script&gt;
+        </code></pre>
+        </div>
+    </div>
+    
+</div>
+
+
+
+
+        </div>
+    </div>
+</div>
+        <div class="foot-area">
+          <div class="fr-info">
+              <div class="info-item">
+                  <span class="qq-logo"></span>：427632094
+              </div>
+          </div>
+            
+          <div class="fr-introduce">
+            <div class="introduce-content">
+              <h3>FrozenUI是什么</h3>
+              <p>FrozenUI是什么 Frozen UI是一个开源的简单易用，轻量快捷的移动端UI框架。基于手Q样式规范，选取最常用的组件，</p>
+              <p>做成手Q公用离线包减少请求，升级方式友好，文档完善，目前全面应用在腾讯手Q增值业务中。</p>
+
+              <div class="bottom-info">
+                  <div class="links">
+                      <a href="">GitHub</a> • <a href="">nico</a> • <a href="">Issues</a> • <a href="">QQVIP FD Team</a>
+                  </div>
+                  <div class="copyright">
+                      © 2015  QQVIP FD Team
+                  </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+
+    </div>
+
+    
+    <a href="#" class="scroll-top-btn" style="display: inline;">回到顶部</a>
+    
+    
+
+    <script src="js/sea.js"></script>
+    <script src="js/jquery.js"></script>
+    <script src="libs/highlight/highlight.pack.js"></script>
+    <script src="libs/zeroclipboard/dist/ZeroClipboard.min.js"></script>
+    <script src="libs/jquery-qrcode/jquery.qrcode.min.js"></script>
+    <script src="js/main.js"></script>
+  </body>
+</html>
+
+
