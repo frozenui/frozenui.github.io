@@ -25,9 +25,9 @@
             });
         });
     }
-    //获取菜单 
+    //获取菜单
     $.ajax({
-        type: "POST",
+        type: "GET",
         url: "http://111.231.236.41/vipstyle/web/case/getCategory.json",
         dataType: 'json',
         timeout: 9999999
@@ -64,7 +64,7 @@
 
       var maxnum =  oncenum;
       $.ajax({
-         type: "POST",
+         type: "GET",
          url: "http://111.231.236.41/vipstyle/web/case/getData.json",
          dataType: 'json',
          timeout: 9999999
