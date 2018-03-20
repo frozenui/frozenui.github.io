@@ -1,0 +1,3216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<title>
+
+    UI组件 · FrozenUI - 专注于移动web的UI框架
+
+
+</title>
+
+<!-- Meta -->
+<meta name="description" content="">
+<meta name="author" content="">
+
+
+<!-- Bootstrap core CSS -->
+
+  <link href="/dist/css/bootstrap.css" rel="stylesheet">
+  <link href="/dist/css/full.css" rel="stylesheet">
+
+
+<!-- Documentation extras -->
+<link href="/assets/css/docs.css" rel="stylesheet">
+
+<!-- Favicons -->
+<link rel="apple-touch-icon" href="/apple-touch-icon.png">
+<link rel="icon" href="/favicon.ico">
+
+<script>
+var _mtac = {"senseQuery":1};
+(function() {
+    var mta = document.createElement("script");
+    mta.src = "http://pingjs.qq.com/h5/stats.js?v2.0.2";
+    mta.setAttribute("name", "MTAH5");
+    mta.setAttribute("sid", "500500200");
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(mta, s);
+})();
+
+
+</script>
+
+  </head>
+  <body class="bd-docs" data-spy="scroll" data-target=".bd-sidenav-active">
+    <header class="navbar navbar-expand-md bd-navbar">
+  <nav class="container">
+
+
+    <div class="d-flex justify-content-between">
+      <a class="navbar-brand logo-frozenui" href="/">
+        FrozenUI
+      </a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#bd-main-nav" aria-controls="bd-main-nav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+    </div>
+
+    <div class="collapse navbar-collapse" id="bd-main-nav">
+      <ul class="nav navbar-nav">
+        <li class="nav-item active">
+          <a class="nav-item nav-link " href="/">首页</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/getting-started">快速开始</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link active" href="/components/components">UI组件</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link " href="/components/function">工具方法</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" target="_blank" href="http://frozenui.github.io/frozenui/demo/index.html">DEMO</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-item nav-link" target="_blank" href="http://frozenui.github.io/case.html">精彩H5</a>
+        </li>
+         <li class="nav-item">
+          <a class="nav-item nav-link" target="_blank" href="https://github.com/frozenui/frozenui">GitHub</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+</header>
+
+    <div class="bd-pageheader">
+      <div class="container">
+
+  <h1>UI组件</h1>
+  <p class="lead">
+      丰富的UI组件，包括按钮、列表、网格、面板、表单、对话框、列表等常用组件。
+  </p>
+
+
+      </div>
+    </div>
+    <div class="container">
+      <div class="row">
+        <div class="col-12 col-md-3 push-md-9 bd-sidebar">
+
+<nav class="bd-links" id="docsNavbarContent">
+
+
+
+
+
+
+
+
+
+  <div class="bd-toc-item ">
+      <a class="bd-toc-link" href="//introduction/">
+
+      </a>
+
+      <ul class="nav bd-sidenav">
+
+
+
+
+
+
+          <li class="">
+            <a href="//introduction/">
+              Introduction
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//download/">
+              Download
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//contents/">
+              Contents
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//browsers-devices/">
+              Browsers & devices
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//javascript/">
+              JavaScript
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//options/">
+              Options
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//build-tools/">
+              Build tools
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//best-practices/">
+              Best practices
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//accessibility/">
+              Accessibility
+            </a>
+
+
+          </li>
+
+      </ul>
+    </div>
+
+
+
+
+
+
+
+
+  <div class="bd-toc-item ">
+      <a class="bd-toc-link" href="//按钮/">
+
+      </a>
+
+      <ul class="nav bd-sidenav">
+
+
+
+
+
+
+          <li class="">
+            <a href="//按钮/">
+              按钮
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//面板/">
+              面板
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//信息流/">
+              信息流
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//列表/">
+              列表
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//提示/">
+              提示
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//表格/">
+              表格
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//选项卡/">
+              选项卡
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//角标/">
+              角标
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//菜单/">
+              菜单
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//表单/">
+              表单
+            </a>
+
+
+          </li>
+
+
+
+
+
+
+          <li class="">
+            <a href="//网格/">
+              网格
+            </a>
+
+
+          </li>
+
+      </ul>
+    </div>
+
+</nav>
+
+        </div>
+        <main class="col-12 col-md-9 pull-md-3 bd-content" role="main">
+          <ul id="markdown-toc">
+  <li><a href="#uicompontent" id="markdown-toc-uicompontent">uicompontent</a></li>
+  <li><a href="#按钮" id="markdown-toc-按钮">按钮</a>    <ul>
+      <li><a href="#普通按钮" id="markdown-toc-普通按钮">普通按钮</a></li>
+      <li><a href="#块状按钮" id="markdown-toc-块状按钮">块状按钮</a></li>
+      <li><a href="#大按钮" id="markdown-toc-大按钮">大按钮</a></li>
+    </ul>
+  </li>
+  <li><a href="#菜单" id="markdown-toc-菜单">菜单</a></li>
+  <li><a href="#提示" id="markdown-toc-提示">提示</a>    <ul>
+      <li><a href="#普通提示" id="markdown-toc-普通提示">普通提示</a></li>
+      <li><a href="#警示提示" id="markdown-toc-警示提示">警示提示</a></li>
+      <li><a href="#引导提示" id="markdown-toc-引导提示">引导提示</a></li>
+      <li><a href="#底部提示" id="markdown-toc-底部提示">底部提示</a></li>
+    </ul>
+  </li>
+  <li><a href="#弹窗" id="markdown-toc-弹窗">弹窗</a>    <ul>
+      <li><a href="#文字提示带标题" id="markdown-toc-文字提示带标题">文字提示(带标题)</a></li>
+      <li><a href="#文字提示不带标题" id="markdown-toc-文字提示不带标题">文字提示(不带标题)</a></li>
+      <li><a href="#结构化消息提示" id="markdown-toc-结构化消息提示">结构化消息提示</a></li>
+      <li><a href="#运营提示运营图展示类单按钮" id="markdown-toc-运营提示运营图展示类单按钮">运营提示(运营图展示类)(单按钮)</a></li>
+      <li><a href="#运营提示运营图展示类双按钮" id="markdown-toc-运营提示运营图展示类双按钮">运营提示(运营图展示类)(双按钮)</a></li>
+      <li><a href="#运营提示图标展示类" id="markdown-toc-运营提示图标展示类">运营提示(图标展示类)</a></li>
+    </ul>
+  </li>
+  <li><a href="#信息流" id="markdown-toc-信息流">信息流</a>    <ul>
+      <li><a href="#单图展示" id="markdown-toc-单图展示">单图展示</a></li>
+      <li><a href="#两图展示" id="markdown-toc-两图展示">两图展示</a></li>
+      <li><a href="#三图展示" id="markdown-toc-三图展示">三图展示</a></li>
+      <li><a href="#四图展示" id="markdown-toc-四图展示">四图展示</a></li>
+      <li><a href="#五图展示" id="markdown-toc-五图展示">五图展示</a></li>
+      <li><a href="#六图展示" id="markdown-toc-六图展示">六图展示</a></li>
+      <li><a href="#七图展示" id="markdown-toc-七图展示">七图展示</a></li>
+      <li><a href="#八图展示" id="markdown-toc-八图展示">八图展示</a></li>
+      <li><a href="#九图展示" id="markdown-toc-九图展示">九图展示</a></li>
+    </ul>
+  </li>
+  <li><a href="#网格" id="markdown-toc-网格">网格</a>    <ul>
+      <li><a href="#float网格适合多行" id="markdown-toc-float网格适合多行">float网格适合多行</a></li>
+      <li><a href="#flex网格" id="markdown-toc-flex网格">flex网格</a></li>
+      <li><a href="#竖排flex" id="markdown-toc-竖排flex">竖排flex</a></li>
+      <li><a href="#三列无交界线" id="markdown-toc-三列无交界线">三列(无交界线)</a></li>
+      <li><a href="#三列" id="markdown-toc-三列">三列</a></li>
+      <li><a href="#两列" id="markdown-toc-两列">两列</a></li>
+      <li><a href="#两列文字" id="markdown-toc-两列文字">两列文字</a></li>
+      <li><a href="#图文左右排列" id="markdown-toc-图文左右排列">图文左右排列</a></li>
+    </ul>
+  </li>
+  <li><a href="#列表" id="markdown-toc-列表">列表</a>    <ul>
+      <li><a href="#单行列表纯文字" id="markdown-toc-单行列表纯文字">单行列表(纯文字)</a></li>
+      <li><a href="#单行头像" id="markdown-toc-单行头像">单行头像</a></li>
+      <li><a href="#单行小缩略图" id="markdown-toc-单行小缩略图">单行小缩略图</a></li>
+      <li><a href="#单行缩略图" id="markdown-toc-单行缩略图">单行缩略图</a></li>
+      <li><a href="#双行文字头像按钮" id="markdown-toc-双行文字头像按钮">双行文字头像+按钮</a></li>
+      <li><a href="#图片在右列表" id="markdown-toc-图片在右列表">图片在右列表</a></li>
+      <li><a href="#图文列表正方形固定大小" id="markdown-toc-图文列表正方形固定大小">图文列表正方形固定大小</a></li>
+      <li><a href="#图文列表垂直" id="markdown-toc-图文列表垂直">图文列表（垂直）</a></li>
+    </ul>
+  </li>
+  <li><a href="#表单" id="markdown-toc-表单">表单</a>    <ul>
+      <li><a href="#通用设置类输入框" id="markdown-toc-通用设置类输入框">通用设置类输入框</a></li>
+      <li><a href="#强引导类输入框" id="markdown-toc-强引导类输入框">强引导类输入框</a></li>
+      <li><a href="#表单开关项" id="markdown-toc-表单开关项">表单开关项</a></li>
+      <li><a href="#表单下拉框" id="markdown-toc-表单下拉框">表单下拉框</a></li>
+      <li><a href="#表单单选项" id="markdown-toc-表单单选项">表单单选项</a></li>
+      <li><a href="#表单多选项" id="markdown-toc-表单多选项">表单多选项</a></li>
+      <li><a href="#普通列表中单选项" id="markdown-toc-普通列表中单选项">普通列表中单选项</a></li>
+      <li><a href="#普通列表中多选项" id="markdown-toc-普通列表中多选项">普通列表中多选项</a></li>
+    </ul>
+  </li>
+  <li><a href="#通知" id="markdown-toc-通知">通知</a></li>
+  <li><a href="#面板" id="markdown-toc-面板">面板</a>    <ul>
+      <li><a href="#默认面板" id="markdown-toc-默认面板">默认面板</a></li>
+      <li><a href="#居中面板" id="markdown-toc-居中面板">居中面板</a></li>
+      <li><a href="#多行居中面板" id="markdown-toc-多行居中面板">多行居中面板</a></li>
+    </ul>
+  </li>
+  <li><a href="#进度条" id="markdown-toc-进度条">进度条</a></li>
+  <li><a href="#搜索栏" id="markdown-toc-搜索栏">搜索栏</a></li>
+  <li><a href="#角标" id="markdown-toc-角标">角标</a>    <ul>
+      <li><a href="#红色角标" id="markdown-toc-红色角标">红色角标</a></li>
+      <li><a href="#橙色角标" id="markdown-toc-橙色角标">橙色角标</a></li>
+      <li><a href="#绿色角标" id="markdown-toc-绿色角标">绿色角标</a></li>
+      <li><a href="#蓝色角标" id="markdown-toc-蓝色角标">蓝色角标</a></li>
+      <li><a href="#三字角标" id="markdown-toc-三字角标">三字角标</a></li>
+    </ul>
+  </li>
+  <li><a href="#选项卡" id="markdown-toc-选项卡">选项卡</a>    <ul>
+      <li><a href="#两个tab" id="markdown-toc-两个tab">两个tab</a></li>
+      <li><a href="#三个tab" id="markdown-toc-三个tab">三个tab</a></li>
+      <li><a href="#四个tab" id="markdown-toc-四个tab">四个tab</a></li>
+    </ul>
+  </li>
+</ul>
+<h2 id="uicompontent">uicompontent</h2>
+
+<h2 id="按钮">按钮</h2>
+
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+      <span class="icon-qr"></span>
+      <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+
+<h3 id="普通按钮">普通按钮</h3>
+<p>添加类名 <code>.disabled</code> 增加不可点状态。</p>
+
+<div class="bd-example" data-example-id="">
+<div class="demo">
+    <button class="ui-btn">普通按钮</button>
+    <button class="ui-btn ui-btn-primary">主要按钮</button>
+    <button class="ui-btn ui-btn-danger">警示按钮</button>
+    <button class="ui-btn disabled">不可点击</button>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"demo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn"</span><span class="nt">&gt;</span>普通按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn-primary"</span><span class="nt">&gt;</span>主要按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn ui-btn-danger"</span><span class="nt">&gt;</span>警示按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn disabled"</span><span class="nt">&gt;</span>不可点击<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="块状按钮">块状按钮</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="demo">
+    <button class="ui-btn-lg">普通按钮</button>
+    <button class="ui-btn-lg ui-btn-primary">主要按钮</button>
+    <button class="ui-btn-lg ui-btn-danger">警示按钮</button>
+    <button class="ui-btn-lg disabled">不可点击</button>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"demo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg"</span><span class="nt">&gt;</span>普通按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg ui-btn-primary"</span><span class="nt">&gt;</span>主要按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg ui-btn-danger"</span><span class="nt">&gt;</span>警示按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg disabled"</span><span class="nt">&gt;</span>不可点击<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="大按钮">大按钮</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="demo">
+    <button class="ui-btn-lg-nowhole">普通按钮</button>
+    <button class="ui-btn-lg-nowhole ui-btn-primary">主要按钮</button>
+    <button class="ui-btn-lg-nowhole ui-btn-danger">警示按钮</button>
+    <button class="ui-btn-lg-nowhole ui-btn-danger disabled">不可点击</button>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"demo"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg-nowhole"</span><span class="nt">&gt;</span>普通按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg-nowhole ui-btn-primary"</span><span class="nt">&gt;</span>主要按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg-nowhole ui-btn-danger"</span><span class="nt">&gt;</span>警示按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg-nowhole ui-btn-danger disabled"</span><span class="nt">&gt;</span>不可点击<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="菜单">菜单</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/actionsheet.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qractionsheet"></span>
+  </a>
+</div>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-actionsheet show">
+    <div class="ui-actionsheet-cnt am-actionsheet-down">
+        <h4>同时会将我从对方的列表中删除</h4>
+        <button>分享</button>
+        <button class="ui-actionsheet-del">删除</button>
+        <div class="ui-actionsheet-split-line"></div>
+        <button id="cancel">取消</button>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-actionsheet show"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-actionsheet-cnt am-actionsheet-down"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;h4&gt;</span>同时会将我从对方的列表中删除<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;button&gt;</span>分享<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-actionsheet-del"</span><span class="nt">&gt;</span>删除<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-actionsheet-split-line"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"cancel"</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="提示">提示</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/tips.html" title="点击查看demo" target="blank">
+  <span class="icon-qr"></span>
+  <span class="doc-qrcode" id="qrtips"></span>
+  </a>
+</div>
+<h3 id="普通提示">普通提示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-tooltips">
+    <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+        无法连接服务器，请检查你的网络设置。
+    </div>
+</div>
+<div class="ui-tooltips">
+    <div class="ui-tooltips-cnt ui-border-b">
+        无法连接服务器，请检查你的网络设置。<a class="ui-icon-close"></a>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b"</span><span class="nt">&gt;</span>
+        无法连接服务器，请检查你的网络设置。
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-border-b"</span><span class="nt">&gt;</span>
+        无法连接服务器，请检查你的网络设置。<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"ui-icon-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="警示提示">警示提示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-tooltips ui-tooltips-warn">
+    <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+        <i></i>无法连接服务器，请检查你的网络设置。
+    </div>
+</div>
+<div class="ui-tooltips ui-tooltips-warn">
+    <div class="ui-tooltips-cnt ui-border-b">
+        <i></i>无法连接服务器，请检查你的网络设置。<a class="ui-icon-close"></a>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips ui-tooltips-warn"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i&gt;&lt;/i&gt;</span>无法连接服务器，请检查你的网络设置。
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips ui-tooltips-warn"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i&gt;&lt;/i&gt;</span>无法连接服务器，请检查你的网络设置。<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"ui-icon-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="引导提示">引导提示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-tooltips ui-tooltips-guide">
+    <div class="ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b">
+        <i class="ui-icon-talk"></i>进行时状态相关进行时状态相关进行时状态相关进行时状态相关
+    </div>
+</div>
+<div class="ui-tooltips ui-tooltips-guide">
+    <div class="ui-tooltips-cnt ui-border-b">
+        <i></i>新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。<a class="ui-icon-close"></a>
+    </div>
+</div>
+<div class="ui-tooltips ui-tooltips-guide ui-tooltips-function">
+    <div class="ui-tooltips-cnt ui-border-b">
+        <i></i>新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。<button class="ui-btn-s">开通</button>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips ui-tooltips-guide"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-tooltips-cnt-link ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-icon-talk"</span><span class="nt">&gt;&lt;/i&gt;</span>进行时状态相关进行时状态相关进行时状态相关进行时状态相关
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips ui-tooltips-guide"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i&gt;&lt;/i&gt;</span>新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。<span class="nt">&lt;a</span> <span class="na">class=</span><span class="s">"ui-icon-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips ui-tooltips-guide ui-tooltips-function"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i&gt;&lt;/i&gt;</span>新手引导、新功能推荐、广告推广等。新手引导、新功能推荐、广告推广等。<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-s"</span><span class="nt">&gt;</span>开通<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="底部提示">底部提示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-tooltips ui-tooltips-guide ui-tooltips-action">
+    <div class="ui-tooltips-cnt ui-border-b">
+        <i></i>底部引导条<button class="ui-btn-s">开通</button><a class="ui-icon-close"></a>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips ui-tooltips-guide ui-tooltips-action"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tooltips-cnt ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i&gt;&lt;/i&gt;</span>底部引导条<span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-s"</span><span class="nt">&gt;</span>开通<span class="nt">&lt;/button&gt;&lt;a</span> <span class="na">class=</span><span class="s">"ui-icon-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="弹窗">弹窗</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/dialog.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrdialog"></span>
+  </a>
+</div>
+<h3 id="文字提示带标题">文字提示(带标题)</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-dialog show">
+    <div class="ui-dialog-cnt">
+        <div class="ui-dialog-bd">
+            <h3>下线通知</h3>
+            <p>你的账号于17:00在一台Android手机登录。如非本人操作，密码可能已泄露，建议立即冻结账号。</p>
+        </div>
+        <div class="ui-dialog-ft">
+            <button type="button" data-role="button">退出</button>
+            <button type="button" data-role="button" class="btn-recommand">重新登录</button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog show"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-cnt"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-bd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3&gt;</span>下线通知<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;p&gt;</span>你的账号于17:00在一台Android手机登录。如非本人操作，密码可能已泄露，建议立即冻结账号。<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-ft"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;</span>退出<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"btn-recommand"</span><span class="nt">&gt;</span>重新登录<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="文字提示不带标题">文字提示(不带标题)</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-dialog show">
+    <div class="ui-dialog-cnt">
+        <div class="ui-dialog-bd">
+            <p>将终止文件发送，确定返回？</p>
+        </div>
+        <div class="ui-dialog-ft">
+            <button type="button" data-role="button">取消</button>
+            <button type="button" data-role="button">确定</button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog show"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-cnt"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-bd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;p&gt;</span>将终止文件发送，确定返回？<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-ft"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;</span>确定<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="结构化消息提示">结构化消息提示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-dialog ui-dialog-function show">
+    <div class="ui-dialog-cnt">
+        <div class="ui-dialog-bd">
+            <h3>发送到 seame芝麻</h3>
+            <div class="ui-dialog-item">
+                <div class="ui-img">
+                    <span style="background-image:url(http://placeholder.qiniudn.com/140x140)"></span>
+                </div>
+                <div class="ui-dialog-info">
+                    <h5 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h5>
+                    <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+                    <span class="ui-nowrap">应用 开眼</span>
+                </div>
+            </div>
+        </div>
+        <div class="ui-dialog-ft">
+            <button type="button" data-role="button">取消</button>
+            <button type="button" data-role="button">确定</button>
+        </div>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog ui-dialog-function show"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-cnt"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-bd"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h3&gt;</span>发送到 seame芝麻<span class="nt">&lt;/h3&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-item"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/140x140)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+                <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-info"</span><span class="nt">&gt;</span>
+                    <span class="nt">&lt;h5</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是标题，加ui-nowrap可以超出长度截断<span class="nt">&lt;/h5&gt;</span>
+                    <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是内容，加ui-nowrap可以超出长度截断<span class="nt">&lt;/p&gt;</span>
+                    <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>应用 开眼<span class="nt">&lt;/span&gt;</span>
+                <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-ft"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;</span>确定<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="运营提示运营图展示类单按钮">运营提示(运营图展示类)(单按钮)</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-dialog ui-dialog-operate show">
+  <div class="ui-dialog-cnt">
+  	<div class="ui-dialog-hd">
+  		<div class="ui-img">
+  			<span style="background-image:url(http://placeholder.qiniudn.com/640x300)"></span>
+  		</div>
+  	</div>
+  	<div class="ui-dialog-bd">
+  		<h3>使用QQ钱包优惠购</h3>
+  		<p>参加天猫运动会，使用QQ钱包购买智能穿戴！分期0首付0手续费，放肆去浪！</p>
+  	</div>
+  	<div class="ui-dialog-ft">
+            <button class="ui-btn-lg">立即查看</button>
+        </div>
+        <i class="ui-dialog-close" data-role="button"></i>
+  </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog ui-dialog-operate show"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-cnt"</span><span class="nt">&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-hd"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img"</span><span class="nt">&gt;</span>
+  			<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/640x300)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  		<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-bd"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;h3&gt;</span>使用QQ钱包优惠购<span class="nt">&lt;/h3&gt;</span>
+  		<span class="nt">&lt;p&gt;</span>参加天猫运动会，使用QQ钱包购买智能穿戴！分期0首付0手续费，放肆去浪！<span class="nt">&lt;/p&gt;</span>
+  	<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-ft"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg"</span><span class="nt">&gt;</span>立即查看<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-dialog-close"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="运营提示运营图展示类双按钮">运营提示(运营图展示类)(双按钮)</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-dialog ui-dialog-operate show">
+  <div class="ui-dialog-cnt">
+  	<div class="ui-dialog-hd">
+  		<div class="ui-img">
+  			<span style="background-image:url(http://placeholder.qiniudn.com/640x300)"></span>
+  		</div>
+  	</div>
+  	<div class="ui-dialog-bd">
+  		<p>按钮颜色根据运营氛围需要自行重置！</p>
+  	</div>
+  	<div class="ui-dialog-ft">
+            <button type="button" data-role="button" class="ui-btn">查看详情</button>
+            <button type="button" data-role="button" class="ui-btn">下个任务</button>
+        </div>
+        <i class="ui-dialog-close" data-role="button"></i>
+  </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog ui-dialog-operate show"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-cnt"</span><span class="nt">&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-hd"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img"</span><span class="nt">&gt;</span>
+  			<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/640x300)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  		<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-bd"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;p&gt;</span>按钮颜色根据运营氛围需要自行重置！<span class="nt">&lt;/p&gt;</span>
+  	<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-ft"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ui-btn"</span><span class="nt">&gt;</span>查看详情<span class="nt">&lt;/button&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">data-role=</span><span class="s">"button"</span> <span class="na">class=</span><span class="s">"ui-btn"</span><span class="nt">&gt;</span>下个任务<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-dialog-close"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="运营提示图标展示类">运营提示(图标展示类)</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-dialog ui-dialog-operate ui-dialog-operate-icon show">
+  <div class="ui-dialog-cnt">
+  	<div class="ui-dialog-hd">
+  		<div class="ui-img">
+  			<span style="background-image:url(http://placeholder.qiniudn.com/420x220)"></span>
+  		</div>
+  	</div>
+  	<div class="ui-dialog-bd">
+  		<h3>恭喜你获得10个专属福袋！</h3>
+  	</div>
+  	<div class="ui-dialog-ft">
+            <button class="ui-btn-lg">发福袋</button>
+        </div>
+        <i class="ui-dialog-close" data-role="button"></i>
+  </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog ui-dialog-operate ui-dialog-operate-icon show"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-cnt"</span><span class="nt">&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-hd"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img"</span><span class="nt">&gt;</span>
+  			<span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/420x220)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+  		<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-bd"</span><span class="nt">&gt;</span>
+  		<span class="nt">&lt;h3&gt;</span>恭喜你获得10个专属福袋！<span class="nt">&lt;/h3&gt;</span>
+  	<span class="nt">&lt;/div&gt;</span>
+  	<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-dialog-ft"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg"</span><span class="nt">&gt;</span>发福袋<span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-dialog-close"</span> <span class="na">data-role=</span><span class="s">"button"</span><span class="nt">&gt;&lt;/i&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="信息流">信息流</h2>
+<div class="mod-qrcode2">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/feeds.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrfeeds"></span>
+  </a>
+</div>
+<h3 id="单图展示">单图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+        <ul>
+            <li>
+                <img src="http://119.29.8.64/vipstyle/mobile/client/cartoon/v2/pic/community/item1.jpg" alt="" />
+            </li>
+        </ul>
+    </div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;ul&gt;</span>
+            <span class="nt">&lt;li&gt;</span>
+                <span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"http://119.29.8.64/vipstyle/mobile/client/cartoon/v2/pic/community/item1.jpg"</span> <span class="na">alt=</span><span class="s">""</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="两图展示">两图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="三图展示">三图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="四图展示">四图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="五图展示">五图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="六图展示">六图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="七图展示">七图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="八图展示">八图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="九图展示">九图展示</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-feeds">
+    <ul>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+      <li>
+        <span style="background-image:url(http://placeholder.qiniudn.com/374x374)"></span>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-feeds"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/374x374)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="网格">网格</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+  <span class="icon-qr"></span>
+  <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+<h3 id="float网格适合多行">float网格适合多行</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-row">
+    <li class="ui-col ui-col-50">50</li>
+    <li class="ui-col ui-col-50">50</li>
+    <li class="ui-col ui-col-25">25</li>
+    <li class="ui-col ui-col-75">75</li>
+    <li class="ui-col ui-col-33">33</li>
+    <li class="ui-col ui-col-67">67</li>
+    <li class="ui-col ui-col-20">20</li>
+    <li class="ui-col ui-col-80">80</li>
+    <li class="ui-col ui-col-10">10</li>
+    <li class="ui-col ui-col-90">90</li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-row"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-50"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-50"</span><span class="nt">&gt;</span>50<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-25"</span><span class="nt">&gt;</span>25<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-75"</span><span class="nt">&gt;</span>75<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-33"</span><span class="nt">&gt;</span>33<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-67"</span><span class="nt">&gt;</span>67<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-20"</span><span class="nt">&gt;</span>20<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-80"</span><span class="nt">&gt;</span>80<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-10"</span><span class="nt">&gt;</span>10<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-col ui-col-90"</span><span class="nt">&gt;</span>90<span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="flex网格">flex网格</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col">平均分</div>
+    <div class="ui-col ui-col">平均分</div>
+    <div class="ui-col ui-col">平均分</div>
+    <div class="ui-col ui-col">平均分</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-2">2/3</div>
+    <div class="ui-col">1/3</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-3">3/4</div>
+    <div class="ui-col">1/4</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-4">4/5</div>
+    <div class="ui-col">1/5</div>
+</div>
+<div class="ui-row-flex ui-whitespace">
+    <div class="ui-col ui-col-3">3/5</div>
+    <div class="ui-col ui-col-2">2/5</div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-row-flex ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col"</span><span class="nt">&gt;</span>平均分<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col"</span><span class="nt">&gt;</span>平均分<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col"</span><span class="nt">&gt;</span>平均分<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col"</span><span class="nt">&gt;</span>平均分<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-row-flex ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col-2"</span><span class="nt">&gt;</span>2/3<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col"</span><span class="nt">&gt;</span>1/3<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-row-flex ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col-3"</span><span class="nt">&gt;</span>3/4<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col"</span><span class="nt">&gt;</span>1/4<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-row-flex ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col-4"</span><span class="nt">&gt;</span>4/5<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col"</span><span class="nt">&gt;</span>1/5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-row-flex ui-whitespace"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col-3"</span><span class="nt">&gt;</span>3/5<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col ui-col-2"</span><span class="nt">&gt;</span>2/5<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="竖排flex">竖排flex</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-row-flex ui-whitespace ui-row-flex-ver">
+    <div class="ui-col">1/2</div>
+    <div class="ui-col">1/2</div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-row-flex ui-whitespace ui-row-flex-ver"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col"</span><span class="nt">&gt;</span>1/2<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-col"</span><span class="nt">&gt;</span>1/2<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="三列无交界线">三列(无交界线)</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-grid ui-grid-trisect">
+    <ul class="ui-border-b">
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid ui-grid-trisect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="三列">三列</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-grid ui-grid-trisect">
+    <ul class="ui-border-b">
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>高尔夫<span>2.3M</span></h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid ui-grid-trisect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>高尔夫<span class="nt">&lt;span&gt;</span>2.3M<span class="nt">&lt;/span&gt;&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="两列">两列</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-grid ui-grid-bisect">
+    <ul>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid ui-grid-bisect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-horizontal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-horizontal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-horizontal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-horizontal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="两列文字">两列文字</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-grid ui-grid-bisect">
+    <ul>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-horizontal">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x290)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img">
+                <span style="background-image:url(http://placeholder.qiniudn.com/290x290)"></span>
+            </div>
+            <div class="ui-grid-info">
+              <h4>主要信息</h4>
+              <p>辅助信息</p>
+            </div>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid ui-grid-bisect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-horizontal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>主要信息<span class="nt">&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-horizontal"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>主要信息<span class="nt">&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x290)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>主要信息<span class="nt">&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x290)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;h4&gt;</span>主要信息<span class="nt">&lt;/h4&gt;</span>
+              <span class="nt">&lt;p&gt;</span>辅助信息<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="图文左右排列">图文左右排列</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-grid-icon ui-grid-icon-horizontal">
+    <ul>
+      <li>
+        <div class="ui-img-icon">
+          <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+          <h4>标题</h4>
+      </li>
+      <li>
+        <div class="ui-img-icon">
+          <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+       <h4>标题</h4>
+      </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-icon ui-grid-icon-horizontal"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/80x80)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;h4&gt;</span>标题<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+      <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-icon"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/80x80)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+       <span class="nt">&lt;h4&gt;</span>标题<span class="nt">&lt;/h4&gt;</span>
+      <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<!-- ## Examples -->
+<p>图文上下排列</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-grid-icon ">
+    <ul>
+        <li>
+          <div class="ui-img-icon">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+          </div>
+          <h5>标题</h5>
+          <p>副标题</p>
+        </li>
+        <li>
+          <div class="ui-img-icon">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+          </div>
+          <h5>标题</h5>
+          <p>副标题</p>
+        </li>
+        <li>
+          <div class="ui-img-icon">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+          </div>
+          <h5>标题</h5>
+          <p>副标题</p>
+        </li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-icon "</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/100x100)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;h5&gt;</span>标题<span class="nt">&lt;/h5&gt;</span>
+          <span class="nt">&lt;p&gt;</span>副标题<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/100x100)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;h5&gt;</span>标题<span class="nt">&lt;/h5&gt;</span>
+          <span class="nt">&lt;p&gt;</span>副标题<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+          <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-icon"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/100x100)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+          <span class="nt">&lt;/div&gt;</span>
+          <span class="nt">&lt;h5&gt;</span>标题<span class="nt">&lt;/h5&gt;</span>
+          <span class="nt">&lt;p&gt;</span>副标题<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<!-- ## Examples -->
+<h2 id="列表">列表</h2>
+<div class="mod-qrcode">
+    <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank"><span class="icon-qr"></span> <span class="doc-qrcode" id="qrbtn"></span> </a>
+</div>
+
+<h3 id="单行列表纯文字">单行列表(纯文字)</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-single ui-list-link ui-border-tb">
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">性别</h4>
+            <div class="ui-txt-info">男</div>
+        </div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">生日</h4>
+            <div class="ui-reddot ui-reddot-static"></div>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-single ui-list-link ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>性别<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-txt-info"</span><span class="nt">&gt;</span>男<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>生日<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-reddot ui-reddot-static"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="单行头像">单行头像</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-link ui-list-single ui-border-tb">
+    <li>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar-s单行头像</h4>
+        </div>
+    </li>
+    <li>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar-s单行头像</h4>
+        </div>
+    </li>
+    <li>
+        <div class="ui-avatar-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar-s单行头像</h4>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-link ui-list-single ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-avatar-s"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/68x68)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-avatar-s单行头像<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-avatar-s"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/68x68)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-avatar-s单行头像<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-avatar-s"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/68x68)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-avatar-s单行头像<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="单行小缩略图">单行小缩略图</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-single ui-list-link ui-border-tb">
+    <li>
+        <div class="ui-list-thumb-s ui-border-t">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">性别</h4>
+            <div class="ui-txt-info">男</div>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-thumb-s">
+            <span style="background-image:url(http://placeholder.qiniudn.com/68x68)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">生日</h4>
+            <div class="ui-reddot ui-reddot-static"></div>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-single ui-list-link ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-thumb-s ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/68x68)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>性别<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-txt-info"</span><span class="nt">&gt;</span>男<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-thumb-s"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/68x68)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>生日<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-reddot ui-reddot-static"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="单行缩略图">单行缩略图</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-link ui-border-tb">
+    <li>
+        <div class="ui-list-thumb">
+            <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-list-thumb缩略图</h4>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-thumb">
+            <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-list-thumb缩略图</h4>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-thumb">
+            <span style="background-image:url(http://placeholder.qiniudn.com/80x80)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-list-thumb缩略图</h4>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-link ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-thumb"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/80x80)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-list-thumb缩略图<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-thumb"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/80x80)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-list-thumb缩略图<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-thumb"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/80x80)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-list-thumb缩略图<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="双行文字头像按钮">双行文字头像+按钮</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-function ui-border-tb">
+    <li>
+        <div class="ui-avatar">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar</h4>
+            <p>双行头像</p>
+        </div>
+        <div class="ui-btn">PK</div>
+    </li>
+    <li>
+        <div class="ui-avatar">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar</h4>
+            <p>双行头像</p>
+        </div>
+        <div class="ui-btn-s">PK</div>
+    </li>
+    <li>
+        <div class="ui-avatar">
+            <span style="background-image:url(http://placeholder.qiniudn.com/100x100)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">ui-avatar</h4>
+            <p>双行头像</p>
+        </div>
+        <div class="ui-btn">PK</div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-function ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-avatar"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/100x100)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-avatar<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p&gt;</span>双行头像<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-btn"</span><span class="nt">&gt;</span>PK<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-avatar"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/100x100)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-avatar<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p&gt;</span>双行头像<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-btn-s"</span><span class="nt">&gt;</span>PK<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-avatar"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/100x100)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-avatar<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p&gt;</span>双行头像<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-btn"</span><span class="nt">&gt;</span>PK<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="图片在右列表">图片在右列表</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-nospace ui-border-tb">
+    <li class="ui-border-t ui-arrowlink">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">ui-list-icon</h4>
+            <p class="ui-nowrap">两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行</p>
+        </div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">ui-list-icon</h4>
+            <p class="ui-nowrap">两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两</p>
+        </div>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
+        </div>
+    </li>
+    <li class="ui-border-t">
+        <div class="ui-list-info">
+            <h4 class="ui-nowrap">ui-list-icon</h4>
+            <p>两行</p>
+        </div>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-nospace ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t ui-arrowlink"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-list-icon<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-list-icon<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两行两<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img-square"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/188x188)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>ui-list-icon<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p&gt;</span>两行<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img-square"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/188x188)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="图文列表正方形固定大小">图文列表正方形固定大小</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-border-tb ">
+    <li>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-img-square">
+            <span style="background-image:url(http://placeholder.qiniudn.com/188x188)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-border-tb "</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img-square"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/188x188)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是标题，加ui-nowrap可以超出长度截断<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是内容，加ui-nowrap可以超出长度截断<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img-square"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/188x188)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是标题，加ui-nowrap可以超出长度截断<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是内容，加ui-nowrap可以超出长度截断<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="图文列表垂直">图文列表（垂直）</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-border-tb">
+    <li>
+        <div class=" ui-list-img-vertical">
+            <span style="background-image:url(http://placeholder.qiniudn.com/216x308)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-img-vertical">
+            <span style="background-image:url(http://placeholder.qiniudn.com/216x308)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题标题标题标题标题标题标题标题</h4>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">" ui-list-img-vertical"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/216x308)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是标题，加ui-nowrap可以超出长度截断<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是内容，加ui-nowrap可以超出长度截断<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img-vertical"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/216x308)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4&gt;</span>标题标题标题标题标题标题标题标题标题标题标题<span class="nt">&lt;/h4&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<!-- ## Examples -->
+<p>图文列表（水平）</p>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list  ui-border-tb">
+    <li class="active">
+        <div class=" ui-list-img-horizontal">
+            <span style="background-image:url(http://placeholder.qiniudn.com/268x188)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p>这是内容</p>
+            <p></p>
+            <p></p>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-img-horizontal">
+            <span style="background-image:url(http://placeholder.qiniudn.com/268x188)"></span>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4>标题标题标题标题</h4>
+             <p>这是内容</p>
+            <p></p>
+            <p></p>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list  ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"active"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">" ui-list-img-horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/268x188)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是标题，加ui-nowrap可以超出长度截断<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p&gt;</span>这是内容<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img-horizontal"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/268x188)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4&gt;</span>标题标题标题标题<span class="nt">&lt;/h4&gt;</span>
+             <span class="nt">&lt;p&gt;</span>这是内容<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+            <span class="nt">&lt;p&gt;&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<!-- ## Examples -->
+<p>图文列表图片不固定大小</p>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-nospace ui-border-tb ">
+    <li>
+        <div class="ui-list-img">
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/248x352)"></span>
+            </div>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+        </div>
+    </li>
+    <li>
+        <div class="ui-list-img">
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/248x352)"></span>
+            </div>
+        </div>
+        <div class="ui-list-info ui-border-t">
+            <h4 class="ui-nowrap">这是标题，加ui-nowrap可以超出长度截断</h4>
+            <p class="ui-nowrap">这是内容，加ui-nowrap可以超出长度截断</p>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-nospace ui-border-tb "</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/248x352)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是标题，加ui-nowrap可以超出长度截断<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是内容，加ui-nowrap可以超出长度截断<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-img"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/248x352)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-list-info ui-border-t"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是标题，加ui-nowrap可以超出长度截断<span class="nt">&lt;/h4&gt;</span>
+            <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这是内容，加ui-nowrap可以超出长度截断<span class="nt">&lt;/p&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<p>局部加载中</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-loading-wrap">
+    <p>正在加载中...</p>
+    <i class="ui-loading"></i>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-loading-wrap"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;p&gt;</span>正在加载中...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-loading"</span><span class="nt">&gt;&lt;/i&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>页面加载中</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-loading-block show">
+    <div class="ui-loading-cnt">
+        <i class="ui-loading-bright"></i>
+        <p>正在加载中...</p>
+    </div>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-loading-block show"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-loading-cnt"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-loading-bright"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;p&gt;</span>正在加载中...<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="表单">表单</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+<h3 id="通用设置类输入框">通用设置类输入框</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-form ui-border-t">
+    <form action="">
+        <div class="ui-form-item ui-border-b">
+            <label>
+                列表标题
+            </label>
+            <input type="text" placeholder="18位身份证号码" />
+            <a href="#" class="ui-icon-close">
+            </a>
+        </div>
+        <div class="ui-form-item ui-form-item-link ui-border-b">
+            <label>
+                列表标题
+            </label>
+        </div>
+        <div class="ui-form-item ui-form-item-link ui-border-b">
+            <label>
+                标题
+            </label>
+        </div>
+        <div class="ui-btn-wrap">
+            <button class="ui-btn-lg ui-btn-primary">
+                确定
+            </button>
+        </div>
+    </form>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form ui-border-t"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-border-b"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label&gt;</span>
+                列表标题
+            <span class="nt">&lt;/label&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"18位身份证号码"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ui-icon-close"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-link ui-border-b"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label&gt;</span>
+                列表标题
+            <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-link ui-border-b"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;label&gt;</span>
+                标题
+            <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-btn-wrap"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-lg ui-btn-primary"</span><span class="nt">&gt;</span>
+                确定
+            <span class="nt">&lt;/button&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-form ui-border-t">
+    <form action="">
+        <div class="ui-form-item ui-form-item-pure ui-border-b">
+            <input type="text" placeholder="列表标题" />
+            <a href="#" class="ui-icon-close"></a>
+        </div>
+        <p class="ui-form-tips">4/20</p>
+    </form>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form ui-border-t"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-pure ui-border-b"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">placeholder=</span><span class="s">"列表标题"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">class=</span><span class="s">"ui-icon-close"</span><span class="nt">&gt;&lt;/a&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-form-tips"</span><span class="nt">&gt;</span>4/20<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/form&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="强引导类输入框">强引导类输入框</h3>
+
+<div class="bd-example" data-example-id="">
+<section class="ui-input-wrap ui-border-t">
+    <div class="ui-input ui-border-radius">
+        <input type="text" name="" value="" placeholder="我也说一句..." />
+    </div>
+    <button class="ui-btn">评论</button>
+</section>
+<section class="ui-input-wrap ui-border-t">
+    <div class="ui-input ui-border-radius ui-input-text">
+        <input type="text" name="" value="" placeholder="我也说一句..." />
+    </div>
+</section>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"ui-input-wrap ui-border-t"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-input ui-border-radius"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"我也说一句..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn"</span><span class="nt">&gt;</span>评论<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+<span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"ui-input-wrap ui-border-t"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-input ui-border-radius ui-input-text"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">""</span> <span class="na">value=</span><span class="s">""</span> <span class="na">placeholder=</span><span class="s">"我也说一句..."</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></div>
+
+<h3 id="表单开关项">表单开关项</h3>
+
+<div class="bd-example" data-example-id="">
+<form action="">
+      <div class="ui-form-item ui-form-item-switch ui-border-b">
+          <p>
+              对附近的人可见
+          </p>
+          <label class="ui-switch">
+              <input type="checkbox" />
+          </label>
+      </div>
+      <div class="ui-form-item ui-form-item-switch ui-border-b">
+          <p>
+              对附近的人可见
+          </p>
+          <label class="ui-switch">
+              <input type="checkbox" checked="" />
+          </label>
+      </div>
+  </form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-switch ui-border-b"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>
+              对附近的人可见
+          <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-switch"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-switch ui-border-b"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;p&gt;</span>
+              对附近的人可见
+          <span class="nt">&lt;/p&gt;</span>
+          <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-switch"</span><span class="nt">&gt;</span>
+              <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked=</span><span class="s">""</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;/label&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h3 id="表单下拉框">表单下拉框</h3>
+
+<div class="bd-example" data-example-id="">
+<form action="">
+    <div class="ui-form-item ui-border-b">
+        <label>日期</label>
+        <div class="ui-select-group">
+            <div class="ui-select">
+                <select>
+                    <option>2014</option>
+                    <option selected="">2015</option>
+                    <option>2016</option>
+                </select>
+            </div>
+            <div class="ui-select">
+                <select>
+                    <option>03</option>
+                    <option selected="">04</option>
+                    <option>05</option>
+                </select>
+            </div>
+            <div class="ui-select">
+                <select>
+                    <option>21</option>
+                    <option selected="">22</option>
+                    <option>23</option>
+                </select>
+            </div>
+        </div>
+    </div>
+    <div class="ui-form-item ui-border-b">
+        <label>日期</label>
+        <div class="ui-select">
+            <select>
+                <option>2014</option>
+                <option selected="">2015</option>
+                <option>2016</option>
+            </select>
+        </div>
+    </div>
+</form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label&gt;</span>日期<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-select-group"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-select"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;select&gt;</span>
+                    <span class="nt">&lt;option&gt;</span>2014<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">selected=</span><span class="s">""</span><span class="nt">&gt;</span>2015<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option&gt;</span>2016<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-select"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;select&gt;</span>
+                    <span class="nt">&lt;option&gt;</span>03<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">selected=</span><span class="s">""</span><span class="nt">&gt;</span>04<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option&gt;</span>05<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-select"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;select&gt;</span>
+                    <span class="nt">&lt;option&gt;</span>21<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option</span> <span class="na">selected=</span><span class="s">""</span><span class="nt">&gt;</span>22<span class="nt">&lt;/option&gt;</span>
+                    <span class="nt">&lt;option&gt;</span>23<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;/select&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label&gt;</span>日期<span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-select"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;select&gt;</span>
+                <span class="nt">&lt;option&gt;</span>2014<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;option</span> <span class="na">selected=</span><span class="s">""</span><span class="nt">&gt;</span>2015<span class="nt">&lt;/option&gt;</span>
+                <span class="nt">&lt;option&gt;</span>2016<span class="nt">&lt;/option&gt;</span>
+            <span class="nt">&lt;/select&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h3 id="表单单选项">表单单选项</h3>
+
+<div class="bd-example" data-example-id="">
+<form action="">
+    <div class="ui-form-item ui-form-item-radio ui-border-b">
+        <label class="ui-radio" for="radio">
+            <input type="radio" name="radio" />
+        </label>
+        <p>表单中用于单选操作</p>
+    </div>
+    <div class="ui-form-item ui-form-item-radio ui-border-b">
+
+        <label class="ui-radio" for="radio">
+            <input type="radio" checked="" name="radio" />
+        </label>
+        <p>表单中用于单选操作</p>
+    </div>
+</form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-radio ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-radio"</span> <span class="na">for=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>表单中用于单选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-radio ui-border-b"</span><span class="nt">&gt;</span>
+
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-radio"</span> <span class="na">for=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">checked=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>表单中用于单选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h3 id="表单多选项">表单多选项</h3>
+
+<div class="bd-example" data-example-id="">
+<form action="">
+    <div class="ui-form-item ui-form-item-checkbox ui-border-b">
+        <label class="ui-checkbox">
+            <input type="checkbox" />
+        </label>
+        <p>表单中用于多选操作</p>
+    </div>
+    <div class="ui-form-item ui-form-item-checkbox ui-border-b">
+        <label class="ui-checkbox">
+            <input type="checkbox" checked="" />
+        </label>
+        <p>表单中用于多选操作</p>
+    </div>
+</form>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">""</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-checkbox ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>表单中用于多选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-form-item ui-form-item-checkbox ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked=</span><span class="s">""</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>表单中用于多选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span></code></pre></div>
+
+<h3 id="普通列表中单选项">普通列表中单选项</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-text ui-list-radio ui-border-tb">
+    <li class="ui-border-t">
+        <label class="ui-radio" for="radio">
+            <input type="radio" name="radio" />
+        </label>
+        <p>普通列表中用于单选操作</p>
+    </li>
+    <li class="ui-border-t">
+        <label class="ui-radio" for="radio">
+            <input type="radio" checked="" name="radio" />
+        </label>
+        <p>普通列表中用于单选操作</p>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-text ui-list-radio ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-radio"</span> <span class="na">for=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>普通列表中用于单选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-radio"</span> <span class="na">for=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"radio"</span> <span class="na">checked=</span><span class="s">""</span> <span class="na">name=</span><span class="s">"radio"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>普通列表中用于单选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="普通列表中多选项">普通列表中多选项</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-list ui-list-text ui-list-checkbox ui-border-b">
+    <li class="ui-border-t">
+        <label class="ui-checkbox">
+            <input type="checkbox" />
+        </label>
+        <p>普通列表中用于多选操作</p>
+    </li>
+    <li class="ui-border-t">
+        <label class="ui-checkbox">
+            <input type="checkbox" checked="" />
+        </label>
+        <p>普通列表中用于多选操作</p>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-list ui-list-text ui-list-checkbox ui-border-b"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>普通列表中用于多选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"ui-border-t"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;label</span> <span class="na">class=</span><span class="s">"ui-checkbox"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"checkbox"</span> <span class="na">checked=</span><span class="s">""</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;/label&gt;</span>
+        <span class="nt">&lt;p&gt;</span>普通列表中用于多选操作<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h2 id="通知">通知</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+
+<div class="bd-example" data-example-id="">
+<section class="ui-notice">
+    <i></i>
+    <p>请检查网络</p>
+    <div class="ui-notice-btn">
+        <button class="ui-btn-primary ui-btn-lg">按钮</button>
+    </div>
+</section>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"ui-notice"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;i&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;p&gt;</span>请检查网络<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-notice-btn"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-btn-primary ui-btn-lg"</span><span class="nt">&gt;</span>按钮<span class="nt">&lt;/button&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></div>
+
+<h2 id="面板">面板</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/panel.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrpanel"></span>
+  </a>
+</div>
+
+<h3 id="默认面板">默认面板</h3>
+
+<div class="bd-example" data-example-id="">
+<section class="ui-panel ui-grid ui-grid-trisect">
+    <h2 class="ui-arrowlink">猜你喜欢<span class="ui-panel-subtitle">1328条</span></h2>
+    <ul>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+                <h4 class="ui-nowrap-multi">我是主标题</h4>
+                <p class="ui-nowrap">这里是副标题</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+                <h4 class="ui-nowrap-multi">我是主标题</h4>
+                <p class="ui-nowrap">这里是副标题</p>
+            </div>
+        </li>
+        <li>
+            <div class="ui-img-vertical">
+                <span style="background-image:url(http://placeholder.qiniudn.com/190x284)"></span>
+            </div>
+            <div class="ui-grid-info ui-border-r">
+                <h4 class="ui-nowrap-multi">我是主标题</h4>
+                <p class="ui-nowrap">这里是副标题</p>
+            </div>
+        </li>
+    </ul>
+    <div class="ui-panel-more ui-border-tb">
+        <span class="ui-arrowlink">查看全部</span>
+    </div>
+</section>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"ui-panel ui-grid ui-grid-trisect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ui-arrowlink"</span><span class="nt">&gt;</span>猜你喜欢<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ui-panel-subtitle"</span><span class="nt">&gt;</span>1328条<span class="nt">&lt;/span&gt;&lt;/h2&gt;</span>
+    <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap-multi"</span><span class="nt">&gt;</span>我是主标题<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这里是副标题<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap-multi"</span><span class="nt">&gt;</span>我是主标题<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这里是副标题<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-img-vertical"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/190x284)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-info ui-border-r"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;h4</span> <span class="na">class=</span><span class="s">"ui-nowrap-multi"</span><span class="nt">&gt;</span>我是主标题<span class="nt">&lt;/h4&gt;</span>
+                <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"ui-nowrap"</span><span class="nt">&gt;</span>这里是副标题<span class="nt">&lt;/p&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-panel-more ui-border-tb"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"ui-arrowlink"</span><span class="nt">&gt;</span>查看全部<span class="nt">&lt;/span&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></div>
+
+<h3 id="居中面板">居中面板</h3>
+<p>ui-panel-center 居中</p>
+
+<div class="bd-example" data-example-id="">
+<section class="ui-panel ui-panel-center ui-border-tb">
+    <h2 class="ui-arrowlink"><span>标题文字</span><span class="ui-panel-title-tips">分类更多</span></h2>
+</section>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"ui-panel ui-panel-center ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ui-arrowlink"</span><span class="nt">&gt;&lt;span&gt;</span>标题文字<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"ui-panel-title-tips"</span><span class="nt">&gt;</span>分类更多<span class="nt">&lt;/span&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></div>
+
+<h3 id="多行居中面板">多行居中面板</h3>
+<p>ui-panel-center-multi 居中两行</p>
+
+<div class="bd-example" data-example-id="">
+<section class="ui-panel ui-panel-center-multi ui-border-tb">
+    <h2 class="ui-arrowlink"><span>标题文字</span><span class="ui-panel-subtitle">副标题文字</span><span class="ui-panel-title-tips">分类更多</span></h2>
+</section>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;section</span> <span class="na">class=</span><span class="s">"ui-panel ui-panel-center-multi ui-border-tb"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;h2</span> <span class="na">class=</span><span class="s">"ui-arrowlink"</span><span class="nt">&gt;&lt;span&gt;</span>标题文字<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"ui-panel-subtitle"</span><span class="nt">&gt;</span>副标题文字<span class="nt">&lt;/span&gt;&lt;span</span> <span class="na">class=</span><span class="s">"ui-panel-title-tips"</span><span class="nt">&gt;</span>分类更多<span class="nt">&lt;/span&gt;&lt;/h2&gt;</span>
+<span class="nt">&lt;/section&gt;</span></code></pre></div>
+
+<h2 id="进度条">进度条</h2>
+<div class="mod-qrcode2">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+<p>进度条</p>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-progress">
+    <span style="width:50%"></span>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-progress"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"width:50%"</span><span class="nt">&gt;&lt;/span&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<p>图片上进度条</p>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-grid-halve">
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+            <div class="ui-progress">
+                <span style="width:50%"></span>
+            </div>
+        </div>
+    </li>
+    <li>
+        <div class="ui-grid-halve-img">
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-grid-halve"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-halve-img"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-progress"</span><span class="nt">&gt;</span>
+                <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"width:50%"</span><span class="nt">&gt;&lt;/span&gt;</span>
+            <span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-halve-img"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h2 id="搜索栏">搜索栏</h2>
+<div class="mod-qrcode2">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-searchbar-wrap ui-border-b">
+    <div class="ui-searchbar ui-border-radius">
+        <i class="ui-icon-search"></i>
+        <div class="ui-searchbar-text">搜索号码（2-10位）</div>
+        <div class="ui-searchbar-input"><input value="" type="tel" placeholder="搜索号码（2-10位）" autocapitalize="off" /></div>
+        <i class="ui-icon-close"></i>
+    </div>
+    <button class="ui-searchbar-cancel">取消</button>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span>  <span class="na">class=</span><span class="s">"ui-searchbar-wrap ui-border-b"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-searchbar ui-border-radius"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-icon-search"</span><span class="nt">&gt;&lt;/i&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-searchbar-text"</span><span class="nt">&gt;</span>搜索号码（2-10位）<span class="nt">&lt;/div&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-searchbar-input"</span><span class="nt">&gt;&lt;input</span> <span class="na">value=</span><span class="s">""</span> <span class="na">type=</span><span class="s">"tel"</span> <span class="na">placeholder=</span><span class="s">"搜索号码（2-10位）"</span> <span class="na">autocapitalize=</span><span class="s">"off"</span><span class="nt">&gt;&lt;/div&gt;</span>
+        <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-icon-close"</span><span class="nt">&gt;&lt;/i&gt;</span>
+    <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">class=</span><span class="s">"ui-searchbar-cancel"</span><span class="nt">&gt;</span>取消<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h2 id="角标">角标</h2>
+<div class="mod-qrcode">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+
+<h3 id="红色角标">红色角标</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-grid-halve">
+    <li>
+        <div class="ui-grid-halve-img" style="overflow:hidden;">
+            <i class="ui-subscript ui-subscript-red">最新</i>
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-grid-halve"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-halve-img"</span> <span class="na">style=</span><span class="s">"overflow:hidden;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-subscript ui-subscript-red"</span><span class="nt">&gt;</span>最新<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="橙色角标">橙色角标</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-grid-halve">
+  <li>
+      <div class="ui-grid-halve-img" style="overflow:hidden;">
+          <i class="ui-subscript ui-subscript-orange">活动</i>
+          <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+      </div>
+  </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-grid-halve"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;li&gt;</span>
+      <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-halve-img"</span> <span class="na">style=</span><span class="s">"overflow:hidden;"</span><span class="nt">&gt;</span>
+          <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-subscript ui-subscript-orange"</span><span class="nt">&gt;</span>活动<span class="nt">&lt;/i&gt;</span>
+          <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+      <span class="nt">&lt;/div&gt;</span>
+  <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="绿色角标">绿色角标</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-grid-halve">
+    <li>
+        <div class="ui-grid-halve-img" style="overflow:hidden;">
+            <i class="ui-subscript ui-subscript-green">限免</i>
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-grid-halve"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-halve-img"</span> <span class="na">style=</span><span class="s">"overflow:hidden;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-subscript ui-subscript-green"</span><span class="nt">&gt;</span>限免<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="蓝色角标">蓝色角标</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-grid-halve">
+    <li>
+        <div class="ui-grid-halve-img" style="overflow:hidden;">
+            <i class="ui-subscript ui-subscript-blue">免费</i>
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-grid-halve"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-halve-img"</span> <span class="na">style=</span><span class="s">"overflow:hidden;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-subscript ui-subscript-blue"</span><span class="nt">&gt;</span>免费<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h3 id="三字角标">三字角标</h3>
+
+<div class="bd-example" data-example-id="">
+<ul class="ui-grid-halve">
+    <li>
+        <div class="ui-grid-halve-img" style="overflow:hidden;">
+            <i class="ui-subscript ui-subscript-red ui-subscript-trisection">小表情</i>
+            <span style="background-image:url(http://placeholder.qiniudn.com/290x160)"></span>
+        </div>
+    </li>
+</ul>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-grid-halve"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;li&gt;</span>
+        <span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-grid-halve-img"</span> <span class="na">style=</span><span class="s">"overflow:hidden;"</span><span class="nt">&gt;</span>
+            <span class="nt">&lt;i</span> <span class="na">class=</span><span class="s">"ui-subscript ui-subscript-red ui-subscript-trisection"</span><span class="nt">&gt;</span>小表情<span class="nt">&lt;/i&gt;</span>
+            <span class="nt">&lt;span</span> <span class="na">style=</span><span class="s">"background-image:url(http://placeholder.qiniudn.com/290x160)"</span><span class="nt">&gt;&lt;/span&gt;</span>
+        <span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+<span class="nt">&lt;/ul&gt;</span></code></pre></div>
+
+<h2 id="选项卡">选项卡</h2>
+<div class="mod-qrcode2">
+  <a class="doc-demo-link" href="http://frozenui.github.io/frozenui/demo/btn.html" title="点击查看demo" target="blank">
+    <span class="icon-qr"></span>
+    <span class="doc-qrcode" id="qrbtn"></span>
+  </a>
+</div>
+<h3 id="两个tab">两个tab</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-tab ">
+    <ul class="ui-tab-nav ui-border-b ">
+        <li class="current"><span>热门</span></li>
+        <li><span>热门</span></li>
+    </ul>
+    <ul class="ui-tab-content" style="width:200%">
+        <li>内容1</li>
+        <li>内容2</li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tab "</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-tab-nav ui-border-b "</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;&lt;span&gt;</span>热门<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>热门<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-tab-content"</span> <span class="na">style=</span><span class="s">"width:200%"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容1<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容2<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="三个tab">三个tab</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-tab">
+    <ul class="ui-tab-nav ui-border-b">
+        <li class="current"><span>热门直播类</span></li>
+        <li><span>热门直播类</span></li>
+        <li><span>热门直播类</span></li>
+    </ul>
+    <ul class="ui-tab-content" style="width:300%">
+        <li>内容1</li>
+        <li>内容2</li>
+        <li>内容2</li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tab"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-tab-nav ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;&lt;span&gt;</span>热门直播类<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>热门直播类<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>热门直播类<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-tab-content"</span> <span class="na">style=</span><span class="s">"width:300%"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容1<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容2<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容2<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+<h3 id="四个tab">四个tab</h3>
+
+<div class="bd-example" data-example-id="">
+<div class="ui-tab">
+    <ul class="ui-tab-nav ui-border-b">
+        <li class="current"><span>热门直播类</span></li>
+        <li><span>热门直播类</span></li>
+        <li><span>热门直播类</span></li>
+        <li><span>热门直播类</span></li>
+    </ul>
+    <ul class="ui-tab-content" style="width:400%">
+        <li>内容1</li>
+        <li>内容2</li>
+        <li>内容3</li>
+        <li>内容4</li>
+    </ul>
+</div>
+</div>
+<div class="highlight"><pre><code class="language-html" data-lang="html"><span class="nt">&lt;div</span> <span class="na">class=</span><span class="s">"ui-tab"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-tab-nav ui-border-b"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"current"</span><span class="nt">&gt;&lt;span&gt;</span>热门直播类<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>热门直播类<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>热门直播类<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;span&gt;</span>热门直播类<span class="nt">&lt;/span&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;ul</span> <span class="na">class=</span><span class="s">"ui-tab-content"</span> <span class="na">style=</span><span class="s">"width:400%"</span><span class="nt">&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容1<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容2<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容3<span class="nt">&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;</span>内容4<span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/div&gt;</span></code></pre></div>
+
+
+        </main>
+      </div>
+    </div>
+
+    <footer class="bd-footer text-muted">
+  <div class="container">
+    <ul class="bd-footer-links">
+      <li><a href="">GitHub</a></li>
+      <li><a href="http://frozenui.github.io/frozenui/demo/index.html">DEMO</a></li>
+      <li><a href="http://frozenui.github.io/case.html">精彩H5</a></li>
+      <li><a href="#">QQ群：427632094</a></li>
+    </ul>
+    <p></p>
+    <p>©2017 QQVIP FD Team</p>
+  </div>
+</footer>
+
+<script src="" integrity="" crossorigin="anonymous"></script>
+<script>window.jQuery || document.write('<script src="/assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+
+<script src="/assets/js/vendor/tether.min.js"></script>
+
+
+  <script src="/dist/js/bootstrap.js"></script>
+  <script src="/dist/js/qrcode.min.js"></script>
+  <script src="/dist/js/index.js"></script>
+
+
+
+
+  <script src="/assets/js/vendor/anchor.min.js"></script>
+  <script src="/assets/js/vendor/clipboard.min.js"></script>
+  <script src="/assets/js/vendor/holder.min.js"></script>
+  <script src="/assets/js/src/application.js"></script>
+
+
+<!-- IE10 viewport hack for Surface/desktop Windows 8 bug -->
+<script src="/assets/js/ie10-viewport-bug-workaround.js"></script>
+<script src="/assets/js/ie-emulation-modes-warning.js"></script>
+
+
+<script src="/assets/js/vendor/jekyll-search.min.js"></script>
+
+<script>
+SimpleJekyllSearch.init({
+  searchInput: document.getElementById('search-input'),
+  resultsContainer: document.getElementById('search-results'),
+  searchResultTemplate: '<a class="dropdown-item" href="{url}">{title}</a>',
+  noResultsText: '<div class="dropdown-item no-results">Sorry, there are no results for that search.</div>',
+  json: '/search.json'
+})
+</script>
+
+
+<script>
+</script>
+
+  </body>
+</html>
