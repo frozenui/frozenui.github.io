@@ -1449,3 +1449,11 @@ body {
   width: 100px;
   top: -74px;
   right: -30px; }
+
+.container{
+  position: relative;
+}
+  .qrcode{
+    position: absolute;
+    height: 100%;
+  }
