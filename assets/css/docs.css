@@ -1455,5 +1455,7 @@ body {
 }
   .qrcode{
     position: absolute;
-    height: 100%;
+    height: 150px;
+    right: 100px;
+    top: -38px;
   }
